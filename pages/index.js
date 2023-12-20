@@ -1,16 +1,15 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
-import BlogCard from './components/blogCard'
+import Footer from '../Components/Footer/index'
+import BlogCard from '@/Components/blogCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className="bg-white p-10"
-    >
+    <main>
       <BlogCard/>
+      <Footer/>
     </main>
   )
 }
