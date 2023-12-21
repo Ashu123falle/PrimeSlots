@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar"
-import { CategoryCard } from "./CategoryCard"
+import { CategoryCard } from "@/components/CategoryCard"
 
 const categoriesList = [
   {
@@ -79,6 +79,8 @@ export default function Home() {
                 ))}
           </div>
         </div>
+
+        
 
       </main>
     )
