@@ -1,3 +1,5 @@
+import Footer from '@/Components/Footer'
+import BlogCard from '@/Components/blogCard'
 import React from 'react'
 
 const SearchResultPage = () => {
@@ -7,8 +9,10 @@ const SearchResultPage = () => {
                 <div>
                     <h1>Home/MarketPlace/Billboards</h1>
                     <hr />
-                    <h2>Showing 1-20 out of 2356 Products</h2>
+                    <h2 className='text-right'>Showing 1-20 out of 2356 Products</h2>
                 </div>
+                <BlogCard/>
+                <Footer/>
             </div>
         </>
     )
