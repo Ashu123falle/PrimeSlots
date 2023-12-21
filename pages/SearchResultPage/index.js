@@ -3,7 +3,7 @@ import React from 'react'
 const SearchResultPage = () => {
     return (
         <>
-            <div className='border border-black my-5'>
+            <div className='my-5'>
                 <div>
                     <h1>Home/MarketPlace/Billboards</h1>
                     <hr />
