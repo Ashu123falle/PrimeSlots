@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
+import Footer from "@/Components/Footer"
 
 const categoriesList = [
   {
@@ -81,7 +82,7 @@ export default function Home() {
         </div>
 
         
-
+      <Footer/>
       </main>
     )
   }

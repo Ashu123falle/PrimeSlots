@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterComponent from '../../Components/FilterComponent';
+import FilterComponent from './FilterComponent/FilterComponent';
 
 // Example data
 const data = [
