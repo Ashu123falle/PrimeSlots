@@ -1,18 +1,39 @@
 import React from 'react';
 import FilterComponent from './FilterComponent/FilterComponent';
-
+import Navbar from '@/Components/Navbar';
+import Footer from '@/Components/Footer';
+const optionsConfig = [
+  {
+    key: 'state',
+    label: 'Search Location',
+    options: ['All', 'Andhra Pradesh', 'Assam', 'Arunachal Pradesh'], // Add more states as needed
+    default: 'All',
+  },
+  {
+    key: 'category',
+    label: 'Media Categories',
+    options: ['All', 'category1', 'category2', 'category3'], // Add more categories as needed
+    default: 'All',
+  },
+  {
+    key: 'filter',
+    label: 'Filters',
+    options: ['All', 'filter1', 'filter2', 'filter3'], // Add more filters as needed
+    default: 'All',
+  },
+];
 // Example data
 const data = [
-  { title: 'Result 1', state: 'Andhra Pradesh', category: 'Category 1', filter: 'Filter 1' },
-  { title: 'Result 2', state: 'Assam', category: 'Category 2', filter: 'Filter 2' },
-  { title: 'Result 3', state: 'Arunachal Pradesh', category: 'Category 1', filter: 'Filter 3' },
-  // Add more data as needed
+  
+  //our data items
 ];
 
 const Home = () => {
   return (
-    <div>
-      <FilterComponent data={data} />
+    <div >
+      <Navbar/>
+      <FilterComponent data={data} optionsConfig={optionsConfig}/>
+      <Footer/>
     </div>
   );
 };
