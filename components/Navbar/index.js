@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
+import Image from 'next/image' ;
+
+import mainlogo from '@/pages/assets/mainlogo.png'
+
 
 function Navbar() {
 
     return (
         <>
         <nav className="flex items-center justify-around flex-wrap p-6">
-            <img src='../../assets/img/mainlogo.jpg' className="w-[136.7px] h-8 relative " />
+            <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
             <div className="">
             <div className={"bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
             <input type="text"/>
