@@ -15,7 +15,7 @@ function ExtraServices(props) {
     <div class="bg-gray-200 p-4 mr-150 ml-110">
     <h2 class="text-2xl font-bold mb-4 pl-20">Our Extra Services</h2>
   
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 pr-20 pl-20">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 pr-10 pl-5">
       
       <div class="bg-white p-4 rounded-lg shadow">
         <Image src={image_1} alt="Image 1" class="w-full h-32 object-cover mb-2"/>
