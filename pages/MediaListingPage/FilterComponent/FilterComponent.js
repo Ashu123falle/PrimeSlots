@@ -15,9 +15,9 @@ const FilterComponent = ({ data }) => {
 
   return (
     <div className=' text-white'>
-      <div className='flex m-11 space-x-4 rounded p-3' style={{ backgroundColor: '#242565' }}>
+      <div className='flex flex-col md:flex-row m-4 space-y-4 md:space-y-0 md:space-x-4 rounded p-3' style={{ backgroundColor: '#242565' }}>
         {/* Indian States dropdown */}
-        <div className='flex flex-1 flex-col  p-5'>
+        <div className='flex flex-1 flex-col p-2 md:p-5'>
           <label htmlFor='indianStates'>Search Location:</label>
           <select
             id='indianStates'
@@ -34,7 +34,7 @@ const FilterComponent = ({ data }) => {
         </div>
 
         {/* Media Categories dropdown */}
-        <div className='flex flex-1 flex-col p-4 '>
+        <div className='flex flex-1 flex-col p-2 md:p-4'>
           <label htmlFor='mediaCategories'>Media Categories:</label>
           <select
             id='mediaCategories'
@@ -51,7 +51,7 @@ const FilterComponent = ({ data }) => {
         </div>
 
         {/* Filters dropdown */}
-        <div className='flex flex-1 flex-col  p-4 '>
+        <div className='flex flex-1 flex-col p-2 md:p-4'>
           <label htmlFor='filters'>Filters:</label>
           <select
             id='filters'
@@ -70,7 +70,7 @@ const FilterComponent = ({ data }) => {
       {/* Display results here */}
       <div className='text-black m-8'>
         {filteredData.map((item) => (
-          <div key={item.title}>
+          <div key={item.title} className='mb-2'>
             {item.title} - {item.state} - {item.category} - {item.filter}
           </div>
         ))}
