@@ -13,7 +13,7 @@ function ExtraServices(props) {
   return (
    <>
     <div class="bg-gray-200 p-4 mr-150 ml-110">
-    <h2 class="text-2xl font-bold mb-4 pl-20">Our Extra Services</h2>
+    <h2 class="text-2xl font-bold mb-4 pl-5">Our Extra Services</h2>
   
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 pr-10 pl-5">
       
