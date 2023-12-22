@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function BlogCard(props) {
     return (
         <>
-            <li className="list-none rounded-xl hover:shadow-lg w-[280px] h-[420px] group-hover:h-[400px] shadow
+            <div className="list-none rounded-xl hover:shadow-lg w-[260px] h-[390px] group-hover:h-[400px] shadow
                                 bg-white rounded-lg shadow border border-slate-300 flex-col justify-start 
                                 items-start inline-flex m-3" key={props.id}>
                 <img src={props.image}
@@ -34,7 +34,7 @@ export default function BlogCard(props) {
                     <button className="w-[80px] h-[30px] rounded-[5px] bg-blue-500 text-white
              text-sm font-medium font-['Figtree'] leading-snug">Book Now</button>
                 </div>
-            </li>
+            </div>
         </>
     )
 }
