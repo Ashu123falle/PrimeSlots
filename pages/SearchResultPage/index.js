@@ -4,6 +4,7 @@ import BlogCard from '@/Components/blogCard'
 import Searchapi from '../api/SearchPageapi'
 import Navbar from '@/Components/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
+import ServiceSection from "@/Components/ServicesSection"
 
 const SearchResultPage = () => {
 
@@ -40,6 +41,7 @@ const SearchResultPage = () => {
       
             </div>
         </div>
+        <ServiceSection />
         <Footer/>
         </>
     )
