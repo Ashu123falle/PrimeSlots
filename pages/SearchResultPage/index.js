@@ -4,6 +4,7 @@ import BlogCard from '@/Components/blogCard'
 import Searchapi from '../api/SearchPageapi'
 import Navbar from '@/Components/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
+import ServiceSection from "@/Components/ServicesSection"
 
 const SearchResultPage = () => {
 
@@ -12,8 +13,8 @@ const SearchResultPage = () => {
     
 
     return (
-        <div className='w-full'>
-        <Navbar/>
+        <div className='box-border'>
+            <Navbar/>
             <div>
                    <h1 className='px-5 py-4 mb-[-10px] text-[14px]'><span className='text-gray-400 '> Home / MarketPlace /</span> <span className='text-black font-semibold'>Billboards</span> </h1>
                    <hr className='border border-gray-300 w-[100vw]' />
@@ -30,16 +31,18 @@ const SearchResultPage = () => {
                </ul>
         
 
-            <hr className='border border-gray-300 my-4 w-[100vw]'/>
+            <hr className='border border-gray-300 my-4 w-[99vw]'/>
 
             <div className="pt-2">
-            <h1 className='text-2xl md:text-3xl font-bold mb-5'>People also looked for</h1>
-
-    
-            <PeopleAlsoLookFor/>
-      
+                <h1 className='text-2xl md:text-3xl font-bold mb-5'>People also looked for</h1>
+            
+                <PeopleAlsoLookFor/>
             </div>
         </div>
+        <ServiceSection />
+
+
+
         <Footer/>
         </div>
     )
