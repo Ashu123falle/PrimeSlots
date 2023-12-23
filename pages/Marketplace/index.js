@@ -2,10 +2,10 @@ import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
 
-import ServiceSection from "../../Components/ServicesSection"
-
 import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
+import ServiceSection from "@/Components/ServicesSection"
 
 
 const categoriesList = [
@@ -244,11 +244,7 @@ export default function Home() {
         
         <div className="hotpicks p-3 overscroll-auto overflow-x-scroll no-scrollbar">
           <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[32px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
-          <div className="mx-3 categories flex justify-start items-center">
-              {hotpicks.map(each => (
-                <BlogCard key={each.id}  data = {each} />
-                ))}
-          </div>
+          <PeopleAlsoLookFor/>
         </div>
 
         <div className="buttons mt-4 flex justify-end">
@@ -312,6 +308,7 @@ export default function Home() {
 
 
           </div>
+          <ServiceSection />
       <Footer/>
       </main>
     )
