@@ -8,17 +8,19 @@ import { useState } from "react";
 function Navbar() {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [dropDown, setdropDown] = useState(true);
+
 
 
     return (
         <>
-        <nav className="hidden lg:flex items-center justify-around flex-wrap p-6 w-full">
+        <nav className="hidden md:flex items-center justify-around flex-wrap p-6 w-full">
             <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
 
         
             <div className="">
             <div className={"bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
-            <input type="text" className="w-[500px] h-[40px]"/>
+            <input type="text" className="w-[500px] h-[40px] outline-none pl-2" placeholder='Search for your requirements'/>
             <a><svg
                 className={"w-6 h-6 relative overflow-visible "}
                
@@ -92,12 +94,12 @@ function Navbar() {
         </nav>
 
 
-        <div className="flex items-center justify-between border-b border-gray-400 py-8 lg:hidden">
+        <div className="flex items-center justify-between border-b border-gray-400 py-8 md:hidden">
       <a href="/">
       <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
       </a>
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="MOBILE-MENU text-left flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)}
@@ -125,31 +127,31 @@ function Navbar() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex flex-col justify-start items-start min-h-[250px]">
-              <li className="my-8 uppercase text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+            <ul className="flex-col justify-center text-left min-h-[250px]">
+              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
                 <a href="#">Marketplace</a>
               </li>
-              <li className="my-8 uppercase text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
                 <a href="#">Partners</a>
               </li>
-              <li className="my-8 uppercase text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
-            <div class="relative inline-block text-left">
+              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+            <div className="relative inline-block text-left">
                 <div>
-                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <button type="button"  onClick={() => setdropDown((prev) => !prev)} className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                     Browse by category
-                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                     </svg>
                     </button>
                 </div>
-                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <div class="py-1" role="none">
+                <div className={dropDown? "absolute left-0 z-10 mt-2 ml-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" : "absolute left-0 z-10 mt-2 ml-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div className="py-1" role="none">
                 
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Billboards</a>
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Digital Billboards</a>
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Neon Signs</a>
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Billboards</a>
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Digital Billboards</a>
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Neon Signs</a>
                 <form method="POST" action="#" role="none">
-                    <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">See all</button>
+                    <button type="submit" className="text-[#0D6EFD] block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">See all...</button>
                 </form>
                 </div>
             </div>
