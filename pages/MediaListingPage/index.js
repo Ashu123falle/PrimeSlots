@@ -2,6 +2,7 @@ import React from 'react';
 import FilterComponent from './FilterComponent/FilterComponent';
 import Navbar from '@/Components/Navbar';
 import Footer from '@/Components/Footer';
+import ServiceSection from "@/Components/ServicesSection";
 const optionsConfig = [
   {
     key: 'state',
@@ -33,6 +34,7 @@ const Home = () => {
     <div >
       <Navbar/>
       <FilterComponent data={data} optionsConfig={optionsConfig}/>
+      <ServiceSection />
       <Footer/>
     </div>
   );

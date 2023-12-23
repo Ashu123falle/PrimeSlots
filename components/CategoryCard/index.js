@@ -1,7 +1,6 @@
 export const CategoryCard = (props) => {
 
     const {title, imageUrl, alt, id} = props
-
     return (
       <li
         className=

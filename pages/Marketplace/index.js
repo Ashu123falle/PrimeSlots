@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
+
+import ServiceSection from "../../Components/ServicesSection"
+
 import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
 
@@ -185,7 +188,7 @@ export default function Home() {
           </div>
         </div>
 
-        
+      <ServiceSection />
       <Footer/>
       </main>
     )
