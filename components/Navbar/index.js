@@ -63,11 +63,12 @@ function Navbar() {
             </div>
             </div>
             <div className="flex justify-around items-center">
-            <h1
+            <a href="/Marketplace"><h1
                 className="text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]"
                 >
                 Marketplace
             </h1>
+            </a>
             <h1
                 className="text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]"
                 >
@@ -129,7 +130,7 @@ function Navbar() {
             </div>
             <ul className="flex-col justify-center text-left min-h-[250px]">
               <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
-                <a href="#">Marketplace</a>
+                <a href="/Marketplace">Marketplace</a>
               </li>
               <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
                 <a href="#">Partners</a>
