@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
+import ServiceSection from "../../Components/ServicesSection"
 
 const categoriesList = [
   {
@@ -79,7 +80,7 @@ export default function Home() {
           </ul>
         </div>
 
-        
+      <ServiceSection />
       <Footer/>
       </main>
     )
