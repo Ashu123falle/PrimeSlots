@@ -5,8 +5,6 @@ import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
 
 
-
-
 const categoriesList = [
   {
     id: 0,
@@ -53,6 +51,7 @@ const categoriesList = [
 ]
 
 export default function Home() {
+  
     return (
       <main className="bg-whitebg-cover w-full">
         <Navbar/>
@@ -152,7 +151,7 @@ export default function Home() {
           <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-4xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
           <div className="mx-3 categories flex justify-start items-center">
               {hotpicks.map(each => (
-                <BlogCard key={each.id} id={each.id} image={each.image} heading={each.heading} name={each.name} description1={each.description1} description2={each.description2} description3={each.description3} description4={each.description4} />
+                <BlogCard key={each.id} data = {each} />
                 ))}
           </div>
           <a><h1 className="text-color-2 text-center font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] font-semibold relative flex items-center justify-center text-[#D292FF]">View All Products 
@@ -181,7 +180,7 @@ export default function Home() {
           <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-4xl leading-[48px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
           <div className="mx-3 categories flex justify-start items-center">
               {hotpicks.map(each => (
-                <BlogCard key={each.id} id={each.id} image={each.image} heading={each.heading} name={each.name} description1={each.description1} description2={each.description2} description3={each.description3} description4={each.description4} />
+                <BlogCard key={each.id}  data = {each} />
                 ))}
           </div>
         </div>
