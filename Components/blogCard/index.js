@@ -21,7 +21,7 @@ export default function BlogCard(props) {
                         <h1 className="text-amber-500 text-sm font-normal font-['Figtree'] leading-tight">{props.heading}</h1>
                     </div>
 
-                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree'] leading-tight">{name}</p>
+                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree'] leading-tight">{props.name}</p>
 
 
                     <ul className=" pt-[10px] p-2 flex flex-wrap m-[-10px] justify-between">
