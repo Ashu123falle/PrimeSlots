@@ -35,7 +35,7 @@ const SearchResultPage = () => {
             <div className="othersearch pl-32">
                 <div className=''>
                     <h1 className='text-3xl font-bold  py-4'>People also looked for</h1>
-                    <div className="img flex justify-start space-x-12">
+                    <div className="img grid grid-flow-col overflow-x-auto space-x-12 ">
                         {
                             othersearchData.map((curElem, ind) => {
                                 return <BlogCard key={ind} id={curElem.id} image={curElem.image} heading={curElem.heading} name={curElem.name} description1={curElem.description1} description2={curElem.description2} description3={curElem.description3} description4={curElem.description4} />

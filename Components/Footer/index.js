@@ -43,7 +43,7 @@ const Footer = () => {
 
 
                 <div className="second">
-                    <p className="text-center mt-8 text-xs">Primeslots/ Copyright 2023/ All Rights Reserved</p>
+                    <p className="text-center mt-6 text-xs">Primeslots/ Copyright 2023/ All Rights Reserved</p>
                 </div>
             </div>
         </>
