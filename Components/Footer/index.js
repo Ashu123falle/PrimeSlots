@@ -8,8 +8,8 @@ import linkedinlogo from '@/pages/assets/LinkedIn.svg'
 const Footer = () => {
     return (
         <>
-            <div className="bg-[#0a075f] text-white flex flex-col py-6 mt-10 mx-0">
-                <div className="container ml-10 flex justify-evenly text-gray-200">
+            <div className="bg-[#0a075f] text-white flex flex-col py-6 mt-10 mx-0 w-full">
+                <div className="container ml-10 md: flex justify-evenly text-gray-200">
                     <div className="space-y-3">
                         <Image src={mainlogo}></Image>
                         <p>3,4th floor, Siddharth <br /> Bandodkar Bhavan, Panji, Goa 403001</p>
