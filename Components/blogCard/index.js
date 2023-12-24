@@ -43,16 +43,16 @@ export default function BlogCard(props) {
                     <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree-Regular',_sans-serif]leading-tight">{name}</p>
 
 
-                    <ul className=" pt-[10px] p-2 flex flex-wrap m-[-10px] justify-between">
-                        <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
-                text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description1}</li>
-                        <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
-                text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description2}</li>
-                        <li className="h-[25px] p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
-                text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description3}</li>
-                        <li className="h-[25px] p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
-                text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tightmy-1 ">{description4}</li>
-                    </ul>
+                <ul className=" pt-[10px] p-2 flex flex-wrap m-[-10px] justify-around">
+                            <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
+                    text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description1}</li>
+                            <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
+                    text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description2}</li>
+                            <li className="h-[25px] p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
+                    text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description3}</li>
+                            <li className="h-[25px] p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
+                    text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tightmy-1 ">{description4}</li>
+                </ul>
 
                 <button className="w-[90px] h-[35px] mt-2 mb-2 rounded-[5px] border border-indigo-500 group-hover:bg-blue-500 group-hover:text-white bg-transparent
              text-sm font-medium font-['Figtree-Regular',_sans-serif] leading-snug text-indigo-500">Book Now</button>
