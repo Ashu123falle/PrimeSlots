@@ -7,7 +7,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: true,
     },
 
     {
@@ -18,7 +19,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -29,7 +31,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -40,7 +43,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -51,7 +55,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -62,7 +67,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -73,7 +79,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -84,7 +91,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 
     {
@@ -95,7 +103,8 @@ const Searchapi = [
         description1: "Real Estate",
         description2: "Retail",
         description3: "Resturants",
-        description4: "AutoMobile"
+        description4: "AutoMobile",
+        isLiked: false,
     },
 ]
 

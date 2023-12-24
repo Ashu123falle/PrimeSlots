@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import {Component} from 'react'
+
 import Footer from '@/Components/Footer'
 import BlogCard from '@/Components/blogCard'
 import Searchapi from '../api/SearchPageapi'
@@ -6,10 +7,33 @@ import Navbar from '@/Components/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
 import ServiceSection from '@/Components/ServicesSection'
 
-const SearchResultPage = () => {
+class SearchResultPage extends Component {
+    state ={
+        searchData: [],
+    }
 
-    const [searchData, setsearchData] = useState(Searchapi);
+    componentDidMount() {
+        this.setState({
+            searchData: Searchapi,
+        })
+    }
 
+    onClickWishlistButton = id => {
+        const{searchData} = this.state
+       const updatedSearchData = searchData.map(obj => {
+        if (obj.id === id) {
+            return {...obj, isLiked: !obj.isLiked}
+        }
+        return obj
+       })
+
+       this.setState({
+        searchData: updatedSearchData,
+       })
+    }
+
+    render(){
+        const {searchData} = this.state
     return (
         <div className='box-border'>
             <Navbar/>
@@ -23,7 +47,7 @@ const SearchResultPage = () => {
              <ul className='flex flex-wrap justify-around h-[120vh] overflow-y-auto w-full'>
                    {
                        searchData.map((curElem, ind) => {
-                           return <BlogCard key={ind} data={curElem} />
+                           return <BlogCard key={ind} data={curElem} onClickWishlistButton = {this.onClickWishlistButton}/>
                        })
                    }
                </ul>
@@ -43,6 +67,7 @@ const SearchResultPage = () => {
         <Footer/>
         </div>
     )
+    }
 }
 
 export default SearchResultPage
