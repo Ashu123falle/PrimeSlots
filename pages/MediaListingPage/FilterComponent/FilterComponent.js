@@ -15,15 +15,16 @@ const FilterComponent = ({ data, optionsConfig }) => {
         {optionsConfig.map((option) => (
           <div key={option.key} className='flex flex-1 flex-col p-2 md:p-5 text-[16px]'>
             <label htmlFor={option.key}>{option.label}</label>
+
             <select
               id={option.key}
               value={selectedOptions[option.key]}
               onChange={(e) => setSelectedOptions({ ...selectedOptions, [option.key]: e.target.value })}
-              className='text-white border-b text-[16px] font-bold'
+              className='text-white border-b text-[16px] font-bold '
               style={{ backgroundColor: '#242565' }}
             >
               {option.options.map((opt) => (
-                <option key={opt} value={opt} className='text-black bg-white text-[16px]'>
+                <option key={opt} value={opt} className=' text-black bg-white text-[16px]'>
                   {opt}
                 </option>
               ))}

@@ -82,6 +82,17 @@ const MediaListingPage = () => {
    const [searchData, setsearchData] = useState(Searchapi);
    const [isSmallDevice, setIsSmallDevice] = useState(false);
 
+   const onClickWishlistButton = id => {
+    const updatedSearchData = searchData.map(obj => {
+      if (obj.id === id) {
+          return {...obj, isLiked: !obj.isLiked}
+      }
+      return obj
+    })
+    setsearchData(updatedSearchData)
+
+}
+
   useEffect(() => {
     const handleResize = () => {
       setIsSmallDevice(window.innerWidth <= 640); // You can adjust the width based on your needs
@@ -127,22 +138,23 @@ const MediaListingPage = () => {
           <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Neon Sites</h1>
         </div>
         <hr className='border border-gray-300 my-3 w-[99vw]' />
-        <h2 className='text-right text-[14px] px-5'><span className='font-semibold'>Showing 1-20</span> <span className='text-gray-400'>out of 2356 Products</span></h2>
+
       </div>
-      <div className="p-3 categories my-7 flex flex-col">
-  <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
-  <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
-  <div className="flex overflow-x-scroll sm:overflow-visible">
-    <ul className="p-3 mx-3 categories flex justify-start items-center whitespace-nowrap">
-      {categoriesList.map((each, index) => (
-        <CategoryCard
-          key={each.id}
-          title={each.title}
-          imageUrl={each.imageUrl}
-          alt={each.alt}
-        />
-      ))}
-    </ul>
+
+        <div className="p-3 categories my-7 flex flex-col">
+    <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
+    <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
+    <div className="flex overflow-x-scroll sm:overflow-visible">
+      <ul className="p-3 mx-3 categories flex justify-start items-center whitespace-nowrap">
+        {categoriesList.map((each, index) => (
+          <CategoryCard
+            key={each.id}
+            title={each.title}
+            imageUrl={each.imageUrl}
+            alt={each.alt}
+          />
+        ))}
+      </ul>
   </div>
 </div>
 
@@ -156,12 +168,13 @@ const MediaListingPage = () => {
       </div>
 
       <FilterComponent data={data} optionsConfig={optionsConfig} />
+
       <div className="px-2 md:px-8 xl:px-16 pb-6">
       <ul className='flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 m-2'>
   {searchData.map((curElem, ind) => (
-    <li key={ind} className='flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2'>
-      <BlogCard data={curElem} />
-    </li>
+    <div key={ind} className='flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2'>
+      <BlogCard data={curElem} onClickWishlistButton={onClickWishlistButton}/>
+    </div>
   ))}
 </ul>
 
