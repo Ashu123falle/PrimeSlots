@@ -4,7 +4,6 @@ import Image from "next/image";
 const ServiceSectionCard = (props) => {
     const {itemDetails} = props
     const {text,image} = itemDetails
-    console.log(text)
 
     return (
         <li className="m-10 flex flex-col justify-center items-center">

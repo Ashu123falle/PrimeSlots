@@ -4,13 +4,11 @@ import BlogCard from '@/Components/blogCard'
 import Searchapi from '../api/SearchPageapi'
 import Navbar from '@/Components/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
-import ServiceSection from "@/Components/ServicesSection"
+import ServiceSection from '@/Components/ServicesSection'
 
 const SearchResultPage = () => {
 
     const [searchData, setsearchData] = useState(Searchapi);
-
-    
 
     return (
         <div className='box-border'>
@@ -38,10 +36,9 @@ const SearchResultPage = () => {
             
                 <PeopleAlsoLookFor/>
             </div>
+
+            <ServiceSection/>
         </div>
-        <ServiceSection />
-
-
 
         <Footer/>
         </div>
