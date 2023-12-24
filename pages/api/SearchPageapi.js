@@ -95,17 +95,6 @@ const Searchapi = [
         isLiked: false,
     },
 
-    {
-        id:9,
-        image:"https://s3-alpha-sig.figma.com/img/fbd0/b60c/32373eb8c1f5a933c6493aa7ee4eab44?Expires=1704067200&Signature=PVHMtm55YmUpa~04vyfE6pGcDSrH-Y78K35Qm4xT0EAEr9GqIv7wPmbEAIIgJ272mgD-2wo-af6RtwZtmm5Ub4YoWb0oQSnsRsY0pgvDjcDVknz4Qc-ps4BqdTx2YxwZ6R~Gugnv~-R7QBE9bYLcRZ-Vgf-3r5xvNesgrL59XQX6CS5nwt68eqHDGtCHkT6MpQ8mNQtJ5jPjgwtLRKRhc3qJus3lm1GQODcCnYboxGw40eOzb9bVnEm1qK77QAXoQcqsuk2LH8wxkPkQr8TM~1XiSlNvVBDmM2Aik~-z2V0pLnjdxEJ3xr3v0QLgFWMz4XhvI2Zq7g93970zqI5e2g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
 ]
 
 export default Searchapi
