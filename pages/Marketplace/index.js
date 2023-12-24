@@ -59,21 +59,13 @@ export default function Home() {
       <main className="bg-whitebg-cover w-full">
         <Navbar/>
 
-        <div className="tabs-display-cont mt-5 ml-3 flex justify-start">
-          <h1 className="text-[#AFAFAF] text-ligtext text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Home</h1>
-          <div
-              className={
-                "m-2 my-3 border-solid border-ligtext border-t border-r-[0] border-b-[0] border-l-[0] shrink-0 w-[13.19px] h-0 relative border-gray-500"
-              }
-              style={{
-                opacity: "0.5",
-                transform: "rotate(117.051deg) scale(2, 2)",
-              }}
-            ></div>
-          <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Marketplace</h1>
+        <div>
+            <h1 className='px-5 py-4 mb-[-10px] text-[14px]'><span className='text-gray-400 '> Home /</span>
+             <span className='text-black font-semibold'>MarketPlace</span> </h1>
+            <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
 
-        <hr/>
+        <hr className="mt-3"/>
         
         <div className="p-3 catgeories my-10 flex flex-col overscroll-auto overflow-x-scroll no-scrollbar ">
           <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
@@ -84,10 +76,8 @@ export default function Home() {
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}
           </ul>
-
-          
-         
         </div>
+
         <div className="buttons mt-4 flex justify-end">
                 
           
@@ -144,12 +134,7 @@ export default function Home() {
 
               </button>
 
-
-              
-
-
-          </div>
-
+        </div>
 
         <div className="hotpicks p-3  mt-5 " style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
           <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>

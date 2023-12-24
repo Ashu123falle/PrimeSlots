@@ -4,10 +4,9 @@ import Image from 'next/image'
 export default function BlogCard(props) {
     
    const {data} = props 
-   const {image, heading,name,description1,description2,description3,description4} = data
+   const {image, heading, name ,description1,description2,description3,description4} = data
 
     return (
-        
             <li className="list-none rounded-xl w-[350px] h-[380px] shrink-0  sm:w-[290px] md:w-[250px] bg-white shadow border border-slate-300 
                 flex-col justify-start items-start inline-flex m-3 group hover:shadow-2xl  hover:h-[390px]
                 "> 
@@ -23,7 +22,7 @@ export default function BlogCard(props) {
                         <h1 className="text-amber-500 text-sm font-normal font-['Figtree'] leading-tight">{heading}</h1>
                     </div>
 
-                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree'] leading-tight">{props.name}</p>
+                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree'] leading-tight">{name}</p>
 
 
                     <ul className=" pt-[10px] p-2 flex flex-wrap m-[-10px] justify-between">
