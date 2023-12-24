@@ -2,8 +2,9 @@ import wishlist from '@/pages/assets/Wishlist.svg'
 import Image from 'next/image'
 
 export default function BlogCard(props) {
-    const {data} = props
-    const {image,heading,name,description1,description2,description3,description4} = data
+    
+   const {data} = props 
+   const {image, heading,name,description1,description2,description3,description4} = data
 
     return (
         
@@ -21,7 +22,9 @@ export default function BlogCard(props) {
                  gap-[4.71px] items-start self-start">
                         <h1 className="text-amber-500 text-sm font-normal font-['Figtree'] leading-tight">{heading}</h1>
                     </div>
-                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree'] leading-tight">{name}</p>
+
+                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree'] leading-tight">{props.name}</p>
+
 
                     <ul className=" pt-[10px] p-2 flex flex-wrap m-[-10px] justify-between">
                         <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 

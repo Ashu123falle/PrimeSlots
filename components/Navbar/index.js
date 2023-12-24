@@ -1,18 +1,26 @@
-import React, { useEffect, useState } from "react";
 import Image from 'next/image' ;
 
 import mainlogo from '@/pages/assets/mainlogo.png'
+import { useState } from "react";
+
 
 
 function Navbar() {
 
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [dropDown, setdropDown] = useState(true);
+
+
+
     return (
         <>
-        <nav className="flex items-center justify-around flex-wrap p-6">
+        <nav className="hidden md:flex items-center justify-around flex-wrap p-6 w-full">
             <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
+
+        
             <div className="">
             <div className={"bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
-            <input type="text"/>
+            <input type="text" className="w-[500px] h-[40px] outline-none pl-2" placeholder='Search for your requirements'/>
             <a><svg
                 className={"w-6 h-6 relative overflow-visible "}
                
@@ -55,11 +63,12 @@ function Navbar() {
             </div>
             </div>
             <div className="flex justify-around items-center">
-            <h1
+            <a href="/Marketplace"><h1
                 className="text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]"
                 >
                 Marketplace
             </h1>
+            </a>
             <h1
                 className="text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]"
                 >
@@ -84,7 +93,114 @@ function Navbar() {
             </svg>
             </div>
         </nav>
+
+
+        <div className="flex items-center justify-between border-b border-gray-400 py-8 md:hidden">
+      <a href="/">
+      <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
+      </a>
+      <nav>
+        <section className="MOBILE-MENU text-left flex lg:hidden">
+          <div
+            className="HAMBURGER-ICON space-y-2"
+            onClick={() => setIsNavOpen((prev) => !prev)}
+          >
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          </div>
+
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div
+              className="absolute top-0 right-0 px-2 py-8"
+              onClick={() => setIsNavOpen(false)}
+            >
+              <svg
+                className="h-8 w-8 text-gray-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <ul className="flex-col justify-center text-left min-h-[250px]">
+              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+                <a href="/Marketplace">Marketplace</a>
+              </li>
+              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+                <a href="#">Partners</a>
+              </li>
+              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+            <div className="relative inline-block text-left">
+                <div>
+                    <button type="button"  onClick={() => setdropDown((prev) => !prev)} className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    Browse by category
+                    <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                    </button>
+                </div>
+                <div className={dropDown? "absolute left-0 z-10 mt-2 ml-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" : "absolute left-0 z-10 mt-2 ml-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div className="py-1" role="none">
+                
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Billboards</a>
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Digital Billboards</a>
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Neon Signs</a>
+                <form method="POST" action="#" role="none">
+                    <button type="submit" className="text-[#0D6EFD] block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">See all...</button>
+                </form>
+                </div>
+            </div>
+            </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    `}</style>
+    </div>
+  
+        
+
+    
         </>
+
+        
     )
 }
 
