@@ -8,7 +8,7 @@ import info from '@/pages/assets/ph_info.svg'
 const MediaDetails = () => {
     return (
         <>
-            <div className="main w-[500px] space-y-6 mx-64 mt-16">
+            <div className="main w-[500px] space-y-6">
 
                 {/* one */}
                 <div className='iconheading flex space-x-4'>
