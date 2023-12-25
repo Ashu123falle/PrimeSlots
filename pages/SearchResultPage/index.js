@@ -59,6 +59,7 @@ class SearchResultPage extends Component {
                 <h1 className='text-2xl md:text-3xl font-bold mb-5'>People also looked for</h1>
             
                 <PeopleAlsoLookFor/>
+
             </div>
 
             <ServiceSection/>
