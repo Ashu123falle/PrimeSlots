@@ -78,25 +78,25 @@ export default function Home() {
         <Navbar/>
 
         <div>
-            <h1 className='px-5 py-4 mb-[-10px] text-[14px]'><span className='text-gray-400 '> Home /</span>
+            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[14px] px-5 md:px-8 xl:px-16'><span className='text-gray-400 '> Home /</span>
              <span className='text-black font-semibold'>MarketPlace</span> </h1>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
 
-        <hr className="mt-3"/>
         
-        <div className="p-3 catgeories my-10 flex flex-col overscroll-auto overflow-x-scroll no-scrollbar ">
-          <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
-          <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
+        
+        <div className="mt-2 catgeories my-10 flex flex-col w-full px-5 md:px-8 xl:px-16">
+          <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
+          <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
-          <ul className="p-3 mx-3 categories flex justify-start items-center overflow-visible">
+          <ul className=" categories flex justify-start items-center overflow-visible overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
               {categoriesList.map(each => (
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}
           </ul>
         </div>
 
-        <div className="buttons mt-4 flex justify-end">
+        <div className="buttons mt-4 mr-4 flex justify-end">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -154,16 +154,19 @@ export default function Home() {
 
         </div>
 
-        <div className="hotpicks p-3  mt-5 " style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
-          <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
+        <div className="hotpicks mt-5 overflow-hidden px-5 md:px-8 xl:px-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
+          <h1 className="text-secondarycolor-1 mx-5 text-left font-['Inter-Bold',_sans-serif] text-xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
           <div className="mx-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
               {hotpicks.map(each => (
                 <BlogCard key={each.id} data = {each} />
                 ))}
           </div>
-          <a><h1 className="text-color-2 text-center font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-8 font-semibold relative flex self-end justify-center text-[#D292FF]">View All Products 
+
+          
+
+          <a><h1 className="text-[#181263] text-center font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-8 font-semibold relative flex self-end justify-center text-[#181263]">View All Products 
           <svg
-                    class="w-6 h-6 relative overflow-visible"
+                    class="w-6 h-6 relative overflow-visible text-[#181263]"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -172,7 +175,7 @@ export default function Home() {
                   >
                     <path
                       d="M13 19L20 12L13 5M20 12L4 12"
-                      stroke="#D292FF"
+                      stroke="#181263"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -180,9 +183,8 @@ export default function Home() {
                   </svg>
               </h1>
             </a>
-        </div>
 
-        <div className="buttons mt-4 flex justify-end">
+            <div className="buttons  flex justify-end">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -244,9 +246,11 @@ export default function Home() {
 
           </div>
 
+        </div>
+
         
-        <div className="hotpicks p-3 overscroll-auto overflow-x-scroll no-scrollbar">
-          <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[32px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
+        <div className="hotpicks p-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar px-5 md:px-8 xl:px-16">
+          <h1 className="text-secondarycolor-1 mx-3 mt-2 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[32px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
           <PeopleAlsoLookFor/>
         </div>
 

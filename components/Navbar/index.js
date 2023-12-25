@@ -97,10 +97,10 @@ function Navbar() {
 
         <div className="flex items-center justify-between border-b border-gray-400 py-8 md:hidden">
       <a href="/">
-      <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
+      <Image src={mainlogo} className="w-[136.7px] h-8 ml-5 relative"></Image>
       </a>
       <nav>
-        <section className="MOBILE-MENU text-left flex lg:hidden">
+        <section className="MOBILE-MENU px-5 text-left flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)}
@@ -128,14 +128,15 @@ function Navbar() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex-col justify-center text-left min-h-[250px]">
-              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+            <div className="flex justify-start">
+            <ul className="flex-col justify-items-start text-left min-h-[250px]">
+              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
                 <a href="/Marketplace">Marketplace</a>
               </li>
-              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
                 <a href="#">Partners</a>
               </li>
-              <li className="my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]">
+              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
             <div className="relative inline-block text-left">
                 <div>
                     <button type="button"  onClick={() => setdropDown((prev) => !prev)} className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]" id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -159,6 +160,7 @@ function Navbar() {
             </div>
               </li>
             </ul>
+            </div>
           </div>
         </section>
 
