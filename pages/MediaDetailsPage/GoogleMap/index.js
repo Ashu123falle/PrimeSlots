@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker, AdvancedMarker } from '@react-google-maps/api';
 
 const GoogleMapComponent = () => {
   const fakeCoordinates = {
@@ -10,7 +10,7 @@ const GoogleMapComponent = () => {
 
   const mapStyles = {
     height: '300px',
-    width: '400px',
+    width: '450px',
   };
 
   return (
