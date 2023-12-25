@@ -2,6 +2,9 @@ import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
 import ServiceSection from "../../Components/ServicesSection"
+import NewListingsComponent from "./NewListingsComponent"
+
+
 
 const categoriesList = [
   {
@@ -80,6 +83,7 @@ export default function Home() {
           </ul>
         </div>
 
+      <NewListingsComponent />
       <ServiceSection />
       <Footer/>
       </main>

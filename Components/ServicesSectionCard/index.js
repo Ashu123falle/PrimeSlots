@@ -13,7 +13,7 @@ const ServiceSectionCard = (props) => {
                     <Image src={image}></Image>
                 </div>
             </div>
-            <h1 className="// FAST DELIVERY text-black text-l font-bold font-'Roboto' leading-7 my-3">{text}</h1>
+            <h1 className="text-black text-sm font-semibold font-'Roboto' leading-7 my-3">{text}</h1>
             <div className="w-[236.94px] h-3 bg-slate-300 rounded-[50px]" />
         </li>
     )
