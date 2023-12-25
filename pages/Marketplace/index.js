@@ -251,9 +251,6 @@ export default function Home() {
           <PeopleAlsoLookFor/>
         </div>
 
-
-      <NewListingsComponent />
-
         <div className="buttons mt-4 flex justify-end">
                 
           
@@ -315,6 +312,8 @@ export default function Home() {
 
 
           </div>
+
+          <NewListingsComponent />
           <ServiceSection />
 
       <Footer/>
