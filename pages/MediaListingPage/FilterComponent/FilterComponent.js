@@ -10,20 +10,21 @@ const FilterComponent = ({ data, optionsConfig }) => {
   );
 
   return (
-    <div className='text-white'>
+    <div className='text-white mx-10'>
       <div className='flex flex-col md:flex-row m-7 space-y-4 md:space-y-0 md:space-x-4 rounded p-3' style={{ backgroundColor: '#242565' }}>
         {optionsConfig.map((option) => (
           <div key={option.key} className='flex flex-1 flex-col p-2 md:p-5 text-[16px]'>
             <label htmlFor={option.key}>{option.label}</label>
+
             <select
               id={option.key}
               value={selectedOptions[option.key]}
               onChange={(e) => setSelectedOptions({ ...selectedOptions, [option.key]: e.target.value })}
-              className='text-white border-b text-[20px] font-bold'
+              className='text-white border-b text-[16px] font-bold '
               style={{ backgroundColor: '#242565' }}
             >
               {option.options.map((opt) => (
-                <option key={opt} value={opt} className='text-black bg-white'>
+                <option key={opt} value={opt} className=' text-black bg-white text-[16px]'>
                   {opt}
                 </option>
               ))}

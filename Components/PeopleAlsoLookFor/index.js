@@ -1,23 +1,48 @@
 
-import React, {useState} from 'react'
+import {Component} from 'react'
 import OtherSearchapi from '@/pages/api/OtherSearchapi'
 import BlogCard from '../blogCard'
 
 
-export default function PeopleAlsoLookFor()  {
+class PeopleAlsoLookFor extends Component {
     
-    const [othersearchData, setothersearchData] = useState(OtherSearchapi)
+    state ={
+        searchData: [],
+    }
 
-    
+    componentDidMount() {
+        this.setState({
+            searchData: OtherSearchapi,
+        })
+    }
+
+    onClickWishlistButton = id => {
+        const{searchData} = this.state
+
+       const updatedSearchData = searchData.map(obj => {
+        if (obj.id === id) {
+            return {...obj, isLiked: !obj.isLiked}
+        }
+        return obj
+       })
+
+       this.setState({
+        searchData: updatedSearchData,
+       })
+    }
+
+
+    render() {
+        const {searchData} = this.state
     return(
-        <ul className='overflow-x-auto flex items-center w-[100vw]'>
+        <ul className='overflow-x-auto flex items-center w-[100vw] h-[70vh]'>
             {
-             othersearchData.map((curElem, ind) =>
-                <BlogCard key={ind} data = {curElem} />
+             searchData.map((curElem, ind) =>
+                <BlogCard key={ind} data = {curElem} onClickWishlistButton={this.onClickWishlistButton}/>
             )}
         </ul>
     )
-    
-
-    
+    }
 }
+
+export default PeopleAlsoLookFor

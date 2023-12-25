@@ -2,13 +2,11 @@ import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
 
-import ServiceSection from "../../Components/ServicesSection"
 import NewListingsComponent from "./NewListingsComponent"
-
-
-
 import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
+import ServiceSection from "@/Components/ServicesSection"
 
 
 const categoriesList = [
@@ -54,6 +52,24 @@ const categoriesList = [
     imageUrl: 'https://s3-alpha-sig.figma.com/img/243f/f692/9cee2c61159b7963d383118970e277ed?Expires=1704067200&Signature=B8W74jphCxQF9us~v5QN5lRKerx-j9QNRg-G753GVkC3WZ9xEuB~~fOUOqEkIYsNcyBO8OpJEmlLsacxCigv9oeGghSI8dmLX~-sFM~VOK2t5SeebSWpME8PqVGUpuo4oxqtgyhhE4GXkgpk9HkGCXUovjXFxrVBEuLvJijEQ2g3zRGV3d3HijExX3McgyESQRbj-sA5qBgtKeNpTwKgZeqPOYklrZqzom4msgddlPCNDJFk8L0MAwFYcZ1H5aXjqmvXbRNf8aWpHs2usvcoiBBI7bpnoN~iqQL4nh5vCWoBbljJ5~kjgNGwU~rAh93~LYaKTZETmKMwGhi19pojqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
     alt: "img2",
   },
+  {
+    id: 9,
+    title: 'LED Board',
+    imageUrl: 'https://s3-alpha-sig.figma.com/img/243f/f692/9cee2c61159b7963d383118970e277ed?Expires=1704067200&Signature=B8W74jphCxQF9us~v5QN5lRKerx-j9QNRg-G753GVkC3WZ9xEuB~~fOUOqEkIYsNcyBO8OpJEmlLsacxCigv9oeGghSI8dmLX~-sFM~VOK2t5SeebSWpME8PqVGUpuo4oxqtgyhhE4GXkgpk9HkGCXUovjXFxrVBEuLvJijEQ2g3zRGV3d3HijExX3McgyESQRbj-sA5qBgtKeNpTwKgZeqPOYklrZqzom4msgddlPCNDJFk8L0MAwFYcZ1H5aXjqmvXbRNf8aWpHs2usvcoiBBI7bpnoN~iqQL4nh5vCWoBbljJ5~kjgNGwU~rAh93~LYaKTZETmKMwGhi19pojqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    alt: "img2",
+  },
+  {
+    id: 7,
+    title: 'LED Board',
+    imageUrl: 'https://s3-alpha-sig.figma.com/img/243f/f692/9cee2c61159b7963d383118970e277ed?Expires=1704067200&Signature=B8W74jphCxQF9us~v5QN5lRKerx-j9QNRg-G753GVkC3WZ9xEuB~~fOUOqEkIYsNcyBO8OpJEmlLsacxCigv9oeGghSI8dmLX~-sFM~VOK2t5SeebSWpME8PqVGUpuo4oxqtgyhhE4GXkgpk9HkGCXUovjXFxrVBEuLvJijEQ2g3zRGV3d3HijExX3McgyESQRbj-sA5qBgtKeNpTwKgZeqPOYklrZqzom4msgddlPCNDJFk8L0MAwFYcZ1H5aXjqmvXbRNf8aWpHs2usvcoiBBI7bpnoN~iqQL4nh5vCWoBbljJ5~kjgNGwU~rAh93~LYaKTZETmKMwGhi19pojqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    alt: "img2",
+  },
+  {
+    id: 8,
+    title: 'LED Board',
+    imageUrl: 'https://s3-alpha-sig.figma.com/img/243f/f692/9cee2c61159b7963d383118970e277ed?Expires=1704067200&Signature=B8W74jphCxQF9us~v5QN5lRKerx-j9QNRg-G753GVkC3WZ9xEuB~~fOUOqEkIYsNcyBO8OpJEmlLsacxCigv9oeGghSI8dmLX~-sFM~VOK2t5SeebSWpME8PqVGUpuo4oxqtgyhhE4GXkgpk9HkGCXUovjXFxrVBEuLvJijEQ2g3zRGV3d3HijExX3McgyESQRbj-sA5qBgtKeNpTwKgZeqPOYklrZqzom4msgddlPCNDJFk8L0MAwFYcZ1H5aXjqmvXbRNf8aWpHs2usvcoiBBI7bpnoN~iqQL4nh5vCWoBbljJ5~kjgNGwU~rAh93~LYaKTZETmKMwGhi19pojqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    alt: "img2",
+  },
 ]
 
 export default function Home() {
@@ -62,33 +78,112 @@ export default function Home() {
       <main className="bg-whitebg-cover w-full">
         <Navbar/>
 
-        <div className="tabs-display-cont mt-5 ml-3 flex justify-start">
-          <h1 className="text-[#AFAFAF] text-ligtext text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Home</h1>
-          <div
-              className={
-                "m-2 my-3 border-solid border-ligtext border-t border-r-[0] border-b-[0] border-l-[0] shrink-0 w-[13.19px] h-0 relative border-gray-500"
-              }
-              style={{
-                opacity: "0.5",
-                transform: "rotate(117.051deg) scale(2, 2)",
-              }}
-            ></div>
-          <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Marketplace</h1>
+        <div>
+            <h1 className='px-5 py-4 mb-[-10px] text-[14px]'><span className='text-gray-400 '> Home /</span>
+             <span className='text-black font-semibold'>MarketPlace</span> </h1>
+            <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
 
-        <hr/>
+        <hr className="mt-3"/>
         
-        <div className="catgeories my-10 flex flex-col overscroll-auto overflow-x-scroll  ">
+        <div className="p-3 catgeories my-10 flex flex-col overscroll-auto overflow-x-scroll no-scrollbar ">
           <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
           <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
-          <ul className="mx-3 categories flex justify-start items-center overflow-visible">
+          <ul className="p-3 mx-3 categories flex justify-start items-center overflow-visible">
               {categoriesList.map(each => (
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}
           </ul>
+        </div>
 
-          <div className="buttons flex justify-end">
+        <div className="buttons mt-4 flex justify-end">
+                
+          
+              <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
+                <div
+                  class="bg-secondary rounded-[50%] absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] h-[100%]"
+                >
+                  <svg
+                  class="h-[auto] absolute right-[23.91%] left-[23.91%] w-[52.17%] bottom-[23.91%] top-[23.91%] h-[52.17%] overflow-visible"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 5L4 12L11 19M4 12H20"
+                    stroke="#CCCCCC"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                </div>
+                
+
+              </button>
+
+              <button class="bg-[#e2b9ff] rounded-[50%] w-[46px] h-[46px] relative">
+                <div
+                  class="bg-secondary rounded-[50%] absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] h-[100%] flex justify-center items-center"
+                >
+
+              <svg
+                  class="w-6 h-6 relative overflow-visible"
+                  
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 19L20 12L13 5M20 12L4 12"
+                    stroke="#131C5F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                </div>
+                
+
+              </button>
+
+        </div>
+
+        <div className="hotpicks p-3  mt-5 " style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
+          <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
+          <div className="mx-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
+              {hotpicks.map(each => (
+                <BlogCard key={each.id} data = {each} />
+                ))}
+          </div>
+          <a><h1 className="text-color-2 text-center font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-8 font-semibold relative flex self-end justify-center text-[#D292FF]">View All Products 
+          <svg
+                    class="w-6 h-6 relative overflow-visible"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 19L20 12L13 5M20 12L4 12"
+                      stroke="#D292FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+              </h1>
+            </a>
+        </div>
+
+        <div className="buttons mt-4 flex justify-end">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -149,50 +244,79 @@ export default function Home() {
 
 
           </div>
-         
-        </div>
-
-
-        <div className="hotpicks overscroll-auto overflow-x-scroll" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
-          <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-4xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
-          <div className="mx-3 categories flex justify-start items-center">
-              {hotpicks.map(each => (
-                <BlogCard key={each.id} data = {each} />
-                ))}
-          </div>
-          <a><h1 className="text-color-2 text-center font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] font-semibold relative flex items-center justify-center text-[#D292FF]">View All Products 
-          <svg
-                    class="w-6 h-6 relative overflow-visible"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13 19L20 12L13 5M20 12L4 12"
-                      stroke="#D292FF"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-              </h1>
-            </a>
-        </div>
 
         
-        <div className="hotpicks overscroll-auto overflow-x-scroll">
-          <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-4xl leading-[48px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
-          <div className="mx-3 categories flex justify-start items-center">
-              {hotpicks.map(each => (
-                <BlogCard key={each.id}  data = {each} />
-                ))}
-          </div>
+        <div className="hotpicks p-3 overscroll-auto overflow-x-scroll no-scrollbar">
+          <h1 className="text-secondarycolor-1 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[32px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
+          <PeopleAlsoLookFor/>
         </div>
 
+
       <NewListingsComponent />
-      <ServiceSection />
+
+        <div className="buttons mt-4 flex justify-end">
+                
+          
+              <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
+                <div
+                  class="bg-secondary rounded-[50%] absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] h-[100%]"
+                >
+                  <svg
+                  class="h-[auto] absolute right-[23.91%] left-[23.91%] w-[52.17%] bottom-[23.91%] top-[23.91%] h-[52.17%] overflow-visible"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 5L4 12L11 19M4 12H20"
+                    stroke="#CCCCCC"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                </div>
+                
+
+              </button>
+
+              <button class="bg-[#e2b9ff] rounded-[50%] w-[46px] h-[46px] relative">
+                <div
+                  class="bg-secondary rounded-[50%] absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] h-[100%] flex justify-center items-center"
+                >
+
+              <svg
+                  class="w-6 h-6 relative overflow-visible"
+                  
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 19L20 12L13 5M20 12L4 12"
+                    stroke="#131C5F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                </div>
+                
+
+              </button>
+
+
+              
+
+
+          </div>
+          <ServiceSection />
+
       <Footer/>
       </main>
     )

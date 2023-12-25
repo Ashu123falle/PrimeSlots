@@ -4,7 +4,6 @@ import Image from "next/image";
 const ServiceSectionCard = (props) => {
     const {itemDetails} = props
     const {text,image} = itemDetails
-    console.log(text)
 
     return (
         <li className="m-10 flex flex-col justify-center items-center">
@@ -13,7 +12,9 @@ const ServiceSectionCard = (props) => {
                     <Image src={image}></Image>
                 </div>
             </div>
+
             <h1 className="text-black text-sm font-semibold font-'Roboto' leading-7 my-3">{text}</h1>
+
             <div className="w-[236.94px] h-3 bg-slate-300 rounded-[50px]" />
         </li>
     )
