@@ -10,7 +10,7 @@ export default function PeopleAlsoLookFor()  {
 
     
     return(
-        <ul className='overflow-x-auto flex items-center'>
+        <ul className='overflow-x-auto flex items-center w-[100vw]'>
             {
              othersearchData.map((curElem, ind) =>
                 <BlogCard key={ind} data = {curElem} />
