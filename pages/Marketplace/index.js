@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
+import React,{ useState } from "react"
 
 import NewListingsComponent from "./NewListingsComponent"
 import hotpicks from "../api/hotpicks"
@@ -73,6 +74,18 @@ const categoriesList = [
 ]
 
 export default function Home() {
+
+  const [hotPicksData, setHotPicksData] = useState(hotpicks)
+
+  const onClickWishlistButton = id => {
+    const updatedSearchData = hotPicksData.map(obj => {
+      if (obj.id === id) {
+          return {...obj, isLiked: !obj.isLiked}
+      }
+      return obj
+    })
+    setHotPicksData(updatedSearchData)
+}
   
     return (
       <main className="bg-whitebg-cover w-full">
@@ -158,8 +171,8 @@ export default function Home() {
         <div className="hotpicks mt-5 overflow-hidden px-5 md:px-8 xl:px-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
           <h1 className="text-secondarycolor-1 mx-5 text-left font-['Inter-Bold',_sans-serif] text-xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
           <div className="mx-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
-              {hotpicks.map(each => (
-                <BlogCard key={each.id} data = {each} />
+              {hotPicksData.map(each => (
+                <BlogCard key={each.id} data = {each} onClickWishlistButton= {onClickWishlistButton} />
                 ))}
           </div>
 

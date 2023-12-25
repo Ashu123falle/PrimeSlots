@@ -165,7 +165,7 @@ const MediaListingPage = () => {
     <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
     <div className="flex overflow-x-scroll sm:overflow-visible">
 
-      <ul className="p-3 mx-3 categories flex justify-start items-center whitespace-nowrap overflow-x-auto">
+      <ul className="p-3 mx-3 categories flex justify-start items-center whitespace-nowrap overflow-x-auto no-scrollbar">
         {categoriesList.map((each, index) => (
           <CategoryCard
             key={each.id}
