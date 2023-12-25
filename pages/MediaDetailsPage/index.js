@@ -1,5 +1,5 @@
 import React from 'react'
-import MediaDetails from '@/Components/MediaDetails'
+import MediaDetails from '@/pages/MediaDetailsPage/detailsComponent'
 
 const MediaDetailsPage = () => {
   return (
