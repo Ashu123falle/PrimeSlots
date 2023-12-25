@@ -11,12 +11,12 @@ export default function BlogCard(props) {
 
     return (
             <li className="list-none rounded-xl w-[350px] h-[380px] shrink-0  sm:w-[290px] md:w-[250px] bg-white shadow border border-slate-300 
-                flex-col justify-start items-start inline-flex m-3 group hover:shadow-2xl  hover:h-[390px]
+                flex-col justify-start items-start inline-flex m-3 group transition-transform duration-300 transform-gpu hover:scale-105
                 "> 
                 <img src={image}
                     className="h-[180px] w-[100%] rounded-t-xl"
                 />
-                <span className="self-end mt-[-20px] bg-white rounded-full w-10 h-10 flex justify-center items-center mr-4 border" onClick={() => onClickWishlistButton(id)}>
+                <span className="self-end mt-[-20px] bg-white rounded-full w-10 h-10 flex justify-center items-center mr-4 border " onClick={() => onClickWishlistButton(id)}>
             
                 {isLiked ? 
                 <svg className="transition-transform duration-300 transform scale-150" width="20" height="20" viewBox="0 0 34 34" fill="none"
