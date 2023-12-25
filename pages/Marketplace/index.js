@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
 
+import NewListingsComponent from "./NewListingsComponent"
 import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
@@ -250,6 +251,9 @@ export default function Home() {
           <PeopleAlsoLookFor/>
         </div>
 
+
+      <NewListingsComponent />
+
         <div className="buttons mt-4 flex justify-end">
                 
           
@@ -312,6 +316,7 @@ export default function Home() {
 
           </div>
           <ServiceSection />
+
       <Footer/>
       </main>
     )
