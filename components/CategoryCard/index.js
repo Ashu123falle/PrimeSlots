@@ -12,7 +12,7 @@ export const CategoryCard = (props) => {
           src={imageUrl}
           alt={alt}
         />
-        <h1 className="group-hover:font-bold text-[#224757] text-capstext text-center font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal absolute left-[calc(50%_-_35px)] bottom-[15px]">
+        <h1 className="group-hover:font-bold text-[#224757] text-capstext text-center mt-3 font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal absolute left-[calc(50%_-_35px)] bottom-[15px]">
           {title}
         </h1>
        
