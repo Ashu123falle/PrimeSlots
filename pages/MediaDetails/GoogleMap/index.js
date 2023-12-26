@@ -2,6 +2,8 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker, AdvancedMarker } from '@react-google-maps/api';
 
+import CustomPin from '@/pages/MediaDetails/CustomPin'
+
 const GoogleMapComponent = () => {
   const fakeCoordinates = {
     lat: 12.972442,
@@ -22,7 +24,7 @@ const GoogleMapComponent = () => {
         zoom={10}
         center={fakeCoordinates}
       >
-        <Marker position={fakeCoordinates} />
+        <Marker position={fakeCoordinates}  icon = {<CustomPin/>} />
       </GoogleMap>
     </LoadScript>
   );

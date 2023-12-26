@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-div {
+* {
   font-family: 'Figtree', sans-serif;
 }
 
