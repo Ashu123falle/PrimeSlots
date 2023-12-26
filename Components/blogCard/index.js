@@ -10,13 +10,13 @@ export default function BlogCard(props) {
    } 
 
     return (
-            <li className="list-none rounded-xl w-[350px] h-[380px] shrink-0  sm:w-[290px] md:w-[250px] bg-white shadow border border-slate-300 
-                flex-col justify-start items-start inline-flex m-3 group hover:shadow-2xl  hover:h-[390px]
+            <li className="list-none rounded-xl w-[350px] h-[380px] shrink-0  sm:w-[290px] md:w-[275px] bg-white shadow border border-slate-300 
+                flex-col justify-start items-start inline-flex m-3 group transition-transform duration-300 transform-gpu hover:scale-105
                 "> 
                 <img src={image}
                     className="h-[180px] w-[100%] rounded-t-xl"
                 />
-                <span className="self-end mt-[-20px] bg-white rounded-full w-10 h-10 flex justify-center items-center mr-4 border" onClick={() => onClickWishlistButton(id)}>
+                <span className="self-end mt-[-20px] bg-white rounded-full w-10 h-10 flex justify-center items-center mr-4 border " onClick={() => onClickWishlistButton(id)}>
             
                 {isLiked ? 
                 <svg className="transition-transform duration-300 transform scale-150" width="20" height="20" viewBox="0 0 34 34" fill="none"
@@ -40,10 +40,10 @@ export default function BlogCard(props) {
                         <h1 className="text-amber-500 text-sm font-normal leading-tight font-['Figtree-Regular',_sans-serif]">{heading}</h1>
                     </div>
 
-                    <p className="pt-1 text-neutral-950 text-base font-normal font-['Figtree-Regular',_sans-serif]leading-tight">{name}</p>
+                    <p className="pt-2 text-neutral-950 text-base font-medium font-['Figtree'] leading-[20.85px]">{name}</p>
 
 
-                <ul className=" pt-[10px] p-2 flex flex-wrap m-[-10px] justify-around">
+                <ul className="  pt-1 flex flex-wrap  justify-between items-center">
                             <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
                     text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description1}</li>
                             <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
@@ -54,7 +54,7 @@ export default function BlogCard(props) {
                     text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tightmy-1 ">{description4}</li>
                 </ul>
 
-                <button className="w-[90px] h-[35px] mt-2 mb-2 rounded-[5px] border border-indigo-500 group-hover:bg-blue-500 group-hover:text-white bg-transparent
+                <button className="w-[90px] h-[35px] mt-2 mb-2 rounded-[5px] border border-indigo-500 hover:bg-blue-500 hover:text-white bg-transparent
              text-sm font-medium font-['Figtree-Regular',_sans-serif] leading-snug text-indigo-500">Book Now</button>
                 </div>
             </li>

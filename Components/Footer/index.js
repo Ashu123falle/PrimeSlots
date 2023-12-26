@@ -46,11 +46,13 @@ const Footer = () => {
                     <p><a href="#">FAQ</a></p>
                 </div>
 
+
                 <div className="md:w-1/4 text-center md:text-left">
                     <h1 className="text-2xl mb-2">Other</h1>
                     <p><a href="#">Terms of Service</a></p>
                     <p><a href="#">Privacy Policy</a></p>
                     <p><a href="#">Cookie Policy</a></p>
+
                 </div>
             </div>
 
