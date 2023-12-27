@@ -20,7 +20,7 @@ function Navbar() {
         
             <div className="mx-9">
             <div className={"bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
-            <input type="text" className="w-[500px] h-[40px] outline-none pl-2" placeholder='Search for your requirements'/>
+            <input type="text" className="w-[500px] h-[40px] rounded-[15px] outline-none pl-2" placeholder='Search for your requirements'/>
             <a><svg
                 className={"w-6 h-6 relative overflow-visible "}
                
