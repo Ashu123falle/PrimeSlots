@@ -6,11 +6,11 @@ const NewListingsComponent = () => {
     return (
         <>
         <div className="mx-8">
-            <div className="text-slate-750 text-sm font-semibold font-['Inter'] uppercase leading-tight">Featured</div>
-            <div className="text-slate-950 text-2xl font-bold font-['Inter'] leading-[48px] tracking-wider">New Listings</div>
+            <h1 className="text-slate-750 text-sm font-semibold font-['Inter'] uppercase leading-tight lg:mx-9">Featured</h1>
+            <h1 className="text-slate-950 text-2xl font-bold font-['Inter'] leading-[32px] tracking-wider lg: ml-9">New Listings</h1>
             
         </div>
-        <div className="flex justify-center md:px-10">
+        <div className="flex justify-center items-center md:px-10">
             <div className="flex flex-col justify-center sm:items-center p-6 md:flex-row w-full  h-50 ">
                 <div className="bg-cover w-[95%] sm:w-[480px] px-4 md:flex-1 md:w-[300px] md:h-[500px] rounded-lg w-full" style={{ backgroundImage: `url(${newbg1.src})` }}>
                     <div className="h-3/4 flex flex-row justify-center items-center">
