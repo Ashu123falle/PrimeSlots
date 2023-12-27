@@ -160,24 +160,16 @@ const MediaListingPage = () => {
 
       </div>
 
-        <div className="p-3 categories my-7 flex flex-col">
-    <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
-    <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
-    <div className="flex overflow-x-scroll sm:overflow-visible">
+      <div className="mt-2 catgeories my-10 flex flex-col w-full pl- md:pl-5 xl:pl-14">
+          <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
+          <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
-      <ul className="p-3 mx-3 categories flex justify-start items-center whitespace-nowrap overflow-x-auto no-scrollbar">
-        {categoriesList.map((each, index) => (
-          <CategoryCard
-            key={each.id}
-            title={each.title}
-            imageUrl={each.imageUrl}
-            alt={each.alt}
-          />
-        ))}
-      </ul>
-  </div>
-</div>
-
+          <ul className=" categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
+              {categoriesList.map(each => (
+                <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
+                ))}
+          </ul>
+      </div>
       <div className="sm:flex sm:justify-end mt-3">
         {isSmallDevice && (
           <div className='ml-auto flex justify-end'>
@@ -189,22 +181,26 @@ const MediaListingPage = () => {
 
       <FilterComponent data={data} optionsConfig={optionsConfig} />
 
-      <div className="px-2 md:px-8 xl:px-16 pb-6">
-      <ul className='flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 m-2'>
-  {searchData.map((curElem, ind) => (
-    <div key={ind} className='flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2'>
-      <BlogCard data={curElem} onClickWishlistButton={onClickWishlistButton}/>
-    </div>
-  ))}
-</ul>
+      <div className="px-5 md:px-8 xl:px-8 pb-5">
+      <ul className='flex flex-wrap justify-around min-h-[120vh] overflow-y-auto w-full no-scrollbar overscroll-auto'>
+                   {
+                       searchData.map((curElem, ind) => {
+                           return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
+                       })
+                   }
+               </ul>
 
         <div>
-        <hr className='border border-gray-300 my-4 w-[99vw]' />
+        <div>
+        <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />
         </div>
-        <div className="pt-2">
-          <h1 className='text-2xl md:text-3xl font-bold md:mb-5'>People also looked for</h1>
-          <PeopleAlsoLookFor />
+        
         </div>
+        <div className="p-3  md:pl-8 xl:pl-7 h-full mt-5">
+        <h1 className="text-secondarycolor-1 mx-3 mt-2 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E]">People also look for</h1>
+          <PeopleAlsoLookFor/>
+        </div>
+
         <div className="sm:flex justify-end mt-3">
         {isSmallDevice && (
           <div className='ml-auto flex justify-end'>
