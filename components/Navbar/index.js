@@ -14,11 +14,11 @@ function Navbar() {
 
     return (
         <>
-        <nav className="hidden md:flex items-center justify-around flex-wrap p-6 w-full">
-            <Image src={mainlogo} className="w-[136.7px] h-8 relative"></Image>
+        <nav className="hidden md:flex items-center justify-center flex-wrap p-6 w-full">
+            <Image src={mainlogo} className="w-[136.7px] h-8 relative mx-1"></Image>
 
         
-            <div className="">
+            <div className="mx-9">
             <div className={"bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
             <input type="text" className="w-[500px] h-[40px] outline-none pl-2" placeholder='Search for your requirements'/>
             <a><svg
@@ -46,7 +46,7 @@ function Navbar() {
             
             <a>
                 <svg
-                className={"w-6 h-6 relative overflow-visible "}
+                className={"w-6 h-6 relative overflow-visible mr-2"}
                
                 width="24"
                 height="24"
@@ -64,7 +64,7 @@ function Navbar() {
             </div>
             <div className="flex justify-around items-center">
             <a href="/Marketplace"><h1
-                className="text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px]"
+                className="mx-0 text-[#848484] text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[110px]"
                 >
                 Marketplace
             </h1>
