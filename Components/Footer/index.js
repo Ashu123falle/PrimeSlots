@@ -8,9 +8,9 @@ import linkedinlogo from '@/pages/assets/LinkedIn.svg';
 const Footer = () => {
     return (
         <div className="bg-[#0a075f] text-white py-6 mt-10 flex flex-col justify-center items-center pl-6">
-            <div className="container p-6 md:p-10 flex flex-col md:flex-row md:justify-between items-start text-gray-200">
-                <div className="mb-6 md:w-1/4 md:mr-8 text-center md:text-left">
-                    <div className="mx-auto">
+            <div className="container p-6 md:p-10 flex flex-col items-center md:flex-row md:justify-between md:items-start text-gray-200">
+                <div className="mb-6 w-[300px] md:w-1/2 md:mr-8 text-center md:text-left">
+                    <div className="w-full md:w-[80%] mx-auto flex justify-center">
                         <Image
                             src={mainlogo}
                             alt="Main Logo"
@@ -18,7 +18,7 @@ const Footer = () => {
                         />
                     </div>
                     <p className="mt-3">3, 4th floor, Siddharth Bandodkar Bhavan, Panji, Goa 403001</p>
-                    <div className="logos flex gap-5 mt-3 justify-center md:justify-start">
+                    <div className="logos flex gap-5 mt-3 justify-center items-center md:justify-start">
   <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
     <Image src={facebooklogo} alt="Facebook Logo" className="logo" />
   </a>
