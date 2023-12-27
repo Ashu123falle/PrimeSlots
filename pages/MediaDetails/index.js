@@ -1,5 +1,5 @@
 
-import {Component} from 'react'
+import {useState} from 'react'
 
 import ExtraServices from "./ExtraServices"
 import Navbar from "@/Components/Navbar"
@@ -11,7 +11,7 @@ import Carousel from './imageCarousal'
 import laStreetView from '@/pages/assets/la_street-view.svg'
 import parkOutline from '@/pages/assets/icon-park-outline_video.svg'
 import Image from 'next/image'
-import { render } from 'react-dom'
+import TickImage from '@/pages/assets/icons8-tick.svg'
 
 const industriesData = [
     {
@@ -66,33 +66,43 @@ const MediaOptionsButtons = [
 
 ]
 
- class  MediaDetails extends Component {
+ const MediaDetails = () => {
 
-    state={
-        activeMediaButtonId : MediaOptionsButtons[0].id,
+    const [activeMediaButtonId,setActiveMediaButtonId] = useState(MediaOptionsButtons[0].id)
+    const [activeIndustryId,setActiveIndustryId] = useState([])
+
+    const onClickMediaButton = (id) => {
+        setActiveMediaButtonId(id)
     }
 
-    onClickMediaButton = (id) => {
-        this.setState({
-            activeMediaButtonId: id
-        })
+    const onClickIndustryButton = (id) => {
+        if (activeIndustryId.includes(id)) {
+            const updatedIndustriesArray = activeIndustryId.filter(obj => obj != id)
+            setActiveIndustryId(updatedIndustriesArray)
+        } else {
+        setActiveIndustryId(prevState => [...prevState,id])
+        }
     }
 
-    mapAndDescriptionSection = () => (
-       
-    <div className="flex flex-col items-center lg:flex-row lg: justify-center">
-            <div className="mt-6 flex flex-col items-center px-8 justify-center">   
+    const mapAndDescriptionSection = () => (
+    <div className="flex flex-col items-center lg:flex-row lg:justify-center px-10">
+            <div className="mt-6 flex flex-col items-center px-8  justify-center">   
                 <GoogleMapComponent/>
-                <div className="px-10 pt-2 width-[500px]">
-                    <h1 class="w-[293px] h-[23px] text-blue-950 text-xl font-semibold font-['Figtree'] my-3 lg:mt-1
+
+                <div className="p-3 w-[300px] sm:w-[500px] lg:w-[450px]">
+                    <h1 class="w-[293px] h-[23px] text-blue-950 text-base sm:text-xl font-semibold font-['Figtree'] my-3 lg:mt-1
                     leading-tight">Industries that suit this location:</h1>
 
-                    <ul className="w-[500px]">
+                    <ul>
                         {industriesData.map(obj => 
-                        <li key={obj.id} className="p-3 h-10 lg:h-8 m-1 rounded-[10px]
-                        border border-blue-950 justify-center items-center gap-[38px] inline-flex cursor-pointer">
-                            <button type="button" className="text-blue-950 text-base font-normal font-['Figtree'] 
-                                leading-none ">{obj.industryName}</button>
+                        <li key={obj.id} className={`p-3 h-8 lg:h-8 md:h-10 m-1 rounded-[10px]  flex 
+                        border border-blue-950 justify-around items-center gap-[38px] inline-flex cursor-pointer 
+                        ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white ':''}`} onClick={() => onClickIndustryButton(obj.id)}>
+                            <button type="button" className={`text-blue-950 text-sm  font-normal font-['Figtree'] 
+                                leading-none  ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white mr-[-22px] ':''} `}>{obj.industryName}
+                            </button>
+                            {activeIndustryId.includes(obj.id) && <Image src={TickImage} className="text-xs"/>}
+                            
                         </li>
                         )}
                     </ul> 
@@ -103,38 +113,32 @@ const MediaOptionsButtons = [
         </div>
     )
 
-    reviewsSection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
+    const reviewsSection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
     <h1 className="text-grey font-medium text-3xl font-['figtree']" >Reviews comes here</h1>
     </div>
 
-    policySection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
+    const policySection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
     <h1 className="text-grey font-medium text-3xl font-['figtree']" >Policy section comes here</h1>
     </div>
 
-    aboutVendorSection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
+    const aboutVendorSection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
     <h1 className="text-grey font-medium text-3xl font-['figtree']" >About vendor section comes here</h1>
     </div>
 
-
-
-    renderMediaDetailSections = () => {
-        const {activeMediaButtonId} = this.state
-
+    const renderMediaDetailSections = () => {
         switch(activeMediaButtonId) {
             case MediaOptionsButtons[0].id :
-                return this.mapAndDescriptionSection()
+                return mapAndDescriptionSection()
             case MediaOptionsButtons[1].id :
-                return this.reviewsSection()
+                return reviewsSection()
             case MediaOptionsButtons[2].id :
-                return this.policySection()
+                return policySection()
             case MediaOptionsButtons[3].id :
-                return this.aboutVendorSection()
+                return aboutVendorSection()
         }
-
     }
 
-    render() {
-        const {activeMediaButtonId} = this.state
+        
     return(
         <>
         <Navbar/>
@@ -148,7 +152,7 @@ const MediaOptionsButtons = [
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
        
-    <div className=" mt-2 mx-12">
+    <div className="mt-6 mx-12">
         <Carousel images={carousalImages}/>
 
         <div className="flex justify-between  border shadow p-4 h-14 rounded-lg">
@@ -166,31 +170,33 @@ const MediaOptionsButtons = [
          <ul className="flex flex-wrap justify-around  md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%]">
             {MediaOptionsButtons.map(obj => 
                 <li key={obj.id} className={`m-2  h-12 pt-2 pb-[13px] border-indigo-500 ${obj.id == activeMediaButtonId ? 'border-b-2':''}
-                 justify-center items-center inline-flex cursor-pointer`} onClick={() => this.onClickMediaButton(obj.id)} >
+                 justify-center items-center inline-flex cursor-pointer`} onClick={() => onClickMediaButton(obj.id)} >
                     <h1 className={`text-center ${obj.id == activeMediaButtonId ? 'text-indigo-500':'text-gray-400'} text-base font-medium font-['Figtree']`}>{obj.displayText}</h1>
                 </li>)}
         </ul> 
         <hr/>
     </div>
         
-    {this.renderMediaDetailSections()}
+    {renderMediaDetailSections()}
 
-    <div className="px-10 sm:mt-10 md:mt-6">
-        <div className="my-10">
+   
+        <div className="my-10 sm:mt-10 md:mt-6 pl-10">
             <h1 className="text-slate-950 text-3xl font-bold font-['Inter']
-             leading-[48px] tracking-wider mx-5">Related Items </h1>
+             leading-[48px] tracking-wider mb-1">Related Items </h1>
              <PeopleAlsoLookFor/>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 px-10">
         <ExtraServices />
         </div>
+        <div className='mt-6 px-8'>
         <ServiceSection/>
-    </div>
-        </>
+        </div>
+    
+    </>
     )
 }
- }
+
 
 export default MediaDetails
 

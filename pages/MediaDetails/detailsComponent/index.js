@@ -8,11 +8,11 @@ import info from '@/pages/assets/ph_info.svg'
 const DetailsComponent = () => {
     return (
         <>
-            <div className="main  md:w-[500px] px-10 lg:h-[480px] mt-6 space-y-4 ">
+            <div className="main  md:w-[500px] px-10 lg:h-[480px] mt-8 space-y-4 md:px-8">
            
                 {/* one */}
                 <div className='iconheading flex space-x-4'>
-                    <span className="icon flex space-x-1">
+                    <span className="icon flex space-x-1 mr-6 md:mr-0">
                         <Image src={staricon} />
                         <Image src={staricon} />
                         <Image src={staricon} />
@@ -20,9 +20,9 @@ const DetailsComponent = () => {
                         <Image src={blankicon} />
                     </span>
                     <div className='flex space-x-5'>
-                        <p className='bg-gray-100 text-orange-600 rounded-xl px-2 py-0'>Physical Boarding</p>
-                        <span>|</span>
-                        <p className='bg-gray-100 text-orange-600 rounded-xl px-2 py-0'>Billboard</p>
+                        <p className='bg-gray-100 text-orange-600 rounded-xl p-2 '>Physical Boarding</p>
+                        <span className="text-orange-600">|</span>
+                        <p className='bg-gray-100 text-orange-600 rounded-xl p-2 '>Billboard</p>
                     </div>
                 </div>
 
