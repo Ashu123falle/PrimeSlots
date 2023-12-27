@@ -1,5 +1,5 @@
 import Image from 'next/image' ;
-
+import Link from 'next/link'
 import mainlogo from '@/pages/assets/mainlogo.png'
 import { useState } from "react";
 
@@ -129,12 +129,12 @@ function Navbar() {
               </svg>
             </div>
             <div className="flex justify-start">
-            <ul className="flex-col justify-items-start text-left min-h-[250px]">
-              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
-                <a href="/Marketplace">Marketplace</a>
+            <div className="flex-col justify-start text-left min-h-[250px]">
+              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base font-normal relative w-[129px] hover:bg-gray-200">
+                <Link href="/Marketplace">Marketplace</Link>
               </li>
               <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
-                <a href="#">Partners</a>
+                <Link href="#">Partners</Link>
               </li>
               <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['Figtree-Regular',_sans-serif] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
             <div className="relative inline-block text-left">
@@ -159,7 +159,7 @@ function Navbar() {
             </div>
             </div>
               </li>
-            </ul>
+            </div>
             </div>
           </div>
         </section>
