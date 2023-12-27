@@ -92,14 +92,15 @@ export default function Home() {
         <Navbar/>
 
         <div>
-            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[14px] px-5 md:px-8 xl:px-16'><span className='text-gray-400 '> Home /</span>
-             <span className='text-black font-semibold'>MarketPlace</span> </h1>
+            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[14px] px-5 md:px-8 xl:px-16'><span className='text-gray-400 '> Home  </span>
+            <span className='text-gray-400 mx-2'> / </span>
+             <span className='text-black font-semibold mx-2'> MarketPlace</span> </h1>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
 
         
         
-        <div className="mt-2 catgeories my-10 flex flex-col w-full px-5 md:px-8 xl:px-16">
+        <div className="mt-2 catgeories my-10 flex flex-col w-full pl-5 md:pl-8 xl:pl-16">
           <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
           <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
