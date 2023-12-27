@@ -11,8 +11,9 @@ const GoogleMapComponent = () => {
   };
 
   const mapStyles = {
-    height: '300px',
-    width: '450px',
+    height: '350px',
+    //'max-width':'500px',
+    width: '500px',
   };
 
   return (
@@ -27,6 +28,7 @@ const GoogleMapComponent = () => {
         <Marker position={fakeCoordinates}  icon = {<CustomPin/>} />
       </GoogleMap>
     </LoadScript>
+   
   );
 };
 

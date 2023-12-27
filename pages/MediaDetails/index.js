@@ -1,6 +1,7 @@
 
-import ExtraServices from "@/Components/ExtraServices"
-import Footer from "@/Components/Footer"
+import {Component} from 'react'
+
+import ExtraServices from "./ExtraServices"
 import Navbar from "@/Components/Navbar"
 import ServiceSection from "@/Components/ServicesSection"
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
@@ -10,6 +11,7 @@ import Carousel from './imageCarousal'
 import laStreetView from '@/pages/assets/la_street-view.svg'
 import parkOutline from '@/pages/assets/icon-park-outline_video.svg'
 import Image from 'next/image'
+import { render } from 'react-dom'
 
 const industriesData = [
     {
@@ -48,92 +50,147 @@ const MediaOptionsButtons = [
     {
         id: 0,
         displayText: 'Media Description',
-        isActive: true,
     },
     {
         id: 1,
         displayText: 'Reviews',
-        isActive: false,
     },
     {
         id: 2,
         displayText: 'Policy',
-        isActive: false,
     },
     {
         id: 3,
         displayText: 'About Vendor',
-        isActive: false,
     },
 
 ]
 
- const  MediaDetails = props => {
+ class  MediaDetails extends Component {
 
+    state={
+        activeMediaButtonId : MediaOptionsButtons[0].id,
+    }
+
+    onClickMediaButton = (id) => {
+        this.setState({
+            activeMediaButtonId: id
+        })
+    }
+
+    mapAndDescriptionSection = () => (
+       
+    <div className="flex flex-col items-center lg:flex-row lg: justify-center">
+            <div className="mt-6 flex flex-col items-center px-8 justify-center">   
+                <GoogleMapComponent/>
+                <div className="px-10 pt-2 width-[500px]">
+                    <h1 class="w-[293px] h-[23px] text-blue-950 text-xl font-semibold font-['Figtree'] my-3 lg:mt-1
+                    leading-tight">Industries that suit this location:</h1>
+
+                    <ul className="w-[500px]">
+                        {industriesData.map(obj => 
+                        <li key={obj.id} className="p-3 h-10 lg:h-8 m-1 rounded-[10px]
+                        border border-blue-950 justify-center items-center gap-[38px] inline-flex cursor-pointer">
+                            <button type="button" className="text-blue-950 text-base font-normal font-['Figtree'] 
+                                leading-none ">{obj.industryName}</button>
+                        </li>
+                        )}
+                    </ul> 
+
+                </div>
+            </div>
+            <DetailsComponent/>
+        </div>
+    )
+
+    reviewsSection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
+    <h1 className="text-grey font-medium text-3xl font-['figtree']" >Reviews comes here</h1>
+    </div>
+
+    policySection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
+    <h1 className="text-grey font-medium text-3xl font-['figtree']" >Policy section comes here</h1>
+    </div>
+
+    aboutVendorSection = () => <div className='px-8 w-full flex justify-center items-center h-[400px]'>
+    <h1 className="text-grey font-medium text-3xl font-['figtree']" >About vendor section comes here</h1>
+    </div>
+
+
+
+    renderMediaDetailSections = () => {
+        const {activeMediaButtonId} = this.state
+
+        switch(activeMediaButtonId) {
+            case MediaOptionsButtons[0].id :
+                return this.mapAndDescriptionSection()
+            case MediaOptionsButtons[1].id :
+                return this.reviewsSection()
+            case MediaOptionsButtons[2].id :
+                return this.policySection()
+            case MediaOptionsButtons[3].id :
+                return this.aboutVendorSection()
+        }
+
+    }
+
+    render() {
+        const {activeMediaButtonId} = this.state
     return(
         <>
         <Navbar/>
 
-        <div>
-             <h1 className='px-5 py-4 mb-[-10px] text-[14px]'><span className='text-gray-400 '> Home / MarketPlace /</span> <span className='text-black font-semibold'>Billboards</span> </h1>
+       <div>
+            <div className='px-5 py-4 mb-[-10px] text-[14px] ml-8'>
+                <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
+              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  MarketPlace &nbsp; /</span> 
+              <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >Billboards</span>
+            </div>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
-
-        <div className="px-10 mt-2">
+       
+    <div className=" mt-2 mx-12">
         <Carousel images={carousalImages}/>
-        <div className="flex justify-between m-3 border shadow p-4 h-14 rounded-lg">
-            <h1 className="text-base font-['Figtree] ">Title of media will come here...</h1>
+
+        <div className="flex justify-between  border shadow p-4 h-14 rounded-lg">
+            <h1 className=" text-black text-base font-medium font-['Figtree'] leading-tight">Title of media will come here...</h1>
             <div className="flex">
+                <button className="border-none outine-none" type="button">
                 <Image src={laStreetView} alt="street view icon" className="mr-2"/>
+                </button>
+                <button>
                 <Image src={parkOutline} alt="park view icon" className="ml-1"/>
+                </button>
             </div>
         </div>
 
-        <ul className="flex flex-wrap justify-around w-[550px] ">
+         <ul className="flex flex-wrap justify-around  md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%]">
             {MediaOptionsButtons.map(obj => 
-                <li key={obj.id} className={`m-2 w-[120px] h-12 pt-4 pb-[13px] border-indigo-500 ${obj.isActive ? 'border-b-2':''}
-                 justify-center items-center inline-flex cursor-pointer`} >
-                    <h1 className="text-center text-indigo-500 text-base font-medium font-['Figtree']">{obj.displayText}</h1>
+                <li key={obj.id} className={`m-2  h-12 pt-2 pb-[13px] border-indigo-500 ${obj.id == activeMediaButtonId ? 'border-b-2':''}
+                 justify-center items-center inline-flex cursor-pointer`} onClick={() => this.onClickMediaButton(obj.id)} >
+                    <h1 className={`text-center ${obj.id == activeMediaButtonId ? 'text-indigo-500':'text-gray-400'} text-base font-medium font-['Figtree']`}>{obj.displayText}</h1>
                 </li>)}
-        </ul>
+        </ul> 
         <hr/>
-        </div>
-
-        <div className="flex flex-col px-14   lg:ml-10 justify-around  items-center md:flex-row mt-8 max-w-[1100px]">
-            <div className="m-3 md:m-0 shadow-lg p-2">    
-                <GoogleMapComponent/>
-                <div>
-                <h1 class="w-[293px] h-[23px] text-blue-950 text-xl font-semibold font-['Figtree'] my-3
-                leading-tight">Industries that suit this location:</h1>
-                <ul className="flex flex-wrap w-[410px]">
-                    {industriesData.map(obj => 
-                        <li key={obj.id} className="w-[120px] h-10 m-1 rounded-[10px]
-                         border border-blue-950 justify-center items-center gap-[38px] inline-flex cursor-pointer">
-                            <button type="button" className="text-blue-950 text-base font-normal font-['Figtree'] 
-                            leading-none ">{obj.industryName}</button>
-                        </li>
-                    )}
-                </ul>
-                </div>
-            </div>
-
-            <DetailsComponent/>
-        </div>
+    </div>
         
+    {this.renderMediaDetailSections()}
+
     <div className="px-10 sm:mt-10 md:mt-6">
-        <div className="pt-2 ">
-            <h1 className='text-xl md:text-2xl font-bold sm:mb-[-80px] md:mb-0'>Related Items</h1>
-            <PeopleAlsoLookFor/>
+        <div className="my-10">
+            <h1 className="text-slate-950 text-3xl font-bold font-['Inter']
+             leading-[48px] tracking-wider mx-5">Related Items </h1>
+             <PeopleAlsoLookFor/>
         </div>
+
         <div className="mt-4">
         <ExtraServices />
         </div>
         <ServiceSection/>
     </div>
-        <Footer/>
         </>
     )
 }
+ }
 
 export default MediaDetails
 

@@ -18,8 +18,8 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden">
+    <div className="relative ">
+      <div className="overflow-hidden rounded-lg">
         <div
           className="w-full flex transition-transform duration-500 transform"
           style={{
@@ -29,7 +29,7 @@ const Carousel = ({ images }) => {
          { images && images.map((image, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 h-64 md:h-80 lg:h-96 bg-cover bg-center rounded-t-md "
+              className="w-full rounded-lg flex-shrink-0 h-64 md:h-80 lg:h-96 bg-cover bg-center rounded-t-md "
               style={{ backgroundImage: `url(${image})` }}
             ></div>
           ))}

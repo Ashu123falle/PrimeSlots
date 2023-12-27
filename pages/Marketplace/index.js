@@ -332,8 +332,6 @@ export default function Home() {
 
           <NewListingsComponent />
           <ServiceSection />
-
-      <Footer/>
       </main>
     )
   }

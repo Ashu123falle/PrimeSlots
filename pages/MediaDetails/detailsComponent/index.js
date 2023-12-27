@@ -8,8 +8,8 @@ import info from '@/pages/assets/ph_info.svg'
 const DetailsComponent = () => {
     return (
         <>
-            <div className="main w-[400px]  space-y-4 mt-5 md:mt-0 md:ml-4 shadow p-2">
-            <hr/>
+            <div className="main  md:w-[500px] px-10 lg:h-[480px] mt-6 space-y-4 ">
+           
                 {/* one */}
                 <div className='iconheading flex space-x-4'>
                     <span className="icon flex space-x-1">
@@ -40,7 +40,7 @@ const DetailsComponent = () => {
                 <hr />
 
                 {/* four */}
-                <div className='border border-gray-400 py-2 space-y-2'>
+                <div className='border border-stone-300 border-opacity-50 py-2 space-y-2 lg:space-y-4 lg:mt-2'>
                     <div className='flex items-center px-5 space-x-12'>
                         <h1 className='text-4xl font-bold text-[#629E69]'>7.8</h1>
                         <div className='space-y-1'>
@@ -53,7 +53,7 @@ const DetailsComponent = () => {
                     <hr />
 
                     <div className='flex items-center px-5 space-x-5'>
-                        <h1 className='text-3xl font-bold text-purple-600 w-[100px]'>12 hr</h1>
+                        <h1 className="w-[95px] text-center text-slate-700 text-4xl font-semibold font-['Figtree'] leading-normal tracking-wide" >12 hr</h1>
                         <div className='space-y-1'>
                             <p className='font-semibold'>Processing Time</p>
                             <p className='text-gray-800'>This is an estimation, may be delivered early.</p>

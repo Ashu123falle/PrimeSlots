@@ -215,7 +215,7 @@ const MediaListingPage = () => {
       </div>
         <ServiceSection />
       </div>
-      <Footer />
+      
     </div>
   )
 };

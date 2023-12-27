@@ -64,8 +64,6 @@ class SearchResultPage extends Component {
 
             <ServiceSection/>
         </div>
-
-        <Footer/>
         </div>
     )
     }
