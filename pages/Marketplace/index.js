@@ -169,15 +169,16 @@ export default function Home() {
 
         </div>
 
-        <div className="hotpicks mt-5 overflow-hidden pl-5 md:pl-8 xl:pl-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "85vh", backgroundSize: "cover", width: "100%"}}>
-          <h1 className="text-secondarycolor-1 ml-5 my-7 text-left font-['Inter-Bold',_sans-serif] text-3xl leading-[48px] font-bold  text-[#181265]">Prime Slots Exclusive!⭐</h1>
-          <ul className="ml-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
+
+        <div className="hotpicks mt-5 overflow-hidden px-5 md:px-8 xl:px-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "610px", backgroundSize: "cover", width: "100%"}}>
+          <h1 className="text-secondarycolor-1 mx-5 my-7 text-left font-['Inter-Bold',_sans-serif] text-3xl leading-[48px] font-bold  text-[#181265]">Prime Slots Exclusive!⭐</h1>
+          <div className="mx-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
               {hotPicksData.map(each => (
                 <BlogCard key={each.id} data = {each} onClickWishlistButton= {onClickWishlistButton} />
                 ))}
 
                 
-          </ul>
+          </div>
 
           
 
@@ -266,8 +267,8 @@ export default function Home() {
         </div>
 
         
-        <div className="hotpicks py-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar pl-5 md:pl-8 xl:pl-16">
-          <h1 className="text-secondarycolor-1 mx-3 mt-4 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E]">Hot Pics 🔥</h1>
+        <div className="hotpicks p-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar pl-5 md:pl-8 xl:pl-16">
+          <h1 className="text-secondarycolor-1 mx-3 mt-4 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E] md: mx-8 ">Hot Pics 🔥</h1>
           <PeopleAlsoLookFor/>
         </div>
 
