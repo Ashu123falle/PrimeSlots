@@ -3,6 +3,7 @@ import newbg1 from "@/pages/assets/newbg1.png"
 
 
 const NewListingsComponent = () => {
+
     return (
         <>
         <div className="mx-8">

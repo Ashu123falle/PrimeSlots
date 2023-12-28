@@ -2,6 +2,7 @@ import Image from 'next/image' ;
 import Link from 'next/link'
 import mainlogo from '@/pages/assets/mainlogo.png'
 import { useState } from "react";
+import { useRouter } from 'next/router';
 
 
 
@@ -11,6 +12,18 @@ function Navbar() {
     const [dropDown, setdropDown] = useState(true);
 
 
+    const [searchInput, setSearchInput] = useState('');
+    const router = useRouter();
+
+    const handleSearch = (event) => {
+        event.preventDefault();
+
+        router.push(`/SearchResult?query=${encodeURIComponent(searchInput)}`);
+    };
+
+    const handleInputChange = (event) => {
+        setSearchInput(event.target.value);
+    };
 
     return (
         <>
@@ -19,8 +32,8 @@ function Navbar() {
 
         
             <div className="mx-9">
-            <div className={"lg:w-[400px] xl: bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
-            <input type="text" className="lg: w-[500px] h-[40px] rounded-[15px] outline-none pl-2" placeholder='Search for your requirements'/>
+            <form onSubmit={handleSearch} className={"lg:w-[400px] xl: bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
+            <input onChange={handleInputChange} type="text" value={searchInput} className="lg: w-[500px] h-[40px] rounded-[15px] outline-none pl-2" placeholder='Search for your requirements'/>
             <button><svg
                 className={"w-6 h-6 relative overflow-visible "}
                
@@ -60,7 +73,7 @@ function Navbar() {
                 />
                 </svg>
             </a>
-            </div>
+            </form>
             </div>
             <div className="flex justify-around items-center">
             <a href="/Marketplace"><h1
