@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
 import React,{ useState } from "react"
-
+import Link from 'next/link'
 import NewListingsComponent from "./NewListingsComponent"
 import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
@@ -111,7 +111,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="buttons mt-4 mr-2 flex justify-end md: mr-14">
+        <div className="buttons hidden mt-4 mr-2 flex justify-end md: mr-14">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -181,7 +181,7 @@ export default function Home() {
 
           
 
-          <a><h1 className="text-[#181263] text-center self-end font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-7 font-semibold relative flex self-end justify-center text-[#D292FF]">View All Products 
+          <Link href=""><h1 className="text-[#181263] text-center self-end font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-7 font-semibold relative flex self-end justify-center text-[#D292FF]">View All Products 
           <svg
                     class="w-6 h-6 relative overflow-visible text-[#181263]"
                     width="24"
@@ -199,9 +199,9 @@ export default function Home() {
                     />
                   </svg>
               </h1>
-            </a>
+            </Link>
 
-            <div className="buttons  flex justify-end mb-5 md:mr-7">
+            <div className="buttons hidden  flex justify-end mb-5 md:mr-7">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -267,11 +267,11 @@ export default function Home() {
 
         
         <div className="hotpicks p-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar pl-5 md:pl-8 xl:pl-16">
-          <h1 className="text-secondarycolor-1 mx-3 mt-2 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E]">Hot Pics 🔥</h1>
+          <h1 className="text-secondarycolor-1 mx-3 mt-4 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E]">Hot Pics 🔥</h1>
           <PeopleAlsoLookFor/>
         </div>
 
-        <div className="buttons mb-3 flex justify-end md:mr-16 pr-5">
+        <div className="buttons hidden mb-3 flex justify-end md:mr-16 pr-5">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -332,8 +332,11 @@ export default function Home() {
 
 
           </div>
-
+          
+          <div className="flex-col items-center justify-center">
           <NewListingsComponent />
+          </div>
+          
           <ServiceSection />
       </main>
     )
