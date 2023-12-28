@@ -95,7 +95,7 @@ function Navbar() {
         </nav>
 
 
-        <div className="flex items-center justify-between border-b border-gray-400 py-8 lg:hidden">
+        <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8 lg:hidden">
       <a href="/">
       <Image src={mainlogo} className="w-[136.7px] h-8 ml-5 relative"></Image>
       </a>
