@@ -180,9 +180,9 @@ const MediaOptionsButtons = [
     {renderMediaDetailSections()}
 
    
-        <div className="my-10 sm:mt-10 md:mt-6 pl-10">
+        <div className="my-10 sm:mt-10 md:mt-6 ml-6 ">
             <h1 className="text-slate-950 text-3xl font-bold font-['Inter']
-             leading-[48px] tracking-wider mb-1">Related Items </h1>
+             leading-[48px] tracking-wider mb-1 ml-6">Related Items </h1>
              <PeopleAlsoLookFor/>
         </div>
 
