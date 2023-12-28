@@ -6,7 +6,7 @@ const NewListingsComponent = () => {
     return (
         <>
         <div className="mx-8">
-            <h1 className="text-slate-750 text-sm font-semibold font-['Inter'] uppercase leading-tight lg:mx-9">Featured</h1>
+            <h1 className="text-slate-750 text-sm font-semibold font-['Inter'] uppercase mx-9">Featured</h1>
             <h1 className="text-slate-950 text-2xl font-bold font-['Inter'] leading-[32px] tracking-wider lg: ml-9">New Listings</h1>
             
         </div>
