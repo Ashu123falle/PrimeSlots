@@ -8,6 +8,8 @@ import { CategoryCard } from '@/Components/CategoryCard';
 import Searchapi from '../api/SearchPageapi';
 import BlogCard from '@/Components/blogCard';
 import ArrowButton from '@/Components/ArrowButton';
+import { useRouter } from 'next/router';
+
 //import PriceFilter from '@/Components/FilterMobileView';
 const optionsConfig = [
   {
@@ -101,6 +103,9 @@ const MediaListingPage = () => {
    const [searchData, setsearchData] = useState(Searchapi);
    const [isSmallDevice, setIsSmallDevice] = useState(false);
 
+   const router = useRouter();
+  const { category } = router.query;
+
    const onClickWishlistButton = id => {
     const updatedSearchData = searchData.map(obj => {
       if (obj.id === id) {
@@ -154,7 +159,7 @@ const MediaListingPage = () => {
               transform: "rotate(117.051deg) scale(2, 2)",
             }}
           ></div>
-          <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Neon Sites</h1>
+          <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">{category}</h1>
         </div>
         <hr className='border border-gray-300 my-3 w-[99vw]' />
 

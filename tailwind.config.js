@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         'figtree': ['Figtree', 'sans-serif'],
       },
+      screens: {
+        'xs': '180px', // min-width
+      },
     },
   },
   plugins: [],
