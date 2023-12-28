@@ -14,14 +14,14 @@ function Navbar() {
 
     return (
         <>
-        <nav className="hidden md:flex items-center justify-center flex-wrap p-6 w-full">
+        <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 w-full">
             <Image src={mainlogo} className="w-[136.7px] h-8 relative mx-1"></Image>
 
         
             <div className="mx-9">
-            <div className={"bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
-            <input type="text" className="w-[500px] h-[40px] rounded-[15px] outline-none pl-2" placeholder='Search for your requirements'/>
-            <a><svg
+            <div className={"lg:w-[400px] xl: bg-[#fbfbff] rounded-[10px] border-solid border-[#d4d9ff] border w-[580px] h-[47px] relative flex justify-end items-center"}>
+            <input type="text" className="lg: w-[500px] h-[40px] rounded-[15px] outline-none pl-2" placeholder='Search for your requirements'/>
+            <button><svg
                 className={"w-6 h-6 relative overflow-visible "}
                
                 width="24"
@@ -35,7 +35,7 @@ function Navbar() {
                     fill="#131C5F"
                 />
             </svg>
-            </a>
+            </button>
 
             <div
             className={
@@ -95,7 +95,7 @@ function Navbar() {
         </nav>
 
 
-        <div className="flex items-center justify-between border-b border-gray-400 py-8 md:hidden">
+        <div className="flex items-center justify-between border-b border-gray-400 py-8 lg:hidden">
       <a href="/">
       <Image src={mainlogo} className="w-[136.7px] h-8 ml-5 relative"></Image>
       </a>

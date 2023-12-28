@@ -332,8 +332,11 @@ export default function Home() {
 
 
           </div>
-
+          
+          <div className="flex-col items-center justify-center">
           <NewListingsComponent />
+          </div>
+          
           <ServiceSection />
 
       <Footer/>
