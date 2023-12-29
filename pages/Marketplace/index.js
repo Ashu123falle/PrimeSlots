@@ -92,9 +92,9 @@ export default function Home() {
         <Navbar/>
 
         <div>
-            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[14px] px-5 md:px-8 xl:px-16'><span className='text-gray-400 '> Home  </span>
+            <h1 className="px-5 py-4 ml-5 mb-[-10px] text-zinc-400 text-base font-normal font-['Figtree'] leading-tight md:px-8 xl:px-16"><span className='text-gray-400 '> Home  </span>
             <span className='text-gray-400 mx-2'> / </span>
-             <span className='text-black font-semibold mx-2'> MarketPlace</span> </h1>
+             <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight mx-2"> MarketPlace</span> </h1>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
 
@@ -170,15 +170,15 @@ export default function Home() {
         </div>
 
 
-        <div className="hotpicks mt-5 overflow-hidden px-5 md:px-8 xl:px-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "610px", backgroundSize: "cover", width: "100%"}}>
+        <div className="hotpicks mt-5 overflow-hidden pl-5 md:pl-8 xl:pl-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "610px", backgroundSize: "cover", width: "100%"}}>
           <h1 className="text-secondarycolor-1 mx-5 my-7 text-left font-['Inter-Bold',_sans-serif] text-3xl leading-[48px] font-bold  text-[#181265]">Prime Slots Exclusive!⭐</h1>
-          <div className="mx-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
+          <ul className="ml-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
               {hotPicksData.map(each => (
                 <BlogCard key={each.id} data = {each} onClickWishlistButton= {onClickWishlistButton} />
                 ))}
 
                 
-          </div>
+          </ul>
 
           
 
@@ -328,13 +328,9 @@ export default function Home() {
 
               </button>
 
-
-              
-
-
           </div>
           
-          <div className="flex-col items-center justify-center">
+          <div className="flex-col items-center justify-center ml-1">
           <NewListingsComponent />
           </div>
           
