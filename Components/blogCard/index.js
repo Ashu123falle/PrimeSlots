@@ -45,7 +45,7 @@ export default function BlogCard(props) {
 
                 <ul className="  pt-1 flex flex-wrap  justify-between items-center">
                             <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
-                    text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description1}</li>
+                    text-indigo-600 text-sm font-normal font-['Figtree'] leading-tight my-1">{description1}</li>
                             <li className="h-[25px]  p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 
                     text-indigo-600 text-sm font-normal font-['Figtree-Regular',_sans-serif] leading-tight my-1">{description2}</li>
                             <li className="h-[25px] p-2 flex items-center bg-indigo-100 bg-opacity-60 rounded 

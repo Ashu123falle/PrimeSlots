@@ -138,56 +138,34 @@ const MediaListingPage = () => {
     <div className='box-border' style={{ overflowX: 'hidden' }}>
       <Navbar />
       <div>
-        <div className="tabs-display-cont mt-5 ml-3 flex justify-start">
-          <h1 className="text-[#AFAFAF] text-ligtext text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Home</h1>
-          <div
-            className={
-              "m-2 my-3 border-solid border-ligtext border-t border-r-[0] border-b-[0] border-l-[0] shrink-0 w-[13.19px] h-0 relative border-gray-500"
-            }
-            style={{
-              opacity: "0.5",
-              transform: "rotate(117.051deg) scale(2, 2)",
-            }}
-          ></div>
-          <h1 className="text-[#AFAFAF] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Marketplace</h1>
-          <div
-            className={
-              "m-2 my-3 border-solid border-ligtext border-t border-r-[0] border-b-[0] border-l-[0] shrink-0 w-[13.19px] h-0 relative border-gray-500"
-            }
-            style={{
-              opacity: "0.5",
-              transform: "rotate(117.051deg) scale(2, 2)",
-            }}
-          ></div>
-          <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">{category}</h1>
-        </div>
+      
+            <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
+                <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
+              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  MarketPlace &nbsp; /</span> 
+              <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >Neon Sites</span>
+            </div>
+      
         <hr className='border border-gray-300 my-3 w-[99vw]' />
 
       </div>
 
       <div className="mt-2 catgeories my-10 flex flex-col w-full pl- md:pl-5 xl:pl-14">
-          <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
-          <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
+          <h1 className="text-color-4-text text-left mx-8 font-['Figtree']
+           text-sm sm:text-base leading-5 font-semibold uppercase text-[#224757] mt-5">CATEGORIES</h1>
+          <h1 className="text-secondarycolor-1 text-left mx-8 font-['Figtree'] 
+          text-3xl md:text-4xl leading-[17.5px] font-bold relative text-[#00002E] mb-5 mt-2">Browse By Category</h1>
 
-          <ul className=" categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
+          <ul className="ml-2 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
               {categoriesList.map(each => (
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}
           </ul>
       </div>
-      <div className="sm:flex sm:justify-end mt-3">
-        {isSmallDevice && (
-          <div className='ml-auto flex justify-end'>
-            <ArrowButton bgColor="secondary" svgColor="#CCCCCC" svgPath="M11 5L4 12L11 19M4 12H20" />
-            <ArrowButton bgColor="[#e2b9ff]" svgColor="#131C5F" svgPath="M13 19L20 12L13 5M20 12L4 12" />
-          </div>
-        )}
-      </div>
 
       <FilterComponent data={data} optionsConfig={optionsConfig} />
 
       <div className="px-5 md:px-8 xl:px-8 pb-5">
-      <ul className='flex flex-wrap justify-around min-h-[120vh] overflow-y-auto w-full no-scrollbar overscroll-auto'>
+      <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 md:no-scrollbar'>
                    {
                        searchData.map((curElem, ind) => {
                            return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
@@ -196,24 +174,16 @@ const MediaListingPage = () => {
                </ul>
 
         <div>
-        <div>
+      
         <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />
-        </div>
+      
         
         </div>
-        <div className="p-3  md:pl-8 xl:pl-7 h-full mt-5">
-        <h1 className="text-secondarycolor-1 mx-3 mt-2 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E]">People also look for</h1>
+        <div className="p-3 md:pl-8 xl:pl-7 h-full mt-5 md:pl-4 ">
+        <h1 className="text-secondarycolor-1 mx-3 my-4 text-left font-['Inter'] text-2xl md:text-4xl leading-none font-bold  text-[#00002E] md:mx-0 md:mb-0">People also look for</h1>
           <PeopleAlsoLookFor/>
         </div>
 
-        <div className="sm:flex justify-end mt-3">
-        {isSmallDevice && (
-          <div className='ml-auto flex justify-end'>
-            <ArrowButton bgColor="secondary" svgColor="#CCCCCC" svgPath="M11 5L4 12L11 19M4 12H20" />
-            <ArrowButton bgColor="[#e2b9ff]" svgColor="#131C5F" svgPath="M13 19L20 12L13 5M20 12L4 12" />
-          </div>
-        )}
-      </div>
         <ServiceSection />
       </div>
       
