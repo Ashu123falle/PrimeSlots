@@ -10,6 +10,7 @@ import BlogCard from '@/Components/blogCard';
 import ArrowButton from '@/Components/ArrowButton';
 import { useRouter } from 'next/router';
 
+
 //import PriceFilter from '@/Components/FilterMobileView';
 const optionsConfig = [
   {
@@ -105,6 +106,8 @@ const MediaListingPage = () => {
 
    const router = useRouter();
   const { category } = router.query;
+  const { pathname } = router;
+  const [,pageName] = pathname.split("/")
 
    const onClickWishlistButton = id => {
     const updatedSearchData = searchData.map(obj => {
@@ -141,7 +144,7 @@ const MediaListingPage = () => {
       
             <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
                 <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
-              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  MarketPlace &nbsp; /</span> 
+              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
               <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >{category}</span>
             </div>
       
