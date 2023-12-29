@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const CategoryCard = (props) => {
 
     const {title, imageUrl, alt, id} = props
@@ -12,9 +14,10 @@ export const CategoryCard = (props) => {
           src={imageUrl}
           alt={alt}
         />
-        <h1 className="group-hover:font-bold group-hover: text-[#224757] text-capstext text-center mt-3 font-['Figtree-Regular',_sans-serif] text-sm text-base leading-5 font-normal bottom-[10px]">
+        <Link href={`/MediaListing?category=${encodeURIComponent(title)}`}> <h1 className="group-hover:font-bold group-hover: text-[#224757] text-capstext text-center mt-3 font-['Figtree-Regular',_sans-serif] text-sm text-base leading-5 font-normal bottom-[10px]">
           {title}
         </h1>
+        </Link>
       </li>
     );
   };

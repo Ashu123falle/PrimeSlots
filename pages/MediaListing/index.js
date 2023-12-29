@@ -8,6 +8,8 @@ import { CategoryCard } from '@/Components/CategoryCard';
 import Searchapi from '../api/SearchPageapi';
 import BlogCard from '@/Components/blogCard';
 import ArrowButton from '@/Components/ArrowButton';
+import { useRouter } from 'next/router';
+
 //import PriceFilter from '@/Components/FilterMobileView';
 const optionsConfig = [
   {
@@ -100,6 +102,9 @@ const categoriesList = [
 const MediaListingPage = () => {
    const [searchData, setsearchData] = useState(Searchapi);
    const [isSmallDevice, setIsSmallDevice] = useState(false);
+
+   const router = useRouter();
+  const { category } = router.query;
 
    const onClickWishlistButton = id => {
     const updatedSearchData = searchData.map(obj => {
