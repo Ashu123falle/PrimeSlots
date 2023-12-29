@@ -12,7 +12,7 @@ import zoom from '@/pages/assets/zoom.svg'
 
 const JoinTheBrand  = () => {
   return (
-    <div>
+    <div className="px-8">
       <div className="flex flex-col items-stretch px-5">
       <div className="self-center text-4xl text-blue-950 whitespace-nowrap">
         Join these brands

@@ -12,8 +12,9 @@ const LandingPage = () => {
     <OurAdvantage/>
     <LightBox/>
     <Unleasing/>
-    <StayLoop/>
     <JoinTheBrand/>
+    <StayLoop/>
+   
 
     </>
   )

@@ -7,7 +7,7 @@ import linkedinlogo from '@/pages/assets/LinkedIn.svg';
 
 const Footer = () => {
     return (
-        <div className="bg-[#0a075f] text-white py-6 mt-10 flex flex-col justify-center items-center pl-6">
+        <div className="bg-[#0a075f] text-white py-6  flex flex-col justify-center items-center pl-6 mt-[-1px]">
             <div className="container p-6 md:p-10 flex flex-col items-center md:flex-row md:justify-between md:items-start text-gray-200">
                 <div className="mb-6 w-[300px] md:w-[300px] md:mr-8 text-center md:text-left md:flex flex-col ">
                     <div className="w-full md:w-[80%] mx-auto flex justify-center md:justify-start md:mx-0">
