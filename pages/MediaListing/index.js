@@ -168,7 +168,7 @@ const MediaListingPage = () => {
       <FilterComponent data={data} optionsConfig={optionsConfig} />
 
       <div className="px-5 md:px-8 xl:px-8 pb-5">
-      <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 md:no-scrollbar'>
+      <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 '>
                    {
                        searchData.map((curElem, ind) => {
                            return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>

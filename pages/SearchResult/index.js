@@ -52,27 +52,27 @@ class SearchResultPage extends Component {
              </div>
         
 
-        <div className="px-5 md:px-1 lg:px-1 xl:px-16 pb-2">
-             <ul className='flex flex-wrap justify-center items-start h-[120vh] overflow-y-auto w-full'>
+        <div className="px-8 pb-2">
+             <ul className='flex flex-wrap justify-center items-start h-[100vh] overflow-y-auto w-full'>
                    {
                        searchData.map((curElem, ind) => {
                            return <BlogCard key={ind} data={curElem} onClickWishlistButton = {this.onClickWishlistButton}/>
                        })
                    }
                </ul>
-        
+        </div>
 
             <hr className='border border-gray-300 my-4 w-[99vw]'/>
 
-            <div className="pt-2">
-                <h1 className='text-2xl md:text-3xl font-bold mb-5'>People also looked for</h1>
+            <div className="pt-2 pl-8">
+                <h1 className='text-2xl md:text-3xl font-bold mb-5 mx-3'>People also looked for</h1>
             
                 <PeopleAlsoLookFor/>
 
-            </div>
+            </div>/
 
             <ServiceSection/>
-        </div>
+       
         </div>
     )
     }
