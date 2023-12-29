@@ -12,7 +12,7 @@ const NewListingsComponent = () => {
         </div>
         <div className=" lg:flex justify-center items-center md:px-10 xs:hidden sm:hidden md:hidden">
             <div className="flex flex-col justify-center sm:items-center p-6 md:flex-row w-full mr-5 h-50 ">
-                <div className="bg-cover w-[98%]  sm:w-[480px] bg-cover sm:h-[25vh] px-4 md:flex-1 md:w-[300px] md: bg-cover md:h-[500px] rounded-lg w-full" style={{ backgroundImage: `url(${newbg1.src})` }}>
+                <div className="bg-cover w-[98%]  sm:w-[480px]  sm:h-[25vh] px-4 md:flex-1 md:w-[300px] md:h-[500px] rounded-lg w-full" style={{ backgroundImage: `url(${newbg1.src})` }}>
                     <div className="h-3/4 flex flex-row justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="39" height="40" viewBox="0 0 39 40" fill="none">
                             <path d="M19.3333 12.202C19.3333 9.85861 21.1988 7.95893 23.5 7.95893C25.8012 7.95893 27.6667 9.85861 27.6667 12.202C27.6667 14.5454 25.8012 16.445 23.5 16.445C21.1988 16.445 19.3333 14.5454 19.3333 12.202Z" fill="#7C8B9D"/>
@@ -23,10 +23,10 @@ const NewListingsComponent = () => {
                     </div>  
                     <div className="h-1/4 flex flex-col justify-end py-10">
                         <div class="w-[74.82px]  bg-stone-50 rounded-[40.93px] justify-center items-center  flex">
-                            <div class="text-amber-500 text-base font-normal font-['Figtree'] leading-[20.85px]">Billboard</div>
+                            <h1 class="text-amber-500 text-base font-normal font-['Figtree'] leading-[20.85px]">Billboard</h1>
                         </div>
                         <div class="self-stretch flex-col justify-start items-start flex">
-                            <div class="w-[296px]  text-white text-base font-normal font-['Figtree'] leading-[20.85px]">Title of the media will come here....</div>
+                            <h1 class="w-[296px]  text-white text-base font-normal font-['Figtree'] leading-[20.85px]">Title of the media will come here....</h1>
                         </div>
                     </div>
                 </div>
