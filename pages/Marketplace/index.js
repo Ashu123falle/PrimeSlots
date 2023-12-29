@@ -92,7 +92,7 @@ export default function Home() {
         <Navbar/>
 
         <div>
-            <h1 className="px-5 py-4 ml-5 mb-[-10px] text-zinc-400 text-base font-normal font-['Figtree'] leading-tight md:px-8 xl:px-16"><span className='text-gray-400 '> Home  </span>
+            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[16px] px-5 md:px-8 xl:px-16 font-["Figtree"] leading-tight '><span className='text-gray-400 '> Home  </span>
             <span className='text-gray-400 mx-2'> / </span>
              <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight mx-2"> MarketPlace</span> </h1>
             <hr className='border border-gray-300 w-[100vw] mb-3' />

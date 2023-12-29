@@ -139,10 +139,10 @@ const MediaListingPage = () => {
       <Navbar />
       <div>
       
-            <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
+            <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
                 <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
               <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  MarketPlace &nbsp; /</span> 
-              <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >Neon Sites</span>
+              <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >{category}</span>
             </div>
       
         <hr className='border border-gray-300 my-3 w-[99vw]' />
