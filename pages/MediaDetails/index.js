@@ -1,6 +1,6 @@
 
 import {useState} from 'react'
-
+import { useRouter } from 'next/router'
 import ExtraServices from "./ExtraServices"
 import Navbar from "@/Components/Navbar"
 import ServiceSection from "@/Components/ServicesSection"
@@ -84,6 +84,11 @@ const MediaOptionsButtons = [
         }
     }
 
+    const router = useRouter();
+    const { category } = router.query;
+    const { pathname } = router;
+    const [,pageName] = pathname.split("/")
+
     const mapAndDescriptionSection = () => (
     <div className="flex flex-col items-center lg:flex-row lg:justify-center px-10">
             <div className="mt-6 flex flex-col items-center px-8  justify-center">   
@@ -146,7 +151,7 @@ const MediaOptionsButtons = [
        <div>
             <div className='px-5 py-4 mb-[-10px] text-[14px] ml-8'>
                 <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
-              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  MarketPlace &nbsp; /</span> 
+              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
               <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >Billboards</span>
             </div>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
