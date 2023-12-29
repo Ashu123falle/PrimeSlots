@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar"
 import { CategoryCard } from "@/components/CategoryCard"
 import Footer from "@/Components/Footer"
 import React,{ useState } from "react"
-
+import Link from 'next/link'
 import NewListingsComponent from "./NewListingsComponent"
 import hotpicks from "../api/hotpicks"
 import BlogCard  from "@/components/blogCard"
@@ -92,14 +92,15 @@ export default function Home() {
         <Navbar/>
 
         <div>
-            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[14px] px-5 md:px-8 xl:px-16'><span className='text-gray-400 '> Home /</span>
-             <span className='text-black font-semibold'>MarketPlace</span> </h1>
+            <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[16px] px-5 md:px-8 xl:px-16 font-["Figtree"] leading-tight '><span className='text-gray-400 '> Home  </span>
+            <span className='text-gray-400 mx-2'> / </span>
+             <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight mx-2"> MarketPlace</span> </h1>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
 
         
         
-        <div className="mt-2 catgeories my-10 flex flex-col w-full px-5 md:px-8 xl:px-16">
+        <div className="mt-2 catgeories my-10 flex flex-col w-full pl-5 md:pl-8 xl:pl-16">
           <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
           <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
@@ -110,7 +111,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="buttons mt-4 mr-4 flex justify-end">
+        <div className="buttons hidden mt-4 mr-2 flex justify-end md: mr-14">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -168,17 +169,20 @@ export default function Home() {
 
         </div>
 
-        <div className="hotpicks mt-5 overflow-hidden px-5 md:px-8 xl:px-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "80vh"}}>
-          <h1 className="text-secondarycolor-1 mx-5 text-left font-['Inter-Bold',_sans-serif] text-xl leading-[48px] font-bold  text-[#00002E]">Prime Slots Exclusive</h1>
-          <div className="mx-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
+
+        <div className="hotpicks mt-5 overflow-hidden pl-5 md:pl-8 xl:pl-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "610px", backgroundSize: "cover", width: "100%"}}>
+          <h1 className="text-secondarycolor-1 mx-5 my-7 text-left font-['Inter-Bold',_sans-serif] text-3xl leading-[48px] font-bold  text-[#181265]">Prime Slots Exclusive!⭐</h1>
+          <ul className="ml-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
               {hotPicksData.map(each => (
                 <BlogCard key={each.id} data = {each} onClickWishlistButton= {onClickWishlistButton} />
                 ))}
-          </div>
+
+                
+          </ul>
 
           
 
-          <a><h1 className="text-[#181263] text-center font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-8 font-semibold relative flex self-end justify-center text-[#181263]">View All Products 
+          <Link href=""><h1 className="text-[#181263] text-center self-end font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-7 font-semibold relative flex self-end justify-center text-[#D292FF]">View All Products 
           <svg
                     class="w-6 h-6 relative overflow-visible text-[#181263]"
                     width="24"
@@ -189,16 +193,16 @@ export default function Home() {
                   >
                     <path
                       d="M13 19L20 12L13 5M20 12L4 12"
-                      stroke="#181263"
+                      stroke="#D292FF"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                   </svg>
               </h1>
-            </a>
+            </Link>
 
-            <div className="buttons  flex justify-end">
+            <div className="buttons hidden  flex justify-end mb-5 md:mr-7">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -263,12 +267,12 @@ export default function Home() {
         </div>
 
         
-        <div className="hotpicks p-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar px-5 md:px-8 xl:px-16">
-          <h1 className="text-secondarycolor-1 mx-3 mt-2 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-[32px] font-bold  text-[#00002E]">Hot Pics 🔥</h1>
+        <div className="hotpicks p-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar pl-5 md:pl-8 xl:pl-16">
+          <h1 className="text-secondarycolor-1 mx-3 mt-4 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E] md: mx-8 ">Hot Pics 🔥</h1>
           <PeopleAlsoLookFor/>
         </div>
 
-        <div className="buttons mt-4 flex justify-end">
+        <div className="buttons hidden mb-3 flex justify-end md:mr-16 pr-5">
                 
           
               <button class="bg-secondary shrink-0 w-[46px] h-[46px] relative rounded-[50%]">
@@ -324,16 +328,13 @@ export default function Home() {
 
               </button>
 
-
-              
-
-
           </div>
-
+          
+          <div className="flex-col items-center justify-center ml-1">
           <NewListingsComponent />
+          </div>
+          
           <ServiceSection />
-
-      <Footer/>
       </main>
     )
   }

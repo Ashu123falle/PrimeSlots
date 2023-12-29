@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import { withRouter } from 'next/router';
 
 import Footer from '@/Components/Footer'
 import BlogCard from '@/Components/blogCard'
@@ -12,6 +13,7 @@ class SearchResultPage extends Component {
         searchData: [],
     }
 
+    
     componentDidMount() {
         this.setState({
             searchData: Searchapi,
@@ -34,41 +36,46 @@ class SearchResultPage extends Component {
 
     render(){
         const {searchData} = this.state
+        const { pathname } = this.props.router || {};
+        const [,pageName] = pathname.split('/') 
     return (
         <div className='box-border'>
             <Navbar/>
             <div>
-                   <h1 className='px-5 py-4 mb-[-10px] text-[14px]'><span className='text-gray-400 '> Home / MarketPlace /</span> <span className='text-black font-semibold'>Billboards</span> </h1>
+                    <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
+                        <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
+                    <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
+                    <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >Billboards</span>
+                    </div>
                    <hr className='border border-gray-300 w-[100vw]' />
-                   <h2 className='text-right py-3 text-[14px] px-5'><span className='font-semibold'>Showing 1-20</span> <span className='text-gray-400'>out of 2356 Products</span></h2>
+                   <h2 className='text-right py-3 text-[14px] px-5 md: pr-16 md:mr-16'><span className='font-semibold'>Showing 1-20</span> <span className='text-gray-400'>out of 2356 Products</span></h2>
              </div>
+        
 
-        <div className="px-5 md:px-8 xl:px-16 pb-6">
-             <ul className='flex flex-wrap justify-around h-[120vh] overflow-y-auto w-full'>
+        <div className="px-8 pb-2">
+             <ul className='flex flex-wrap justify-center items-start h-[100vh] overflow-y-auto w-full'>
                    {
                        searchData.map((curElem, ind) => {
                            return <BlogCard key={ind} data={curElem} onClickWishlistButton = {this.onClickWishlistButton}/>
                        })
                    }
                </ul>
-        
+        </div>
 
             <hr className='border border-gray-300 my-4 w-[99vw]'/>
 
-            <div className="pt-2">
-                <h1 className='text-2xl md:text-3xl font-bold mb-5'>People also looked for</h1>
+            <div className="pt-2 pl-8">
+                <h1 className='text-2xl md:text-3xl font-bold mb-5 mx-3'>People also looked for</h1>
             
                 <PeopleAlsoLookFor/>
 
-            </div>
+            </div>/
 
             <ServiceSection/>
-        </div>
-
-        <Footer/>
+       
         </div>
     )
     }
 }
 
-export default SearchResultPage
+export default withRouter(SearchResultPage)
