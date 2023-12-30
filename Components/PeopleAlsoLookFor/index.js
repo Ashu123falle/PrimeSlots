@@ -35,7 +35,7 @@ class PeopleAlsoLookFor extends Component {
     render() {
         const {searchData} = this.state
     return(
-        <ul className='overflow-x-auto flex items-center w-[100vw] h-[70vh]'>
+        <ul className='flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md:p-6 md:pr-0 '>
             {
              searchData.map((curElem, ind) =>
                 <BlogCard key={ind} data = {curElem} onClickWishlistButton={this.onClickWishlistButton}/>

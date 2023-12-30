@@ -14,6 +14,11 @@ module.exports = {
       },
       fontFamily: {
         'figtree': ['Figtree', 'sans-serif'],
+        'Figtree': ['Figtree', 'sans-serif'],
+        'Playfair': ['Playfair Display', 'serif'],
+      },
+      screens: {
+        'xs': '180px', // min-width
       },
     },
   },

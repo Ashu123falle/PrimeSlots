@@ -42,6 +42,37 @@ const hotpicks = [
         description3: "Resturants",
         description4: "AutoMobile"
     },
+    {
+        id:14,
+        image:"https://s3-alpha-sig.figma.com/img/1949/a96c/fb7f996dbc6aaeedd840eefee921821d?Expires=1704067200&Signature=jT3Ug~h5C2-OZSezvxD0glstU7B8Ebr9xo9lA0-u8grKqVRusV0v9hEfD16SfiY5IYgvDfWS70ca9xqnFRtlMoEtbfYtKBaKE~oafLM1n3Wx~vKRVL2mnfUMRwGAoqH39kEmnQJHFTuA-W-KMCoGNZHG-qTQCA0zmQzq-CE~cApRH3nmGmfv3K8vxfxhn~NZJ9cDDcQHLrKrETbwFZX6jGS96Vig~DV6h4~LsIqgdhyyZ3B92FSpdT4fDnfysXFHANDJqsSXpH~yzo8KFZ~DJCkRe8uE2VTa5Ehh-fUeWcerLrZOvOcWVOuiGNWFgFMNs4EG4btxXuQkn8a2g7IABw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile"
+    },
+    {
+        id:15,
+        image:"https://s3-alpha-sig.figma.com/img/1949/a96c/fb7f996dbc6aaeedd840eefee921821d?Expires=1704067200&Signature=jT3Ug~h5C2-OZSezvxD0glstU7B8Ebr9xo9lA0-u8grKqVRusV0v9hEfD16SfiY5IYgvDfWS70ca9xqnFRtlMoEtbfYtKBaKE~oafLM1n3Wx~vKRVL2mnfUMRwGAoqH39kEmnQJHFTuA-W-KMCoGNZHG-qTQCA0zmQzq-CE~cApRH3nmGmfv3K8vxfxhn~NZJ9cDDcQHLrKrETbwFZX6jGS96Vig~DV6h4~LsIqgdhyyZ3B92FSpdT4fDnfysXFHANDJqsSXpH~yzo8KFZ~DJCkRe8uE2VTa5Ehh-fUeWcerLrZOvOcWVOuiGNWFgFMNs4EG4btxXuQkn8a2g7IABw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile"
+    },
+    {
+        id:16,
+        image:"https://s3-alpha-sig.figma.com/img/1949/a96c/fb7f996dbc6aaeedd840eefee921821d?Expires=1704067200&Signature=jT3Ug~h5C2-OZSezvxD0glstU7B8Ebr9xo9lA0-u8grKqVRusV0v9hEfD16SfiY5IYgvDfWS70ca9xqnFRtlMoEtbfYtKBaKE~oafLM1n3Wx~vKRVL2mnfUMRwGAoqH39kEmnQJHFTuA-W-KMCoGNZHG-qTQCA0zmQzq-CE~cApRH3nmGmfv3K8vxfxhn~NZJ9cDDcQHLrKrETbwFZX6jGS96Vig~DV6h4~LsIqgdhyyZ3B92FSpdT4fDnfysXFHANDJqsSXpH~yzo8KFZ~DJCkRe8uE2VTa5Ehh-fUeWcerLrZOvOcWVOuiGNWFgFMNs4EG4btxXuQkn8a2g7IABw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile"
+    },
+
 ]
 
 export default hotpicks

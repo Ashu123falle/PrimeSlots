@@ -8,6 +8,9 @@ import { CategoryCard } from '@/Components/CategoryCard';
 import Searchapi from '../api/SearchPageapi';
 import BlogCard from '@/Components/blogCard';
 import ArrowButton from '@/Components/ArrowButton';
+import { useRouter } from 'next/router';
+
+
 //import PriceFilter from '@/Components/FilterMobileView';
 const optionsConfig = [
   {
@@ -101,6 +104,11 @@ const MediaListingPage = () => {
    const [searchData, setsearchData] = useState(Searchapi);
    const [isSmallDevice, setIsSmallDevice] = useState(false);
 
+   const router = useRouter();
+  const { category } = router.query;
+  const { pathname } = router;
+  const [,pageName] = pathname.split("/")
+
    const onClickWishlistButton = id => {
     const updatedSearchData = searchData.map(obj => {
       if (obj.id === id) {
@@ -133,89 +141,55 @@ const MediaListingPage = () => {
     <div className='box-border' style={{ overflowX: 'hidden' }}>
       <Navbar />
       <div>
-        <div className="tabs-display-cont mt-5 ml-3 flex justify-start">
-          <h1 className="text-[#AFAFAF] text-ligtext text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Home</h1>
-          <div
-            className={
-              "m-2 my-3 border-solid border-ligtext border-t border-r-[0] border-b-[0] border-l-[0] shrink-0 w-[13.19px] h-0 relative border-gray-500"
-            }
-            style={{
-              opacity: "0.5",
-              transform: "rotate(117.051deg) scale(2, 2)",
-            }}
-          ></div>
-          <h1 className="text-[#AFAFAF] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Marketplace</h1>
-          <div
-            className={
-              "m-2 my-3 border-solid border-ligtext border-t border-r-[0] border-b-[0] border-l-[0] shrink-0 w-[13.19px] h-0 relative border-gray-500"
-            }
-            style={{
-              opacity: "0.5",
-              transform: "rotate(117.051deg) scale(2, 2)",
-            }}
-          ></div>
-          <h1 className="text-[#00002E] text-secondarycolor-1 text-left font-['Figtree-Regular',_sans-serif] text-base leading-5 font-normal relative ">Neon Sites</h1>
-        </div>
+      
+            <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
+                <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
+              <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
+              <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >{category}</span>
+            </div>
+      
         <hr className='border border-gray-300 my-3 w-[99vw]' />
 
       </div>
 
-        <div className="p-3 categories my-7 flex flex-col">
-    <h1 className="text-color-4-text text-left font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
-    <h1 className="text-secondarycolor-1 text-left font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
-    <div className="flex overflow-x-scroll sm:overflow-visible">
+      <div className="mt-2 catgeories my-10 flex flex-col w-full pl- md:pl-5 xl:pl-14">
+          <h1 className="text-color-4-text text-left mx-8 font-['Figtree']
+           text-sm sm:text-base leading-5 font-semibold uppercase text-[#224757] mt-5">CATEGORIES</h1>
+          <h1 className="text-secondarycolor-1 text-left mx-8 font-['Figtree'] 
+          text-3xl md:text-4xl leading-[17.5px] font-bold relative text-[#00002E] mb-5 mt-2">Browse By Category</h1>
 
-      <ul className="p-3 mx-3 categories flex justify-start items-center whitespace-nowrap overflow-x-auto">
-        {categoriesList.map((each, index) => (
-          <CategoryCard
-            key={each.id}
-            title={each.title}
-            imageUrl={each.imageUrl}
-            alt={each.alt}
-          />
-        ))}
-      </ul>
-  </div>
-</div>
-
-      <div className="sm:flex sm:justify-end mt-3">
-        {isSmallDevice && (
-          <div className='ml-auto flex justify-end'>
-            <ArrowButton bgColor="secondary" svgColor="#CCCCCC" svgPath="M11 5L4 12L11 19M4 12H20" />
-            <ArrowButton bgColor="[#e2b9ff]" svgColor="#131C5F" svgPath="M13 19L20 12L13 5M20 12L4 12" />
-          </div>
-        )}
+          <ul className="ml-2 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
+              {categoriesList.map(each => (
+                <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
+                ))}
+          </ul>
       </div>
 
       <FilterComponent data={data} optionsConfig={optionsConfig} />
 
-      <div className="px-2 md:px-8 xl:px-16 pb-6">
-      <ul className='flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 m-2'>
-  {searchData.map((curElem, ind) => (
-    <div key={ind} className='flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2'>
-      <BlogCard data={curElem} onClickWishlistButton={onClickWishlistButton}/>
-    </div>
-  ))}
-</ul>
+      <div className="px-5 md:px-8 xl:px-8 pb-5">
+      <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 '>
+                   {
+                       searchData.map((curElem, ind) => {
+                           return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
+                       })
+                   }
+               </ul>
 
         <div>
-        <hr className='border border-gray-300 my-4 w-[99vw]' />
+      
+        <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />
+      
+        
         </div>
-        <div className="pt-2">
-          <h1 className='text-2xl md:text-3xl font-bold md:mb-5'>People also looked for</h1>
-          <PeopleAlsoLookFor />
+        <div className="p-3 md:pl-8 xl:pl-7 h-full mt-5 md:pl-4 ">
+        <h1 className="text-secondarycolor-1 mx-3 my-4 text-left font-['Inter'] text-2xl md:text-4xl leading-none font-bold  text-[#00002E] md:mx-0 md:mb-0">People also look for</h1>
+          <PeopleAlsoLookFor/>
         </div>
-        <div className="sm:flex justify-end mt-3">
-        {isSmallDevice && (
-          <div className='ml-auto flex justify-end'>
-            <ArrowButton bgColor="secondary" svgColor="#CCCCCC" svgPath="M11 5L4 12L11 19M4 12H20" />
-            <ArrowButton bgColor="[#e2b9ff]" svgColor="#131C5F" svgPath="M13 19L20 12L13 5M20 12L4 12" />
-          </div>
-        )}
-      </div>
+
         <ServiceSection />
       </div>
-      <Footer />
+      
     </div>
   )
 };
