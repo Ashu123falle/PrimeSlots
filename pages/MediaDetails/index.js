@@ -12,6 +12,9 @@ import laStreetView from '@/pages/assets/la_street-view.svg'
 import parkOutline from '@/pages/assets/icon-park-outline_video.svg'
 import Image from 'next/image'
 import TickImage from '@/pages/assets/icons8-tick.svg'
+import Popup from 'reactjs-popup'
+import ReactPlayer from 'react-player'
+import closeIcon from '@/pages/assets/icons8-close.svg'
 
 const industriesData = [
     {
@@ -166,9 +169,22 @@ const MediaOptionsButtons = [
                 <button className="border-none outine-none" type="button">
                 <Image src={laStreetView} alt="street view icon" className="mr-2"/>
                 </button>
-                <button>
+
+                <Popup trigger ={ <button>
                 <Image src={parkOutline} alt="park view icon" className="ml-1"/>
-                </button>
+                </button>}
+                modal
+                >
+               {close => (
+                <div className='w-[80vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
+                    <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
+                border-neutral-200 flex justify-center items-center p-1 self-end">
+                 <Image src={closeIcon} onClick={() => close()}/>
+               </span>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=LCU4EMQf7IU&t=150s" controls width={'100%'} height={'90%'} className="rounded-xl"/> 
+                </div>
+               )}
+                </Popup>
             </div>
         </div>
 
