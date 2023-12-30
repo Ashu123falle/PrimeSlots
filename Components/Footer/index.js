@@ -6,6 +6,7 @@ import grouplogo from '@/pages/assets/Group.svg';
 import linkedinlogo from '@/pages/assets/LinkedIn.svg';
 
 const Footer = () => {
+
     return (
         <div className="bg-[#0a075f] text-white py-6  flex flex-col justify-center items-center pl-6 mt-[-1px]">
             <div className="container p-6 md:p-10 flex flex-col items-center md:flex-row md:justify-between md:items-start text-gray-200">

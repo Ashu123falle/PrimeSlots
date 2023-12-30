@@ -50,11 +50,11 @@ const Carousel = ({ images }) => {
                >
                 {close => (
                   <div className='bg-white h-[100vh] md:h-[100vh] w-[100vw] bg-cover bg-no-repeat p-2
-                  ' style={{ backgroundImage: `url(${image})` }}>
+                  ' style={{ backgroundImage: `url(${image})`}}>
                     
                     <span className="absolute left-[87%] right-0 p-2 sm:left-[92%] md:left-[94%] lg:left-[95%] xl:left-[96%] cursor-pointer  w-[37px] h-[37px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center" onClick={() => close()}>
-                 <Image src={halfScreenIcon} className=''/>
+                 <Image src={halfScreenIcon} />
                </span>
                   </div>
                 )}

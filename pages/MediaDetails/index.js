@@ -105,7 +105,7 @@ const MediaOptionsButtons = [
                         {industriesData.map(obj => 
                         <li key={obj.id} className={`p-3 h-8 lg:h-8 md:h-10 m-1 rounded-[10px]  flex 
                         border border-blue-950 justify-around items-center gap-[38px] inline-flex cursor-pointer 
-                        ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white ':''}`} onClick={() => onClickIndustryButton(obj.id)}>
+                        ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white ':''}`}>
                             <button type="button" className={`text-blue-950 text-sm  font-normal font-['Figtree'] 
                                 leading-none  ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white mr-[-22px] ':''} `}>{obj.industryName}
                             </button>
