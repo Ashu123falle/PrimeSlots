@@ -14,7 +14,7 @@ const JoinTheBrand  = () => {
   return (
     <div className="px-8">
       <div className="flex flex-col items-stretch px-5">
-      <div className="self-center text-4xl text-blue-950 whitespace-nowrap">
+      <div className="self-center text-4xl text-blue-950 whitespace-nowrap font-[Playfair]">
         Join these brands
       </div>
       <div className="text-neutral-500 text-center text-lg self-center max-w-[613px] mt-6 max-md:max-w-full">

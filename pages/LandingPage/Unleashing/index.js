@@ -10,7 +10,7 @@ const Unleasing = () => {
                         <div className='sm:space-y-6 space-y-2 sm:text-justify text-center'>
                             <span>
                                 <p className='sm:text-sm text-[10px] text-[#A9A9A9]'>FUELING PARTNER GROWTH</p>
-                                <h1 className='sm:text-2xl text-xl font-semibold text-[#131C5F]'>Unleashing Potential Together!</h1>
+                                <h1 className='sm:text-2xl text-xl font-semibold text-[#131C5F] font-[Playfair]'>Unleashing Potential Together!</h1>
                             </span>
                             <p className='text-[#777777] leading-4 sm:mt-4 text-[0.8rem] sm:text-[0.8rem] md:text-[0.9rem]'>Empower your organization’s growth with PrimeSlots. Our collaborative approach and innovative solutions unlock your full potential. Join us for accelerated success and unparalleled opportunities.</p>
                         </div>

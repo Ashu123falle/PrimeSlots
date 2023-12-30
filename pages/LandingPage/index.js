@@ -14,8 +14,6 @@ const LandingPage = () => {
     <Unleasing/>
     <JoinTheBrand/>
     <StayLoop/>
-   
-
     </>
   )
 }

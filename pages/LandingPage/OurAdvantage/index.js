@@ -15,8 +15,8 @@ const OurAdvantage = () => {
                 {/* content  */}
                 <div className="mt-3">
                     <div className=''>
-                        <span className='text-[#242565] text-xl sm:text-3xl md:text-4xl font-bold'>our</span>
-                        <h1 className='text-3xl sm:text-5xl md:text-6xl text-[#242565] font-bold'>advantages</h1>
+                        <span className="text-[#242565] text-xl sm:text-3xl md:text-4xl font-bold font-['Playfair']">our</span>
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl text-[#242565] font-['Playfair'] font-bold ">advantages</h1>
                     </div>
 
 
@@ -24,7 +24,7 @@ const OurAdvantage = () => {
                         <div className='flex items-center space-x-4  text-[#131C5F] pl-5'>
                             <Image src={blankphoto} className='w-[8%] text-white bg-gray-300 p-2 rounded-full mt-[-30px]' />
                             <div className='leading-[1rem] space-y-5'>
-                                <h2 className='sm:text-[1.4rem] text-[1.2rem] font-bold'>Global Visibility</h2>
+                                <h2 className="sm:text-[1.4rem] text-[1.2rem] font-bold font-['Playfair']">Global Visibility</h2>
                                 <p className='text-[0.9rem] sm:text-[0.8rem] md:text-[1rem]'>Enhance and Capitalise the number <br /> of people for your venue</p>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const OurAdvantage = () => {
                         <div className='flex items-center space-x-4 text-[#131C5F] pl-5'>
                             <Image src={blankphoto} className='w-[8%] text-white bg-gray-300 p-2 rounded-full mt-[-30px]' />
                             <div className='leading-[1rem] space-y-5'>
-                                <h2 className='sm:text-[1.4rem] text-[1.2rem] font-bold'>Global Visibility</h2>
+                                <h2 className="sm:text-[1.4rem] text-[1.2rem] font-['Playfair'] font-bold">Global Visibility</h2>
                                 <p className='text-[0.9rem] sm:text-[0.8rem] md:text-[1rem]'>Enhance and Capitalise the number <br /> of people for your venue</p>
                             </div>
                         </div>
@@ -40,15 +40,15 @@ const OurAdvantage = () => {
                         <div className='flex items-center space-x-4 text-[#131C5F] pl-5 '>
                             <Image src={blankphoto} className='w-[8%] text-white bg-gray-300 p-2 rounded-full mt-[-30px]' />
                             <div className='leading-[1rem] space-y-5'>
-                                <h2 className='sm:text-[1.4rem] text-[1.2rem] font-bold'>Global Visibility</h2>
+                                <h2 className="sm:text-[1.4rem] font-['Playfair'] text-[1.2rem] font-bold">Global Visibility</h2>
                                 <p className='text-[0.9rem] sm:text-[0.8rem] md:text-[1rem]'>Enhance and Capitalise the number <br /> of people for your venue</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center space-x-4 text-[#131C5F] pl-5'>
+                        <div className='flex items-center space-x-4 text-[#131C5F] pl-5 '>
                             <Image src={blankphoto} className='w-[8%] text-white bg-gray-300 p-2 rounded-full mt-[-30px]' />
                             <div className='leading-[1rem] space-y-5'>
-                                <h2 className='sm:text-[1.4rem] text-[1.2rem] font-bold'>Global Visibility</h2>
+                                <h2 className="sm:text-[1.4rem] font-['Playfair'] text-[1.2rem] font-bold">Global Visibility</h2>
                                 <p className='text-[0.9rem] sm:text-[0.8rem] md:text-[1rem]'>Enhance and Capitalise the number <br /> of people for your venue</p>
                             </div>
                         </div>
