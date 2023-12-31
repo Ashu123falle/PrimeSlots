@@ -3,7 +3,7 @@ import React from 'react'
 const StayLoop = () => {
     return (
         <>
-            <div className="main h-[160px] sm:h-[160px] md:h-[180px] bg-gradient-to-b from-stone-800 to-blue-950 flex justify-center items-center">
+            <div className="main h-[160px] sm:h-[160px] md:h-[180px]  bg-gradient-to-b from-[#241E1F] to-[#0A075F]  flex justify-center items-center ">
                 <div className='xl:p-7 lg:p-5 xl:w-[75%] lg:w-[85%] md:w-[90%] sm:w-[92%] w-[90%] flex sm:flex-row flex-col justify-center items-center lg:space-x-10 sm:space-y-0 space-y-7'>
 
                     <div className="content w-full">
