@@ -9,8 +9,8 @@ import Searchapi from '../api/SearchPageapi';
 import BlogCard from '@/Components/blogCard';
 import ArrowButton from '@/Components/ArrowButton';
 import { useRouter } from 'next/router';
-
-
+import PerksComponent from '@/Components/Perks';
+import PerksHeader from '@/Components/PerksHeader';
 //import PriceFilter from '@/Components/FilterMobileView';
 const optionsConfig = [
   {
@@ -140,6 +140,7 @@ const MediaListingPage = () => {
   return (
     <div className='box-border' style={{ overflowX: 'hidden' }}>
       <Navbar />
+      <PerksHeader/>
       <div>
       
             <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
@@ -166,7 +167,7 @@ const MediaListingPage = () => {
       </div>
 
       <FilterComponent data={data} optionsConfig={optionsConfig} />
-
+      
       <div className="px-5 md:px-8 xl:px-8 pb-5">
       <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 '>
                    {
@@ -186,7 +187,6 @@ const MediaListingPage = () => {
         <h1 className="text-secondarycolor-1 mx-3 my-4 text-left font-['Inter'] text-2xl md:text-4xl leading-none font-bold  text-[#00002E] md:mx-0 md:mb-0">People also look for</h1>
           <PeopleAlsoLookFor/>
         </div>
-
         <ServiceSection />
       </div>
       
