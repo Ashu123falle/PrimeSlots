@@ -64,7 +64,9 @@ const Banner = () => {
 
     return(
         <>
-        <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] sm:h-[190vh] md:h-[150vh] 2xl:h-[130vh]" style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1704672000&Signature=Xz6BeRagExtpnmtcKTEKZ90M7Z8CPeuMf3G~dJ~3WILoceH79CufiXkqsWCa-HXVhiHOfCtnzuequs1UiuYMlQ4juPiF-qW0odF5s5M5QoNGsL6TMiCmbrGHiFMO5Zhryx5nOzJeJJjVEYq3RGCfaSaXO~W-9eNmKcYxNWUmWEZKiCPomDw9-wjM86SK9CwU1904tjGQTBRS8tYc3XFhoCnY2iIu27LEIe67pWncsinHx1JyBn9VSBQVH5K1A~vDfZWDKdV46Otcdo-WQakXuV67xHpqYP0AjgPZ-rDYl6t76XqMtWOSom6oGrlfAsocG2JeWu9bGItHkzFCMk8quA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')", backgroundSize: "cover", width:"100%", opacity: "100" }}>
+        <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] sm:h-[190vh] md:h-[150vh] 2xl:h-[130vh]" 
+        style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1704672000&Signature=Xz6BeRagExtpnmtcKTEKZ90M7Z8CPeuMf3G~dJ~3WILoceH79CufiXkqsWCa-HXVhiHOfCtnzuequs1UiuYMlQ4juPiF-qW0odF5s5M5QoNGsL6TMiCmbrGHiFMO5Zhryx5nOzJeJJjVEYq3RGCfaSaXO~W-9eNmKcYxNWUmWEZKiCPomDw9-wjM86SK9CwU1904tjGQTBRS8tYc3XFhoCnY2iIu27LEIe67pWncsinHx1JyBn9VSBQVH5K1A~vDfZWDKdV46Otcdo-WQakXuV67xHpqYP0AjgPZ-rDYl6t76XqMtWOSom6oGrlfAsocG2JeWu9bGItHkzFCMk8quA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')", backgroundSize: "cover", width:"100%"}}>
+        <div className="absolute inset-0 backdrop-blur-sm">
             
             <div className="Navbar py-5 flex justify-around relative">
             <div
@@ -171,11 +173,12 @@ const Banner = () => {
             ></motion.div>
             </div>
             <div className="flex-col items-center justify-center">
+
             <div className={"self-center left-[calc(5vw)] relative top-[calc(-45vw)] z-10  "}>
                 <FilterComponent data={data} optionsConfig={optionsConfig} />
             </div>
 
-            <div className="button self-center left-[calc(40vw)] relative top-[calc(-45vw)]">
+            <div className="button self-center left-[calc(45vw)] relative top-[calc(-45vw)]">
                 <motion.button variants={buttonVariants} whileHover="hover" className="bg-[#ffffff] rounded-[36px] w-[140px] h-[52px]  text-[#0e0d0d] text-center text-[18.40671920776367px] font-semibold font-['Figtree-SemiBold',_sans-serif]">Explore Now</motion.button>
                 <div className="relative left-[calc(7vw)] top-[calc(-1vw)]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="46" viewBox="0 0 62 66" fill="none">
@@ -203,6 +206,7 @@ const Banner = () => {
             
             </div>
             </div>
+        </div>
         </div>
         </>
 
