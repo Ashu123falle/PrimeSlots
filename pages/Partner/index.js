@@ -13,7 +13,5 @@ const Partner=()=>{
                 <ReadyToConnect />
                 <StayLoop />   
             </div>
-    );
-}
 
 export default Partner

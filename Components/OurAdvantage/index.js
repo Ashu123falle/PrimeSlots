@@ -5,7 +5,7 @@ import blankphoto from '@/pages/assets/photoFill.svg'
 const OurAdvantage = () => {
     return (
         <>
-            <div className="px-6 grid grid-flow-row main bg-gradient-to-r from-[#EEE1FF00] via-[#EEE1FF] to-[#FFFFFF] sm:px-8 md:px-14 lg:px-24 xl:px-40  py-10 sm:space-y-2 md:space-y-6">
+            <div className="px-6 grid grid-flow-row main bg-gradient-to-t from-violet-100 via-violet-100 to-white sm:px-8 md:px-14 lg:px-24 xl:px-40  py-10 sm:space-y-2 md:space-y-6">
 
                 <div className='h-[180px] sm:h-[220px] md:h-[240px] lg:h-[300px] bg-[#232526] flex justify-center items-center rounded-xl'>
                     <Image src={blankphoto} className='' />
