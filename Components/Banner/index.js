@@ -174,7 +174,7 @@ const Banner = () => {
             </div>
             <div className="flex-col items-center justify-center">
 
-            <div className={"self-center left-[calc(5vw)] relative top-[calc(-45vw)] z-10  "}>
+            <div className={"self-center  relative top-[calc(-45vw)] z-10  "}>
                 <FilterComponent data={data} optionsConfig={optionsConfig} />
             </div>
 
