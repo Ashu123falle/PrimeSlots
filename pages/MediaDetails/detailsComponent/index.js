@@ -4,8 +4,18 @@ import staricon from '@/pages/assets/Vector.svg'
 import blankicon from '@/pages/assets/Vector1.svg'
 import wishlist from '@/pages/assets/Wishlist2.svg'
 import info from '@/pages/assets/ph_info.svg'
+import Popup from 'reactjs-popup'
+import {useContext} from 'react'
+import AuthContext from '@/Context/authContext'
 
 const DetailsComponent = () => {
+    const {jwtToken,isAuthorized,onClickLogin} = useContext(AuthContext)
+
+    const login = () => {
+        onClickLogin()
+    }
+    
+
     return (
         <>
             <div className="main  md:w-[500px] px-10 lg:h-[480px] mt-8 space-y-4 md:px-8">
@@ -63,9 +73,20 @@ const DetailsComponent = () => {
 
                 {/* fifth */}
                 <div className='flex space-x-2'>
+                    <Popup trigger={
                     <button className='bg-[#6979F8] text-1xl rounded-md text-white w-full py-2'>
-                        Book Now
-                    </button>
+                         Book Now
+                     </button>
+                    }
+                    modal
+                    >
+                   {close => (
+                    <div className='w-[80vw] h-[70vh] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col justify-center items-center'>
+                        <button onClick={login} className='bg-[#6979F8] text-1xl rounded-md text-white  py-2 w-[100px]'>Login</button>
+                        { isAuthorized ? <p className="text-white text-2xl mt-9">Current user is authorized !!</p>:<p className="mt-9 text-white text-2xl">User is not authorized</p> }
+                    </div>
+                   )}
+                    </Popup>
                     <span className='flex justify-center items-center rounded-md border border-gray-400 px-4'>
                         <Image src={wishlist} className='' />
                     </span>

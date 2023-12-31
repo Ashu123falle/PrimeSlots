@@ -12,6 +12,9 @@ import laStreetView from '@/pages/assets/la_street-view.svg'
 import parkOutline from '@/pages/assets/icon-park-outline_video.svg'
 import Image from 'next/image'
 import TickImage from '@/pages/assets/icons8-tick.svg'
+import Popup from 'reactjs-popup'
+import ReactPlayer from 'react-player'
+import closeIcon from '@/pages/assets/icons8-close.svg'
 
 const industriesData = [
     {
@@ -102,7 +105,7 @@ const MediaOptionsButtons = [
                         {industriesData.map(obj => 
                         <li key={obj.id} className={`p-3 h-8 lg:h-8 md:h-10 m-1 rounded-[10px]  flex 
                         border border-blue-950 justify-around items-center gap-[38px] inline-flex cursor-pointer 
-                        ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white ':''}`} onClick={() => onClickIndustryButton(obj.id)}>
+                        ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white ':''}`}>
                             <button type="button" className={`text-blue-950 text-sm  font-normal font-['Figtree'] 
                                 leading-none  ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white mr-[-22px] ':''} `}>{obj.industryName}
                             </button>
@@ -166,9 +169,22 @@ const MediaOptionsButtons = [
                 <button className="border-none outine-none" type="button">
                 <Image src={laStreetView} alt="street view icon" className="mr-2"/>
                 </button>
-                <button>
+
+                <Popup trigger ={ <button>
                 <Image src={parkOutline} alt="park view icon" className="ml-1"/>
-                </button>
+                </button>}
+                modal
+                >
+               {close => (
+                <div className='w-[80vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
+                    <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
+                border-neutral-200 flex justify-center items-center p-1 self-end">
+                 <Image src={closeIcon} onClick={() => close()}/>
+               </span>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=LCU4EMQf7IU&t=150s" controls width={'100%'} height={'90%'} className="rounded-xl"/> 
+                </div>
+               )}
+                </Popup>
             </div>
         </div>
 
