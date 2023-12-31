@@ -3,8 +3,9 @@ const EasyStepsSection = () => {
         <div class="w-full p-3 md:p-20 md:pb-0 flex flex-col justify-center items-center bg-gradient-to-b from-violet-100 to-white">
             <h1 className="text-blue-950 text-xl md:text-3xl lg:text-4xl font-semibold font-['Playfair'] text-center ">3 Easy steps to become a PrimeSlots Partner</h1>
             <div className="my-10 md:my-20 w-full flex flex-col md:flex-row justify-between items-center">
-                <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-3 md:p-10">
-                    <div class="w-1/2 my-3 h-1.5 md:h-2.5 bg-slate-300 rounded-[50px]"></div>                        <div class="w-full mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
+                <div className="w-full order-2 md:order-1 md:w-1/2 flex flex-col justify-center items-start p-3 md:p-10">
+                    <div class="w-1/2 my-3 h-1.5 md:h-2.5 bg-slate-300 rounded-[50px]"></div>                        
+                    <div class="w-full mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
                     <div class="w-3/4 mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
                     <div class="w-1/2 mb-5 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
                     <div class="w-full h-2 md:h-3 mb-2 bg-slate-300 rounded-[50px]"></div>
@@ -16,7 +17,7 @@ const EasyStepsSection = () => {
                     </div>
                 </div>
 
-                <div className="w-full md:w-1/2 text-center">
+                <div className="w-full order-1 md:order-2 md:w-1/2 text-center">
                     <div class="w-3/4  h-[200px]  md:w-[330px] lg:w-[400px] md:h-[400px] bg-slate-300 rounded-[10px] justify-center items-center inline-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path d="M20.0001 12.5C20.0001 10.1988 21.8656 8.33329 24.1667 8.33329C26.4679 8.33329 28.3334 10.1988 28.3334 12.5C28.3334 14.8011 26.4679 16.6666 24.1667 16.6666C21.8656 16.6666 20.0001 14.8011 20.0001 12.5Z" fill="#7C8B9D"/>
@@ -30,7 +31,7 @@ const EasyStepsSection = () => {
                 </div>
 
                 <div className="my-10 md:my-20 w-full flex flex-col md:flex-row justify-between items-center">
-                    <div className="order-1 md:order-2 w-full md:w-1/2 flex flex-col justify-center items-start p-3 md:p-10">
+                    <div className="order-2 md:order-2 w-full md:w-1/2 flex flex-col justify-center items-start p-3 md:p-10">
                     <div class="w-1/2 my-3 h-1.5 md:h-2.5 bg-slate-300 rounded-[50px]"></div>
                     <div class="w-full mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
                     <div class="w-3/4 mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
@@ -43,7 +44,7 @@ const EasyStepsSection = () => {
                     </div>
                 </div>
 
-                    <div className="order-2 md:order-1 w-full md:w-1/2 text-center">
+                    <div className="order-1 md:order-1 w-full md:w-1/2 text-center">
                         <div class="w-3/4 h-[200px]  md:w-[330px] lg:w-[400px] md:h-[400px] bg-slate-300 rounded-[10px] justify-center items-center inline-flex">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                 <path d="M20.0001 12.5C20.0001 10.1988 21.8656 8.33329 24.1667 8.33329C26.4679 8.33329 28.3334 10.1988 28.3334 12.5C28.3334 14.8011 26.4679 16.6666 24.1667 16.6666C21.8656 16.6666 20.0001 14.8011 20.0001 12.5Z" fill="#7C8B9D"/>
@@ -57,7 +58,7 @@ const EasyStepsSection = () => {
                 </div>
 
                 <div className="my-10 md:my-20 w-full flex flex-col md:flex-row justify-between items-center">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-3 md:p-10">
+                    <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col justify-center items-start p-3 md:p-10">
                         <div class="w-1/2 my-3 h-1.5 md:h-2.5 bg-slate-300 rounded-[50px]"></div>
                         <div class="w-full mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
                         <div class="w-3/4 mb-2 h-[10px] md:h-[18px] bg-slate-500 rounded-[50px]"></div>
@@ -71,7 +72,7 @@ const EasyStepsSection = () => {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2 text-center">
+                    <div className="order-1 md:order-2 w-full md:w-1/2 text-center">
                         <div class="w-3/4 h-[200px]  md:w-[330px] lg:w-[400px] md:h-[400px] bg-slate-300 rounded-[10px] justify-center items-center inline-flex">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M20.0001 12.5C20.0001 10.1988 21.8656 8.33329 24.1667 8.33329C26.4679 8.33329 28.3334 10.1988 28.3334 12.5C28.3334 14.8011 26.4679 16.6666 24.1667 16.6666C21.8656 16.6666 20.0001 14.8011 20.0001 12.5Z" fill="#7C8B9D"/>
