@@ -84,7 +84,7 @@ const EasyStepsSection = () => {
                     
                 </div>
         
-                <div className="w-full h-[0px] md:h-[28px] flex flex-row justify-end">
+                <div className="w-full h-[0px] md:h-[28px] flex flex-row justify-end ">
                     <svg xmlns="http://www.w3.org/2000/svg"  className="w-[37px] h-[35px] md:w-[57px] md:h-[65px]" viewBox="0 0 57 65" fill="none">
                     <path d="M0.160679 28.4793C0.408286 18.4117 1.54453 4.53983 8.33162 1.49925C15.1187 -1.54134 32.918 4.78599 40.8832 10.2358C48.8484 15.6857 55.577 26.2099 56.1227 34.1983C56.6685 42.1867 52.3705 53.5485 44.1577 58.1662C35.9449 62.784 14.1788 66.8528 6.84597 61.905" fill="url(#paint0_linear_525_1707)"/>
                     <defs>
