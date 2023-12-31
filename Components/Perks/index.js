@@ -28,7 +28,7 @@ const PerkItem = ({ src, alt, title, description }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.75 }}
       className="flex flex-col lg:flex-row items-center"
     >
       <div className="max-w-full h-auto rounded-lg mb-2 lg:mb-0 lg:mr-4">

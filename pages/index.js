@@ -8,6 +8,7 @@ import Unleasing from '@/Components/Unleashing'
 import JoinTheBrand from '@/Components/JoinTheBrand'
 import StayLoop from '@/Components/StayLoop'
 import { CategoryCard } from '@/Components/CategoryCard'
+import Testimonials from '@/Components/Testomonials'
 
 const categoriesList = [
   {
@@ -94,8 +95,11 @@ export default function Home() {
       <LightBox/>
       <Unleasing/>
       <JoinTheBrand/>
+      <Testimonials/>
       <StayLoop/>
     </div>
+    
+    <Footer/>
       </div>
     </main>
   )
