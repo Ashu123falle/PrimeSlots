@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import FilterComponent from './FilterComponent/FilterComponent';
+import FilterComponent from '../../Components/FilterComponent/FilterComponent';
 import Navbar from '@/Components/Navbar';
 import Footer from '@/Components/Footer';
 import ServiceSection from "@/Components/ServicesSection";
@@ -7,10 +7,8 @@ import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor';
 import { CategoryCard } from '@/Components/CategoryCard';
 import Searchapi from '../api/SearchPageapi';
 import BlogCard from '@/Components/blogCard';
-import ArrowButton from '@/Components/ArrowButton';
 import { useRouter } from 'next/router';
-import PerksComponent from '@/Components/Perks';
-import PerksHeader from '@/Components/PerksHeader';
+import Link from 'next/link';
 //import PriceFilter from '@/Components/FilterMobileView';
 
 const optionsConfig = [
@@ -142,9 +140,9 @@ const MediaListingPage = () => {
     <div className='box-border' style={{ overflowX: 'hidden' }}>
       <Navbar />
       <div>
-      
             <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
-                <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
+            <Link href="/">
+                <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> </Link>
               <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
               <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >{category}</span>
             </div>

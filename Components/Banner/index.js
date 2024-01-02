@@ -1,4 +1,4 @@
-import FilterComponent from "@/pages/MediaListing/FilterComponent/FilterComponent"
+import FilterComponent from "@/Components/FilterComponent/FilterComponent"
 import mainlogo from '@/pages/assets/mainlogo.png'
 import Image from 'next/image' ;
 import Link from "next/link";
@@ -6,6 +6,7 @@ import React, { useEffect, useRef } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Reveal from "@/Components/RevealAnimation/Reveal";
+import { useRouter } from "next/router";
 
 const squareVariants = {
     visible: { opacity: 1, scale: 4, transition: { duration: 1 } },
@@ -55,12 +56,17 @@ const Banner = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
     const mainControls = useAnimation();
+    const router = useRouter()
 
     useEffect(() => {
         if(isInView){
             mainControls.start("visible");
         }
     }, [isInView] )
+
+    const onClickExplore = () => {
+        router.push("/Marketplace")
+    }
 
     return(
         <>
@@ -69,7 +75,7 @@ const Banner = () => {
         <div className="absolute inset-0 backdrop-blur-sm">
             
             <div className="Navbar py-5 flex justify-around relative">
-            <div
+            <Link href="/"
                 className={"bg-[#ffffff] w-[149px] h-[37px] relative "}
                 >
                     <Image
@@ -77,7 +83,7 @@ const Banner = () => {
                     src={mainlogo}
                     />
 
-                </div>  
+                </Link>  
             <div className="links flex justify-between">
                 <Link href="/Marketplace" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Marketplace</Link>
                 <Link href="#" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Become a partner</Link>
@@ -179,7 +185,9 @@ const Banner = () => {
             </div>
 
             <div className="button self-center left-[calc(45vw)] relative top-[calc(-45vw)]">
-                <motion.button variants={buttonVariants} whileHover="hover" className="bg-[#ffffff] rounded-[36px] w-[140px] h-[52px]  text-[#0e0d0d] text-center text-[18.40671920776367px] font-semibold font-['Figtree-SemiBold',_sans-serif]">Explore Now</motion.button>
+                <motion.button onClick={onClickExplore} variants={buttonVariants} whileHover="hover" className="bg-[#ffffff] rounded-[36px] w-[140px] h-[52px]  
+                text-[#0e0d0d] text-center text-[18.40671920776367px] font-semibold font-['Figtree-SemiBold',_sans-serif]">Explore Now</motion.button>
+
                 <div className="relative left-[calc(7vw)] top-[calc(-1vw)]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="46" viewBox="0 0 62 66" fill="none">
                     <g filter="url(#filter0_d_844_738)">

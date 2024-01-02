@@ -2,8 +2,8 @@ import Footer from "@/Components/Footer";
 import PerksComponent from "@/Components/Perks";
 import PerksHeader from "@/Components/PerksHeader";
 import Unleasing from "@/Components/Unleashing";
-import EasyStepsSection from "@/pages/Partner/EasyStepsSection";
-import ReadyToConnect from "@/pages/Partner/ReadyToConnect";
+import EasyStepsSection from "@/Components/EasyStepsSection";
+import ReadyToConnect from "@/Components/ReadyToConnect";
 
 const Partner=()=>{
     return(

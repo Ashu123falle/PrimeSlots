@@ -1,13 +1,13 @@
 
 import {useState} from 'react'
 import { useRouter } from 'next/router'
-import ExtraServices from "./ExtraServices"
+import ExtraServices from "../../Components/ExtraServices"
 import Navbar from "@/Components/Navbar"
 import ServiceSection from "@/Components/ServicesSection"
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
-import GoogleMapComponent from './GoogleMap'
-import DetailsComponent from './detailsComponent'
-import Carousel from './imageCarousal'
+import GoogleMapComponent from '../../Components/GoogleMap'
+import DetailsComponent from '../../Components/detailsComponent'
+import Carousel from '../../Components/imageCarousal'
 import laStreetView from '@/pages/assets/la_street-view.svg'
 import parkOutline from '@/pages/assets/icon-park-outline_video.svg'
 import Image from 'next/image'

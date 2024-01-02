@@ -1,4 +1,6 @@
 
+import { useRouter } from "next/router"
+
 export default function BlogCard(props) {
     
    const {data} = props 
@@ -7,6 +9,12 @@ export default function BlogCard(props) {
 
    const addToLikeButton = id => {
     onClickWishlistButton(id)
+   } 
+
+   const router = useRouter()
+
+   const onClickBookNow = () => {
+        router.push(`/MediaDetails?mediaId=${id}`)
    } 
 
     return (
@@ -55,7 +63,7 @@ export default function BlogCard(props) {
                 </ul>
 
                 <button className="w-[90px] h-[35px] mt-2 mb-2 rounded-[5px] border border-indigo-500 hover:bg-blue-500 hover:text-white bg-transparent
-             text-sm font-medium font-['Figtree-Regular',_sans-serif] leading-snug text-indigo-500">Book Now</button>
+             text-sm font-medium font-['Figtree-Regular',_sans-serif] leading-snug text-indigo-500" onClick={onClickBookNow}>Book Now</button>
                 </div>
             </li>
         
