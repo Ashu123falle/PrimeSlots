@@ -64,7 +64,7 @@ const Banner = () => {
 
     return(
         <>
-        <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] sm:h-[190vh] md:h-[150vh] 2xl:h-[130vh]" 
+        <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] xs:h-[140vh] sm:h-[100vh] md:h-[150vh] 2xl:h-[130vh]" 
         style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1704672000&Signature=Xz6BeRagExtpnmtcKTEKZ90M7Z8CPeuMf3G~dJ~3WILoceH79CufiXkqsWCa-HXVhiHOfCtnzuequs1UiuYMlQ4juPiF-qW0odF5s5M5QoNGsL6TMiCmbrGHiFMO5Zhryx5nOzJeJJjVEYq3RGCfaSaXO~W-9eNmKcYxNWUmWEZKiCPomDw9-wjM86SK9CwU1904tjGQTBRS8tYc3XFhoCnY2iIu27LEIe67pWncsinHx1JyBn9VSBQVH5K1A~vDfZWDKdV46Otcdo-WQakXuV67xHpqYP0AjgPZ-rDYl6t76XqMtWOSom6oGrlfAsocG2JeWu9bGItHkzFCMk8quA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')", backgroundSize: "cover", width:"100%"}}>
         <div className="absolute inset-0 backdrop-blur-sm">
             
@@ -121,7 +121,7 @@ const Banner = () => {
                 once: true
             }}
             className={
-                "text-[#ffffff] text-left font-['PlayfairDisplay-Bold',_sans-serif] md:text-[180.3414001464844px] font-bold relative left-[calc(15vw)] top-[calc(10vw)] z-10 xs:text-[100px]"
+                "text-[#ffffff] text-left font-['PlayfairDisplay-Bold',_sans-serif] md:text-[180.3414001464844px] font-bold relative left-[calc(25vw)] top-[calc(40vw)] md:left-[calc(15vw)] md:top-[calc(10vw)] z-10 xs:text-[50px]"
             }
             >
             OOH{" "}
@@ -142,7 +142,7 @@ const Banner = () => {
             transition={{duration: 1, delay: 0.75}}
             whileHover="hover"
             className={
-                "text-[#ffffff] text-left font-['PlayfairDisplay-Bold',_sans-serif] text-[160.8080139160156px] font-bold relative left-[calc(20vw)] top-[calc(2vw)] z-10"
+                "text-[#ffffff] text-left font-['PlayfairDisplay-Bold',_sans-serif] md:text-[160.8080139160156px] font-bold relative left-[calc(30vw)] top-[calc(34vw)] md:left-[calc(20vw)] md:top-[calc(2vw)] z-10 xs:text-[50px]"
             }
             >
             Awaits!{" "}
@@ -156,7 +156,7 @@ const Banner = () => {
             initial="hidden"
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
-            className={"w-[30vw] h-[50vh] relative top-[calc(-12vw)] bg-cover"}
+            className={"w-[30vw] h-[25vh] md:h-[50vh] relative top-[calc(8vw)] md:top-[calc(-12vw)] bg-cover"}
             style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/3181/f79d/5f3ed537229f96087c4eca08efd968b9?Expires=1704672000&Signature=KwEaDsA1aQ~gsYSxmCAbkmDIfUja-Tb0ad6cSXyCK6i7WABBen8NJd69x3PocMgsr9pC07dBSK0U9dgAlkxdk~g5p0JSq-MAHRyBCRdRfZZtwJeIm9CinJmEkY0rlsf9dM1RJky7UO5K0czLcfWJXTqvxxLyeVhDiyWkWe-BB57j6VzlMCJNlKMjudxN5lndI2UBSRwyfAx9kx-oYYq270wHvlXSWs-hxMwIJTkSdGklI1N9~FvcqjvgaEfaRyZXhaV~x5VZG6CfxfSv9bzCF~eOKeHJSj9jZCmVR4widyukXvzrAfur8ua8D223QzFxyJBQs~mr8fJ-4BvvLv0fvA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")'}}
             ></motion.div>
 
@@ -168,7 +168,7 @@ const Banner = () => {
             initial="hidden"
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
-            className={"w-[30vw] h-[50vh] relative left-[calc(70vw)] top-[calc(-47vw)] bg-cover"}
+            className={"w-[30vw] h-[25vh] md:h-[50vh] relative left-[calc(70vw)]  top-[calc(-47vw)] bg-cover"}
             style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/fa98/8e09/1a4b35e0c0523eeeb654c75c59849568?Expires=1704672000&Signature=jH4ZJoEO-w3ZgNO5n7iZIQ51Fi9wOLyNDc8OYfvrr9kuk7oMqocOZKOudYDFT~8GMfeOtEjj3Fwnd9blDR9X0ek9UTqHC~ziHwt5O2xW2fzFQM73JfIWDBbUE8ffDz~XpphC-oHGQu6SF1mROzTWbpqZZZgyl63J~IY7DH~lesjA6~KESk1cSOD4-SkaTJsoiznGk6wkNuX5WvmF7vdlLspnsd3VyVryMCi-A~uEAcC2zLsXIHp692wZ-5JgnskR7szkp5bQp4l-0Vp2jLCKomYrPcxCo0gSKRWbVngx02T4XEVmswZL7ZkKjli5IggW5kpja9fVldGHV~cLI9KEKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")'}}
             ></motion.div>
             </div>
