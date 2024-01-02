@@ -64,7 +64,7 @@ class SearchResultPage extends Component {
 
             <hr className='border border-gray-300 my-4 w-[99vw]'/>
 
-            <div className="pt-2 pl-8">
+            <div className="mt-8 pl-8">
                 <h1 className='text-2xl md:text-3xl font-bold mb-5 mx-3'>People also looked for</h1>
             
                 <PeopleAlsoLookFor/>
@@ -72,6 +72,7 @@ class SearchResultPage extends Component {
             </div>/
 
             <ServiceSection/>
+            <Footer/>
        
         </div>
     )

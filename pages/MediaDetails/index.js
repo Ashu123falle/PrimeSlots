@@ -15,6 +15,7 @@ import TickImage from '@/pages/assets/icons8-tick.svg'
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
 import closeIcon from '@/pages/assets/icons8-close.svg'
+import Footer from '@/Components/Footer'
 
 const industriesData = [
     {
@@ -213,6 +214,7 @@ const MediaOptionsButtons = [
         <div className='mt-6 px-8'>
         <ServiceSection/>
         </div>
+        <Footer/>
     
     </>
     )

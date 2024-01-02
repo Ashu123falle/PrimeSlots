@@ -12,15 +12,15 @@ import zoom from '@/pages/assets/zoom.svg'
 
 const JoinTheBrand  = () => {
   return (
-    <div className="px-8">
+    <div className="p-8 my-3 mb-6">
       <div className="flex flex-col items-stretch px-5">
-      <div className="self-center text-4xl text-blue-950 whitespace-nowrap font-[Playfair]">
+      <h1 className="self-center text-4xl text-blue-950 whitespace-nowrap font-[Playfair]">
         Join these brands
-      </div>
-      <div className="text-neutral-500 text-center text-lg self-center max-w-[613px] mt-6 max-md:max-w-full">
+      </h1>
+      <p className="text-neutral-500 text-center text-lg self-center max-w-[613px] mt-6 max-md:max-w-full">
         We've had the pleasure of working with industry-defining brands. These
         are just some of them.
-      </div>
+      </p>
     </div>
     <div className="flex flex-wrap items-center justify-evenly">
     <span className="  self-end mt-[1px]   flex justify-center items-center  ml-4">

@@ -3,7 +3,7 @@ import React from 'react'
 const Unleasing = () => {
     return (
         <>
-            <div className="main h-[260px] sm:h-[280px] md:h-[300px] bg-[#F9FBFD] flex justify-center items-center">
+            <div className="p-6 lg:ml-10 main h-[260px] sm:h-[280px] md:h-[300px] bg-[#F9FBFD] flex justify-center items-center">
                 <div className=' xl:p-7 lg:p-5 xl:w-[75%] lg:w-[85%] md:w-[90%] sm:w-[92%] w-[90%] flex sm:flex-row flex-col justify-center items-center lg:space-x-10 sm:space-y-0 space-y-7'>
 
                     <div className="content w-full">

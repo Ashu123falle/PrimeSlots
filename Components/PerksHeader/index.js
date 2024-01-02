@@ -7,7 +7,7 @@ import nobglogo from '@/pages/assets/nobglogo.png';
 
 const PerksHeader = () => {
   return (
-<div className=" text-white p-8 ">
+<div className=" text-white p-2 px-8 sm:px-16 pb-16">
   <div className=''>
     <nav className="navbar flex justify-between items-center">
       <div className="logo">

@@ -100,7 +100,7 @@ export default function Home() {
 
         
         
-        <div className="mt-2 catgeories my-10 flex flex-col w-full pl-5 md:pl-8 xl:pl-16">
+        <div className=" catgeories my-6 flex flex-col w-full pl-5 md:pl-8 xl:pl-16">
           <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
           <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
@@ -267,7 +267,7 @@ export default function Home() {
         </div>
 
         
-        <div className="hotpicks p-3 pl-7 overscroll-auto overflow-x-scroll no-scrollbar pl-5 md:pl-8 xl:pl-16">
+        <div className="hotpicks p-3 mt-6 pl-7 overscroll-auto overflow-x-scroll no-scrollbar pl-5 md:pl-8 xl:pl-16">
           <h1 className="text-secondarycolor-1 mx-3 mt-4 text-left font-['Inter-Bold',_sans-serif] text-2xl leading-none font-bold  text-[#00002E] md: mx-8 ">Hot Pics 🔥</h1>
           <PeopleAlsoLookFor/>
         </div>
@@ -330,11 +330,12 @@ export default function Home() {
 
           </div>
           
-          <div className="flex-col items-center justify-center ml-1">
+          <div className="flex-col mt-6 items-center justify-center ml-1">
           <NewListingsComponent />
           </div>
           
           <ServiceSection />
+          <Footer/>
       </main>
     )
   }
