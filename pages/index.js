@@ -8,6 +8,7 @@ import Unleasing from '@/Components/Unleashing'
 import JoinTheBrand from '@/Components/JoinTheBrand'
 import StayLoop from '@/Components/StayLoop'
 import { CategoryCard } from '@/Components/CategoryCard'
+import Testimonials from '@/Components/Testomonials'
 
 const categoriesList = [
   {
@@ -80,22 +81,25 @@ export default function Home() {
        <div className='w-[100%] overflow-x-hidden'>
     <Banner />
 
-    <div>
       <div className='mt-10 text-center mb-8'>
-      <h1 class="text-slate-950 text-4xl font-bold font-['Playfair'] 
-       leading-[48px] tracking-wider">OOH media Solutions for </h1>
+      <h1 class="text-slate-950 text-3xl font-bold font-['Playfair'] 
+       leading-[48px] tracking-wider p-3">OOH media Solutions for </h1>
          <ul className="mt-3 categories flex justify-start items-center overflow-visible overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
               {categoriesList.map(each => (
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}
           </ul>
       </div>
+
       <OurAdvantage/>
       <LightBox/>
       <Unleasing/>
+      <Testimonials/>
       <JoinTheBrand/>
       <StayLoop/>
-    </div>
+   
+    
+    <Footer/>
       </div>
     </main>
   )

@@ -5,7 +5,7 @@ import light from '@/pages/assets/light.png'
 const LightBox = () => {
     return (
         <>
-            <div className='main bg-[#FFF] h-[240px] sm:h-[280px] md:h-[350px] flex flex-col justify-center items-center'>
+            <div className='p-3 main bg-[#FFF] h-[240px] sm:h-[280px] md:h-[350px] flex flex-col justify-center items-center'>
                 <div className='border p-1 rounded-3xl bg-[#D9D9D9] w-[95%] sm:w-[92%] md:w-[85%] lg:w-[80%] xl:w-[70%]'>
                     <div className='rounded-3xl bg-[#0A0D26]'>
                         <div className="lights grid grid-flow-col sm:pl-4">

@@ -29,7 +29,7 @@ const PriceFilter = () => {
   };
 
   return (
-    <div className="price-filter-container p-4 border border-gray-300 rounded m-3" style={{ width: "500px" }}>
+    <div className="price-filter-container p-4 border border-gray-300 rounded m-3 bg-white" style={{ width: "500px" }}>
       <div className="slider-header-container mb-2 flex justify-between items-center">
         <label className="block text-sm font-medium text-gray-600">Price Range</label>
         <button className="caret-button" onClick={togglePriceSliderVisibility}>

@@ -3,19 +3,21 @@
 import React from 'react';
 import Image from 'next/image';
 import nobglogo from '@/pages/assets/nobglogo.png';
+import Link from 'next/link';
 
 
 const PerksHeader = () => {
   return (
-<div className=" text-white p-8 ">
+<div className=" text-white p-2 px-8 sm:px-16 pb-16">
   <div className=''>
     <nav className="navbar flex justify-between items-center">
-      <div className="logo">
+      <Link href="/" className="logo">
         <Image src={nobglogo} alt="Logo" className="" />
-      </div>
+      </Link>
       <div className="nav-text flex p-3 text-white">
-      <p className="mx-2 text-sm sm:text-md md:text-base">Marketplace</p>
-<p className="mx-2 text-sm sm:text-md md:text-base">Become a Vendor</p>
+      <Link href="/Marketplace" className="mx-2 text-sm sm:text-md md:text-base">Marketplace</Link>
+<a href="#" className="mx-2 text-sm sm:text-md md:text-base">Become a Vendor</a>
+
 
       </div>
     </nav>

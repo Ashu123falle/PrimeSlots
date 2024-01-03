@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import { withRouter } from 'next/router';
+import Link from 'next/link';
 
 import Footer from '@/Components/Footer'
 import BlogCard from '@/Components/blogCard'
@@ -43,7 +44,8 @@ class SearchResultPage extends Component {
             <Navbar/>
             <div>
                     <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
-                        <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
+                    <Link href="/">
+                        <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span>  </Link>
                     <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
                     <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >Billboards</span>
                     </div>
@@ -64,7 +66,7 @@ class SearchResultPage extends Component {
 
             <hr className='border border-gray-300 my-4 w-[99vw]'/>
 
-            <div className="pt-2 pl-8">
+            <div className="mt-8 pl-8">
                 <h1 className='text-2xl md:text-3xl font-bold mb-5 mx-3'>People also looked for</h1>
             
                 <PeopleAlsoLookFor/>
@@ -72,6 +74,7 @@ class SearchResultPage extends Component {
             </div>/
 
             <ServiceSection/>
+            <Footer/>
        
         </div>
     )

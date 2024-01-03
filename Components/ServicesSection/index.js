@@ -24,7 +24,7 @@ const serviceItems = [
 
 const ServiceSection = () => {
     return(
-        <ul className="flex flex-row justify-center items-center w-100 flex-wrap">
+        <ul className="flex flex-row justify-center items-center w-100 flex-wrap my-6">
            {
             serviceItems.map((each) => (
                 <ServiceSectionCard key={each.id} itemDetails={each}/>
