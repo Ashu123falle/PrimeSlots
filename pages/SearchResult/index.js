@@ -2,12 +2,12 @@ import {Component} from 'react'
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 
-import Footer from '@/Components/Footer'
-import BlogCard from '@/Components/blogCard'
+import Footer from '@/Components/Footer/Footer'
+import BlogCard from '@/Components/blogCard/blogCard'
 import Searchapi from '../api/SearchPageapi'
-import Navbar from '@/Components/Navbar'
-import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
-import ServiceSection from '@/Components/ServicesSection'
+import Navbar from '@/Components/Navbar/Navbar'
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import ServiceSection from '@/Components/ServicesSection/ServicesSection'
 
 class SearchResultPage extends Component {
     state ={

@@ -22,6 +22,7 @@ export default function BlogCard(props) {
                 flex-col justify-start items-start inline-flex m-3 group transition-transform duration-300 transform-gpu hover:scale-105
                 "> 
                 <img src={image}
+                alt=""
                     className="h-[180px] w-[100%] rounded-t-xl"
                 />
                 <span className="self-end mt-[-20px] bg-white rounded-full w-10 h-10 flex justify-center items-center mr-4 border " onClick={() => onClickWishlistButton(id)}>
