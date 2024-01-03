@@ -3,7 +3,7 @@ import Link from 'next/link'
 import mainlogo from '@/pages/assets/mainlogo.png'
 import { useState } from "react";
 import { useRouter } from 'next/router';
-import PriceFilter from '../FilterMobileView';
+import PriceFilter from '../FilterMobileView/FilterMobileView';
 import Popup from 'reactjs-popup';
 
 

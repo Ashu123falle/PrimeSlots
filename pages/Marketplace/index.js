@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar"
-import { CategoryCard } from "@/components/CategoryCard"
-import Footer from "@/Components/Footer"
+import Navbar from "@/Components/Navbar/Navbar"
+import { CategoryCard } from "@/Components/CategoryCard/CategoryCard"
+import Footer from "@/Components/Footer/Footer"
 import React,{ useState } from "react"
 import Link from 'next/link'
-import NewListingsComponent from "../../Components/NewListingsComponent"
+import NewListingsComponent from "../../Components/NewListingsComponent/NewListingsComponent"
 import hotpicks from "../api/hotpicks"
-import BlogCard  from "@/components/blogCard"
-import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
-import ServiceSection from "@/Components/ServicesSection"
+import BlogCard  from "@/Components/blogCard/blogCard"
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import ServiceSection from "@/Components/ServicesSection/ServicesSection"
 
 
 const categoriesList = [
