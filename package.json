@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
+    "framer-motion": "^10.16.16",
+    "next": "^14.0.4",
+    "node": "^21.2.0",
+    "rc-slider": "^10.5.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.2"
+    "react-intersection-observer": "^9.5.3",
+    "react-player": "^2.14.1",
+    "react-select": "^5.8.0",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.4.0"
   }
 }
