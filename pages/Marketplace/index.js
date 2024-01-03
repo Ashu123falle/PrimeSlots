@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar"
-import { CategoryCard } from "@/components/CategoryCard"
+import Navbar from "@/CategoryCardomponents/Navbar"
+import { CategoryCard } from "@/Components/CategoryCard"
 import Footer from "@/Components/Footer"
 import React,{ useState } from "react"
 import Link from 'next/link'
 import NewListingsComponent from "../../Components/NewListingsComponent"
 import hotpicks from "../api/hotpicks"
-import BlogCard  from "@/components/blogCard"
+import BlogCard  from "@/Components/blogCard"
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
 import ServiceSection from "@/Components/ServicesSection"
 
