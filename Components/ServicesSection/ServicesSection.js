@@ -1,7 +1,7 @@
 import ServiceSectionCard from "../ServicesSectionCard/ServicesSectionCard"
-import icondelivery from "@/pages/assets/icondelivery.png"
-import IconCustomerservice from "@/pages/assets/IconCustomerservice.png"
-import shieldtick from "@/pages/assets/shieldtick.png"
+import icondelivery from "@/public/assets/icondelivery.png"
+import IconCustomerservice from "@/public/assets/IconCustomerservice.png"
+import shieldtick from "@/public/assets/shieldtick.png"
 
 
 const serviceItems = [

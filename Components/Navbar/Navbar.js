@@ -1,6 +1,4 @@
-import Image from 'next/image' ;
 import Link from 'next/link'
-import mainlogo from '@/pages/assets/mainlogo.png'
 import { useState } from "react";
 import { useRouter } from 'next/router';
 import PriceFilter from '../FilterMobileView/FilterMobileView';
@@ -31,7 +29,7 @@ function Navbar() {
         <>
         <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 w-full">
           <Link href="/">
-            <Image src={mainlogo} className="w-[136.7px] h-8 relative mx-1" />
+            <Image src='/assets/mainlogo.png' width={136.7} height={32} className="w-[136.7px] h-8 relative mx-1" />
             </Link>
 
             <div className="mx-9">
@@ -125,7 +123,7 @@ function Navbar() {
 
         <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8 lg:hidden">
       <a href="/">
-      <Image src={mainlogo} className="w-[136.7px] h-8 ml-5 relative"></Image>
+      <Image src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
       </a>
       <nav>
         <section className="MOBILE-MENU px-5 text-left flex lg:hidden">

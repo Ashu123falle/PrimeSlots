@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import arrow from '@/pages/assets/Vector 6.svg'
 
 const Testimonials = () => {
     return (
@@ -22,7 +21,7 @@ const Testimonials = () => {
                                 <p className='text-[11px] leading-3 text-[#FFFFFF] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p>
                                 <div className='flex space-x-3'>
                                     <p className='text-[13px] text-[#FFFFFF] font-medium'>See full review</p>
-                                    <Image src={arrow} width={15} />
+                                    <Image src='/assets/Vector6.svg' width={15} height={15} />
                                 </div>
                             </div>
                         </div>
@@ -34,7 +33,7 @@ const Testimonials = () => {
                                 <p className='text-[11px] leading-3 text-[#FFFFFF] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p>
                                 <div className='flex space-x-3'>
                                     <p className='text-[13px] text-[#FFFFFF] font-medium'>See full review</p>
-                                    <Image src={arrow} width={15} />
+                                    <Image src='/assets/Vector6.svg' width={15} height={15}/>
                                 </div>
                             </div>
 
@@ -51,7 +50,7 @@ const Testimonials = () => {
                             <p className='text-[11px] leading-3 text-[#FFFFFF] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p>
                             <div className='flex space-x-3'>
                                 <p className='text-[13px] text-[#FFFFFF] font-medium'>See full review</p>
-                                <Image src={arrow} width={15} />
+                                <Image src='/assets/Vector6.svg' width={15} height={15}/>
                             </div>
                         </div>
                     </div>

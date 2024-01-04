@@ -177,12 +177,8 @@ export default function Home() {
           <ul className="ml-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
               {hotPicksData.map(each => (
                 <BlogCard key={each.id} data = {each} onClickWishlistButton= {onClickWishlistButton} />
-                ))}
-
-                
+                ))} 
           </ul>
-
-          
 
           <Link href=""><h1 className="text-[#181263] text-center self-end font-['Figtree-SemiBold',_sans-serif] text-xl leading-[22px] mt-7 font-semibold relative flex self-end justify-center text-[#D292FF]">View All Products 
           <svg
