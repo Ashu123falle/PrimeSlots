@@ -1,7 +1,7 @@
 
 import {Component} from 'react'
 import OtherSearchapi from '@/pages/api/OtherSearchapi'
-import BlogCard from '../blogCard'
+import BlogCard from '../blogCard/blogCard'
 
 
 class PeopleAlsoLookFor extends Component {
