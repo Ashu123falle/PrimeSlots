@@ -10,7 +10,7 @@ const PerksHeader = () => {
   <div className=''>
     <nav className="navbar flex justify-between items-center">
       <Link href="/" className="logo">
-        <img src='/assets/nobglogo.png' alt="Logo" className="" />
+        <img src='/assets/nobglogo.png' alt="Logo"/>
       </Link>
       <div className="nav-text flex p-3 text-white">
       <Link href="/Marketplace" className="mx-2 text-sm sm:text-md md:text-base">Marketplace</Link>

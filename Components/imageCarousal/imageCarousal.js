@@ -1,9 +1,5 @@
 import { useState, useEffect } from 'react';
 import Popup from 'reactjs-popup';
-import Image from 'next/image';
-
-import fullScreenIcon from '@/pages/assets/ant-design_fullscreen-outlined.svg'
-import halfScreenIcon from '@/pages/assets/halfscreen-svgrepo-com.svg' 
 
 const Carousel = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -42,7 +38,7 @@ const Carousel = ({ images }) => {
               trigger={
                 <span className="absolute left-[87%] right-0 sm:left-[92%] md:left-[94%] lg:left-[95%] xl:left-[96%] cursor-pointer  w-[37px] h-[37px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center ">
-                 <Image src={fullScreenIcon}/>
+                 <img src='/assets/ant-design_fullscreen-outlined.svg' alt="full screen"/>
                </span>
               }
               modal
@@ -54,7 +50,7 @@ const Carousel = ({ images }) => {
                     
                     <span className="absolute left-[87%] right-0 p-2 sm:left-[92%] md:left-[94%] lg:left-[95%] xl:left-[96%] cursor-pointer  w-[37px] h-[37px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center" onClick={() => close()}>
-                 <Image src={halfScreenIcon} />
+                 <img src='/assets/halfscreen-svgrepo-com.svg' alt="half screen" />
                </span>
                   </div>
                 )}

@@ -1,5 +1,4 @@
 import FilterComponent from "@/Components/FilterComponent/FilterComponent"
-import Image from 'next/image' ;
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { useAnimation, motion } from "framer-motion";
@@ -83,9 +82,10 @@ const Banner = () => {
                 </Link>  
             <div className="links flex justify-between">
                 <Link href="/Marketplace" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Marketplace</Link>
-                <Link href="#" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Become a partner</Link>
+                <Link href="/Partner" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Become a partner</Link>
             </div>
             </div>
+            
             <div className="relative">
             <motion.div
                

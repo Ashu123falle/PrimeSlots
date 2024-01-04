@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from 'next/router';
 import PriceFilter from '../FilterMobileView/FilterMobileView';
 import Popup from 'reactjs-popup';
+import Image from 'next/image';
 
 
 

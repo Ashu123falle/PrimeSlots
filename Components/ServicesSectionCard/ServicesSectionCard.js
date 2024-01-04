@@ -9,7 +9,7 @@ const ServiceSectionCard = (props) => {
         <li className="m-10 flex flex-col justify-center items-center">
             <div className="w-20 h-20 bg-zinc-300 rounded-full flex flex-row justify-center items-center">
                 <div className="w-[58px] h-[58px] bg-black rounded-full flex justify-center items-center">
-                    <Image src={image}></Image>
+                    <Image src={image} width={40} height={40}/>
                 </div>
             </div>
 
