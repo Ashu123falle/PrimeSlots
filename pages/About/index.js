@@ -1,10 +1,10 @@
-import Navbar from "@/Components/Navbar"
+import Navbar from "@/Components/Navbar/Navbar"
 import { useRouter } from "next/router";
 import Link from "next/link";
 import OurStory from "@/pages/About/OurStory";
 import TrustedBy from "@/pages/About/TrustedBy";
-import Footer from "@/Components/Footer";
-import StayLoop from "@/Components/StayLoop";
+import Footer from "@/Components/Footer/Footer";
+import StayLoop from "@/Components/StayLoop/StayLoop";
 
 const About = () => {
 

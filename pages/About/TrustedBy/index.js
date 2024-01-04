@@ -13,8 +13,8 @@ import zoom from '@/pages/assets/zoom.svg'
 const TrustedBy  = () => {
   return (
     <div className="p-8 my-3 mb-6">
-      <div className="flex flex-col items-stretch px-5">
-      <h1 className="self-center text-4xl text-blue-950 whitespace-nowrap font-[Playfair]">
+      <div className="flex flex-col text-center px-5">
+      <h1 className=" text-[40px] text-blue-950 self-center w-[90%] font-[Playfair]">
       Trusted by 1500+ companies since 2002
       </h1>
       <p className="text-neutral-500 text-center text-lg self-center max-w-[613px] mt-6 max-md:max-w-full">
@@ -22,6 +22,7 @@ const TrustedBy  = () => {
         are just some of them.
       </p>
       </div>
+
       <div className="flex flex-wrap items-center justify-evenly">
         <span className="  self-end mt-[1px]   flex justify-center items-center  ml-4">
                 <Image src={spotify} width={180} height={50} className="items-stretch pb-6 mb-4 " />
