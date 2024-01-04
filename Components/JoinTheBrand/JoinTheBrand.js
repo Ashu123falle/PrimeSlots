@@ -13,6 +13,7 @@ const JoinTheBrand  = () => {
         are just some of them.
       </p>
     </div>
+
     <div className="flex flex-wrap items-center justify-evenly">
     <span className="  self-end mt-[1px]   flex justify-center items-center  ml-4">
             <Image src='/assets/spotify.svg' width={180} height={50} className="items-stretch pb-6 mb-4 " />
@@ -42,6 +43,7 @@ const JoinTheBrand  = () => {
             <Image src='/assets/grab.png' width={120} height={50} className="object-cover object-center pb-10 mb-4 " />
                 </span>
     </div>
+    
     </div>
   );
 };
