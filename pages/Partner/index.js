@@ -14,7 +14,7 @@ const Partner=()=>{
                 <EasyStepsSection />
                 <ReadyToConnect /> {/* and stay in he loop component*/ }
                  <Footer/>
-                 <Testimonials/>
+    
             </div>
     )
 }
