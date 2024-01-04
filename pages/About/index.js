@@ -15,7 +15,7 @@ const About = () => {
     const [,pageName] = pathname.split("/")
 
     return (
-        <>
+        <div className="overflow-x-hidden">
             <Navbar />
             <div>
                 <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
@@ -37,7 +37,7 @@ const About = () => {
           </div>
           
           <Footer/>
-        </>
+        </div>
     )
 }
 
