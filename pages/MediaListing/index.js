@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import FilterComponent from '../../Components/FilterComponent/FilterComponent';
-import Navbar from '@/Components/Navbar';
-import Footer from '@/Components/Footer';
-import ServiceSection from "@/Components/ServicesSection";
-import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor';
-import { CategoryCard } from '@/Components/CategoryCard';
+import Navbar from '@/Components/Navbar/Navbar';
+import Footer from '@/Components/Footer/Footer';
+import ServiceSection from "@/Components/ServicesSection/ServicesSection";
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor';
+import { CategoryCard } from '@/Components/CategoryCard/CategoryCard';
 import Searchapi from '../api/SearchPageapi';
-import BlogCard from '@/Components/blogCard';
+import BlogCard from '@/Components/blogCard/blogCard';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 //import PriceFilter from '@/Components/FilterMobileView';

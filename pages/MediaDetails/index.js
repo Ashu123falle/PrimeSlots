@@ -1,13 +1,13 @@
 
 import {useState} from 'react'
 import { useRouter } from 'next/router'
-import ExtraServices from "../../Components/ExtraServices"
-import Navbar from "@/Components/Navbar"
-import ServiceSection from "@/Components/ServicesSection"
-import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor'
-import GoogleMapComponent from '../../Components/GoogleMap'
-import DetailsComponent from '../../Components/detailsComponent'
-import Carousel from '../../Components/imageCarousal'
+import ExtraServices from "../../Components/ExtraServices/ExtraServices"
+import Navbar from "@/Components/Navbar/Navbar"
+import ServiceSection from "@/Components/ServicesSection/ServicesSection"
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import GoogleMapComponent from '../../Components/GoogleMap/GoogleMap'
+import DetailsComponent from '../../Components/detailsComponent/detailsComponent'
+import Carousel from '../../Components/imageCarousal/imageCarousal'
 import laStreetView from '@/pages/assets/la_street-view.svg'
 import parkOutline from '@/pages/assets/icon-park-outline_video.svg'
 import Image from 'next/image'
@@ -15,7 +15,7 @@ import TickImage from '@/pages/assets/icons8-tick.svg'
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
 import closeIcon from '@/pages/assets/icons8-close.svg'
-import Footer from '@/Components/Footer'
+import Footer from '@/Components/Footer/Footer'
 
 const industriesData = [
     {
