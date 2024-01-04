@@ -1,6 +1,8 @@
+
 import Navbar from "@/Components/Navbar/Navbar"
 import { CategoryCard } from "@/Components/CategoryCard/CategoryCard"
 import Footer from "@/Components/Footer/Footer"
+
 import React,{ useState } from "react"
 import Link from 'next/link'
 import NewListingsComponent from "../../Components/NewListingsComponent/NewListingsComponent"
@@ -84,6 +86,7 @@ const hotpicks = [
   },
 
 ]
+
 
 const categoriesList = [
   {
