@@ -1,4 +1,4 @@
-import Navbar from "@/CategoryCardomponents/Navbar"
+import Navbar from "@/Components/Navbar"
 import { CategoryCard } from "@/Components/CategoryCard"
 import Footer from "@/Components/Footer"
 import React,{ useState } from "react"
