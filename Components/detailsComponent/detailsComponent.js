@@ -1,9 +1,4 @@
 import React from 'react'
-import Image from "next/image"
-import staricon from '@/pages/assets/Vector.svg'
-import blankicon from '@/pages/assets/Vector1.svg'
-import wishlist from '@/pages/assets/Wishlist2.svg'
-import info from '@/pages/assets/ph_info.svg'
 import Popup from 'reactjs-popup'
 import {useContext} from 'react'
 import AuthContext from '@/Context/authContext'
@@ -23,11 +18,11 @@ const DetailsComponent = () => {
                 {/* one */}
                 <div className='iconheading flex space-x-4'>
                     <span className="icon flex space-x-1 mr-6 md:mr-0">
-                        <Image src={staricon} />
-                        <Image src={staricon} />
-                        <Image src={staricon} />
-                        <Image src={staricon} />
-                        <Image src={blankicon} />
+                        <img src='/assets/Vector.svg' alt="star icon"/>
+                        <img src='/assets/Vector.svg' alt="star icon"/>
+                        <img src='/assets/Vector.svg' alt="star icon"/>
+                        <img src='/assets/Vector.svg' alt="star icon"/>
+                        <img src='/assets/Vector1.svg'alt="blank star icon" />
                     </span>
                     <div className='flex space-x-5'>
                         <p className='bg-gray-100 text-orange-600 rounded-xl p-2 '>Physical Boarding</p>
@@ -57,7 +52,7 @@ const DetailsComponent = () => {
                             <p className='font-semibold'>Walk Score</p>
                             <p className='text-gray-800'>Walk Score is more than average</p>
                         </div>
-                        <Image src={info} />
+                        <img src='/assets/ph_info.svg' alt='info icon' />
                     </div>
 
                     <hr />
@@ -88,7 +83,7 @@ const DetailsComponent = () => {
                    )}
                     </Popup>
                     <span className='flex justify-center items-center rounded-md border border-gray-400 px-4'>
-                        <Image src={wishlist} className='' />
+                        <img src='/assets/Wishlist2.svg' alt="wishlist icon"  />
                     </span>
                 </div>
             </div>
