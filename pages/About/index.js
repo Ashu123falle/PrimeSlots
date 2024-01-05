@@ -3,12 +3,12 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import WhoWeAre from "@/Components/WhoWeAre";
 
-import OurStory from "@/pages/About/OurStory";
-import TrustedBy from "@/pages/About/TrustedBy";
+import OurStory from "@/Components/OurStory/OurStory";
+import TrustedBy from "@/Components/TrustedBy/TrustedBy";
 import Footer from "@/Components/Footer/Footer";
 import StayLoop from "@/Components/StayLoop/StayLoop";
-import OurFundamental from "@/Components/OurFundamental";
-import OurTeams from "@/Components/OurTeams";
+import OurFundamental from "@/Components/OurFundamental/OurFundamentals";
+import OurTeams from "@/Components/OurTeams/OurTeam";
 
 const About = () => {
 
@@ -32,10 +32,21 @@ const About = () => {
 
             <WhoWeAre />
           
+          <div className="my-12 sm:p-4">
           <OurStory />
+          </div>
+
+          <div className="sm:py-4">
           <TrustedBy />
+          </div>
+
+          <div className="mb-10 sm:mb-14">
           <OurFundamental/>
+          </div>
+          <div className="my-8 sm:my-10">
           <OurTeams/>
+          </div>
+          
           <div className="mb-20">
             <StayLoop/>
           </div>

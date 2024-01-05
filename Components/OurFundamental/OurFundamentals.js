@@ -7,7 +7,7 @@ const OurFundamental = () => {
     return (
         <>
             <div className="main p-5 sm:p-10 space-y-10 xl:px-28 sm:space-y-16 md:space-y-20">
-                <div className='text-center space-y-4 md:px-20'>
+                <div className='text-center space-y-4 md:px-20 mb-[-25px]'>
                     <h1 className='text-[40px] text-[#242565] font-[Playfair]'>Our Fundamental principles</h1>
                     <p className='text-lg text-pretty leading-4 text-[#6A6A6A] text-[Figtree]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
