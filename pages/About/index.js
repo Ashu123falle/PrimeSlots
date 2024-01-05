@@ -7,6 +7,8 @@ import OurStory from "@/pages/About/OurStory";
 import TrustedBy from "@/pages/About/TrustedBy";
 import Footer from "@/Components/Footer/Footer";
 import StayLoop from "@/Components/StayLoop/StayLoop";
+import OurFundamental from "@/Components/OurFundamental";
+import OurTeams from "@/Components/OurTeams";
 
 const About = () => {
 
@@ -32,6 +34,8 @@ const About = () => {
           
           <OurStory />
           <TrustedBy />
+          <OurFundamental/>
+          <OurTeams/>
           <div className="mb-20">
             <StayLoop/>
           </div>

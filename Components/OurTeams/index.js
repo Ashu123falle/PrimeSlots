@@ -1,8 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import oneimage from '@/pages/assets/Rectangle26.png'
-import secondimage from '@/pages/assets/Rectangle28.png'
-import thirdimage from '@/pages/assets/Rectangle31 1.png'
 
 const OurTeams = () => {
     return (
@@ -17,7 +14,7 @@ const OurTeams = () => {
 
                     <div className="images flex flex-wrap sm:flex-wrap md:flex-nowrap justify-center sm:gap-6 gap-8">
                         <div className='space-y-5'>
-                            <Image src={thirdimage} width={350} />
+                            <Image src='/assets/Rectangle31 1.png' width={350}  height={350}/>
                             <div className='text-center'>
                                 <h3 className='text-xl font-semibold text-[#131C5F]  font-[Figtree]'>Roy Thomas</h3>
                                 <p className='text-sm text-[#131C5F]  font-[Figtree]'>Founder & CEO</p>
@@ -25,7 +22,7 @@ const OurTeams = () => {
                         </div>
 
                         <div className='space-y-5'>
-                            <Image src={oneimage} width={350} />
+                            <Image src='/assets/Rectangle26.png' width={350} height={350}/>
                             <div className='text-center'>
                                 <h3 className='text-xl font-semibold text-[#131C5F]  font-[Figtree]'>Roy Thomas</h3>
                                 <p className='text-sm text-[#131C5F]  font-[Figtree]'>Founder & CEO</p>
@@ -33,7 +30,7 @@ const OurTeams = () => {
                         </div>
 
                         <div className='space-y-5'>
-                            <Image src={secondimage} width={350} />
+                            <Image src='/assets/Rectangle28.png' width={350} height={350}/>
                             <div className='text-center'>
                                 <h3 className='text-xl font-semibold text-[#131C5F] font-[Figtree]'>Roy Thomas</h3>
                                 <p className='text-sm text-[#131C5F] font-[Figtree]'>Founder & CEO</p>
