@@ -106,7 +106,7 @@ const MediaOptionsButtons = [
                             <button type="button" className={`text-blue-950 text-sm  font-normal font-['Figtree'] 
                                 leading-none  ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white mr-[-22px] ':''} `}>{obj.industryName}
                             </button>
-                            {activeIndustryId.includes(obj.id) && <img src='/assets/icons8-tick.svg' alt="tick logo" className="text-xs"/>}
+                            {activeIndustryId.includes(obj.id) && <Image src='/assets/icons8-tick.svg' alt="tick logo" width={10} height={10} className="text-xs"/>}
                             
                         </li>
                         )}
@@ -164,11 +164,11 @@ const MediaOptionsButtons = [
             <h1 className=" text-black text-base font-medium font-['Figtree'] leading-tight">Title of media will come here...</h1>
             <div className="flex">
                 <button className="border-none outine-none" type="button">
-                <img src="/assets/la_street-view.svg" alt="street view icon" className="mr-2"/>
+                <Image src="/assets/la_street-view.svg" alt="street view icon" height={20} width={20} className="mr-2"/>
                 </button>
 
                 <Popup trigger ={ <button>
-                <img src='/assets/icon-park-outline_video.svg' alt="park view icon" className="ml-1"/>
+                <Image src='/assets/icon-park-outline_video.svg' height={20} width={20} alt="park view icon" className="ml-1"/>
                 </button>}
                 modal
                 >
@@ -176,7 +176,7 @@ const MediaOptionsButtons = [
                 <div className='w-[80vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
                     <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center p-1 self-end">
-                 <img src='/assets/icons8-close.svg' onClick={() => close()} alt="close"/>
+                 <Image height={20} width={20} src='/assets/icons8-close.svg' onClick={() => close()} alt="close"/>
                </span>
                     <ReactPlayer url="https://www.youtube.com/watch?v=LCU4EMQf7IU&t=150s" controls width={'100%'} height={'90%'} className="rounded-xl"/> 
                 </div>

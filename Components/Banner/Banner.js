@@ -5,6 +5,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import RevealAnimation from "@/Components/RevealAnimation/RevealAnimation";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const squareVariants = {
     visible: { opacity: 1, scale: 4, transition: { duration: 1 } },
@@ -60,7 +61,7 @@ const Banner = () => {
         if(isInView){
             mainControls.start("visible");
         }
-    }, [isInView] )
+    })
 
     const onClickExplore = () => {
         router.push("/Marketplace")
@@ -76,9 +77,9 @@ const Banner = () => {
             <Link href="/"
                 className={"bg-[#ffffff] w-[149px] h-[37px] relative "}
                 >
-                    <img
-                    className="w-[136.7px] h-8 relative"
-                    src='/assets/mainlogo.png' alt="main logo"/>
+                    <Image 
+                    className="w-[136.7px] h-8 relative"  height={32} width={136.7}
+                    src='/assets/mainlogo.png' alt="main logo" />
                 </Link>  
             <div className="links flex justify-between">
                 <Link href="/Marketplace" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Marketplace</Link>
