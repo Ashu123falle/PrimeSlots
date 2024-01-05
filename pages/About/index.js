@@ -1,7 +1,7 @@
 import Navbar from "@/Components/Navbar/Navbar"
 import { useRouter } from "next/router";
 import Link from "next/link";
-import WhoWeAre from "@/Components/WhoWeAre";
+import WhoWeAre from "@/Components/WhoWeAre/WhoWeAre";
 
 import OurStory from "@/Components/OurStory/OurStory";
 import TrustedBy from "@/Components/TrustedBy/TrustedBy";
