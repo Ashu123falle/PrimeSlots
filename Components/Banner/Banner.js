@@ -1,11 +1,9 @@
 import FilterComponent from "@/Components/FilterComponent/FilterComponent"
-import mainlogo from '@/pages/assets/mainlogo.png'
-import Image from 'next/image' ;
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Reveal from "@/Components/RevealAnimation/Reveal";
+import RevealAnimation from "@/Components/RevealAnimation/RevealAnimation";
 import { useRouter } from "next/router";
 
 const squareVariants = {
@@ -78,17 +76,16 @@ const Banner = () => {
             <Link href="/"
                 className={"bg-[#ffffff] w-[149px] h-[37px] relative "}
                 >
-                    <Image
-                    className={"w-[136.7px] h-8 relative "}
-                    src={mainlogo}
-                    />
-
+                    <img
+                    className="w-[136.7px] h-8 relative"
+                    src='/assets/mainlogo.png' alt="main logo"/>
                 </Link>  
             <div className="links flex justify-between">
                 <Link href="/Marketplace" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Marketplace</Link>
-                <Link href="#" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Become a partner</Link>
+                <Link href="/Partner" className="mx-3 text-[#d9d9d9] text-center font-['Figtree-Medium',_sans-serif] text-base leading-[101%] font-medium relative w-[129px]">Become a partner</Link>
             </div>
             </div>
+            
             <div className="relative">
             <motion.div
                

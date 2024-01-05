@@ -1,20 +1,20 @@
 
 import Image from "next/image";
 
-const JoinTheBrand  = () => {
+const TrustedBy  = () => {
   return (
     <div className="p-8 my-3 mb-6">
-      <div className="flex flex-col items-stretch px-5">
-      <h1 className="self-center text-4xl text-blue-950 whitespace-nowrap font-[Playfair]">
-        Join these brands
+      <div className="flex flex-col text-center px-5">
+      <h1 className=" text-[40px] text-blue-950 self-center w-[90%] font-[Playfair]">
+      Trusted by 1500+ companies since 2002
       </h1>
       <p className="text-neutral-500 text-center text-lg self-center max-w-[613px] mt-6 max-md:max-w-full">
         We've had the pleasure of working with industry-defining brands. These
         are just some of them.
       </p>
-    </div>
+      </div>
 
-    <div className="flex flex-wrap items-center justify-evenly">
+      <div className="flex flex-wrap items-center justify-evenly">
     <span className="  self-end mt-[1px]   flex justify-center items-center  ml-4">
             <Image src='/assets/spotify.svg' width={180} height={50} className="items-stretch pb-6 mb-4 " />
                 </span>
@@ -43,9 +43,9 @@ const JoinTheBrand  = () => {
             <Image src='/assets/grab.png' width={120} height={50} className="object-cover object-center pb-10 mb-4 " />
                 </span>
     </div>
-    
+
     </div>
   );
 };
 
-export default JoinTheBrand ;
+export default TrustedBy ;

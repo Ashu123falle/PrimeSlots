@@ -1,24 +1,20 @@
 import ServiceSectionCard from "../ServicesSectionCard/ServicesSectionCard"
-import icondelivery from "@/pages/assets/icondelivery.png"
-import IconCustomerservice from "@/pages/assets/IconCustomerservice.png"
-import shieldtick from "@/pages/assets/shieldtick.png"
-
 
 const serviceItems = [
     {
         id : 1,
         text : "FAST DELIVERY",
-        image : icondelivery,
+        image : '/assets/icondelivery.png',
     },
     {
         id : 2,
         text : "24/7 CUSTOMER SERVICE",
-        image:IconCustomerservice,
+        image:'/assets/IconCustomerservice.png',
     },
     {
         id : 3,
         text : "MONEY BACK GUARANTEE",
-        image:shieldtick,
+        image: '/assets/shieldtick.png',
     }
 ]
 

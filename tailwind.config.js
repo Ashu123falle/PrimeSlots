@@ -16,6 +16,7 @@ module.exports = {
         'figtree': ['Figtree', 'sans-serif'],
         'Figtree': ['Figtree', 'sans-serif'],
         'Playfair': ['Playfair Display', 'serif'],
+        'Nexa-Regular':['Nexa','sans-serif'],
       },
       screens: {
         'xs': '180px', // min-width
