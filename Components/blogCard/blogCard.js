@@ -22,7 +22,7 @@ export default function BlogCard(props) {
             <li className="list-none rounded-xl w-[300px] h-[380px] shrink-0  sm:w-[270px] md:w-[290px] bg-white shadow border border-slate-300 
                 flex-col justify-start items-start inline-flex m-3 group transition-transform duration-300 transform-gpu hover:scale-105
                 "> 
-                <Image src={image} height={180} width='auto'
+                <Image src={image} height={180} width={180}
                 alt=""
                     className="h-[180px] w-[100%] rounded-t-xl"
                 />

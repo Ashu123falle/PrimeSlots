@@ -3,7 +3,7 @@ import Navbar from "@/Components/Navbar/Navbar"
 import { CategoryCard } from "@/Components/CategoryCard/CategoryCard"
 import Footer from "@/Components/Footer/Footer"
 
-import React,{ useState } from "react"
+import React,{ useEffect, useState } from "react"
 import Link from 'next/link'
 import NewListingsComponent from "../../Components/NewListingsComponent/NewListingsComponent"
 import BlogCard  from "@/Components/blogCard/blogCard"
@@ -87,7 +87,6 @@ const hotpicks = [
 
 ]
 
-
 const categoriesList = [
   {
     id: 0,
@@ -153,7 +152,11 @@ const categoriesList = [
 
 export default function Home() {
 
-  const [hotPicksData, setHotPicksData] = useState(hotpicks)
+  const [hotPicksData, setHotPicksData] = useState([])
+
+  useEffect(() => {
+    setHotPicksData(hotpicks)
+  },[])
 
   const onClickWishlistButton = id => {
     const updatedSearchData = hotPicksData.map(obj => {
