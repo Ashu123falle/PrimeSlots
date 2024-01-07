@@ -26,7 +26,7 @@ const StayLoop = () => {
             aria-label="Email Address"
           />
           <button
-            className="h-12 w-48 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white "
+            className="h-12 w-48 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
             type="button"
           >
             {isSmallScreen ? (
