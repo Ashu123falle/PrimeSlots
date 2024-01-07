@@ -20,7 +20,7 @@ const StayLoop = () => {
 
         <div className="w-full h-[60px] flex items-center bg-white rounded-[45px] px-4 pl-2 pr-1.5 max-md:h-auto max-sm:rounded-[20px] max-sm:flex-col">
           <input
-            className="w-full rounded-[50px] text-gray-700 mr-3 py-1 pl-2 leading-tight max-sm:mt-4"
+            className="w-full rounded-[50px] text-gray-700 mr-3 py-1 pl-2 leading-tight max-sm:mt-4 outline-none"
             type="text"
             placeholder="Enter your email address.."
             aria-label="Email Address"
