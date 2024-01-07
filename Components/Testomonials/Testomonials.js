@@ -14,14 +14,14 @@ const Testimonials = () => {
                     <div className='space-y-3 sm:space-y-5'>
                         {/* one div */}
                         <div className='flex lg:h-[195px]'>
-                            <img className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
+                            <Image className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" width={377} height={399} />
 
                             <div className='p-3 bg-[#241E1F] space-y-3 flex flex-col justify-center items-center'>
                                 <h1 className='text-[18px] leading-5 font-bold text-[#FFFFFF]'>“Amazing Team with Lorem Ipsum”</h1>
                                 <p className='text-[11px] leading-3 text-[#FFFFFF] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p>
                                 <div className='flex space-x-3'>
                                     <p className='text-[13px] text-[#FFFFFF] font-medium'>See full review</p>
-                                    <Image src='/assets/Vector6.svg' width={15} height={15} />
+                                    <Image src='/assets/Vector6.svg' width={15} height={15} alt="vector"/>
                                 </div>
                             </div>
                         </div>
@@ -33,24 +33,24 @@ const Testimonials = () => {
                                 <p className='text-[11px] leading-3 text-[#FFFFFF] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p>
                                 <div className='flex space-x-3'>
                                     <p className='text-[13px] text-[#FFFFFF] font-medium'>See full review</p>
-                                    <Image src='/assets/Vector6.svg' width={15} height={15}/>
+                                    <Image src='/assets/Vector6.svg' width={15} height={15} alt="vector2"/>
                                 </div>
                             </div>
 
-                            <img className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
+                            <Image className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="v" width={160}/>
                         </div>
                     </div>
 
                     {/* another div */}
                     <div className='flex md:flex-col mt-3 sm:mt-5 md:mt-0'>
-                        <img className='w-[196px] h-[140px] lg:h-[195px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
+                        <Image className='w-[196px] h-[140px] lg:h-[195px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="k" width={196} height={195}/>
 
                         <div className='p-3 bg-[rgb(36,30,31)] space-y-3 md:space-y-2 flex flex-col md:h-[195px]  md:w-[195px] lg:h-[215px] justify-center items-center'>
                             <h1 className='text-[18px] leading-5 font-bold text-[#FFFFFF]'>“Amazing Team with Lorem Ipsum”</h1>
                             <p className='text-[11px] leading-3 text-[#FFFFFF] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p>
                             <div className='flex space-x-3'>
                                 <p className='text-[13px] text-[#FFFFFF] font-medium'>See full review</p>
-                                <Image src='/assets/Vector6.svg' width={15} height={15}/>
+                                <Image src='/assets/Vector6.svg' width={15} height={15} alt="vec"/>
                             </div>
                         </div>
                     </div>

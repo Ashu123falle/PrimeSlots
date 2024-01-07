@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WhoWeAre = () => {
     return (
     <>
@@ -7,10 +9,12 @@ const WhoWeAre = () => {
         
         <div className="flex flex-col md:flex-row md:justify-around md:items-center">
         <div className="flex flex-col items-center justify-center md:mx-10 md:order-[2]">
-        <img
+        <Image
             className={
                 "rounded-[15px] w-[80vw] h-[40vh] relative my-8 md:h-[360px] md:w-[365px]" 
             }
+            width={365}
+            height={360}
             alt="look for help"
             src="https://s3-alpha-sig.figma.com/img/07cd/30a5/fbc750fab49f45fde83645f53cdbfdca?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bDJtW373vgnPMD1f4FTXwg~uRIR5tWviC28v5PbgGwpMoA4WfMooVyVlXSDYBYFGonIwrXohlvbJk20HM-a1HeKk71wnL906tf0-34cZedGXIpwBw855qpDmaRVx9wikxrV2crfy3zlQRIITkmkmgjTiS3p41vd1X~Z18Bt-NpnyBbtDk7G1Xy8UZEUpY1K7NP8ybDKO-Hk~HqRJLNztZnJQ2-CYNFpxQjU76ezoIdhRjngF1bN2o9mWKiiYPsr6vlEYZT83p8iDv5A20qFlA~t8Gje7URcrlfxpnpZagNMDjba3yeDXJytB0f8AeFdf4hpVqznyOVWs0ETElqbeqQ__"
             />
@@ -75,7 +79,7 @@ const WhoWeAre = () => {
 
      <div className="features-cont flex flex-col justify-center mt-[-2] items-center md:flex-row">
 
-        <div className="f1 flex flex-row text-left my-2  md:my-16">
+        <div className="f1 flex xs:flex-col sm:flex-row text-left my-2  md:my-16">
             <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none" className="mx-10 md:mx-5" >
             <path d="M95.9857 2.80388C94.509 2.80388 92.7862 2.80388 91.3094 2.80388C81.2185 3.29613 71.6198 5.51121 62.5133 9.94139C51.4379 15.1099 42.0853 22.4935 34.7017 32.3384C29.5331 38.9836 25.8413 46.3673 23.134 54.2431C22.8879 54.7354 23.134 54.9815 23.3801 55.2276C25.5952 57.4427 27.8103 59.6578 30.0254 61.8729C30.2715 62.119 30.5176 62.6112 30.5176 63.1035C30.5176 63.5957 30.2715 64.088 29.7793 64.3341C29.287 64.5802 28.5486 64.5802 28.3025 64.088C27.0719 62.8574 26.0874 61.8729 24.8568 60.6423C23.3801 59.1656 22.1495 57.6888 20.6728 56.4582C20.1805 55.966 19.9344 55.2276 20.1805 54.4893C23.3801 44.8905 28.0564 36.0302 34.7017 28.1543C41.3469 20.0323 49.4689 13.6332 58.5754 8.9569C66.9435 4.52673 76.05 1.8194 85.4026 0.588796C89.3405 0.0965543 93.2784 -0.149566 97.2164 0.0965544C98.447 0.0965544 98.6931 0.588796 98.9392 1.8194C99.4314 17.8173 95.4935 32.5845 86.8793 46.3673C78.265 59.9039 66.4513 69.9949 51.684 76.394C49.4689 77.3785 47.0077 78.1169 44.5465 79.1013C43.8081 79.3475 43.3159 79.3475 42.8237 78.6091C40.3624 76.1479 37.6551 73.4406 35.1939 70.9794C34.7017 70.4871 34.4555 69.7487 34.9478 69.0104C35.44 68.272 36.4245 68.272 37.1629 69.0104C39.378 71.2255 41.5931 73.4406 43.8081 75.6557C44.3004 76.1479 44.5465 76.1479 45.0387 75.9018C55.8681 72.21 65.4668 66.3031 73.5888 58.4272C83.1875 49.0746 89.5866 37.9992 93.2784 25.447C95.2474 18.5556 96.2319 11.4181 96.2319 4.03449C96.2319 3.54225 95.9857 3.29613 95.9857 2.80388Z" fill="#D292FF"/>
@@ -88,7 +92,7 @@ const WhoWeAre = () => {
             <path d="M26.8259 85.9932C26.8259 86.2393 26.5798 86.4854 26.3337 86.9777C22.888 90.4234 19.6884 93.623 16.2427 97.0686C15.5044 97.807 14.766 97.807 14.0276 97.0686C13.5354 96.5764 13.5354 95.5919 14.2738 95.0997C17.7194 91.654 20.919 88.4544 24.3647 85.0087C24.8569 84.5165 25.3492 84.2704 26.0876 84.5165C26.5798 84.7626 26.8259 85.0087 26.8259 85.9932Z" fill="#D292FF"/>
             </svg>
             </div>
-            <div className="feature-des flex flex-col ">
+            <div className="feature-des flex flex-col my-5">
                 <div
                     class="text-[rgba(255,255,255,0.90)] text-left font-['Figtree-Regular',_sans-serif] text-[27px] font-normal relative"
                     >
@@ -108,7 +112,7 @@ const WhoWeAre = () => {
 
         </div>
 
-         <div className="f2 flex flex-row my-5 md:my-16">
+         <div className="f2 flex xs:flex-col sm:flex-row my-5 md:my-16">
             <div className="">
             <svg xmlns="http://www.w3.org/2000/svg" width="82" height="99" viewBox="0 0 82 99" fill="none" className="mx-10 md:mx-5">
             <path d="M33.2385 68.1869C32.254 68.4331 31.5157 68.6792 30.7773 69.1714C29.7928 67.6947 29.0545 65.9719 28.07 64.7413C26.3472 62.28 24.3782 60.065 22.6553 57.6037C19.948 53.9119 17.7329 50.2201 16.7485 45.5438C14.5334 33.9761 20.9325 22.6546 32.0079 18.2244C46.529 12.3175 63.2653 22.1623 65.4803 37.668C66.4648 44.8055 64.2497 50.7124 60.3118 56.3731C58.589 58.8344 56.3739 61.2956 54.6511 64.0029C53.4204 65.7257 52.6821 67.4486 51.4515 69.1714C50.9593 69.9098 50.467 70.6482 49.7286 70.8943C44.0679 73.1094 38.4071 75.0783 32.7463 77.0473C32.0079 77.2934 31.5157 77.0473 31.2696 76.555C31.0235 75.8167 31.0235 75.0783 31.7618 74.8322C32.2541 74.5861 32.7463 74.34 33.2385 74.34C38.1609 72.6171 43.0833 70.8943 48.0058 68.9253C48.498 68.6792 48.9902 68.1869 49.2364 67.6947C51.2053 64.0029 53.6666 61.0494 56.1278 57.6037C58.589 54.4042 60.8041 51.4507 61.7885 47.5128C64.2497 39.6369 62.5269 32.7455 57.1123 26.8386C50.9592 19.9473 43.0834 17.7322 34.2231 20.4395C25.3627 23.1468 20.4402 29.2998 18.7174 38.4063C17.4868 44.8055 19.7019 50.2201 23.3937 55.1425C25.6088 58.096 27.8239 61.0494 30.039 64.0029C31.5157 64.9874 32.254 66.4641 33.2385 68.1869Z" fill="#D292FF"/>
@@ -124,7 +128,7 @@ const WhoWeAre = () => {
             <path d="M13.0558 70.1566C12.8096 69.9104 12.3174 69.6643 12.0713 69.1721C11.8252 68.926 12.0713 68.1876 12.0713 67.9415C13.548 66.4647 15.0247 64.7419 16.7476 63.2652C17.2398 62.7729 17.9781 62.7729 18.4704 63.2652C18.9626 63.7574 18.9626 64.4958 18.4704 64.988C16.9937 66.4647 15.517 67.9415 14.0402 69.4182C13.7941 69.9104 13.548 70.1566 13.0558 70.1566Z" fill="#D292FF"/>
             </svg>
             </div>
-            <div className="feature-des flex flex-col">
+            <div className="feature-des flex flex-col my-5">
                 <div
                     class="text-[rgba(255,255,255,0.90)] text-left font-['Figtree-Regular',_sans-serif] text-[27px] font-normal relative"
                     >
@@ -163,10 +167,12 @@ const WhoWeAre = () => {
         
         <div className="flex flex-col md:flex-row md:justify-around md:items-center">
         <div className="flex flex-col items-center justify-center md:mx-10 md:order-[2]">
-        <img
+        <Image
             className={
                 "rounded-[15px] w-[80vw] h-[35vh] relative my-8 md:h-[320px] md:w-[425px]" 
             }
+            height={320}
+            width={425}
             alt="look for help"
             src="https://s3-alpha-sig.figma.com/img/07cd/30a5/fbc750fab49f45fde83645f53cdbfdca?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bDJtW373vgnPMD1f4FTXwg~uRIR5tWviC28v5PbgGwpMoA4WfMooVyVlXSDYBYFGonIwrXohlvbJk20HM-a1HeKk71wnL906tf0-34cZedGXIpwBw855qpDmaRVx9wikxrV2crfy3zlQRIITkmkmgjTiS3p41vd1X~Z18Bt-NpnyBbtDk7G1Xy8UZEUpY1K7NP8ybDKO-Hk~HqRJLNztZnJQ2-CYNFpxQjU76ezoIdhRjngF1bN2o9mWKiiYPsr6vlEYZT83p8iDv5A20qFlA~t8Gje7URcrlfxpnpZagNMDjba3yeDXJytB0f8AeFdf4hpVqznyOVWs0ETElqbeqQ__"
             />
@@ -318,8 +324,8 @@ const WhoWeAre = () => {
 
       <div className="flex justify-center">  
     <div className="img-cont w-[90vw] h-[60%]  items-center -mt-2 z-10 relative">
-        <img src="https://s3-alpha-sig.figma.com/img/e44b/950f/b4840766421086953e20e34484f58173?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GFyqLBURDep1ZwLJuYBmFm0E34WtEBl3K2DoNyo14kAo1-xnT093HbXrTxKl9s2On3MsAQi~ihd7wskCAFE1yRz9PZPDGMJdSYC6Rp652tDWlDaHX881ps8M8h-QgCSi~NnbtH~wkQ2IR6xzxleR9s1b9JrCYSuJ1hbDGkI8eiUshQQM6QtidcvwAqXG-Au~FAu2KjO3wIGjARYc5RDPliGPzYjPM2nwCX79QGaxKl6XLEpFHnaZRfygYOG5DHtsScF6o9~MaACLfXreoD-pvM5vTouFc1rVdDXQJG4Xzr6LoJtaUIh23J2lNjnx7udPIi8IznEpplwlCqguhl4O6A__" 
-         className="rounded-[20px] -mt-5 z-10" alt="bottom image"/>
+        <Image src="https://s3-alpha-sig.figma.com/img/e44b/950f/b4840766421086953e20e34484f58173?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GFyqLBURDep1ZwLJuYBmFm0E34WtEBl3K2DoNyo14kAo1-xnT093HbXrTxKl9s2On3MsAQi~ihd7wskCAFE1yRz9PZPDGMJdSYC6Rp652tDWlDaHX881ps8M8h-QgCSi~NnbtH~wkQ2IR6xzxleR9s1b9JrCYSuJ1hbDGkI8eiUshQQM6QtidcvwAqXG-Au~FAu2KjO3wIGjARYc5RDPliGPzYjPM2nwCX79QGaxKl6XLEpFHnaZRfygYOG5DHtsScF6o9~MaACLfXreoD-pvM5vTouFc1rVdDXQJG4Xzr6LoJtaUIh23J2lNjnx7udPIi8IznEpplwlCqguhl4O6A__" 
+         className="rounded-[20px] fill -mt-5 z-10" alt="bottom image" height={648} width={2312}/>
 
     </div>
     </div>
