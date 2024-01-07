@@ -19,7 +19,8 @@ module.exports = {
         'Nexa-Regular':['Nexa','sans-serif'],
       },
       screens: {
-        'xs': '180px', // min-width
+        'xs': '180px',
+        '3xl': '1650px' // min-width
       },
     },
   },

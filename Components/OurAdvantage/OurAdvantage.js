@@ -18,7 +18,7 @@ const OurAdvantage = () => {
                     </div>
 
 
-                    <div className='mt-5 py-3 grid sm:grid-cols-2 sm:mt-10 sm:gap-y-20 gap-y-12 sm:py-5'>
+                    <div className='mt-5 py-3 grid sm:grid-cols-2 sm:mt-10 sm:gap-y-20 gap-y-12 sm:py-5 2xl:ml-48'>
                         <div className='flex items-center space-x-4  text-[#131C5F] pl-5'>
                             <img src='/assets/photoFill.svg' alt="photofill" className='w-[8%] text-white bg-gray-300 p-2 rounded-full mt-[-30px]' />
                             <div className='leading-[1rem] space-y-5'>
