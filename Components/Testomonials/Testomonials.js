@@ -37,7 +37,9 @@ const Testimonials = () => {
                                 </div>
                             </div>
 
-                            <Image className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="v" width={160} height={51}/>
+
+                            <Image className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="v" width={160}  height={195}/>
+
                         </div>
                     </div>
 
