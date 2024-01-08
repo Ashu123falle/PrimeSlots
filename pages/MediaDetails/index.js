@@ -204,7 +204,7 @@ const MediaOptionsButtons = [
              <PeopleAlsoLookFor/>
         </div>
 
-        <div className="mt-4 px-10">
+        <div className="mt-4 md:px-10">
         <ExtraServices />
         </div>
         <div className='mt-6 px-8'>

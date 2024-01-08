@@ -262,19 +262,16 @@ const MediaListingPage = () => {
       <FilterComponent data={data} optionsConfig={optionsConfig} />
       
       <div className="px-5 md:px-8 xl:px-8 pb-5">
-      <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 '>
-                   {
-                       searchData.map((curElem, ind) => {
-                           return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
-                       })
-                   }
-      </ul>
+        <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:pl-20  max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 '>
+          {
+            searchData.map((curElem, ind) => {
+              return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
+            })
+          }
+        </ul>
 
         <div>
-      
-        <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />
-      
-        
+          <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />     
         </div>
         <div className="p-3 md:pl-8 xl:pl-7 h-full mt-5 md:pl-4 ">
         <h1 className="text-secondarycolor-1 mx-3 my-8 text-left font-['Inter'] text-2xl md:text-4xl leading-none font-bold 
