@@ -1,8 +1,12 @@
 import React from 'react'
+import Image from "next/image"
+import staricon from '@/pages/assets/Vector.svg'
+import blankicon from '@/pages/assets/Vector1.svg'
+import wishlist from '@/pages/assets/Wishlist2.svg'
+import info from '@/pages/assets/ph_info.svg'
 import Popup from 'reactjs-popup'
 import {useContext} from 'react'
 import AuthContext from '@/Context/authContext'
-import Image from 'next/image'
 
 const DetailsComponent = () => {
     const {jwtToken,isAuthorized,onClickLogin} = useContext(AuthContext)
@@ -14,21 +18,21 @@ const DetailsComponent = () => {
 
     return (
         <>
-            <div className="main  md:w-[500px] px-10 lg:h-[480px] mt-8 space-y-4 md:px-8">
+            <div className="main w-[350px] sm:w-[550px] md:w-[500px] px-5 ml-5 sm:ml-0 sm:px-10 lg:h-[480px] mt-8 space-y-2 sm:space-y-4 md:px-6">
            
                 {/* one */}
-                <div className='iconheading flex space-x-4'>
-                    <span className="icon flex space-x-1 mr-6 md:mr-0">
-                        <Image src='/assets/Vector.svg' width={20} height={20} alt="star icon"/>
-                        <Image src='/assets/Vector.svg' width={20} height={20} alt="star icon"/>
-                        <Image src='/assets/Vector.svg' width={20} height={20} alt="star icon"/>
-                        <Image src='/assets/Vector.svg' width={20} height={20} alt="star icon"/>
-                        <Image src='/assets/Vector1.svg'width={20} height={20} alt="blank star icon" />
+                <div className='iconheading flex space-x-2 sm:space-x-4'>
+                    <span className="icon flex sm:space-x-1 sm:mr-6 md:mr-0">
+                        <Image src={staricon} alt='' />
+                        <Image src={staricon} alt='' />
+                        <Image src={staricon} alt='' />
+                        <Image src={staricon} alt='' />
+                        <Image src={blankicon} alt='' />
                     </span>
-                    <div className='flex space-x-5'>
-                        <p className='bg-gray-100 text-orange-600 rounded-xl p-2 '>Physical Boarding</p>
+                    <div className='flex space-x-4 sm:space-x-5'>
+                        <p className='bg-gray-100 text-orange-600 rounded-xl p-1 sm:p-2 text-xs sm:text-base'>Physical Boarding</p>
                         <span className="text-orange-600">|</span>
-                        <p className='bg-gray-100 text-orange-600 rounded-xl p-2 '>Billboard</p>
+                        <p className='bg-gray-100 text-orange-600 rounded-xl p-1 sm:p-2 text-xs sm:text-base'>Billboard</p>
                     </div>
                 </div>
 
@@ -53,7 +57,7 @@ const DetailsComponent = () => {
                             <p className='font-semibold'>Walk Score</p>
                             <p className='text-gray-800'>Walk Score is more than average</p>
                         </div>
-                        <Image src='/assets/ph_info.svg'width={24} height={24}  alt='info icon' />
+                        <Image src={info} alt='' />
                     </div>
 
                     <hr />
@@ -84,7 +88,7 @@ const DetailsComponent = () => {
                    )}
                     </Popup>
                     <span className='flex justify-center items-center rounded-md border border-gray-400 px-4'>
-                        <Image src='/assets/Wishlist2.svg' width={32} height={32} alt="wishlist icon"  />
+                        <Image src={wishlist} alt='' className='' />
                     </span>
                 </div>
             </div>
