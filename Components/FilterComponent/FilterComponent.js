@@ -45,7 +45,7 @@ const FilterComponent = ({ data, optionsConfig }) => {
   };
 
   return (
-    <div className='text-white mx-4 sm:mx-10 md:mx-13 lg:mx-16 max-w-[1450px]'>
+    <div className='text-white mx-4 sm:mx-10 md:mx-13 lg:mx-auto max-w-[1450px]'>
       <div className='flex flex-col md:flex-row m-7 space-y-4 md:space-y-0 md:space-x-4 rounded p-3 ' style={{ backgroundColor: '#242565',
       borderRadius: '20px' }}>
         {optionsConfig.map((option) => (

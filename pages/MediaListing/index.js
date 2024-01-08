@@ -258,8 +258,12 @@ const MediaListingPage = () => {
                 ))}
           </ul>
       </div>
-              
+
+
+      <div className='mx-auto'>
+
       <FilterComponent data={data} optionsConfig={optionsConfig} />
+      </div>
       
       <div className="px-5 md:px-8 xl:px-8 pb-5">
         <div className='flex justify-center'>

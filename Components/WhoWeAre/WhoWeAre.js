@@ -11,7 +11,7 @@ const WhoWeAre = () => {
         <div className="flex flex-col items-center justify-center md:mx-10 md:order-[2]">
         <Image
             className={
-                "rounded-[15px] w-[80vw] h-[40vh] relative my-8 md:h-[360px] md:w-[365px]" 
+                "rounded-[15px] w-[100%] h-[100%] relative my-8 md:h-[360px] md:w-[365px]" 
             }
             width={365}
             height={360}
@@ -21,27 +21,27 @@ const WhoWeAre = () => {
 
         <div
             className={
-                " text-center bg-[#ffffff] rounded-[15px] w-[78vw] xs:h-[244.5px]  relative -mt-14 md:h-[220px] md:mx-3 md:w-[340px] md:-mt-16" 
+                " text-center bg-[#ffffff] rounded-[15px] w-[95%] xs:h-[100%]  relative -mt-14 md:h-[220px] md:mx-3 md:w-[340px] md:-mt-16" 
             }
             >
-                <div className="text-center py-4">
+                <div className="text-center py-4 px-2">
                 <div
                     className={
-                        "text-[#0132e0] text-center font-['Nexa-Regular',_sans-serif] text-lg font-normal relative "
+                        "text-[#0132e0] text-center font-['Nexa-Regular',_sans-serif] xs:text-normal sm:text-lg font-normal relative "
                     }
                     >
                     Lorem Ipsum is simply dummy{" "}
                 </div>
                 <div
                     className={
-                        "text-[#000000] text-center my-5 font-['Nexa-Regular',_sans-serif] text-[27px] font-normal relative " 
+                        "text-[#000000] text-center my-5 font-['Nexa-Regular',_sans-serif] text-[24px] sm:text-[27px] font-normal relative " 
                     }
                     >
                     Looking for help?{" "}
                 </div>
                 <div
                     className={
-                        "text-[#000000] text-center font-['Nexa-Regular',_sans-serif] text-lg font-normal relative " 
+                        "text-[#000000] text-center font-['Nexa-Regular',_sans-serif] xs:text-normal sm:text-lg font-normal relative " 
                     }
                     >
                     Lorem Ipsum is simply dummy
@@ -150,14 +150,17 @@ const WhoWeAre = () => {
 
      </div>
 
+    
+    <div className="flex flex-row justify-center">
      <button
       className={
-        "bg-[#f5167e] rounded-[50px] w-[200px] h-[60px] relative self-center my-10 text-[#ffffff] text-center font-['Figtree-Bold',_sans-serif] text-lg font-bold relative " 
+        "bg-[#f5167e]  rounded-[50px] w-[200px] h-[60px] relative self-center my-10 text-[#ffffff] text-center font-['Figtree-Bold',_sans-serif] text-lg font-bold relative " 
       }
       style={{ boxShadow: "0px 10px 50px 0px rgba(61, 55, 241, 0.25)" }}
     >
         Contact Us
     </button>
+    </div>
         
      </div>
 
