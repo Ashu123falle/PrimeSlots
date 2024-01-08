@@ -40,6 +40,7 @@ const Footer = () => {
                     <p><a href="#">Pricing</a></p>
                     <p><a href="#">Blogs</a></p>
                     <p><a href="#">Jobs</a></p>
+                    <p><Link href="/About">About Us</Link></p>
                 </div>
 
                 <div className="mb-6 text-center md:w-1/4 md:text-left">
