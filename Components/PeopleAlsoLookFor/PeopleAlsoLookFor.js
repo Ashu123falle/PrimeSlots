@@ -109,7 +109,6 @@ const PeopleAlsoLookFor = () => {
    },[])
 
     const onClickWishlistButton = id => {
-        const{searchData} = this.state
 
        const updatedSearchData = searchData.map(obj => {
         if (obj.id === id) {
@@ -118,9 +117,8 @@ const PeopleAlsoLookFor = () => {
         return obj
        })
 
-       this.setState({
-        searchData: updatedSearchData,
-       })
+       setSearchData(updatedSearchData)
+       
     }
 
 

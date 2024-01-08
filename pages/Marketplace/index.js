@@ -126,7 +126,7 @@ const categoriesList = [
   {
     id: 6,
     title: 'LED Board',
-    imageUrl: '/assets/Rectangle 34624178 (6).png',
+    imageUrl: '/assets/Rectangle 34624178.png',
     alt: "img2",
   },
   {
