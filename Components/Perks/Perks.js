@@ -1,16 +1,7 @@
 import React from 'react';
 import Image from "next/image";
-import digitallogo from '@/pages/assets/digital.svg';
-import perk1 from '@/pages/assets/perk1.png';
-import perk2 from '@/pages/assets/perk2.png';
-import perk3 from '@/pages/assets/perk3.png';
-import perk4 from '@/pages/assets/perk4.png';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Vectortop from '@/pages/assets/Vectortop.png';
-import Vectormiddle from '@/pages/assets/Vectormiddle.png';
-import Vectorbottom1 from '@/pages/assets/Vectorbottom1.png';
-import Vectorbottom2 from '@/pages/assets/Vectorbottom2.png';
 
 const PerkItem = ({ src, alt, title, description }) => {
   const [ref, inView] = useInView({
@@ -32,7 +23,7 @@ const PerkItem = ({ src, alt, title, description }) => {
       className="flex flex-col lg:flex-row items-center"
     >
       <div className="max-w-full h-auto rounded-lg mb-2 lg:mb-0 lg:mr-4">
-        <Image src={src} alt={alt} />
+        <img src={src} alt={alt} />
       </div>
       <div className='lg:text-left'>
         <div className="text-md font-bold md:text-center sm:text-center xs:text-center lg:text-left">{title}</div>
@@ -65,6 +56,7 @@ const AnimatedText = ({ children }) => {
     </motion.div>
   );
 };
+
 const PerksComponent = () => {
   const containerStyle = {
     width: '100vw',
@@ -82,14 +74,15 @@ const PerksComponent = () => {
   }
   
   return (
-    <div className="relative p-4 bg-gradient-to-b from-rgba-19-28-95-1 to-rgba-2-12-97-0-79 rotate-container lg:text-left origin-top-left min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white" style={{...containerStyle, ...customRotationStyle}}>
+    <div className="relative p-4 bg-gradient-to-b from-rgba-19-28-95-1 to-rgba-2-12-97-0-79 rotate-container lg:text-left origin-top-left
+     min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white" style={{...containerStyle, ...customRotationStyle, position: 'relative'}}>
      
   
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-24 left-7'>
-        <Image src={Vectortop} alt="Vector Top" />
+        <img src='/assets/Vectortop.png' alt="Vector Top" />
       </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-48 left-0'>
-        <Image src={Vectormiddle} alt="Vector Middle" />
+        <img src='/assets/Vectormiddle.png' alt="Vector Middle" />
       </motion.div>
 
 
@@ -103,7 +96,7 @@ const PerksComponent = () => {
   Perks of a <span className="lg:inline hidden sm:hidden md:hidden mt-0 lg:mt-0"><br /></span> Prime Slots Partner
 </motion.div>
     <div className="max-w-full h-auto rounded-lg">
-      <Image src={digitallogo} alt="Perks Image" className='h-[250px]'/>
+      <Image src='/assets/digital.svg' alt="Perks Image" height={250} width={150} />
     </div>
   </div>
 
@@ -111,7 +104,7 @@ const PerksComponent = () => {
     <div className='lg:flex-col space-y-10'>
       {/* Perk 1 */}
       <PerkItem
-        src={perk1}
+        src='/assets/perk1.png'
         alt="Perk 1 Image"
         title="Perk 1"
         description="Description of perk 1 goes here."
@@ -119,7 +112,7 @@ const PerksComponent = () => {
 
       {/* Perk 2 */}
       <PerkItem
-        src={perk2}
+        src='/assets/perk2.png'
         alt="Perk 2 Image"
         title="Perk 2"
         description="Description of perk 2 goes here."
@@ -129,7 +122,7 @@ const PerksComponent = () => {
     <div className='lg:flex-col space-y-10 lg:ml-8'>
       {/* Perk 3 */}
       <PerkItem
-        src={perk3}
+        src='/assets/perk3.png'
         alt="Perk 3 Image"
         title="Perk 3"
         description="Description of perk 3 goes here."
@@ -137,16 +130,16 @@ const PerksComponent = () => {
 
       {/* Perk 4 */}
       <PerkItem
-        src={perk4}
+        src='/assets/perk4.png'
         alt="Perk 4 Image"
         title="Perk 4"
         description="Description of perk 4 goes here."
       />
     </div>
     
-    <Image src={Vectorbottom2} alt="Vector Bottom 2" className='absolute top-8 right-0 w-20 h-40 lg:inline hidden' />
+    <img src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" className='absolute top-8 right-0 w-20 h-40 lg:inline hidden' />
   </div>
-  <Image src={Vectorbottom1} alt="Vector Bottom 1" className='absolute top-88 right-56 lg:inline hidden' />
+  <img src='/assets/Vectorbottom1.png' alt="Vector Bottom 1"  className='absolute top-[510px] z-20 right-20 lg:inline hidden' />
 </div>
 
   );

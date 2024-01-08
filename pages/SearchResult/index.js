@@ -4,11 +4,108 @@ import Link from 'next/link';
 
 import Footer from '@/Components/Footer/Footer'
 import BlogCard from '@/Components/blogCard/blogCard'
-import Searchapi from '../api/SearchPageapi'
 import Navbar from '@/Components/Navbar/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
 import ServiceSection from '@/Components/ServicesSection/ServicesSection'
 
+const Searchapi = [
+    {
+        id:1,
+        image:"/assets/Switch.png",   
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: true,
+    },
+  
+    {
+        id:2,
+        image:"/assets/Switch (1).png",    
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+    {
+        id:3,
+        image:"/assets/Switch (2).png",     
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+    {
+        id:4,
+        image:"/assets/Switch (3).png",   
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+    {
+        id:5,
+        image:"/assets/Switch.png",   
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+    {
+        id:6,
+        image:"/assets/Switch (1).png",   
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+    {
+        id:7,
+        image:"/assets/Switch (2).png",   
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+    {
+        id:8,
+        image:"/assets/Switch (3).png",   
+        heading:"Digital Boarding",
+        name:"Title of media will come here",
+        description1: "Real Estate",
+        description2: "Retail",
+        description3: "Resturants",
+        description4: "AutoMobile",
+        isLiked: false,
+    },
+  
+  ]
 class SearchResultPage extends Component {
     state ={
         searchData: [],
