@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
              <span className="text-slate-950 text-lg font-normal font-['Figtree'] leading-tight mx-2"> Privacy Policy</span> </h1>
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
-    <div className="pl-20 pr-16 ml-8 pb-20 mb-52 mt-10  text-teal-900  font-['figtree'] max-md:pl-14 max-md:pr-8 max-md:ml-0 max-md:pb-12">
+    <div className="pl-20 pr-16 ml-8 pb-20 mb-52 mt-10  text-teal-900  font-['figtree'] max-md:pl-6 max-md:pr-2 max-md:ml-0 max-md:pb-12">
         <h3 className='text-5xl '><b>Privacy Policy</b></h3>
         <br></br>
 
