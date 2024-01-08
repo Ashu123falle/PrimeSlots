@@ -5,10 +5,10 @@ import Image from 'next/image';
 function ExtraServices(props) {
   return (
    <>
-    <div class=" p-4 mr-150 ml-110 rounded-lg flex flex-col items-center justify-center w-full">
+    <div class=" sm:p-4 sm:mr-150 sm:ml-110 rounded-lg flex flex-col items-center justify-center w-full">
     <h1 class="self-start text-3xl font-bold mb-4 pl-5">Our Extra Services</h1>
   
-    <div class="position:relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pr-10 pl-5">
+    <div class="position:relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pr-5 pl-5 sm:pr-10 sm:pl-5">
       
       <div class="border relative bg-white p-4 rounded-lg shadow flex flex-col">
         <Image src='/assets/image_1.png'width={303} height={222} alt="Image 1" class="w-full h-32 object-cover mb-2"/>
