@@ -1,5 +1,5 @@
 // PerksHeader.js
-
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ const PerksHeader = () => {
   <div className=''>
     <nav className="navbar flex justify-between items-center">
       <Link href="/" className="logo">
-        <img src='/assets/nobglogo.png' alt="Logo"/>
+        <Image src='/assets/nobglogo.png' alt="Logo" height={56} width={150}/>
       </Link>
       <div className="nav-text flex p-3 text-white">
       <Link href="/Marketplace" className="mx-2 text-sm sm:text-md md:text-base">Marketplace</Link>

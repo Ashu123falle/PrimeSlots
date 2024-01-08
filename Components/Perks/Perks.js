@@ -23,7 +23,7 @@ const PerkItem = ({ src, alt, title, description }) => {
       className="flex flex-col lg:flex-row items-center m-5"
     >
       <div className="max-w-full h-auto rounded-lg mb-2 lg:mb-0 lg:mr-4">
-        <img src={src} alt={alt} />
+        <Image src={src} alt={alt} height={53} width={52}/>
       </div>
       <div className='lg:text-left'>
         <div className="text-md font-bold md:text-center sm:text-center xs:text-center lg:text-left">{title}</div>
@@ -78,11 +78,11 @@ const PerksComponent = () => {
      min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white" style={{...containerStyle, ...customRotationStyle, position: 'relative'}}>
     
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-24 left-7'>
-        <img src='/assets/Vectortop.png' alt="Vector Top" />
+        <Image src='/assets/Vectortop.png' alt="Vector Top" height={61} width={40} className='sm:w-[63]'/>
     </motion.div>
       
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-48 left-0'>
-        <img src='/assets/Vectormiddle.png' alt="Vector Middle" />
+        <Image src='/assets/Vectormiddle.png' alt="Vector Middle" height={100} width={50} className='sm:w-[70]'/>
     </motion.div>
 
     {/*small to medium screen perks component*/}
@@ -138,7 +138,7 @@ const PerksComponent = () => {
       />
     </div>
     
-    <img src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" className='absolute top-8 right-0 w-20 h-40 lg:inline hidden' />
+    <Image src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" height={140} width={130} className='absolute top-8 right-0 w-20 h-40 lg:inline hidden' />
   </div>
 
 {/*large screen perks component*/}
@@ -182,8 +182,8 @@ const PerksComponent = () => {
       />
       </div>
     </div>
-    <img src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" className='absolute top-80 right-0 w-20 h-40 lg:inline hidden' />
-  <img src='/assets/Vectorbottom1.png' alt="Vector Bottom 1"  className='absolute top-[510px] z-20 right-20 lg:inline hidden' />
+    <Image src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" height={140} width={130} className='absolute top-80 right-0 w-20 h-40 lg:inline hidden' />
+  <Image src='/assets/Vectorbottom1.png' alt="Vector Bottom 1" height={140} width={130} className='absolute top-[510px] z-20 right-20 lg:inline hidden' />
 </div>
 
   );
