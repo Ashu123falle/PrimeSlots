@@ -12,102 +12,103 @@ import Link from 'next/link';
 
 const Searchapi = [
   {
-      id:1,
-      image:"https://s3-alpha-sig.figma.com/img/d0d6/fb64/ac317a81274e933ab56953f482e79f71?Expires=1704067200&Signature=NcZuFsVC3GSR~Zxevtq9KAcjJzChWDcJ50X41THeKTWdaq4UFub4BkdyUYx7nkG091JDN7Y~g33kun6egvsTVom8RMW5xFrUkAm1KRZfGmZ0U~uQ2jh4iAFQlV4kML1Yg~r4JUfm1kPegKkhWSEt66EJiGRegCswZlt82x8kUqI9Kci6BwApuJo-jfqrPNOlEBXOYYcDapuNKv-~d7YVTxUP5aYlCF5fQg0D0YltKKCDzBsQuq5YoLvqyqK8fY236VJNCnA66LmLV7i79Z2Q23WW9y1M28QQCIiryc9L8Fz65K5zfWtujNXfs4j5ANuXIqZ0fDvrRze8EpIbvm0npQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: true,
-  },
+    id:1,
+    image:"/assets/Switch.png",   
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: true,
+},
 
-  {
-      id:2,
-      image:"https://s3-alpha-sig.figma.com/img/7bd9/2916/de73d8dd53e61c76a26828ace17fe898?Expires=1704067200&Signature=FY1hirxIunWFJBOFRkF80B1a4q9TDPtV7C4q~OIoRh6efEGp8xVFwlU9t24-JuuW-zEhhnX~vFt0iUSWaYsOHyjiJi5eeeHJwKn-VLXF0kmdue10B6I7hRSvUO8JpznNea~qYDbL-AhHI4XcRUw6gnEpoTri9Fs1Zhe0hYVbA2txukNm~vut6-pTonPBYOopeWLERo9NiZE26Dyc7aWlcr28tvWUixDT4h4o5oajNnzayv0I5FUhaU0DWQ62rmiwLfpUO8I3YgvRDCaSQKM8QOVTAc0ewXjgC0Kbegbq9~yk4n2vwkIY8BahbNHAbvTtfpOyCnembaqW9B2joOfbjA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
+{
+    id:2,
+    image:"/assets/Switch (1).png",    
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 
-  {
-      id:3,
-      image:"https://s3-alpha-sig.figma.com/img/fc88/6f74/41628076516333f1052602929b7d989f?Expires=1704067200&Signature=JNl02bcPxMiS8rwhkogE8TN~H-rFtSyfT-3cJNGQHDk631u13jCG-UM1IdHI7CcdObKKFFlIPbGm3PH6fYrcc-9R2opv7uO0lpuQlyDduprSEPNpO8-Y2v6KqDHdpnyU3mJTTE267lKJQAOXHdVfetSPmkiGBDAvFoVc9Q9QmRuBxhATl-U7tw2KjFNdZZW9gGcXY-sb1IT4CqQXsW3Iyv29-pHcQKFcBgw7iz6OocIlKYfiHsW92pP-34v1boqnFLkXYs9oAkREYiOw9tmOn7V6u1HceC01T95TqX2RzvXH24UbElITxVOyyk7CKaawckl4O5hp7vPqhIMy0MfXtw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
+{
+    id:3,
+    image:"/assets/Switch (2).png",     
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 
-  {
-      id:4,
-      image:"https://s3-alpha-sig.figma.com/img/d477/0221/15c438b7930694c75ebe70148ed817d7?Expires=1704067200&Signature=RCk4i7nL2vGps9VNpY04pkBZvuRmzfgLvJfLvR0AgaXzeWKgoUy-Jp7zOfUioL2tbSwNF7FyCbRmBiGX9l7FaYDjIJaqY4agAANI2a0gTgUdzaWroCGpnqcvjD9CZNGUtCYWEKjeE9GZvlHC5TzSNdq83CLOZkuuzZ0N3bF3MqV~xtTKFPm-FcvGqrchfOYpkszq3Iojo8syRp6gNLbZ~w2mKlGDye6lbDc4~~8sQpPWpe5nVYGLH8g0MP3Bjl1qE9psO~Z0xOjppAej4muAASVEk3CUSFBoytpeUxqgPtI6oGrlVQCQ8is5eBPAI5rkz1aLkN-yWgeFF9MUV7l~LA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
+{
+    id:4,
+    image:"/assets/Switch (3).png",   
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 
-  {
-      id:5,
-      image:"https://s3-alpha-sig.figma.com/img/059c/68db/bb534e560011ffa2aa844e470c4903e2?Expires=1704067200&Signature=WbME2o00scLkHgZinLX3yeveVpR30lzijsKFs2T9KfXSjP--bj5HERQRw5ov~qWtuO05hqqW5mtLZCMJiayIdUXTrQjUSAZ62JLHqeUTis9J~irmPF5X7AA4cQgtc8N0F~v5uTc54NpYRlY8E6ZcdW0WdKPdsHasqW7bRqk~dJCQbMfWVyP17a3O-eXjp-L6YFG7ad3xmDqxsRvMGtmyMCzUlEkRM9Qr3TIHb40lu-Jlw7dp3qfiGLJUWryqI7JgBuIXsu1ozqs3TBEO1qqD6MKRmPUJg2DmlfD8ySL4B3FMod~qY4mPSnbncz4gST~deeavSesz2Af7HGE5rfbfhg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
+{
+    id:5,
+    image:"/assets/Switch.png",   
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 
-  {
-      id:6,
-      image:"https://s3-alpha-sig.figma.com/img/98e7/9a7b/31f42c9cad23e7c5c35c314c41b9ca30?Expires=1704067200&Signature=S1FIESSK-0GwMKpnvjK8AOBLHvOiotJnWPozdlxaZ0HkzkLC-v7C~2t4qWy9FIxtQLdwRHxsJHVqI2~8cZr0LTk72bKt9Blafb5~FNWOxdTq59Tpw2nWM1SKl2ZQKW5oxnEMhDqg8uPkXQI8jz~f62kJUUuscOBhyaaszxXQpmpr573qZp7T6KuqDVzo0GF69zcdUWefpbr6scAEAmbhn6FcfGDmm0cyBwhRPECa01fB0IULsBLYp76wMS7Cdibfq9XeuH-p4SCafSYNxpY2QLEvUaod30IzcezYNDJzmCOSd-9TNRp8aQGTeYHKk2DV1N7jNOgk9kKIYZKSc~9cVg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
+{
+    id:6,
+    image:"/assets/Switch (1).png",   
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 
-  {
-      id:7,
-      image:"https://s3-alpha-sig.figma.com/img/c784/8fd5/3ecd6740f48a20e609a7792230acb580?Expires=1704067200&Signature=ZvYRfoy3hPU2a59TSH2iFjo-kBN8IHARBMVPEaLyC3syk1O~DvG8hvP9ugVanb8Mx3alEylfN5mt0xd5v6P3xCfu65-VfEraHn053AO5mo4vSrfcTDhe7rvWYwVFZtTYHiysvgICs3lzOXLWZXyKt63NJDFIwxS5PEU6dxFJM0IZgB~ASkE4a2h9KNynI~k42elYOXGzr1VWioNu~iN3hcZKvSM6IECCg3QDSw0WaRtfj059bhGwmHzGzN6n2mompztaJC8atoEHaBePn4havDBmHdf78L~WtUblHqiISDLkb8nPip0iCvQAodOkClb3Os-lnNltX48P2QXYLlc-ng__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
+{
+    id:7,
+    image:"/assets/Switch (2).png",   
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 
-  {
-      id:8,
-      image:"https://s3-alpha-sig.figma.com/img/1b91/1498/f3fedd18e5d64b09ccc1c823085633e5?Expires=1704067200&Signature=VSQJVdbyxMafJpxk3v0qV4~a2vh99ZrSOJRr8TxfRacr9UWK675UysTW~0CC4Z96nOUzVSlQnPUqDIypEpbiXEnucELMqUsAjKdlVqnfDvp8MYP-Fj5e~jXUHxsc~zTlcsdn0pjy-PzGYkECQmg0rhmTzaWh-23IOR7O~ZaRBE15lzGTdkVPnBwlZKzQOSf8vKFE3GykyqU-pA9B02DuQeAKfDve-MCiYkW7BFAF4ddb6EapUNX2OI0xkNbc1I8wWc3wb2iLuaW9j1zAJ4gtFtOHlpU7CXpqlfe4yWZo9oSjjftTD2g4NN-TmIBU6PEfJxk~6gD9Pgw~tqA~wKbd9g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      heading:"Digital Boarding",
-      name:"Title of media will come here",
-      description1: "Real Estate",
-      description2: "Retail",
-      description3: "Resturants",
-      description4: "AutoMobile",
-      isLiked: false,
-  },
-
+{
+    id:8,
+    image:"/assets/Switch (3).png",   
+    heading:"Digital Boarding",
+    name:"Title of media will come here",
+    description1: "Real Estate",
+    description2: "Retail",
+    description3: "Resturants",
+    description4: "AutoMobile",
+    isLiked: false,
+},
 ]
+
+const data = []
 
 const optionsConfig = [
   {
@@ -130,72 +131,68 @@ const optionsConfig = [
   },
 ];
 // Example data
-const data = [
-  
-  //our data items
-];
+
 const categoriesList = [
   {
     id: 0,
     title: 'Neon Site',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/b426/6b37/1e58dcdea3b5e1ea4011aa8ab793919f?Expires=1704067200&Signature=Ybr6kGklfTJf8pfWz9Z71rcMtvVQO2Xl5AIDTy17wkavqQcyDG79sGAVfR2U0n6N16wdXj4jW5HuKumCn0PwwpXu-tZuuhu4w6a7NAm-fcOa5Bl0w~bxlflOj5cBzdxOYiSXbqKaFNbiR2cJBApaiLdZanu2~SZhezoTYKkHgzQdll3zPOuimlQ5Je9Rye~xh6TVzYOVXViarjOu9vtUaxGXyA~ea-4t7hCvXXIv8b0HD9Yhr7Par3hEu660T2X~cU-h0od4ZU0esAqEQ8vaCZ8d3WnueH6lcQW~nBTfFM1hmoBscGhEXCJWJGueDIkdGvG7XmscvOpL52gmA79LHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    imageUrl: '/assets/Rectangle 34624178.png', 
     alt: "img1",
   },
   {
     id: 1,
     title: 'Bill Boards',
-    imageUrl:'https://s3-alpha-sig.figma.com/img/923a/40b9/9185769696ba1c70284e593b870059f9?Expires=1704067200&Signature=YgMsZW2MixRHbU09beOR10bHSi4WugDPCfkfqSYUY~~-MBfzkmSwb1kN8~GL4U06sv1NNEEW0hf4B1WnLJwyGiV0s5~aRiQO5ma5W04tndUQia70twYIOA9b9HTgZXZQ55~yNfcTnxK4CYLTRxSBIZd~kmnpAAuqxIeyoG1Gi88h6DHYyOYi2WxYVb6bhdIEGEySMs0WYh1LSvqvxfOV3Rw0NcHbTAAnR2qwP5c56llCg-1LVj855W1NdoAS7AKUYowbw738tPsomCWn0NJitrGONly0oKJjXuMlN7Gn3WgugwQe3ghA-bnGGUxVNa~aCtCq0p641N-dvA1PtiZ9cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-     alt: "img2",
+    imageUrl: '/assets/Rectangle 34624178 (1).png',
+    alt: "img2",
   },
   {
     id: 2,
     title: 'Info Board',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/2c33/43c3/dc4454ec44bff841c83240c9d6a28d9d?Expires=1704067200&Signature=Vpg~akui0kzflHLbcT1y~FBBRDeJit8Qx~CoezJVwN0xih0iRcb-vH3Qdm2gS0n2-MlDrylYluxal8XyFhHXNUMQhLzW0bs~Dku6Gllz~qjL9ihGM4-p2qpdjSMWCV5x3sa8YRp12lua4Dm8J1rcoTYIETnNdVCQHTIt1i1xmGTdaaOOBkWcT7oliz6lICN95-oi~O3dQScFO4Q0eWMzN8RxjIVKg31nL8OPHRbpfP5jatRMd5kwgMdkYGigBlDsLGb4M3pSJ7bZ1BTnLQGuaFN~QDStl7hFSzHArP-NG6uoIOP1n-xwq~fwsK6faXNrq~3PgQN5gdoSqbuIRknJBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    imageUrl: '/assets/Rectangle 34624178 (2).png',
     alt: "img3",
   },
   {
     id: 3,
     title: 'Signage',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/df9c/e6c9/c7c29ea6894b9a0e539ba0af0ec2d8b4?Expires=1704067200&Signature=eiiaiL5w0zzy03CBlQfnSwTii3BpHXdGw7nDwqWHOfbbJhpBfslAo6CzfebEMqN8OeofC4uM2L~I6SCd1FfM9AQ7KaCcD5vdXuslJWLoWlOWdnIr8vsG47lMjdY-DTWY2xy7JETu9TBwU6McVLp5lsilst7Y2yXA8EJudpuoyT2kcV0TfRB6nans2M1t5v7U-ham3s0k9ELKWkhseOJAErhU7ia2qCbL8fm7xvAoGSaKea8CIKga5B1G3EHS7Vvo71~pbx4stDCJHfyDlHXGbJfrR2b4AjuO7H8TAzmQypS4HFl3m~kDt9r8-vp5Gind6jLTnYreEju6AW7huNxYdw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    imageUrl: '/assets/Rectangle 34624178 (3).png',
     alt: "img2",
   },
   {
     id: 4,
     title: 'Bridge Sign',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/d225/d223/3a9a55a2821d5db1d78f97451ca235cf?Expires=1704067200&Signature=BF0e92YdxK4FYJg1oidxpszLj8RJmam1Q~HpAUmQxx9nVYlqzS0qinKuiUGbWegVaIGgeFj8pV20e1FXIxqh52FSijz4cQ6Pby9zUTQC3awsKDtvWZZBdmEK~MqlCCa-NrhSWH2BioY00U3LnkiAozsebn~5vE7w64Kc67KKRKUrINfHmbSkto6JASZ0bDMoaRMdZuRU-oimvxORri9-NJ1tBzcAHILT4y6ybWNPc1GaYBOlKni1u-wSYmtSR7RqZvTLAV-utf7UONetyLDVY9nlunsu16LfXL~cC-8qlTHAnijuYyAociMrr8U1WSrfTdLZC9q3-xKcIjL9VQeuQQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    imageUrl: '/assets/Rectangle 34624178 (4).png',
     alt: "img2",
   },
   {
     id: 5,
     title: 'Traffic Pedestals',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/f857/273d/84bee1c4bf273221b1c0820a0ae5ed3b?Expires=1704067200&Signature=fmjjQv56DLtumimRhI15eu3bz-8U5Sn~8OyG6aKIHkbZeyNgEgw~kYOQyFoMon-3ZIQ4-CA4q15jG19miw0XNvbH3HFvn34xSlH0XUq1RVs9kkw-se~2ywuh-BibswGzDG27BkAe-KinfPNtZxksgn-gURzXgWIm~HcPLxovaXtYrnhJ1-LWu7nKXxxOB-2hTQ-VQhu8W2WjPL-PvaS9Nw6i9UV99J3Cp-8Sr~zaB6wAQ4pUIJD64Ds-OhPGYpqxMQ9fmrokRUd1ThFs645zT84grQ8auFHhpXrjAFsDX2noS88ADnyiU1ADWj1IUlQPtd9hZJzcg5f2-EMfJDc4pQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    imageUrl: '/assets/Rectangle 34624178 (5).png',
     alt: "img2",
   },
   {
     id: 6,
     title: 'LED Board',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/243f/f692/9cee2c61159b7963d383118970e277ed?Expires=1704067200&Signature=B8W74jphCxQF9us~v5QN5lRKerx-j9QNRg-G753GVkC3WZ9xEuB~~fOUOqEkIYsNcyBO8OpJEmlLsacxCigv9oeGghSI8dmLX~-sFM~VOK2t5SeebSWpME8PqVGUpuo4oxqtgyhhE4GXkgpk9HkGCXUovjXFxrVBEuLvJijEQ2g3zRGV3d3HijExX3McgyESQRbj-sA5qBgtKeNpTwKgZeqPOYklrZqzom4msgddlPCNDJFk8L0MAwFYcZ1H5aXjqmvXbRNf8aWpHs2usvcoiBBI7bpnoN~iqQL4nh5vCWoBbljJ5~kjgNGwU~rAh93~LYaKTZETmKMwGhi19pojqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    imageUrl: '/assets/Rectangle 34624178.png',
+    alt: "img2",
+  },
+  {
+    id: 9,
+    title: 'LED Board',
+    imageUrl: '/assets/Rectangle 34624178.png',
     alt: "img2",
   },
   {
     id: 7,
-    title: 'Info Board',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/2c33/43c3/dc4454ec44bff841c83240c9d6a28d9d?Expires=1704067200&Signature=Vpg~akui0kzflHLbcT1y~FBBRDeJit8Qx~CoezJVwN0xih0iRcb-vH3Qdm2gS0n2-MlDrylYluxal8XyFhHXNUMQhLzW0bs~Dku6Gllz~qjL9ihGM4-p2qpdjSMWCV5x3sa8YRp12lua4Dm8J1rcoTYIETnNdVCQHTIt1i1xmGTdaaOOBkWcT7oliz6lICN95-oi~O3dQScFO4Q0eWMzN8RxjIVKg31nL8OPHRbpfP5jatRMd5kwgMdkYGigBlDsLGb4M3pSJ7bZ1BTnLQGuaFN~QDStl7hFSzHArP-NG6uoIOP1n-xwq~fwsK6faXNrq~3PgQN5gdoSqbuIRknJBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-    alt: "img3",
+    title: 'LED Board',
+    imageUrl: '/assets/Rectangle 34624178 (1).png',
+    alt: "img2",
   },
   {
     id: 8,
-    title: 'Info Board',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/2c33/43c3/dc4454ec44bff841c83240c9d6a28d9d?Expires=1704067200&Signature=Vpg~akui0kzflHLbcT1y~FBBRDeJit8Qx~CoezJVwN0xih0iRcb-vH3Qdm2gS0n2-MlDrylYluxal8XyFhHXNUMQhLzW0bs~Dku6Gllz~qjL9ihGM4-p2qpdjSMWCV5x3sa8YRp12lua4Dm8J1rcoTYIETnNdVCQHTIt1i1xmGTdaaOOBkWcT7oliz6lICN95-oi~O3dQScFO4Q0eWMzN8RxjIVKg31nL8OPHRbpfP5jatRMd5kwgMdkYGigBlDsLGb4M3pSJ7bZ1BTnLQGuaFN~QDStl7hFSzHArP-NG6uoIOP1n-xwq~fwsK6faXNrq~3PgQN5gdoSqbuIRknJBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-    alt: "img3",
+    title: 'LED Board',
+    imageUrl: '/assets/Rectangle 34624178 (2).png',
+    alt: "img2",
   },
-  {
-    id: 9,
-    title: 'Info Board',
-    imageUrl: 'https://s3-alpha-sig.figma.com/img/2c33/43c3/dc4454ec44bff841c83240c9d6a28d9d?Expires=1704067200&Signature=Vpg~akui0kzflHLbcT1y~FBBRDeJit8Qx~CoezJVwN0xih0iRcb-vH3Qdm2gS0n2-MlDrylYluxal8XyFhHXNUMQhLzW0bs~Dku6Gllz~qjL9ihGM4-p2qpdjSMWCV5x3sa8YRp12lua4Dm8J1rcoTYIETnNdVCQHTIt1i1xmGTdaaOOBkWcT7oliz6lICN95-oi~O3dQScFO4Q0eWMzN8RxjIVKg31nL8OPHRbpfP5jatRMd5kwgMdkYGigBlDsLGb4M3pSJ7bZ1BTnLQGuaFN~QDStl7hFSzHArP-NG6uoIOP1n-xwq~fwsK6faXNrq~3PgQN5gdoSqbuIRknJBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-    alt: "img3",
-  },
-
 ]
 const MediaListingPage = () => {
    const [searchData, setsearchData] = useState(Searchapi);
@@ -262,22 +259,25 @@ const MediaListingPage = () => {
           </ul>
       </div>
 
+
+      <div className='mx-auto'>
+
       <FilterComponent data={data} optionsConfig={optionsConfig} />
+      </div>
       
       <div className="px-5 md:px-8 xl:px-8 pb-5">
-      <ul className='flex flex-wrap justify-around max-h-[90vh] overflow-y-auto w-full overscroll-auto mb-4 '>
-                   {
-                       searchData.map((curElem, ind) => {
-                           return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
-                       })
-                   }
-      </ul>
+        <div className='flex justify-center'>
+        <ul className='px-8 grid grid-cols-1 sm:grid-cols-2 sm:px-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-5 4xl:grid-cols-6  max-h-[90vh] overflow-y-auto w-full overscroll-y-auto mb-4 '>
+          {
+            searchData.map((curElem, ind) => {
+              return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
+            })
+          }
+        </ul>
+        </div> 
 
         <div>
-      
-        <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />
-      
-        
+          <hr className='border border-gray-300 mb-7 w-full absolute left-0 right-0' />     
         </div>
         <div className="p-3 md:pl-8 xl:pl-7 h-full mt-5 md:pl-4 ">
         <h1 className="text-secondarycolor-1 mx-3 my-8 text-left font-['Inter'] text-2xl md:text-4xl leading-none font-bold 

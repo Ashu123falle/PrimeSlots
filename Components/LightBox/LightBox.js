@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image"
 
 const LightBox = () => {
     return (
@@ -7,21 +8,21 @@ const LightBox = () => {
                 <div className='border p-1 rounded-3xl bg-[#D9D9D9] w-[95%] sm:w-[92%] md:w-[85%] lg:w-[80%] xl:w-[70%]'>
                     <div className='rounded-3xl bg-[#0A0D26]'>
                         <div className="lights grid grid-flow-col sm:pl-4">
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
-                            <img src='/assets/light.png' className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20}  className='sm:w-[70%] mt-[-12px]' alt="light" />
+                            <Image src='/assets/light.png' height={20} width={20} className='sm:w-[70%] mt-[-12px]' alt="light" />
                         </div>
 
                         <div className="content mt-[-10px] text-center sm:px-5 text-[#FFF] grid grid-flow-col justify-around pb-4 sm:pb-8 md:pb-12 lg:pb-16">

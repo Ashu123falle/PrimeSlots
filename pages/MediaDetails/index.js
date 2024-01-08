@@ -90,8 +90,8 @@ const MediaOptionsButtons = [
     const [,pageName] = pathname.split("/")
 
     const mapAndDescriptionSection = () => (
-    <div className="flex flex-col items-center lg:flex-row lg:justify-center px-10">
-            <div className="mt-6 flex flex-col items-center px-8  justify-center">   
+    <div className="flex flex-col items-center px-10 lg:flex-row lg:justify-center">
+            <div className="flex flex-col items-center justify-center px-8 mt-6">   
                 <GoogleMapComponent/>
 
                 <div className="p-3 w-[300px] sm:w-[500px] lg:w-[450px]">
@@ -106,7 +106,7 @@ const MediaOptionsButtons = [
                             <button type="button" className={`text-blue-950 text-sm  font-normal font-['Figtree'] 
                                 leading-none  ${activeIndustryId.includes(obj.id) ? 'bg-blue-950 text-white mr-[-22px] ':''} `}>{obj.industryName}
                             </button>
-                            {activeIndustryId.includes(obj.id) && <img src='/assets/icons8-tick.svg' alt="tick logo" className="text-xs"/>}
+                            {activeIndustryId.includes(obj.id) && <Image src='/assets/icons8-tick.svg' alt="tick logo" width={10} height={10} className="text-xs"/>}
                             
                         </li>
                         )}
@@ -157,18 +157,18 @@ const MediaOptionsButtons = [
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
        
-    <div className="mt-6 mx-12">
+    <div className="mx-12 mt-6 max-md:mx-4">
         <Carousel images={carousalImages}/>
 
-        <div className="flex justify-between  border shadow p-4 h-14 rounded-lg">
+        <div className="flex justify-between p-4 border rounded-lg shadow h-14">
             <h1 className=" text-black text-base font-medium font-['Figtree'] leading-tight">Title of media will come here...</h1>
             <div className="flex">
                 <button className="border-none outine-none" type="button">
-                <img src="/assets/la_street-view.svg" alt="street view icon" className="mr-2"/>
+                <Image src="/assets/la_street-view.svg" alt="street view icon" height={20} width={20} className="mr-2"/>
                 </button>
 
                 <Popup trigger ={ <button>
-                <img src='/assets/icon-park-outline_video.svg' alt="park view icon" className="ml-1"/>
+                <Image src='/assets/icon-park-outline_video.svg' height={20} width={20} alt="park view icon" className="ml-1"/>
                 </button>}
                 modal
                 >
@@ -176,7 +176,7 @@ const MediaOptionsButtons = [
                 <div className='w-[80vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
                     <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center p-1 self-end">
-                 <img src='/assets/icons8-close.svg' onClick={() => close()} alt="close"/>
+                 <Image height={20} width={20} src='/assets/icons8-close.svg' onClick={() => close()} alt="close"/>
                </span>
                     <ReactPlayer url="https://www.youtube.com/watch?v=LCU4EMQf7IU&t=150s" controls width={'100%'} height={'90%'} className="rounded-xl"/> 
                 </div>
@@ -198,16 +198,18 @@ const MediaOptionsButtons = [
     {renderMediaDetailSections()}
 
    
-        <div className="my-10 sm:mt-10 md:mt-6 ml-6 ">
+        <div className="my-10 ml-6 sm:mt-10 md:mt-6 ">
             <h1 className="text-slate-950 text-3xl font-bold font-['Inter']
              leading-[48px] tracking-wider mb-1 ml-6">Related Items </h1>
              <PeopleAlsoLookFor/>
         </div>
 
-        <div className="mt-4 px-10">
+
+        <div className="mt-4 md:px-10">
+
         <ExtraServices />
         </div>
-        <div className='mt-6 px-8'>
+        <div className='px-8 mt-6'>
         <ServiceSection/>
         </div>
         <Footer/>

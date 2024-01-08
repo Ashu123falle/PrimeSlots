@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const CategoryCard = (props) => {
@@ -10,14 +11,16 @@ export const CategoryCard = (props) => {
         
       >
          <Link href={`/MediaListing?category=${encodeURIComponent(title)}`}>
-         <img
-          className="w-[170px] h-[104px] top-0"
+         <Image
+         width={170}
+         height={104}
+          className="top-0"
           src={imageUrl}
           alt={alt}
         />
        
            <h1 className="group-hover:font-bold group-hover: text-[#224757] text-capstext text-center 
-           mt-3 font-['Figtree-Regular',_sans-serif] text-sm text-base leading-5 font-normal bottom-[10px]">
+           mt-3 font-['Figtree-Regular',_sans-serif]  text-base leading-5 font-normal bottom-[10px]">
           {title}
         </h1>
         </Link>
