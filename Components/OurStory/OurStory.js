@@ -12,7 +12,7 @@ const OurStory = () => {
                                 <p className='sm:text-sm text-[10px] text-[#A9A9A9]'>OUR STORY</p>
                                 <h1 className='sm:text-2xl text-xl font-semibold text-[#131C5F] font-[Playfair]'>We are agency that expert more than 10 years</h1>
                             </span>
-                            <p className='text-[#777777] leading-4 sm:mt-4 text-[0.8rem] sm:text-[0.8rem] md:text-[0.9rem]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p className='text-[#777777] leading-4 sm:mt-4 text-[0.8rem] sm:text-[0.8rem] md:text-[0.9rem]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                         </div>
                     </div>
 

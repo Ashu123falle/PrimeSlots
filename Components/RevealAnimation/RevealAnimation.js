@@ -13,7 +13,7 @@ function Reveal () {
         if(isInView){
             mainControls.start("visible");
         }
-    }, [isInView] )
+    }, [isInView,mainControls] )
     return (
     <div className="">
         <motion.div variants={{

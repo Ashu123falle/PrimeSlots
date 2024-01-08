@@ -21,7 +21,7 @@ const OurFundamental = () => {
                             <Image width={50} height={40} src='/assets/Group1.svg' alt="group1"
                              className=' md:w-[45px] sm:w-[10%]' />
                             <h1 className='text-4xl  uppercase text-[#6979F8] font-[Playfair]'>Lorem Ipsum is simply</h1>
-                            <p className='leading-5 text-[27.03px] font-[Nexa] text-[#9F9E9E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <p className='leading-5 text-[27.03px] font-[Nexa] text-[#9F9E9E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,</p>
                         </div>
                     </div>
 
@@ -35,7 +35,7 @@ const OurFundamental = () => {
                         <div className="content grid gap-4 md:gap-6 lg:gap-10">
                             <Image width={50} height={40} src='/assets/Group2.svg' alt="group2" className='md:w-[45px] sm:w-[10%]' />
                             <h1 className='text-4xl uppercase text-[#6979F8] font-[Playfair]'>Lorem Ipsum is simply</h1>
-                            <p className='leading-5 text-[27.03px] font-[Nexa] text-[#9F9E9E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <p className='leading-5 text-[27.03px] font-[Nexa] text-[#9F9E9E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,</p>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@ const OurFundamental = () => {
                         <div className="content grid gap-4 md:gap-6 lg:gap-10">
                             <Image width={50} height={40} src='/assets/Group3.svg' alt="group3" className='md:w-[45px] sm:w-[10%]' />
                             <h1 className='text-4xl uppercase text-[#6979F8] font-[Playfair]'>Lorem Ipsum is simply</h1>
-                            <p className='leading-5 text-[27.03px] font-[Nexa] text-[#9F9E9E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <p className='leading-5 text-[27.03px] font-[Nexa] text-[#9F9E9E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,</p>
                         </div>
                     </div>
                 </div>
