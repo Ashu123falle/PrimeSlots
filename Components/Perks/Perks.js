@@ -20,7 +20,7 @@ const PerkItem = ({ src, alt, title, description }) => {
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
       transition={{ duration: 2 }}
-      className="flex flex-col lg:flex-row items-center"
+      className="flex flex-col lg:flex-row items-center m-5"
     >
       <div className="max-w-full h-auto rounded-lg mb-2 lg:mb-0 lg:mr-4">
         <img src={src} alt={alt} />
@@ -60,7 +60,6 @@ const AnimatedText = ({ children }) => {
 const PerksComponent = () => {
   const containerStyle = {
     width: '100vw',
-    
   };
   
   const customRotationStyle = {
@@ -69,38 +68,40 @@ const PerksComponent = () => {
     background: 'linear-gradient(to bottom, rgba(19, 28, 95, 1), rgba(2, 12, 97, 0.79))',
     position:'relative'
   };
+
   const clip={
     clipPath:'polygon(0 0, 100% 5%, 100% 100%, 0% 95%)',
   }
   
   return (
-    <div className="relative p-4 bg-gradient-to-b from-rgba-19-28-95-1 to-rgba-2-12-97-0-79 rotate-container lg:text-left origin-top-left
+    <div className="relative p-4 lg:p-8 bg-gradient-to-b from-rgba-19-28-95-1 to-rgba-2-12-97-0-79 rotate-container lg:text-left origin-top-left
      min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white" style={{...containerStyle, ...customRotationStyle, position: 'relative'}}>
-     
-  
+    
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-24 left-7'>
         <img src='/assets/Vectortop.png' alt="Vector Top" />
-      </motion.div>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-48 left-0'>
+    </motion.div>
+      
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-48 left-0'>
         <img src='/assets/Vectormiddle.png' alt="Vector Middle" />
-      </motion.div>
+    </motion.div>
 
-
-  <div className='flex flex-col lg:flex-row items-center p-4 lg:justify-around rotate-content' style={{ transform: 'rotate(0deg)' }}>
+    {/*small to medium screen perks component*/}
+  <div className='flex flex-col lg:flex-row items-center p-4 lg:justify-around rotate-content lg:hidden' style={{ transform: 'rotate(0deg)' }}>
   <motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 2}}
-  className="lg:text-3xl sm:text-2xl md:text-2xl font-bold mb-4 md:mb-0 md:mr-4 md:text-left mt-8"
+  className="lg:text-3xl sm:text-2xl md:text-2xl font-bold mb-4 md:mb-0 md:mr-4 md:text-left mt-8 font-[Playfair]"
 >
   Perks of a <span className="lg:inline hidden sm:hidden md:hidden mt-0 lg:mt-0"><br /></span> Prime Slots Partner
 </motion.div>
+
     <div className="max-w-full h-auto rounded-lg">
-      <Image src='/assets/digital.svg' alt="Perks Image" height={250} width={150} />
+      <Image src='/assets/digital.svg' alt="Perks Image" height={250} width={150} className='w-[190px] sm:w-[250px]  lg:w-[300px] xl:w-[350px]'/>
     </div>
   </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center rotate-content lg:ml-56 lg:mt-4 sm:ml-2 sm:mt-2 md:ml-8 md:mt-8 mt-4 xs:mb-16 md:mb-10 " style={{ transform: 'rotate(0deg)', }}>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center rotate-content lg:ml-56 lg:mt-4 sm:ml-2 sm:mt-2 md:ml-8 md:mt-8 mt-4 xs:mb-16 md:mb-10 lg:hidden" style={{ transform: 'rotate(0deg)', }}>
     <div className='lg:flex-col space-y-10'>
       {/* Perk 1 */}
       <PerkItem
@@ -139,6 +140,49 @@ const PerksComponent = () => {
     
     <img src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" className='absolute top-8 right-0 w-20 h-40 lg:inline hidden' />
   </div>
+
+{/*large screen perks component*/}
+  <div className='lg:flex justify-around w-full hidden'>
+  <div className='flex justify-around w-full items-end mt-2'>
+    <h1 className="w-[450px] text-white text-4xl font-semibold font-['Playfair'] leading-[57.60px]">Perks of a PrimeSlots Partner</h1>
+    <div className="max-w-full h-auto rounded-lg">
+      <Image src='/assets/digital.svg' alt="Perks Image" height={250} width={150} className='w-[190px] sm:w-[250px] lg:w-[350px] '/>
+    </div>
+  </div>
+  </div>
+
+    <div className="lg:flex justify-around mt-6 hidden">
+      <div className='flex flex-col ml-[-100px]'>
+      <PerkItem
+        src='/assets/perk3.png'
+        alt="Perk 3 Image"
+        title="Perk 3"
+        description="Description of perk 3 goes here."
+      />
+      <PerkItem
+        src='/assets/perk3.png'
+        alt="Perk 3 Image"
+        title="Perk 3"
+        description="Description of perk 3 goes here."
+      />
+      </div>
+
+      <div className='flex flex-col'>
+      <PerkItem
+        src='/assets/perk3.png'
+        alt="Perk 3 Image"
+        title="Perk 3"
+        description="Description of perk 3 goes here."
+      />
+      <PerkItem
+        src='/assets/perk3.png'
+        alt="Perk 3 Image"
+        title="Perk 3"
+        description="Description of perk 3 goes here."
+      />
+      </div>
+    </div>
+    <img src='/assets/Vectorbottom2.png' alt="Vector Bottom 2" className='absolute top-80 right-0 w-20 h-40 lg:inline hidden' />
   <img src='/assets/Vectorbottom1.png' alt="Vector Bottom 1"  className='absolute top-[510px] z-20 right-20 lg:inline hidden' />
 </div>
 
