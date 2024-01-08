@@ -30,7 +30,7 @@ function Navbar() {
         <>
         <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 w-full">
           <Link href="/">
-            <Image src='/assets/mainlogo.png' width={136.7} height={32} className="w-[136.7px] h-8 relative mx-1" />
+            <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="w-[136.7px] h-8 relative mx-1" />
             </Link>
 
             <div className="mx-9">
@@ -123,9 +123,9 @@ function Navbar() {
         </nav>
 
         <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8 lg:hidden">
-      <a href="/">
-      <Image src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
-      </a>
+      <Link href="/">
+      <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
+      </Link>
       <nav>
         <section className="MOBILE-MENU px-5 text-left flex lg:hidden">
           <div
