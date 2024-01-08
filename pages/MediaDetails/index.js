@@ -90,8 +90,8 @@ const MediaOptionsButtons = [
     const [,pageName] = pathname.split("/")
 
     const mapAndDescriptionSection = () => (
-    <div className="flex flex-col items-center lg:flex-row lg:justify-center px-10">
-            <div className="mt-6 flex flex-col items-center px-8  justify-center">   
+    <div className="flex flex-col items-center px-10 lg:flex-row lg:justify-center">
+            <div className="flex flex-col items-center justify-center px-8 mt-6">   
                 <GoogleMapComponent/>
 
                 <div className="p-3 w-[300px] sm:w-[500px] lg:w-[450px]">
@@ -157,10 +157,10 @@ const MediaOptionsButtons = [
             <hr className='border border-gray-300 w-[100vw] mb-3' />
         </div>
        
-    <div className="mt-6 mx-12">
+    <div className="mx-12 mt-6 max-md:mx-4">
         <Carousel images={carousalImages}/>
 
-        <div className="flex justify-between  border shadow p-4 h-14 rounded-lg">
+        <div className="flex justify-between p-4 border rounded-lg shadow h-14">
             <h1 className=" text-black text-base font-medium font-['Figtree'] leading-tight">Title of media will come here...</h1>
             <div className="flex">
                 <button className="border-none outine-none" type="button">
@@ -198,16 +198,18 @@ const MediaOptionsButtons = [
     {renderMediaDetailSections()}
 
    
-        <div className="my-10 sm:mt-10 md:mt-6 ml-6 ">
+        <div className="my-10 ml-6 sm:mt-10 md:mt-6 ">
             <h1 className="text-slate-950 text-3xl font-bold font-['Inter']
              leading-[48px] tracking-wider mb-1 ml-6">Related Items </h1>
              <PeopleAlsoLookFor/>
         </div>
 
-        <div className="mt-4 px-10">
+
+        <div className="mt-4 md:px-10">
+
         <ExtraServices />
         </div>
-        <div className='mt-6 px-8'>
+        <div className='px-8 mt-6'>
         <ServiceSection/>
         </div>
         <Footer/>
