@@ -14,7 +14,7 @@ const OurTeams = () => {
 
                     <div className="images flex flex-wrap sm:flex-wrap md:flex-nowrap justify-center sm:gap-6 gap-8">
                         <div className='space-y-5'>
-                            <Image src='/assets/Rectangle31 1.png' width={350}  height={350}/>
+                            <Image src='/assets/Rectangle31 1.png' alt='image1' width={350}  height={350}/>
                             <div className='text-center'>
                                 <h3 className='text-xl font-semibold text-[#131C5F]  font-[Figtree]'>Roy Thomas</h3>
                                 <p className='text-sm text-[#131C5F]  font-[Figtree]'>Founder & CEO</p>
@@ -22,7 +22,7 @@ const OurTeams = () => {
                         </div>
 
                         <div className='space-y-5'>
-                            <Image src='/assets/Rectangle26.png' width={350} height={350}/>
+                            <Image src='/assets/Rectangle26.png' alt='image2' width={350} height={350}/>
                             <div className='text-center'>
                                 <h3 className='text-xl font-semibold text-[#131C5F]  font-[Figtree]'>Roy Thomas</h3>
                                 <p className='text-sm text-[#131C5F]  font-[Figtree]'>Founder & CEO</p>
@@ -30,7 +30,7 @@ const OurTeams = () => {
                         </div>
 
                         <div className='space-y-5'>
-                            <Image src='/assets/Rectangle28.png' width={350} height={350}/>
+                            <Image src='/assets/Rectangle28.png' alt='image3' width={350} height={350}/>
                             <div className='text-center'>
                                 <h3 className='text-xl font-semibold text-[#131C5F] font-[Figtree]'>Roy Thomas</h3>
                                 <p className='text-sm text-[#131C5F] font-[Figtree]'>Founder & CEO</p>
