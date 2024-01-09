@@ -1,10 +1,16 @@
+import Image from 'next/image';
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+
 const ReadyToConnect = () => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
+
     return (
         <>
         <div className="flex flex-col justify-center items-center relative ">
 
             <div >
-                    <svg xmlns="http://www.w3.org/2000/svg"  className="absolute z-10 left-[90%] top-[-15px] md:top-[-25px] w-[37px] h-[35px] md:w-[57px] md:h-[65px]" viewBox="0 0 57 65" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg"  className="absolute z-10 left-[85%] sm:left-[90%] top-[-15px] md:top-[-25px] w-[37px] h-[35px] md:w-[57px] md:h-[65px]" viewBox="0 0 57 65" fill="none">
                     <path d="M0.160679 28.4793C0.408286 18.4117 1.54453 4.53983 8.33162 1.49925C15.1187 -1.54134 32.918 4.78599 40.8832 10.2358C48.8484 15.6857 55.577 26.2099 56.1227 34.1983C56.6685 42.1867 52.3705 53.5485 44.1577 58.1662C35.9449 62.784 14.1788 66.8528 6.84597 61.905" fill="url(#paint0_linear_525_1707)"/>
                     <defs>
                     <linearGradient id="paint0_linear_525_1707" x1="50.4235" y1="52.8766" x2="-4.65708" y2="20.8649" gradientUnits="userSpaceOnUse">                      
@@ -33,25 +39,39 @@ const ReadyToConnect = () => {
                 </div>
         </div>
 
-    <div>
-    <div className="main h-[160px] sm:h-[160px] md:h-[180px] bg-[#0a075f]  flex justify-center items-center ">
-        <div className='xl:p-7 lg:p-5 xl:w-[75%] lg:w-[85%] md:w-[90%] sm:w-[92%] w-[90%] flex sm:flex-row flex-col justify-center items-center lg:space-x-10 sm:space-y-0 space-y-7'>
+        {/* Stay in the Loop section bg-[#0a075f] */}
+        <div className="main h-[160px] sm:h-[160px] md:h-[180px] bg-[#0A075F]  flex justify-center items-center  max-sm:pt-14 ">
+                <div className='xl:p-7 lg:p-5 xl:w-[75%] lg:w-[85%] md:w-[90%] sm:w-[92%] w-[90%] flex sm:flex-row flex-col justify-center items-center lg:space-x-10 sm:space-y-0 space-y-7'>
 
-            <div className="content w-full">
-                <div className='sm:space-y-5 space-y-2 sm:text-justify text-center'>
-                    <span>
-                        <h1 className='sm:text-2xl text-xl font-semibold text-[#F6F6F7]'>Stay in the loop</h1>
-                    </span>
-                    <p className='text-[#F5F5F6] leading-4 sm:mt-4 text-[0.8rem] sm:text-[0.8rem] md:text-[0.9rem]'>Join our mailing list to stay in the loop <br />with our newest for Event and Offers.</p>
-                </div>
-            </div>
+                    <div className="content w-full">
+                        <div className='sm:space-y-5 space-y-2 sm:text-justify text-center'>
+                            <span>
+                                <h1 className='sm:text-2xl text-xl font-semibold text-[#F6F6F7]'>Stay in the loop</h1>
+                            </span>
+                            <p className='text-[#F5F5F6] leading-4 sm:mt-4 text-[0.8rem] sm:text-[0.8rem] md:text-[0.9rem]'>Join our mailing list to stay in the loop <br />with our newest for Event and Offers.</p>
+                        </div>
+                    </div>
 
-
-            <div className="button sm:w-[50%] md:w-[80%] lg:w-full xl:w-full flex md:justify-center md:items-center sm:justify-end">
-                <button className='text-sm px-12 py-2 lg:px-16 lg:py-3 md:px-12 md:py-3 sm:px-8 sm:py-3 bg-[#F5167E] text-[#FFF] rounded-full shadow-lg shadow-[rgba(61, 55, 241, 0.25)]'>Subscribe Now</button>
-            </div>
+        <div className="w-[70vw] sm:w-[100vw] max-w-[400px] h-[60px] flex items-center bg-white rounded-[45px] px-4 pl-2 pr-1.5 max-md:h-auto max-sm:rounded-[20px] max-sm:flex-col">
+          <input
+            className="w-full rounded-[50px] text-gray-700 mr-3 py-1 pl-2 leading-tight max-sm:mt-4 outline-none"
+            type="text"
+            placeholder="Enter your email address.."
+            aria-label="Email Address"
+          />
+          <button
+            className="h-12 w-38 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
+            type="button"
+          >
+            {isSmallScreen ? (
+              <Image src="/assets/subscribe.png" width={70} height={70} alt="Subscribe" className='bg-white  rounded-[50px]'/>
+            ) : (
+              <span className="p-2">Subscribe Now</span>
+            )}
+          </button>
         </div>
-    </div>
+
+      </div>
     </div>
 </>
     )
