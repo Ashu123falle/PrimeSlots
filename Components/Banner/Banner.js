@@ -70,7 +70,7 @@ const Banner = () => {
     return(
         <>
         <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] xs:h-[160vh] sm:h-[140vh] md:h-[163vh] xl:h-[160vh]" 
-        style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1704672000&Signature=Xz6BeRagExtpnmtcKTEKZ90M7Z8CPeuMf3G~dJ~3WILoceH79CufiXkqsWCa-HXVhiHOfCtnzuequs1UiuYMlQ4juPiF-qW0odF5s5M5QoNGsL6TMiCmbrGHiFMO5Zhryx5nOzJeJJjVEYq3RGCfaSaXO~W-9eNmKcYxNWUmWEZKiCPomDw9-wjM86SK9CwU1904tjGQTBRS8tYc3XFhoCnY2iIu27LEIe67pWncsinHx1JyBn9VSBQVH5K1A~vDfZWDKdV46Otcdo-WQakXuV67xHpqYP0AjgPZ-rDYl6t76XqMtWOSom6oGrlfAsocG2JeWu9bGItHkzFCMk8quA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')", backgroundSize: "cover", width:"100%"}}>
+        style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LbjwwZribj2HvpVtvrBr6qtMy846ZGMCLQe1Wu5rI4yjk4UTRYs-llD5i8UBO7YRTl1d1ZSK-~MEh4zfq8ocbyK-ujwG-AGujck8ekndcxyHNgR9RC3QKG5EwRHMnHUaSeirnql4nXNvr7noE7G-UX0wIKLe3sJIC~zgfqVMB9ul8uN2p8rR5gGOu4lkrb0g4P2GAjwMBXLS0BFeVaABvqCYtNpvUJ7YhFI2H7vinMv0m0RPREJecbhkbHw3gOccwTdHuc39RNLx2UAKWAzIHbNKKBhw0gYDTwnbnXd0aRifeGRxvG-LiiVysOGBEPIx3OmwSRD7EiFZbcGZhH7KPQ__')", backgroundSize: "cover", width:"100%"}}>
         <div className="absolute inset-0 backdrop-blur-sm">
             
             <div className="Navbar py-5 flex justify-around relative">
@@ -161,7 +161,7 @@ const Banner = () => {
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
             className={"w-[30vw] h-[25vh] md:h-[50vh] relative top-[calc(8vw)] top-[calc(1vh)] md:top-[calc(-12vh)] bg-cover"}
-            style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/3181/f79d/5f3ed537229f96087c4eca08efd968b9?Expires=1704672000&Signature=KwEaDsA1aQ~gsYSxmCAbkmDIfUja-Tb0ad6cSXyCK6i7WABBen8NJd69x3PocMgsr9pC07dBSK0U9dgAlkxdk~g5p0JSq-MAHRyBCRdRfZZtwJeIm9CinJmEkY0rlsf9dM1RJky7UO5K0czLcfWJXTqvxxLyeVhDiyWkWe-BB57j6VzlMCJNlKMjudxN5lndI2UBSRwyfAx9kx-oYYq270wHvlXSWs-hxMwIJTkSdGklI1N9~FvcqjvgaEfaRyZXhaV~x5VZG6CfxfSv9bzCF~eOKeHJSj9jZCmVR4widyukXvzrAfur8ua8D223QzFxyJBQs~mr8fJ-4BvvLv0fvA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")'}}
+            style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/3181/f79d/5f3ed537229f96087c4eca08efd968b9?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ka3nQBVUtLIz682lhjyf9mtJYhinGu1w0~kut5FTGFFxrWESjsrojZtZWW9M1GM5aaZiY62CcK0C-xD3hoJvrDSvTYve6AXnfTyiSjJUP7vmgfFKsz-L2jVYb4RZqFciXidk88fkZ96y~eQZm2fdcDDymeNVuTouR0C0NdOxBD3YmwDf~nbg07-kKpq3bx6~bRNjBIlfmXlkYXcWVx~sIdAQeGR171iaLL0S~jMJEJLT0CnO756gECJqa14l6f0pReRvoJovGQ406RzXYFwHCoGKqOK39RGjG3f1sE~PwDBjRj50hGIvXrMDyglh2A3Lz-wtw8PUlMSO88RZo~6Brw__")'}}
             ></motion.div>
 
             <motion.div
@@ -173,7 +173,7 @@ const Banner = () => {
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
             className={"w-[30vw] h-[25vh] md:h-[50vh] relative left-[calc(70vw)]  top-[calc(-30vh)]  md:top-[calc(-85vh)] bg-cover"}
-            style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/fa98/8e09/1a4b35e0c0523eeeb654c75c59849568?Expires=1704672000&Signature=jH4ZJoEO-w3ZgNO5n7iZIQ51Fi9wOLyNDc8OYfvrr9kuk7oMqocOZKOudYDFT~8GMfeOtEjj3Fwnd9blDR9X0ek9UTqHC~ziHwt5O2xW2fzFQM73JfIWDBbUE8ffDz~XpphC-oHGQu6SF1mROzTWbpqZZZgyl63J~IY7DH~lesjA6~KESk1cSOD4-SkaTJsoiznGk6wkNuX5WvmF7vdlLspnsd3VyVryMCi-A~uEAcC2zLsXIHp692wZ-5JgnskR7szkp5bQp4l-0Vp2jLCKomYrPcxCo0gSKRWbVngx02T4XEVmswZL7ZkKjli5IggW5kpja9fVldGHV~cLI9KEKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")'}}
+            style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/fa98/8e09/1a4b35e0c0523eeeb654c75c59849568?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CpEWDddjfoIXaFo7mB55T33UKpqlg~wLi9v4MGL9fOZiuojPfeZqBs0ihaskAg4-5T-c7V7hBGRX6yNmH8rGgCFyxQnCIt~4KIh6CcdzdgYLXbN6~AVtb~2BrqRdzH5kJ-WQ~wwDmCzwdZ0c0UzCPnBVf8Gof2rCdUxbH62m6KWDz1rC2PkdZ~2LczrcwAPC~Jib3775K-iza1SF9vCaBr2L61HSOq~jrrQE8I-e3OipCK8b55-DVdZ5LTwKOjLUToZLRfZhImdijxZFxFLiYKQyEKYSgX791UoHWbDnyJYWSNQ5CC2CQS3RL6FYbAs20xlPF6-ADy3iQMC18rS5sw__")'}}
             ></motion.div>
             </div>
             <div className="flex-col items-center justify-center">
@@ -182,12 +182,10 @@ const Banner = () => {
                 <FilterComponent data={data} optionsConfig={optionsConfig} />
             </div>
 
-            <div className="button mx-auto self-center left-[calc(35vw)] sm:left-[calc(45vw)] relative top-[calc(-10vh)] md:top-[calc(-65vh)]">
-                <motion.button onClick={onClickExplore} variants={buttonVariants} whileHover="hover" className="bg-[#ffffff] rounded-[36px] w-[140px] h-[52px] cursor-pointer
+            <div className="mx-auto flex justify-center">
+            <div className="button   relative top-[calc(-10vh)] md:top-[calc(-65vh)]">
+                <motion.button onClick={onClickExplore} variants={buttonVariants} whileHover="hover" className="bg-[#ffffff] rounded-[36px] mx-auto w-[140px] h-[52px] cursor-pointer
                 text-[#0e0d0d] text-center text-[18.40671920776367px] font-semibold font-['Figtree-SemiBold',_sans-serif]">Explore Now</motion.button>
-
-                <div className="relative left-[calc(7vw)] top-[calc(-1vw)]">
-                
                     </div>
             </div>
             
