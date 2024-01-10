@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar/Navbar"
+import Navbar from "@/components/Navbar/Navbar";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
