@@ -51,7 +51,7 @@ const FAQ = () => {
             <Image src='/assets/mail.svg' width={20} height={20} alt="icon" />
            </span>
            <h1 className='py-4 font-bold text-gray-700 max-sm:py-2 max-sm:mx-2'>How do I change my account email?</h1>
-           <p className='text-sm '>You can log in to your account and change it from your Profile &gt; Edit Profile. Then go to the general tab to change your email.</p>
+           <p className='text-sm max-sm:mx-2 '>You can log in to your account and change it from your Profile &gt; Edit Profile. Then go to the general tab to change your email.</p>
         </div>
         
         <div className='flex-col w-full h-auto px-6 my-4 text-gray-700'>
@@ -59,7 +59,7 @@ const FAQ = () => {
             <Image src='/assets/credit-card.svg' width={20} height={20} alt="icon" />
            </span>
            <h1 className='py-4 font-bold text-gray-700 max-sm:py-2 max-sm:mx-2'>What should I do if my payment fails?</h1>
-           <p className='text-sm '>If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.</p>
+           <p className='text-sm max-sm:mx-2'>If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.</p>
         </div>
         
         <div className='flex-col w-full h-auto px-6 my-4 text-gray-700'>
@@ -67,7 +67,7 @@ const FAQ = () => {
             <Image src='/assets/slash.svg' width={20} height={20} alt="icon" />
            </span>
            <h1 className='py-4 font-bold text-gray-700 max-sm:py-2 max-sm:mx-2'>What is your cancellation policy?</h1>
-           <p className='text-sm '>You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made.</p>
+           <p className='text-sm max-sm:mx-2'>You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made.</p>
         </div>
         
         <div className='flex-col w-full h-auto px-6 my-4 text-gray-700'>
@@ -75,7 +75,7 @@ const FAQ = () => {
             <Image src='/assets/truck.svg' width={20} height={20} alt="icon" />
            </span>
            <h1 className='py-4 font-bold text-gray-700 max-sm:py-2 max-sm:mx-2'>How do I check order delivery status ?</h1>
-           <p className='text-sm '>Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.</p>
+           <p className='text-sm max-sm:mx-2'>Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.</p>
         </div>
 
         <div className='flex-col w-full h-auto px-6 my-4 text-gray-700'>
@@ -83,7 +83,7 @@ const FAQ = () => {
             <Image src='/assets/dollar-sign.svg' width={20} height={20} alt="icon" />
            </span>
            <h1 className='py-4 font-bold text-gray-700 max-sm:py-2 max-sm:mx-2'>What is Instant Refunds?</h1>
-           <p className='text-sm '>Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.</p>
+           <p className='text-sm max-sm:mx-2 '>Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.</p>
         </div>
         
         <div className='flex-col w-full h-auto px-6 my-4 text-gray-700'>
@@ -91,7 +91,7 @@ const FAQ = () => {
             <Image src='/assets/tag.svg' width={20} height={20} alt="icon" />
            </span>
            <h1 className='py-4 font-bold text-gray-700 max-sm:py-2 max-sm:mx-2'>How do I apply a coupon on my order?</h1>
-           <p className='text-sm '>You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.</p>
+           <p className='text-sm max-sm:mx-2'>You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.</p>
         </div>
         <Image
               src='/assets/Vectortop.png'
