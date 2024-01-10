@@ -17,6 +17,7 @@ module.exports = {
         'Figtree': ['Figtree', 'sans-serif'],
         'Playfair': ['Playfair Display', 'serif'],
         'Nexa-Regular':['Nexa','sans-serif'],
+         'playfair': ['Playfair Display', 'serif'],
       },
       screens: {
         'xs': '180px',

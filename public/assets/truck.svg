@@ -1,0 +1,13 @@
+<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="truck" clip-path="url(#clip0_1238_1167)">
+<path id="Vector" d="M12.1249 3.06299H1.09326V12.6237H12.1249V3.06299Z" stroke="#131C5F" stroke-width="1.47088" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12.1274 6.74097H15.0692L17.2755 8.94729V12.6245H12.1274V6.74097Z" stroke="#131C5F" stroke-width="1.47088" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M4.40549 16.3007C5.42092 16.3007 6.24409 15.4776 6.24409 14.4621C6.24409 13.4467 5.42092 12.6235 4.40549 12.6235C3.39006 12.6235 2.56689 13.4467 2.56689 14.4621C2.56689 15.4776 3.39006 16.3007 4.40549 16.3007Z" stroke="#131C5F" stroke-width="1.47088" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M13.966 16.3007C14.9815 16.3007 15.8046 15.4776 15.8046 14.4621C15.8046 13.4467 14.9815 12.6235 13.966 12.6235C12.9506 12.6235 12.1274 13.4467 12.1274 14.4621C12.1274 15.4776 12.9506 16.3007 13.966 16.3007Z" stroke="#131C5F" stroke-width="1.47088" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_1238_1167">
+<rect width="17.6506" height="17.6506" fill="white" transform="translate(0.360352 0.856201)"/>
+</clipPath>
+</defs>
+</svg>
