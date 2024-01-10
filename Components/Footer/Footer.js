@@ -45,7 +45,7 @@ const Footer = () => {
 
                 <div className="mb-6 text-center md:w-1/4 md:text-left">
                     <h1 className="mb-2 text-2xl">Support</h1>
-                    <p><a href="#">FAQ</a></p>
+                    <p><Link href="/FAQ">FAQ</Link></p>
                 </div>
 
 
