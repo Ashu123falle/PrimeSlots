@@ -1,14 +1,14 @@
 
-import Navbar from "@/Components/Navbar/Navbar"
-import { CategoryCard } from "@/Components/CategoryCard/CategoryCard"
-import Footer from "@/Components/Footer/Footer"
+import Navbar from "@/components/Navbar/Navbar"
+import { CategoryCard } from "@/components/CategoryCard/CategoryCard"
+import Footer from "@/components/Footer/Footer"
 
 import React,{ useEffect, useState } from "react"
 import Link from 'next/link'
-import NewListingsComponent from "../../Components/NewListingsComponent/NewListingsComponent"
-import BlogCard  from "@/Components/blogCard/blogCard"
-import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
-import ServiceSection from "@/Components/ServicesSection/ServicesSection"
+import NewListingsComponent from "../../components/NewListingsComponent/NewListingsComponent"
+import BlogCard  from "@/components/blogCard/blogCard"
+import PeopleAlsoLookFor from '@/components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import ServiceSection from "@/components/ServicesSection/ServicesSection"
 
 const hotpicks = [
   {

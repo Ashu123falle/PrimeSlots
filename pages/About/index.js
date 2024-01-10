@@ -1,14 +1,14 @@
-import Navbar from "@/Components/Navbar/Navbar"
+import Navbar from "@/components/Navbar/Navbar"
 import { useRouter } from "next/router";
 import Link from "next/link";
-import WhoWeAre from "@/Components/WhoWeAre/WhoWeAre";
+import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
 
-import OurStory from "@/Components/OurStory/OurStory";
-import TrustedBy from "@/Components/TrustedBy/TrustedBy";
-import Footer from "@/Components/Footer/Footer";
-import StayLoop from "@/Components/StayLoop/StayLoop";
-import OurFundamental from "@/Components/OurFundamental/OurFundamentals";
-import OurTeams from "@/Components/OurTeams/OurTeam";
+import OurStory from "@/components/OurStory/OurStory";
+import TrustedBy from "@/components/TrustedBy/TrustedBy";
+import Footer from "@/components/Footer/Footer";
+import StayLoop from "@/components/StayLoop/StayLoop";
+import OurFundamental from "@/components/OurFundamental/OurFundamentals";
+import OurTeams from "@/components/OurTeams/OurTeam";
 
 const About = () => {
 

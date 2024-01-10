@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '@/Components/Navbar/Navbar'
+import Navbar from '@/components/Navbar/Navbar'
 import Link from 'next/link'
-import StayLoop from '@/Components/StayLoop/StayLoop'
-import Footer from '@/Components/Footer/Footer'
+import StayLoop from '@/components/StayLoop/StayLoop'
+import Footer from '@/components/Footer/Footer'
 
 const PrivacyPolicy = () => {
   return (
