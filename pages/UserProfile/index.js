@@ -6,6 +6,8 @@ import Image from "next/image";
 
 import DatePicker from "@/Components/DatePicker/DatePicker";
 import ProfileDetails from "@/Components/ProfileDetails";
+import Footer from "@/Components/Footer/Footer";
+import ServiceSectionBlue from "@/Components/ServiceSectionBlue/ServiceSectionBlue"
 
 export default function Userprofile () {
 
@@ -159,15 +161,15 @@ export default function Userprofile () {
             </main>
 
             </div>
-            <div className="m-5 md:m-10 xl:flex xl:flex-col xl:justify-center xl:items-center">
+            <div className="xl:flex xl:flex-col xl:justify-center xl:items-center px-2 py-5 m:px-10 md:px-16 lg:px-32">
                 <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] leading-loose">My Bookings:</h1>
-                <div className="rounded-md border border-zinc-200 width-full xl:w-3/4 ">
+                <div className="rounded-md border border-zinc-200 width-full xl:w-[100%] ">
                     <MyBookings />
-                    <hr className='border border-zinc-200 w-[85%] mb-10 md:mb-20 ml-2  sm:ml-10' />
+                    <hr className='border border-zinc-200 w-[93%]  ml-2  sm:ml-10' />
                     <MyBookings />
-                    <hr className='border border-zinc-200 w-[85%] mb-10 md:mb-20 ml-2  sm:ml-10' />
+                    <hr className='border border-zinc-200 w-[93%]  ml-2  sm:ml-10' />
                     <MyBookings />
-                    <hr className='border border-zinc-200 w-[85%] mb-5 md:mb-10 ml-2  sm:ml-10' />
+                    <hr className='border border-zinc-200 w-[93%] mb-5 ml-2  sm:ml-10' />
                     <button className="w-[159px] h-10 m-1 lg:ml-10 sm:ml-3 mb-5 md:mb-10 pl-[9px] pr-[13.50px] py-[9px] bg-indigo-500 rounded-md justify-start items-end gap-[13.50px] inline-flex text-white text-base font-medium font-['Inter']">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <path d="M18.3332 10.0833H7.17734L12.3015 4.95916L10.9998 3.66666L3.6665 11L10.9998 18.3333L12.2923 17.0408L7.17734 11.9167H18.3332V10.0833Z" fill="white"/>
@@ -176,13 +178,16 @@ export default function Userprofile () {
                     </button>
                 </div>
             </div>
-            <div>
-            <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] xs:m-5 md:m-10">Profile Details:</h1>
-            <div>
-            <ProfileDetails/>
-            </div>
+            <div className="px-2 py-5 m:px-10 md:px-16 lg:px-32">
+                <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] ">Profile Details:</h1>
+                <div>
+                <ProfileDetails/>
+                </div>
             </div>
             
+            <ServiceSectionBlue />
+
+            <Footer />
         </>
     )
 }
