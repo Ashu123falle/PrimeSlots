@@ -5,7 +5,7 @@ import MyBookings from "@/Components/MyBookings/MyBookings.js"
 import Image from "next/image"; 
 
 import DatePicker from "@/Components/DatePicker/DatePicker";
-
+import ProfileDetails from "@/Components/ProfileDetails";
 
 export default function Userprofile () {
 
@@ -160,7 +160,7 @@ export default function Userprofile () {
 
             </div>
             <div className="m-5 md:m-10 xl:flex xl:flex-col xl:justify-center xl:items-center">
-                <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] leading-loose">My Bookings</h1>
+                <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] leading-loose">My Bookings:</h1>
                 <div className="rounded-md border border-zinc-200 width-full xl:w-3/4 ">
                     <MyBookings />
                     <hr className='border border-zinc-200 w-[85%] mb-10 md:mb-20 ml-2  sm:ml-10' />
@@ -175,6 +175,12 @@ export default function Userprofile () {
                         <p>Browse more</p>
                     </button>
                 </div>
+            </div>
+            <div>
+            <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] xs:m-5 md:m-10">Profile Details:</h1>
+            <div>
+            <ProfileDetails/>
+            </div>
             </div>
             
         </>
