@@ -18,7 +18,7 @@ const StayLoop = () => {
                         </div>
                     </div>
 
-        <div className="w-full h-[60px] flex items-center bg-white rounded-[45px] px-4 pl-2 pr-1.5 max-md:h-auto max-sm:rounded-[20px] max-sm:flex-col">
+        <div className="w-[70vw] sm:w-[100vw] max-w-[400px] h-[60px] flex items-center bg-white rounded-[45px] px-4 pl-2 pr-1.5 max-md:h-auto max-sm:rounded-[20px] max-sm:flex-col">
           <input
             className="w-full rounded-[50px] text-gray-700 mr-3 py-1 pl-2 leading-tight max-sm:mt-4 outline-none"
             type="text"
@@ -26,13 +26,13 @@ const StayLoop = () => {
             aria-label="Email Address"
           />
           <button
-            className="h-12 w-48 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
+            className="h-12 w-38 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
             type="button"
           >
             {isSmallScreen ? (
               <Image src="/assets/subscribe.png" width={70} height={70} alt="Subscribe" className='bg-white  rounded-[50px]'/>
             ) : (
-              <span>Subscribe Now</span>
+              <span className="p-2">Subscribe Now</span>
             )}
           </button>
         </div>

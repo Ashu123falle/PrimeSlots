@@ -1,9 +1,5 @@
 import React from 'react'
 import Image from "next/image"
-import staricon from '@/pages/assets/Vector.svg'
-import blankicon from '@/pages/assets/Vector1.svg'
-import wishlist from '@/pages/assets/Wishlist2.svg'
-import info from '@/pages/assets/ph_info.svg'
 import Popup from 'reactjs-popup'
 import {useContext} from 'react'
 import AuthContext from '@/Context/authContext'
@@ -23,11 +19,11 @@ const DetailsComponent = () => {
                 {/* one */}
                 <div className='iconheading flex space-x-2 sm:space-x-4'>
                     <span className="icon flex sm:space-x-1 sm:mr-6 md:mr-0">
-                        <Image src={staricon} alt='' />
-                        <Image src={staricon} alt='' />
-                        <Image src={staricon} alt='' />
-                        <Image src={staricon} alt='' />
-                        <Image src={blankicon} alt='' />
+                        <Image src='/assets/Vector.svg' alt='' height={20} width={20}/>
+                        <Image src='/assets/Vector.svg' alt='' height={20} width={20}/>
+                        <Image src='/assets/Vector.svg' alt='' height={20} width={20}/>
+                        <Image src='/assets/Vector.svg' alt='' height={20} width={20}/>
+                        <Image src='/assets/Vector1.svg' alt='' height={20} width={20}/>
                     </span>
                     <div className='flex space-x-4 sm:space-x-5'>
                         <p className='bg-gray-100 text-orange-600 rounded-xl p-1 sm:p-2 text-xs sm:text-base'>Physical Boarding</p>
@@ -57,7 +53,7 @@ const DetailsComponent = () => {
                             <p className='font-semibold'>Walk Score</p>
                             <p className='text-gray-800'>Walk Score is more than average</p>
                         </div>
-                        <Image src={info} alt='' />
+                        <Image src='/assets/ph_info.svg' alt='' height={24} width={24}/>
                     </div>
 
                     <hr />
@@ -88,7 +84,7 @@ const DetailsComponent = () => {
                    )}
                     </Popup>
                     <span className='flex justify-center items-center rounded-md border border-gray-400 px-4'>
-                        <Image src={wishlist} alt='' className='' />
+                        <Image src='/assets/Wishlist2.svg' alt='' className='' height={30} width={30}/>
                     </span>
                 </div>
             </div>

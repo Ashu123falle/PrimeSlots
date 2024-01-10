@@ -152,7 +152,8 @@ class SearchResultPage extends Component {
         
 
         <div className="px-8 pb-2">
-             <ul className='flex flex-wrap justify-center items-start h-[100vh] overflow-y-auto w-full'>
+             <ul className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 4xl:grid-cols-6 justify-center items-start
+              h-[80vh] xl:h-[70vh] overflow-y-auto w-full'>
                    {
                        searchData.map((curElem, ind) => {
                            return <BlogCard key={ind} data={curElem} onClickWishlistButton = {this.onClickWishlistButton}/>
