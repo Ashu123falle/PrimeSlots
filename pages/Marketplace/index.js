@@ -3,12 +3,13 @@ import Navbar from "@/Components/Navbar/Navbar"
 import { CategoryCard } from "@/Components/CategoryCard/CategoryCard"
 import Footer from "@/Components/Footer/Footer"
 
-import React,{ useEffect, useState } from "react"
+import React,{ useEffect, useState, useContext } from "react"
 import Link from 'next/link'
 import NewListingsComponent from "../../Components/NewListingsComponent/NewListingsComponent"
 import BlogCard  from "@/Components/blogCard/blogCard"
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
 import ServiceSection from "@/Components/ServicesSection/ServicesSection"
+import AuthContext from "@/Context/authContext"
 
 const hotpicks = [
   {
@@ -152,6 +153,7 @@ const categoriesList = [
 export default function Home() {
 
   const [hotPicksData, setHotPicksData] = useState([])
+  const {addFavMediadata} = useContext(AuthContext)
 
   useEffect(() => {
     setHotPicksData(hotpicks)
@@ -160,12 +162,15 @@ export default function Home() {
   const onClickWishlistButton = id => {
     const updatedSearchData = hotPicksData.map(obj => {
       if (obj.id === id) {
+        addFavMediadata(obj)
+        
           return {...obj, isLiked: !obj.isLiked}
       }
       return obj
     })
     setHotPicksData(updatedSearchData)
 }
+
   
     return (
       <main className="bg-whitebg-cover w-full">
