@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-import CustomPin from '@/Components/CustomPin/CustomPin';
+import CustomPin from '@/components/CustomPin/CustomPin';
 
 const GoogleMapComponent = () => {
   const fakeCoordinates = {
