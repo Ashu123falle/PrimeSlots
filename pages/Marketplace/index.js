@@ -9,7 +9,7 @@ import NewListingsComponent from "../../Components/NewListingsComponent/NewListi
 import BlogCard  from "@/Components/blogCard/blogCard"
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
 import ServiceSection from "@/Components/ServicesSection/ServicesSection"
-import AuthContext from "@/Context/authContext"
+import { AuthContext } from "@/Context/authContext"
 
 const hotpicks = [
   {

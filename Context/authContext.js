@@ -1,6 +1,6 @@
 import {createContext, useEffect, useState} from 'react'
 
-const AuthContext = createContext({
+export const AuthContext = createContext({
     //specify some default values 
     isAuthorized: false,
     jwtToken: null,
@@ -41,4 +41,3 @@ export const AuthContextProvider = ({children}) => {
     )
 } 
 
-export default AuthContext

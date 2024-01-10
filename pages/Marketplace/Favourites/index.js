@@ -8,7 +8,8 @@ import Navbar from '@/Components/Navbar/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
 import ServiceSection from '@/Components/ServicesSection/ServicesSection'
 import {useEffect , useContext, useState } from 'react';
-import AuthContext from '@/Context/authContext';
+import { AuthContext } from '@/Context/authContext';
+import ServiceSectionBlue from '@/Components/ServiceSectionBlue/ServiceSectionBlue';
 
 const Searchapi = [
     {
@@ -114,10 +115,11 @@ const Favourites = () => {
     const [favApiData,setFavApiData] = useState([])
     const router = useRouter()
     const {pathname} = router ; 
+    const [,pathOne,pathTwo] = pathname.split("/")
     
     useEffect(() => {
         console.log("favourites", favouriteMediaData, favApiData)
-        setFavApiData(favouriteMediaData)
+        setFavApiData(Searchapi)
     },[favouriteMediaData])
 
     const onClickRemoveFromWishlist = id => {
@@ -142,7 +144,8 @@ const Favourites = () => {
                 <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
                     <Link href="/">
                         <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span>  </Link>
-                    <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pathname} &nbsp;</span> 
+                    <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pathOne} &nbsp; /</span>
+                    <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >{pathTwo}</span>
                     </div>
                    <hr className='border border-gray-300 w-[100vw]' />
                 <h2 className='text-right py-3 text-[14px] px-5 md: pr-16 md:mr-16'><span className='font-semibold'>Showing 1-20</span> <span className='text-gray-400'>out of 2356 Products</span></h2>
@@ -171,7 +174,7 @@ const Favourites = () => {
 
             </div>/
 
-            <ServiceSection/>
+            <ServiceSectionBlue/>
             <Footer/>
        
         </div>
