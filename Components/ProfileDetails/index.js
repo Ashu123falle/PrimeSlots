@@ -3,11 +3,12 @@
 import React from 'react';
 import Image from 'next/image';
 
+
 const ProfileDetails = () => {
   return (
     <>
       {/* Visible on medium and above devices */}
-      <div className='flex flex-col md:flex-row justify-center items-center md:justify-around ml-24  mt-4 hidden md:flex border rounded p-8 ' style={{'marginRight':"22px"}}>
+      <div className='flex flex-col md:flex-row justify-center items-center md:justify-around   mt-4 hidden md:flex border rounded p-8 ' >
 
         <form className="flex flex-col md:flex-row gap-4 mx-4">
           <div className='flex flex-col'>
