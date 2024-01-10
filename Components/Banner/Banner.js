@@ -99,7 +99,7 @@ const Banner = () => {
                 animate="visible"
                 transition={{duration: 0.5, delay: 1.25}}
                 className={
-                "text-[#ffffff] text-left font-[Inter] xs:text-[16px] sm:text-2xl font-normal w-[70vw] absolute left-[calc(10vw)] top-[calc(5vh)]"
+                "text-[#ffffff] text-left font-['Inter'] xs:text-[16px] sm:text-2xl font-normal w-[70vw] absolute left-[calc(10vw)] top-[calc(5vh)]"
                 }
             >
                 Amplify Your Brand, Captivate Your Audience -<br />
@@ -127,7 +127,7 @@ const Banner = () => {
                 once: true
             }}
             className={
-                "text-[#ffffff] text-left font-[Playfair] md:text-[180.3414001464844px] font-bold relative  top-[calc(14vh)]  md:top-[calc(14vh)] z-10 xs:text-[70px]"
+                "text-[#ffffff] text-left font-[Playfair] sm:text-[100px] md:text-[180.3414001464844px] font-bold relative  top-[calc(14vh)]  md:top-[calc(14vh)] z-10 xs:text-[70px]"
             }
             >
             OOH{" "}
@@ -148,7 +148,7 @@ const Banner = () => {
             transition={{duration: 1, delay: 0.75}}
             whileHover="hover"
             className={
-                "text-[#ffffff] text-left font-[Playfair] md:text-[180.8080139160156px] font-bold relative -mt-5 lg:-mt-9 top-[calc(13vh)] md:top-[calc(5vh)] z-10 xs:text-[70px]"
+                "text-[#ffffff] text-left font-[Playfair] sm:text-[100px] md:text-[180.8080139160156px] font-bold relative -mt-5 lg:-mt-9 top-[calc(13vh)] md:top-[calc(5vh)] z-10 xs:text-[70px]"
             }
             >
             &nbsp;{" "}Awaits!{" "}
