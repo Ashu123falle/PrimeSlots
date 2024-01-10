@@ -36,10 +36,10 @@ const FAQ = () => {
       <div className='flex flex-col items-center justify-between mt-24 text-indigo-200 flex-nowrap max-md:mx-0'>
         <p className='text-sm  h-[18px]'>FAQs</p>
         <h1 className='py-1 my-4 text-4xl font-semibold font-playfair'>Ask us anything</h1>
-        <p className='mb-4 font-sm text-light '>Have any questions? We're here to assist you.</p>
+        <p className='mb-4 font-sm text-light '>Have any questions? We&apos;re here to assist you.</p>
         
         <div className='bg-white w-[275px] h-[40px] flex rounded-[8px] mt-4'>
-          <Image src='/assets/search1.svg' width={25} height={1} className='p-1 mx-2'/>
+          <Image src='/assets/search1.svg' alt="" width={25} height={1} className='p-1 mx-2'/>
           <input type='text' placeholder='Search here' className='w-full h-auto text-sm rounded placeholder-grey-900 focus:outline-none' ></input>
         </div>
       </div>
@@ -94,7 +94,7 @@ const FAQ = () => {
            <p className='text-sm max-sm:mx-2'>You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.</p>
         </div>
         <Image
-              src='/assets/Vectortop.png'
+              src='/assets/Vectortop.png' alt=""
               width={70}
               height={70}
               className='absolute z-10 left-[85%] sm:left-[90%] top-[-15px] md:top-[725px] w-[37px] h-[35px] md:w-[57px] md:h-[65px] max-md:sr-only sm:inline-block'
@@ -119,7 +119,7 @@ const FAQ = () => {
        
      </div> </div>
     
-                    <Image src="/assets/VectorFAQ.png" width={80} height={40} className="absolute mt-[-5.5rem] z-3  max-lg:sr-only " />
+                    <Image src="/assets/VectorFAQ.png" alt="" width={80} height={40} className="absolute mt-[-5.5rem] z-3  max-lg:sr-only " />
                        
                 
     <StayLoop/>

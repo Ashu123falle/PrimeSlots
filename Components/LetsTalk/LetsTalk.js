@@ -15,7 +15,7 @@ const LetsTalk = () => {
 
                 <div className='w-full flex justify-center sm:justify-center md:justify-end lg:justify-center items-center'>
                     <div className='w-[280px] sm:w-[350px] md:w-[300px] lg:w-[350px] p-5 space-y-5'>
-                        <h1 className='text-3xl lg:text-4xl font-bold text-[#011334]'>Let's talk with us</h1>
+                        <h1 className='text-3xl lg:text-4xl font-bold text-[#011334]'>Let&apos;s talk with us</h1>
                         <p className='text-sm'>Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.</p>
                         <div className='space-y-3'>
                             <div className='flex gap-3'>

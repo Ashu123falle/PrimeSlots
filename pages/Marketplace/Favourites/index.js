@@ -120,7 +120,7 @@ const Favourites = () => {
     useEffect(() => {
         console.log("favourites", favouriteMediaData, favApiData)
         setFavApiData(Searchapi)
-    },[favouriteMediaData])
+    },[favouriteMediaData,favApiData])
 
     const onClickRemoveFromWishlist = id => {
     //     const{searchData} = this.state
