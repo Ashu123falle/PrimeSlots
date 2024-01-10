@@ -1,4 +1,4 @@
-import React from 'react';
+import {React,useState,useEffect} from 'react';
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -19,7 +19,7 @@ const PerkItem = ({ src, alt, title, description }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.5 }}
       className="flex flex-col lg:flex-row items-center m-5"
     >
       <div className="max-w-full h-auto rounded-lg mb-2 lg:mb-0 lg:mr-4">
@@ -33,49 +33,40 @@ const PerkItem = ({ src, alt, title, description }) => {
   );
 };
 
-const AnimatedText = ({ children }) => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
 
-  React.useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={controls}
-      transition={{ duration: 0.5 }}
-    >
-      {children}
-    </motion.div>
-  );
-};
 
 const PerksComponent = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    handleResize(); 
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const containerStyle = {
     width: '100vw',
   };
-  
+
   const customRotationStyle = {
-    clipPath:'polygon(0 0, 100% 5%, 100% 100%, 0% 95%)',
+    clipPath: 'polygon(0 0, 100% 5%, 100% 100%, 0% 95%)',
     transform: 'rotate(0deg)',
     background: 'linear-gradient(to bottom, rgba(19, 28, 95, 1), rgba(2, 12, 97, 0.79))',
-    position:'relative'
+    position: 'relative',
   };
 
-  const clip={
-    clipPath:'polygon(0 0, 100% 5%, 100% 100%, 0% 95%)',
-  }
+  const mtStyle = windowWidth <= 366 ? { marginTop: '-0.25rem' } : {};
   
   return (
     <div className="relative p-4 lg:p-8 bg-gradient-to-b from-rgba-19-28-95-1 to-rgba-2-12-97-0-79 rotate-container lg:text-left origin-top-left
-     min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white" style={{...containerStyle, ...customRotationStyle, position: 'relative'}}>
+     min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white mt-32" style={{...containerStyle, ...customRotationStyle,...mtStyle, position: 'relative'}}>
     
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-24 left-7'>
         <Image src='/assets/Vectortop.png' alt="Vector Top" height={61} width={40} className='sm:w-[63]'/>
@@ -154,16 +145,16 @@ const PerksComponent = () => {
     <div className="lg:flex justify-around mt-6 hidden">
       <div className='flex flex-col ml-[-100px]'>
       <PerkItem
-        src='/assets/perk3.png'
-        alt="Perk 3 Image"
-        title="Perk 3"
-        description="Description of perk 3 goes here."
+        src='/assets/perk1.png'
+        alt="Perk 1 Image"
+        title="Perk 1"
+        description="Description of perk 1 goes here."
       />
       <PerkItem
-        src='/assets/perk3.png'
-        alt="Perk 3 Image"
-        title="Perk 3"
-        description="Description of perk 3 goes here."
+        src='/assets/perk2.png'
+        alt="Perk 2 Image"
+        title="Perk 2"
+        description="Description of perk 2 goes here."
       />
       </div>
 
@@ -171,14 +162,14 @@ const PerksComponent = () => {
       <PerkItem
         src='/assets/perk3.png'
         alt="Perk 3 Image"
-        title="Perk 3"
+        title="Perk 1"
         description="Description of perk 3 goes here."
       />
       <PerkItem
-        src='/assets/perk3.png'
-        alt="Perk 3 Image"
-        title="Perk 3"
-        description="Description of perk 3 goes here."
+        src='/assets/perk4.png'
+        alt="Perk 4 Image"
+        title="Perk 4"
+        description="Description of perk 4 goes here."
       />
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import Popup from 'reactjs-popup'
 import {useContext} from 'react'
-import AuthContext from '@/Context/authContext'
+import {AuthContext} from '@/Context/authContext'
 
 const DetailsComponent = () => {
     const {jwtToken,isAuthorized,onClickLogin} = useContext(AuthContext)

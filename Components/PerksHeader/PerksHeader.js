@@ -20,9 +20,9 @@ const PerksHeader = () => {
       </div>
     </nav>
   </div>
-  <div className='ml-4 mt-4'>
-    <h1 className='md:text-3xl xs:text-2xl'>Renting your Media just <br/> got easier!</h1>
-    <button className="mt-4 bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-5 rounded-full">
+  <div className='ml-4 mt-10'>
+    <h1 className='md:text-4xl xs:text-2xl'>Renting your Media just <br/> got easier!</h1>
+    <button className="mt-6 bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-5 rounded-full">
       Become a Vendor
     </button>
   </div>

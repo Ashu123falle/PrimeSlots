@@ -14,7 +14,7 @@ const Testimonials = () => {
                     <div className='space-y-3 sm:space-y-5'>
                         {/* one div */}
                         <div className='flex lg:h-[195px]  overflow-hidden'>
-                            <Image className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" width={377} height={399} />
+                            <Image className='xs:w-[100px] md:w-[160px]' src='/assets/testimonial1.png' alt="" width={377} height={399} />
 
                             <div className='p-3 bg-[#241E1F] space-y-3 flex flex-col justify-center items-center'>
                                 <h1 className='xs:text-[12px] sm:text-[18px] leading-5 font-bold text-[#FFFFFF]'>“Amazing Team with Lorem Ipsum”</h1>
@@ -38,14 +38,14 @@ const Testimonials = () => {
                             </div>
 
 
-                            <Image className='xs:w-[100px] md:w-[160px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="v" width={160}  height={195}/>
+                            <Image className='xs:w-[100px] md:w-[160px]' src='/assets/testimonial3.png' alt="v" width={160}  height={195}/>
 
                         </div>
                     </div>
 
                     {/* another div */}
                     <div className='flex md:flex-col mt-3 sm:mt-5 md:mt-0  overflow-hidden'>
-                        <Image className='xs:w-[100px] md:w-[196px] sm:h-[140px] lg:h-[195px]' src="https://s3-alpha-sig.figma.com/img/d18f/3ca1/c09872c27e4fb88ba1980b61a0d8dbd5?Expires=1704672000&Signature=R5aTV4mqcC9xvYkNLLhVK~wWbx0qzF4FYUwntCEgCs6-fqW2FwEVwH22wgTq5jyepqPvP0JWGelp8BbrhaIniJC2Dxkd3Mg~y8dUjtG9YBvtjf8Ij3SbDBLxxZmZaPMNF4VCQ-yNyz3ma1C~rnpXbfzeVB3d0V~fq94F0zxZET0Wf17Po0U7~hJwBmkSJGv~5sHDrm~miQyogf7iCbRS8tT-CcbQItzspZvDGwgigqIYNoVSKuxNzMRyx1krxfYJlgYD5FYMVP2MsHuPWaZip6KDgNsv05Ukl4m5lHug2qyRXxu78oGqzWV8MojZuecRSZydu2-S~GrJxFJc6saj5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="k" width={196} height={195}/>
+                        <Image className='xs:w-[100px] md:w-[196px] sm:h-[140px] lg:h-[195px]' src='/assets/testimonial2.png' alt="k" width={196} height={195}/>
 
                         <div className='p-3 bg-[rgb(36,30,31)] space-y-3 md:space-y-2 flex flex-col md:h-[195px]  md:w-[195px] lg:h-[215px] justify-center items-center'>
                             <h1 className='xs:text-[12px] sm:text-[18px] leading-5 font-bold text-[#FFFFFF]'>“Amazing Team with Lorem Ipsum”</h1>

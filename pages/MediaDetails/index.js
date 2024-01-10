@@ -173,12 +173,12 @@ const MediaOptionsButtons = [
                 modal
                 >
                {close => (
-                <div className='w-[80vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
-                    <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
+                <div className='w-[100vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
+                    {/* <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center p-1 self-end">
                  <Image height={20} width={20} src='/assets/icons8-close.svg' onClick={() => close()} alt="close"/>
-               </span>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=LCU4EMQf7IU&t=150s" controls width={'100%'} height={'90%'} className="rounded-xl"/> 
+               </span> */}  {/*close button */}
+                    <ReactPlayer url="https://www.youtube.com/watch?v=iFQ6vHSulJw" controls width={'100%'} height={'90%'} className="rounded-xl"/> 
                 </div>
                )}
                 </Popup>

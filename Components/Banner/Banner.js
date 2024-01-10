@@ -69,7 +69,7 @@ const Banner = () => {
 
     return(
         <>
-        <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] xs:h-[160vh] sm:h-[140vh] md:h-[163vh] xl:h-[160vh]" 
+        <div className="opacity-0.5 w-[100vw] rgba(35, 29, 32, 0.89) backdrop-opacity-75 lg:h-[140vh] xs:h-[160vh] sm:h-[140vh] md:h-[163vh] xl:h-[165vh]" 
         style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LbjwwZribj2HvpVtvrBr6qtMy846ZGMCLQe1Wu5rI4yjk4UTRYs-llD5i8UBO7YRTl1d1ZSK-~MEh4zfq8ocbyK-ujwG-AGujck8ekndcxyHNgR9RC3QKG5EwRHMnHUaSeirnql4nXNvr7noE7G-UX0wIKLe3sJIC~zgfqVMB9ul8uN2p8rR5gGOu4lkrb0g4P2GAjwMBXLS0BFeVaABvqCYtNpvUJ7YhFI2H7vinMv0m0RPREJecbhkbHw3gOccwTdHuc39RNLx2UAKWAzIHbNKKBhw0gYDTwnbnXd0aRifeGRxvG-LiiVysOGBEPIx3OmwSRD7EiFZbcGZhH7KPQ__')", backgroundSize: "cover", width:"100%"}}>
         <div className="absolute inset-0 backdrop-blur-sm">
             
@@ -99,12 +99,14 @@ const Banner = () => {
                 animate="visible"
                 transition={{duration: 0.5, delay: 1.25}}
                 className={
-                "text-[#ffffff] text-left font-['Inter-Medium',_sans-serif] xs:text-[16px] sm:text-2xl font-normal w-[70vw] absolute left-[calc(10vw)] top-[calc(5vh)]"
+                "text-[#ffffff] text-left font-['Inter'] xs:text-[16px] sm:text-2xl font-normal w-[70vw] absolute left-[calc(10vw)] top-[calc(5vh)]"
                 }
             >
                 Amplify Your Brand, Captivate Your Audience -<br />
                 Your Gateway to Impactful Advertising!{" "}
             </motion.div>
+            <div className="flex justify-center">
+                <div>
             <motion.div
             variants={{
                 hidden: {opacity: 0, y:75},
@@ -125,7 +127,7 @@ const Banner = () => {
                 once: true
             }}
             className={
-                "text-[#ffffff] text-left font-['PlayfairDisplay-Bold',_sans-serif] md:text-[180.3414001464844px] font-bold relative  left-[calc(25vw)] top-[calc(24vh)] md:left-[calc(15vw)] md:top-[calc(14vh)] z-10 xs:text-[50px]"
+                "text-[#ffffff] text-left font-[Playfair] sm:text-[100px] md:text-[180.3414001464844px] font-bold relative  top-[calc(14vh)]  md:top-[calc(14vh)] z-10 xs:text-[70px]"
             }
             >
             OOH{" "}
@@ -146,11 +148,13 @@ const Banner = () => {
             transition={{duration: 1, delay: 0.75}}
             whileHover="hover"
             className={
-                "text-[#ffffff] text-left font-['PlayfairDisplay-Bold',_sans-serif] md:text-[160.8080139160156px] font-bold relative  left-[calc(30vw)] top-[calc(23vh)] md:left-[calc(20vw)] md:top-[calc(5vh)] z-10 xs:text-[50px]"
+                "text-[#ffffff] text-left font-[Playfair] sm:text-[100px] md:text-[180.8080139160156px] font-bold relative -mt-5 lg:-mt-9 top-[calc(13vh)] md:top-[calc(5vh)] z-10 xs:text-[70px]"
             }
             >
-            Awaits!{" "}
+            &nbsp;{" "}Awaits!{" "}
             </motion.div>
+            </div>
+            </div>
             <div>
             <motion.div
             variants={{
@@ -160,7 +164,7 @@ const Banner = () => {
             initial="hidden"
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
-            className={"w-[30vw] h-[25vh] md:h-[50vh] relative top-[calc(8vw)] top-[calc(1vh)] md:top-[calc(-12vh)] bg-cover"}
+            className={"w-[40vw] h-[25vh] md:h-[50vh] relative top-[calc(8vw)] top-[calc(1vh)] md:top-[calc(-12vh)] bg-cover"}
             style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/3181/f79d/5f3ed537229f96087c4eca08efd968b9?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ka3nQBVUtLIz682lhjyf9mtJYhinGu1w0~kut5FTGFFxrWESjsrojZtZWW9M1GM5aaZiY62CcK0C-xD3hoJvrDSvTYve6AXnfTyiSjJUP7vmgfFKsz-L2jVYb4RZqFciXidk88fkZ96y~eQZm2fdcDDymeNVuTouR0C0NdOxBD3YmwDf~nbg07-kKpq3bx6~bRNjBIlfmXlkYXcWVx~sIdAQeGR171iaLL0S~jMJEJLT0CnO756gECJqa14l6f0pReRvoJovGQ406RzXYFwHCoGKqOK39RGjG3f1sE~PwDBjRj50hGIvXrMDyglh2A3Lz-wtw8PUlMSO88RZo~6Brw__")'}}
             ></motion.div>
 
@@ -172,18 +176,18 @@ const Banner = () => {
             initial="hidden"
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
-            className={"w-[30vw] h-[25vh] md:h-[50vh] relative left-[calc(70vw)]  top-[calc(-30vh)]  md:top-[calc(-85vh)] bg-cover"}
+            className={"w-[40vw] h-[25vh] md:h-[50vh] relative left-[calc(65vw)]  top-[calc(-30vh)]  md:top-[calc(-85vh)] bg-cover"}
             style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/fa98/8e09/1a4b35e0c0523eeeb654c75c59849568?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CpEWDddjfoIXaFo7mB55T33UKpqlg~wLi9v4MGL9fOZiuojPfeZqBs0ihaskAg4-5T-c7V7hBGRX6yNmH8rGgCFyxQnCIt~4KIh6CcdzdgYLXbN6~AVtb~2BrqRdzH5kJ-WQ~wwDmCzwdZ0c0UzCPnBVf8Gof2rCdUxbH62m6KWDz1rC2PkdZ~2LczrcwAPC~Jib3775K-iza1SF9vCaBr2L61HSOq~jrrQE8I-e3OipCK8b55-DVdZ5LTwKOjLUToZLRfZhImdijxZFxFLiYKQyEKYSgX791UoHWbDnyJYWSNQ5CC2CQS3RL6FYbAs20xlPF6-ADy3iQMC18rS5sw__")'}}
             ></motion.div>
             </div>
             <div className="flex-col items-center justify-center">
 
-            <div className={"relative top-[calc(-15vh)] md:top-[calc(-65vh)] z-10  lg:px-12 2xl:px-2"}>
+            <div className={"relative top-[calc(-15vh)] md:top-[calc(-60vh)] z-10  lg:px-12 2xl:px-2"}>
                 <FilterComponent data={data} optionsConfig={optionsConfig} />
             </div>
 
             <div className="mx-auto flex justify-center">
-            <div className="button   relative top-[calc(-10vh)] md:top-[calc(-65vh)]">
+            <div className="button   relative top-[calc(-10vh)] md:top-[calc(-60vh)]">
                 <motion.button onClick={onClickExplore} variants={buttonVariants} whileHover="hover" className="bg-[#ffffff] rounded-[36px] mx-auto w-[140px] h-[52px] cursor-pointer
                 text-[#0e0d0d] text-center text-[18.40671920776367px] font-semibold font-['Figtree-SemiBold',_sans-serif]">Explore Now</motion.button>
                     </div>

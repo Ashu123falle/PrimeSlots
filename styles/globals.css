@@ -1,6 +1,10 @@
+/* styles/globals.css or your global stylesheet */
+
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
 
 * {
   font-family: 'Figtree', sans-serif;
