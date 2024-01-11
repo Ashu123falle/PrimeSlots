@@ -11,7 +11,7 @@ export const AuthContext = createContext({
 
 //Provider 
 export const AuthContextProvider = ({children}) => {
-    const [isAuthorized, setAuthorized] = useState(false)
+    const [isAuthorized, setAuthorized] = useState(true)
     const [jwtToken,setToken] = useState(undefined)
     const [favouriteMediaData, setFavMediadata] = useState([])
 

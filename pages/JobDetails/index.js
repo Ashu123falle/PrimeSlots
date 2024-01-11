@@ -55,7 +55,7 @@ const JobsItem = () => {
     
          
         <div className='pb-24 pl-14 max-md:w-full max-md:pl-0'>
-             <Image src='/assets/JobsItem1.png' width={1200} height={500} />
+             <Image src='/assets/Jobs1.png' width={1200} height={500} alt="" />
         </div>
        
         <div className='flex pr-16 max-md:px-4 max-md:flex-col-reverse'>

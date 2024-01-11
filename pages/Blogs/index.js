@@ -1,5 +1,5 @@
 
-import ContactUsnavbar from "@/Components/ContactUsnavbar/ContactUsnavbar";
+
 import Image from "next/image";
 import { motion } from 'framer-motion'
 import MiniNavbar from "@/Components/MiniNavbar/MiniNavbar";
@@ -77,7 +77,7 @@ function Blogs() {
                
             </div>
 
-           <ContactUsnavbar />
+           
             
             <div className="flex flex-col justify-center items-center">
                 <ul className="px-2 py-5 sm:px-10 md:px-16 lg:px-32  xl:flex xl:flex-col xl:justify-center xl:items-center">
