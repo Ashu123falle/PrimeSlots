@@ -53,8 +53,8 @@ const LightBox = () => {
                 </div>
 
                 <div className='flex justify-evenly px-10 sm:px-28 w-[95%] sm:w-[92%] md:w-[85%] lg:w-[80%] xl:w-[70%]'>
-                    <div class="w-5 h-[25px] sm:h-[30px] md:h-[34px] lg:h-[38px]  xl:h-[42px] bg-zinc-300 border-b border-zinc-400"></div>
-                    <div class="w-5 h-[25px] sm:h-[30px] md:h-[34px] lg:h-[38px]  xl:h-[42px] bg-zinc-300 border-b border-zinc-400"></div>
+                    <div className="w-5 h-[25px] sm:h-[30px] md:h-[34px] lg:h-[38px]  xl:h-[42px] bg-zinc-300 border-b border-zinc-400"></div>
+                    <div className="w-5 h-[25px] sm:h-[30px] md:h-[34px] lg:h-[38px]  xl:h-[42px] bg-zinc-300 border-b border-zinc-400"></div>
                 </div>
             </div>
         </>

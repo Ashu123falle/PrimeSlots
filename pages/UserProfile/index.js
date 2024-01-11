@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar/Navbar"
+import Navbar from "@/Components/Navbar/Navbar"
 import { useRouter } from 'next/router';
 
 import MyBookings from "@/Components/MyBookings/MyBookings.js"
