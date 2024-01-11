@@ -6,7 +6,6 @@ import Footer from '@/Components/Footer/Footer'
 import BlogCard from '@/Components/blogCard/blogCard'
 import Navbar from '@/Components/Navbar/Navbar'
 import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
-import ServiceSection from '@/Components/ServicesSection/ServicesSection'
 import {useEffect , useContext, useState } from 'react';
 import { AuthContext } from '@/Context/authContext';
 import ServiceSectionBlue from '@/Components/ServiceSectionBlue/ServiceSectionBlue';
