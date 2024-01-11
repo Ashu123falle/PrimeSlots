@@ -43,8 +43,7 @@ const ProfileDetails = () => {
   />
   <a href="#" className="mt-2 text-md text-blue-500 underline">Upload Image</a>
 </div>
-
-      </div>
+</div>
 
       {/* Visible on extra small (xs) devices and hidden on medium and above devices */}
       <div className=' md:hidden p-5 border rounded p-6 m-5'>
