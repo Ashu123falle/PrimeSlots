@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect,useContext} from 'react';
 import FilterComponent from '@/Components/FilterComponent/FilterComponent';
 import Navbar from '@/Components/Navbar/Navbar';
 import Footer from '@/Components/Footer/Footer';
@@ -8,6 +8,7 @@ import { CategoryCard } from '@/Components/CategoryCard/CategoryCard';
 import BlogCard from '@/Components/blogCard/blogCard';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { AuthContext } from '@/Context/authContext';
 //import PriceFilter from '@/Components/FilterMobileView';
 
 const Searchapi = [
@@ -197,6 +198,7 @@ const categoriesList = [
 const MediaListingPage = () => {
    const [searchData, setsearchData] = useState(Searchapi);
    const [isSmallDevice, setIsSmallDevice] = useState(false);
+   const {addFavMediadata} = useContext(AuthContext) 
 
    const router = useRouter();
   const { category } = router.query;
@@ -206,6 +208,7 @@ const MediaListingPage = () => {
    const onClickWishlistButton = id => {
     const updatedSearchData = searchData.map(obj => {
       if (obj.id === id) {
+        addFavMediadata({...obj, isLiked: !obj.isLiked})
           return {...obj, isLiked: !obj.isLiked}
       }
       return obj

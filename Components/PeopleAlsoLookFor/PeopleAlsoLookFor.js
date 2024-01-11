@@ -1,6 +1,7 @@
 
-import {useEffect, useState} from 'react'
+import {useEffect, useState,useContext} from 'react'
 import BlogCard from '../blogCard/blogCard'
+import { AuthContext } from '@/Context/authContext'
 
 const OtherSearchapi = [
     {
@@ -103,6 +104,7 @@ const OtherSearchapi = [
 
 const PeopleAlsoLookFor = () => {
     const [searchData, setSearchData] = useState([])
+    const {addFavMediadata} = useContext(AuthContext) 
 
    useEffect(() => {
         setSearchData(OtherSearchapi)
@@ -112,6 +114,7 @@ const PeopleAlsoLookFor = () => {
 
        const updatedSearchData = searchData.map(obj => {
         if (obj.id === id) {
+            addFavMediadata({...obj, isLiked: !obj.isLiked}) // adds to context variable 
             return {...obj, isLiked: !obj.isLiked}
         }
         return obj

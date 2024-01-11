@@ -10,107 +10,9 @@ import {useEffect , useContext, useState } from 'react';
 import { AuthContext } from '@/Context/authContext';
 import ServiceSectionBlue from '@/Components/ServiceSectionBlue/ServiceSectionBlue';
 
-const Searchapi = [
-    {
-        id:1,
-        image:"/assets/Switch.png",   
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: true,
-    },
-  
-    {
-        id:2,
-        image:"/assets/Switch (1).png",    
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-    {
-        id:3,
-        image:"/assets/Switch (2).png",     
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-    {
-        id:4,
-        image:"/assets/Switch (3).png",   
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-    {
-        id:5,
-        image:"/assets/Switch.png",   
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-    {
-        id:6,
-        image:"/assets/Switch (1).png",   
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-    {
-        id:7,
-        image:"/assets/Switch (2).png",   
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-    {
-        id:8,
-        image:"/assets/Switch (3).png",   
-        heading:"Digital Boarding",
-        name:"Title of media will come here",
-        description1: "Real Estate",
-        description2: "Retail",
-        description3: "Resturants",
-        description4: "AutoMobile",
-        isLiked: false,
-    },
-  
-  ]
 
 const Favourites = () => {
-    const {favouriteMediaData} = useContext(AuthContext)
+    const {favouriteMediaData,setFavMediadata} = useContext(AuthContext)
     const [favApiData,setFavApiData] = useState([])
     const router = useRouter()
     const {pathname} = router ; 
@@ -118,21 +20,12 @@ const Favourites = () => {
     
     useEffect(() => {
         console.log("favourites", favouriteMediaData, favApiData)
-        setFavApiData(Searchapi)
+        setFavApiData(favouriteMediaData)
     },[favouriteMediaData,favApiData])
 
     const onClickRemoveFromWishlist = id => {
-    //     const{searchData} = this.state
-    //    const updatedSearchData = searchData.map(obj => {
-    //     if (obj.id === id) {
-    //         return {...obj, isLiked: !obj.isLiked}
-    //     }
-    //     return obj
-    //    })
-
-    //    this.setState({
-    //     searchData: updatedSearchData,
-    //    })
+          const filteredFavMedia = favouriteMediaData.filter(obj => obj.id !== id)
+          setFavMediadata(filteredFavMedia)
     }
  
     return (
@@ -142,8 +35,8 @@ const Favourites = () => {
             <div>
                 <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
                     <Link href="/">
-                        <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span>  </Link>
-                    <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pathOne} &nbsp; /</span>
+                        <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > <Link href="/">Home </Link> &nbsp; / </span>  </Link>
+                    <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  <Link href={`/${pathOne}`}>{pathOne}</Link> &nbsp; /</span>
                     <span className="text-slate-950 text-base font-normal font-['Figtree'] leading-tight" >{pathTwo}</span>
                     </div>
                    <hr className='border border-gray-300 w-[100vw]' />
