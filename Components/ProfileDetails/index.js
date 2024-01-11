@@ -20,7 +20,6 @@ const ProfileDetails = () => {
               <label htmlFor="phone" className="block text-md font-medium text-gray-700">Phone No.:</label>
               <input type="tel" id="phone" name="phone" className="mt-1 p-2 border border-gray-300 rounded-md w-full md:w-full bg-gray-200 h-[46px]" placeholder='9999999999'/>
             </div>
-           
           </div>
           <div className='flex flex-col w-full md:w-2/5 mx-8'>
             <div className="mb-4 md:mb-6">
