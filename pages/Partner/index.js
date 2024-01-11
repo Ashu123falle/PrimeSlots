@@ -1,12 +1,12 @@
 
 import React,{useEffect,useState} from "react";
-import Footer from "@/Components/Footer/Footer";
-import PerksComponent from "@/Components/Perks/Perks";
-import PerksHeader from "@/Components/PerksHeader/PerksHeader";
-import Unleasing from "@/Components/Unleashing/Unleashing";
-import EasyStepsSection from "@/Components/EasyStepsSection/EasyStepsSection";
-import ReadyToConnect from "@/Components/ReadyToConnect/ReadyToConnect";
-import Testimonials from "@/Components/Testomonials/Testomonials";
+import Footer from "@/components/Footer/Footer";
+import PerksComponent from "@/components/Perks/Perks";
+import PerksHeader from "@/components/PerksHeader/PerksHeader";
+import Unleasing from "@/components/Unleashing/Unleashing";
+import EasyStepsSection from "@/components/EasyStepsSection/EasyStepsSection";
+import ReadyToConnect from "@/components/ReadyToConnect/ReadyToConnect";
+import Testimonials from "@/components/Testomonials/Testomonials";
 const Partner = () => {
     const [windowWidth, setWindowWidth] = useState(0);
   

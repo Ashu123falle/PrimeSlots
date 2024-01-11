@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
            <p className='text-lg font-medium'>Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <Link href='https://www.privacypolicies.com/blog/privacy-policy-template/#Use_Of_Cookies_Log_Files_And_Tracking' className='text-indigo-500 underline'>Privacy Policies website </Link>article.</p>
            <br></br>
            <p className='text-lg font-medium'>We use both Session and Persistent Cookies for the purposes set out below: </p>
-           <ul className='px-6 text-lg font-medium list-disc'>
+           {/* <ul className='px-6 text-lg font-medium list-disc'>
             <li><b> Necessary / Essential Cookies </b>
             <ul>
                 <li>Type: Session Cookies</li>
@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
                 <li>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</li>
             </ul>
             </li>
-           </ul>
+           </ul> */}
            
          <p className='text-lg font-medium'>For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy or the Cookies section of our Privacy Policy.</p>
          <br></br>
