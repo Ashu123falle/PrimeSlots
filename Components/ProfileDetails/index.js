@@ -45,7 +45,7 @@ const ProfileDetails = () => {
 </div>
 </div>
 {/* Visible on extra small (xs) devices and hidden on medium and above devices */}
-<div className=' md:hidden p-5 border rounded p-6 m-5'>
+<div className=' md:hidden p-5 border rounded p-6 m-2'>
 <div className="profile-image mb-4 md:mb-0 flex flex-col items-center ">
   <Image
     className="mx-auto"
