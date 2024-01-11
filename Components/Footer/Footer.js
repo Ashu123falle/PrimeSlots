@@ -39,7 +39,7 @@ const Footer = () => {
                     <h1 className="mb-2 text-2xl">Company</h1>
                     <p><a href="#">Pricing</a></p>
                     <p><a href="#">Blogs</a></p>
-                    <p><a href="#">Jobs</a></p>
+                    <p><Link href="/Jobs">Jobs</Link></p>
                     <p><Link href="/About">About Us</Link></p>
                 </div>
 
