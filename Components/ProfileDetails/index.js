@@ -8,7 +8,7 @@ const ProfileDetails = () => {
   return (
     <>
       {/* Visible on medium and above devices */}
-      <div className='flex flex-col md:flex-row justify-center items-center md:justify-around   mt-4 hidden md:flex border rounded p-8 gap-4' >
+      <div className='flex flex-col md:flex-row justify-center items-center md:justify-around   mt-4 hidden md:flex border rounded p-8 gap-4'>
 
         <form className="flex flex-col md:flex-row gap-4 w-auto flex-grow lg:flex-shrink">
           <div className='flex flex-col  w-full md:w-2/5 mx-8'>
