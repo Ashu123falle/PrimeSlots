@@ -1,3 +1,4 @@
+
 import React,{useEffect,useState} from "react";
 import Footer from "@/Components/Footer/Footer";
 import PerksComponent from "@/Components/Perks/Perks";
@@ -40,3 +41,4 @@ const Partner = () => {
   };
   
   export default Partner;
+

@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import FilterComponent from '../../Components/FilterComponent/FilterComponent';
+import FilterComponent from '@/Components/FilterComponent/FilterComponent';
 import Navbar from '@/Components/Navbar/Navbar';
 import Footer from '@/Components/Footer/Footer';
 import ServiceSection from "@/Components/ServicesSection/ServicesSection";
