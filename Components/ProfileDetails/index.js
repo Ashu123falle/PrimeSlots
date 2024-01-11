@@ -23,7 +23,6 @@ const ProfileDetails = () => {
            
           </div>
           <div className='flex flex-col w-full md:w-2/5 mx-8'>
-           
             <div className="mb-4 md:mb-6">
               <label htmlFor="email" className="block text-md font-medium text-gray-700">Email:</label>
               <input type="email" id="email" name="email" className="mt-1 p-2 border border-gray-300 rounded-md w-full md:w-full bg-gray-200 h-[46px]" placeholder='abc@gmail.com'/>
