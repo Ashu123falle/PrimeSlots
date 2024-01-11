@@ -2,14 +2,14 @@
 import { useRouter, withRouter } from 'next/router';
 import Link from 'next/link';
 
-import Footer from '@/components/Footer/Footer'
-import BlogCard from '@/components/blogCard/blogCard'
-import Navbar from '@/components/Navbar/Navbar'
-import PeopleAlsoLookFor from '@/components/PeopleAlsoLookFor/PeopleAlsoLookFor'
-import ServiceSection from '@/components/ServicesSection/ServicesSection'
+import Footer from '@/Components/Footer/Footer'
+import BlogCard from '@/Components/blogCard/blogCard'
+import Navbar from '@/Components/Navbar/Navbar'
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import ServiceSection from '@/Components/ServicesSection/ServicesSection'
 import {useEffect , useContext, useState } from 'react';
 import { AuthContext } from '@/Context/authContext';
-import ServiceSectionBlue from '@/components/ServiceSectionBlue/ServiceSectionBlue';
+import ServiceSectionBlue from '@/Components/ServiceSectionBlue/ServiceSectionBlue';
 
 const Searchapi = [
     {

@@ -1,17 +1,17 @@
 
 import {useState} from 'react'
 import { useRouter } from 'next/router'
-import ExtraServices from "../../components/ExtraServices/ExtraServices"
-import Navbar from "@/components/Navbar/Navbar"
-import ServiceSection from "@/components/ServicesSection/ServicesSection"
-import PeopleAlsoLookFor from '@/components/PeopleAlsoLookFor/PeopleAlsoLookFor'
-import GoogleMapComponent from '../../components/GoogleMap/GoogleMap'
-import DetailsComponent from '../../components/detailsComponent/detailsComponent'
-import Carousel from '../../components/imageCarousal/imageCarousal'
+import ExtraServices from "../../Components/ExtraServices/ExtraServices"
+import Navbar from "@/Components/Navbar/Navbar"
+import ServiceSection from "@/Components/ServicesSection/ServicesSection"
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import GoogleMapComponent from '../../Components/GoogleMap/GoogleMap'
+import DetailsComponent from '../../Components/detailsComponent/detailsComponent'
+import Carousel from '../../Components/imageCarousal/imageCarousal'
 import Image from 'next/image'
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
-import Footer from '@/components/Footer/Footer'
+import Footer from '@/Components/Footer/Footer'
 
 const industriesData = [
     {

@@ -1,15 +1,15 @@
 
-import Navbar from "@/components/Navbar/Navbar"
-import { CategoryCard } from "@/components/CategoryCard/CategoryCard"
-import Footer from "@/components/Footer/Footer"
+import Navbar from "@/Components/Navbar/Navbar"
+import { CategoryCard } from "@/Components/CategoryCard/CategoryCard"
+import Footer from "@/Components/Footer/Footer"
 
 import React,{ useEffect, useState, useContext } from "react"
 import Link from 'next/link'
 
-import NewListingsComponent from "@/components/NewListingsComponent/NewListingsComponent"
-import BlogCard  from "@/components/blogCard/blogCard"
-import PeopleAlsoLookFor from '@/components/PeopleAlsoLookFor/PeopleAlsoLookFor'
-import ServiceSection from "@/components/ServicesSection/ServicesSection"
+import NewListingsComponent from "@/Components/NewListingsComponent/NewListingsComponent"
+import BlogCard  from "@/Components/blogCard/blogCard"
+import PeopleAlsoLookFor from '@/Components/PeopleAlsoLookFor/PeopleAlsoLookFor'
+import ServiceSection from "@/Components/ServicesSection/ServicesSection"
 import { AuthContext } from "@/Context/authContext"
 
 

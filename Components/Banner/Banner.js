@@ -1,9 +1,9 @@
-import FilterComponent from "@/components/FilterComponent/FilterComponent"
+import FilterComponent from "@/Components/FilterComponent/FilterComponent"
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import RevealAnimation from "@/components/RevealAnimation/RevealAnimation";
+import RevealAnimation from "@/Components/RevealAnimation/RevealAnimation";
 import { useRouter } from "next/router";
 import Image from "next/image";
 

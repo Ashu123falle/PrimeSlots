@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar/Navbar"
+import Navbar from "@/Components/Navbar/Navbar"
 import { useRouter } from 'next/router';
 
-import MyBookings from "@/components/MyBookings/MyBookings.js"
+import MyBookings from "@/Components/MyBookings/MyBookings.js"
 import Image from "next/image"; 
 
-import DatePicker from "@/components/DatePicker/DatePicker";
-import ProfileDetails from "@/components/ProfileDetails";
-import Footer from "@/components/Footer/Footer";
-import ServiceSectionBlue from "@/components/ServiceSectionBlue/ServiceSectionBlue"
+import DatePicker from "@/Components/DatePicker/DatePicker";
+import ProfileDetails from "@/Components/ProfileDetails";
+import Footer from "@/Components/Footer/Footer";
+import ServiceSectionBlue from "@/Components/ServiceSectionBlue/ServiceSectionBlue"
 
 export default function Userprofile () {
 

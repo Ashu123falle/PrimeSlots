@@ -1,6 +1,6 @@
 
-import Footer from '@/components/Footer/Footer';
-import StayLoop from '@/components/StayLoop/StayLoop';
+import Footer from '@/Components/Footer/Footer';
+import StayLoop from '@/Components/StayLoop/StayLoop';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';

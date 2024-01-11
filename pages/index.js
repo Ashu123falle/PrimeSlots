@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Footer from '../components/Footer/Footer'
-import Banner from '@/components/Banner/Banner'
-import OurAdvantage from '@/components/OurAdvantage/OurAdvantage'
-import LightBox from '@/components/LightBox/LightBox'
-import Unleasing from '@/components/Unleashing/Unleashing'
-import JoinTheBrand from '@/components/JoinTheBrand/JoinTheBrand'
-import StayLoop from '@/components/StayLoop/StayLoop'
-import { CategoryCard } from '@/components/CategoryCard/CategoryCard'
-import Testimonials from '@/components/Testomonials/Testomonials'
+import Footer from '../Components/Footer/Footer'
+import Banner from '@/Components/Banner/Banner'
+import OurAdvantage from '@/Components/OurAdvantage/OurAdvantage'
+import LightBox from '@/Components/LightBox/LightBox'
+import Unleasing from '@/Components/Unleashing/Unleashing'
+import JoinTheBrand from '@/Components/JoinTheBrand/JoinTheBrand'
+import StayLoop from '@/Components/StayLoop/StayLoop'
+import { CategoryCard } from '@/Components/CategoryCard/CategoryCard'
+import Testimonials from '@/Components/Testomonials/Testomonials'
 
 const categoriesList = [
   {
