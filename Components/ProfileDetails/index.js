@@ -43,7 +43,7 @@ const ProfileDetails = () => {
     height={150} 
     layout='fixed'
   />
-  <a href="#" className="mt-2 text-sm text-blue-500 underline">Upload Image</a>
+  <a href="#" className="mt-2 text-md text-blue-500 underline">Upload Image</a>
 </div>
 
       </div>
