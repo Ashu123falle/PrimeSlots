@@ -14,7 +14,7 @@ const ProfileDetails = () => {
           <div className='flex flex-col  w-full md:w-2/5 mx-8'>
             <div className="mb-6">
               <label htmlFor="name" className="block text-md font-medium text-gray-700">Name:</label>
-              <input type="text" id="name" name="name" className="mt-1 p-2 border border-gray-300 rounded-md w-full md:w-full bg-gray-200 h-[46px]" placeholder='Sahil Nexocide' />
+              <input type="text" id="name" name="name" className="mt-1 p-2 border border-gray-300 rounded-md w-full md:w-full bg-gray-200 h-[46px]" placeholder='Sahil Nexocide'/>
             </div>
             <div className="mb-8 md:mb-0">
               <label htmlFor="phone" className="block text-md font-medium text-gray-700">Phone No.:</label>
