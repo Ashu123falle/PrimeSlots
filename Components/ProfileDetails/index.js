@@ -44,10 +44,9 @@ const ProfileDetails = () => {
   <a href="#" className="mt-2 text-md text-blue-500 underline">Upload Image</a>
 </div>
 </div>
-
-      {/* Visible on extra small (xs) devices and hidden on medium and above devices */}
-      <div className=' md:hidden p-5 border rounded p-6 m-5'>
-      <div className="profile-image mb-4 md:mb-0 flex flex-col items-center ">
+{/* Visible on extra small (xs) devices and hidden on medium and above devices */}
+<div className=' md:hidden p-5 border rounded p-6 m-5'>
+<div className="profile-image mb-4 md:mb-0 flex flex-col items-center ">
   <Image
     className="mx-auto"
     src="/assets/profile.png"
