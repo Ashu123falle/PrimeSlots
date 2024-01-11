@@ -178,7 +178,7 @@ export default function Userprofile () {
                     </button>
                 </div>
             </div>
-            <div className="px-2 py-5 m:px-10 md:px-16 lg:px-32">
+            <div className="px-2 py-5 sm:px-0 md:px-16 lg:px-32">
                 <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] ">Profile Details:</h1>
                 <div>
                 <ProfileDetails/>
