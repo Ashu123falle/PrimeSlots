@@ -104,9 +104,11 @@ function Navbar() {
             </Link>
             </div>
             <div className="flex justify-between items-center">
+              <Link href="/Marketplace/Favourites">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="m-2">
             <path d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z" stroke="#131C5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+            </Link>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="m-2">
             <path d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z" stroke="#131C5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -126,6 +128,7 @@ function Navbar() {
       <Link href="/">
       <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
       </Link>
+
       <nav>
         <section className="MOBILE-MENU px-5 text-left flex lg:hidden">
           <div
@@ -164,6 +167,11 @@ function Navbar() {
               <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['figtree'] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
                 <Link href="/Partner">Partners</Link>
               </li>
+
+              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['figtree'] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
+                <Link href="/Marketplace/Favourites">Favourites</Link>
+              </li>
+
               <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['figtree'] text-base leading-[101%] font-normal relative w-[129px] hover:bg-gray-200">
             <div className="relative inline-block text-left">
                 <div>
@@ -205,6 +213,7 @@ function Navbar() {
         </ul>
 
       </nav>
+      
       <style>{`
       .hideMenuNav {
         display: none;
