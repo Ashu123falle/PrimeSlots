@@ -37,8 +37,8 @@ const ProfileDetails = () => {
     className="mx-auto object-cover"
     src="/assets/profile.png"
     alt="Profile"
-    width={150} 
-    height={150} 
+    width={130} 
+    height={130} 
     layout='fixed'
   />
   <a href="#" className="mt-2 text-md text-blue-500 underline">Upload Image</a>
