@@ -21,3 +21,6 @@
       scrollbar-width: none;  /* Firefox */
 }
 }
+.box-shadow {
+  box-shadow: 0em 10px 50px 0px rgba(61, 55, 241, 0.25);
+}
