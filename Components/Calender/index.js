@@ -181,7 +181,7 @@ const CalendarPage = () => {
             color: white;
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
           }
         `}
