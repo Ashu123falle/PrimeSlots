@@ -164,7 +164,7 @@ export default function Home() {
   const onClickWishlistButton = id => {
     const updatedSearchData = hotPicksData.map(obj => {
       if (obj.id === id) {
-        addFavMediadata(obj)
+        addFavMediadata({...obj, isLiked: !obj.isLiked})
         
           return {...obj, isLiked: !obj.isLiked}
       }

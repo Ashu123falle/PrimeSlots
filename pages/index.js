@@ -78,10 +78,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-       <div className='w-[100%] overflow-x-hidden'>
+       <div className='w-[100%] overflow-x-hidden '>
     <Banner />
 
-      <div className='mt-10 text-center mb-8'>
+      <div className='mt-10 text-center mb-8 w-[100%] overflow-x-hidden'>
       <h1 className="text-slate-950 text-3xl font-bold font-['Playfair'] 
        leading-[48px] tracking-wider p-3">OOH media Solutions for </h1>
          <ul className="mt-3 categories flex justify-start items-center overflow-visible overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">

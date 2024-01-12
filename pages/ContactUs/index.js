@@ -4,11 +4,12 @@ import Footer from '@/Components/Footer/Footer'
 import LetsTalk from '@/Components/LetsTalk/LetsTalk'
 import StayLoop from '@/Components/StayLoop/StayLoop'
 import ContactUsimage from '@/Components/ContactUsimage/ContactUsimage'
+import MiniNavbar from '@/Components/MiniNavbar/MiniNavbar'
 
 const ContactUs = () => {
   return (
     <>
-      <ContactUsnavbar />
+      <MiniNavbar />
       <ContactUsimage/>
       <LetsTalk />
       <StayLoop />

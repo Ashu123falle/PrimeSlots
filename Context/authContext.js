@@ -11,7 +11,7 @@ export const AuthContext = createContext({
 
 //Provider 
 export const AuthContextProvider = ({children}) => {
-    const [isAuthorized, setAuthorized] = useState(false)
+    const [isAuthorized, setAuthorized] = useState(true)
     const [jwtToken,setToken] = useState(undefined)
     const [favouriteMediaData, setFavMediadata] = useState([])
 
@@ -21,7 +21,12 @@ export const AuthContextProvider = ({children}) => {
 
     //add media to favourites
     const addFavMediadata = (data) => {
-        setFavMediadata((prevData) => [...prevData, data])
+        if (data.isLiked === true) {
+            setFavMediadata((prevData) => [...prevData, data])
+        } else {
+            const filteredData = favouriteMediaData.filter(obj => obj.id !== data.id)
+            setFavMediadata(filteredData) 
+        }
     } 
 
     useEffect(() => {
@@ -35,6 +40,7 @@ export const AuthContextProvider = ({children}) => {
             onClickLogin,
             favouriteMediaData,
             addFavMediadata: addFavMediadata,
+            setFavMediadata,
             }}>
             {children}
         </AuthContext.Provider>

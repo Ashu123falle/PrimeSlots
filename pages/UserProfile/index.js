@@ -80,7 +80,8 @@ export default function Userprofile () {
                                 />
                                 </svg>
                             </div>
-                            <h1 className="mx-2 text-button-primary text-center font-['Figtree-Regular',_sans-serif] text-xs leading-[14px] font-normal relative flex items-center justify-center" style={{ textDecoration: "underline" }}>Upload Media</h1>
+                            <h1 className="mx-2 text-button-primary text-center font-['Figtree-Regular',_sans-serif] text-xs leading-[14px] 
+                            font-normal relative flex items-center justify-center" style={{ textDecoration: "underline" }}>Upload Media</h1>
 
                         </div>
                         <h1 className="text-secondarytext text-left mt-3 font-[Figtree]  text-[14px] font-normal relative ">
@@ -161,6 +162,7 @@ export default function Userprofile () {
             </main>
 
             </div>
+
             <div className="xl:flex xl:flex-col xl:justify-center xl:items-center px-2 py-5 m:px-10 md:px-16 lg:px-32">
                 <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] leading-loose">My Bookings:</h1>
                 <div className="rounded-md border border-zinc-200 width-full xl:w-[100%] ">
@@ -178,7 +180,8 @@ export default function Userprofile () {
                     </button>
                 </div>
             </div>
-            <div className="px-2 py-5 m:px-10 md:px-16 lg:px-32">
+
+            <div className="px-2 py-5 sm:px-0 md:px-16 lg:px-32">
                 <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] ">Profile Details:</h1>
                 <div>
                 <ProfileDetails/>
