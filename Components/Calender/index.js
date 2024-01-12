@@ -91,7 +91,7 @@ const CalendarPage = () => {
           .react-calendar__month-view__days__day--weekend.react-calendar__tile--active {
             background-color: rgba(67, 57, 242, 1) !important; /* Pink hex code for selected and today's date */
             color: white !important;
-            border-radius: 40% !important;
+            border-radius: 50% !important;
           }
           
           /* Add circular overlay for today's date */
