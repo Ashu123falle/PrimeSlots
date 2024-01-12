@@ -6,7 +6,7 @@ const CalendarPage = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const specialDates = [
     new Date(2024, 0, 5),
-    new Date(2024, 0, 12),
+    new Date(2024, 0, 11),
     new Date(2024, 0, 19),
   ];
 
