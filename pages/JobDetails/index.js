@@ -4,31 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import MiniNavbar from '@/Components/MiniNavbar/MiniNavbar';
 
 const JobsItem = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
   return (
     <div>
-        <div className='w-full h-auto p-2 px-8 pb-8 text-white bg-gradient-to-b from-gray-900 to-indigo-900 sm:px-16'>
-    
-    <nav className="flex items-center justify-between ">
-      <Link href="/" className="ml-20 bg-white max-md:ml-4 ">
-        <Image src='/assets/FAQlogo.png' alt="Logo" height={32} width={136.7} />
-      </Link>
-      
-      {isSmallScreen ? (
-              <Image src="/assets/menu.png" width={30} height={30} alt="Subscribe" className=' filter brightness-0 invert'/>
-              
-            ) : (
-               <div className="flex p-3 text-white nav-text">
-      <Link href="/Marketplace" className="mx-2 text-sm sm:text-md md:text-base">Marketplace</Link>
-      <Link href="/Partner" className="mx-2 text-sm sm:text-md md:text-base">Become a Partner</Link>
-       </div> 
-            )}
-      </nav>
-    </div>
-    
-    <div className='flex flex-col items-center justify-between w-full h-auto pt-24 text-indigo-200 bg-gray-900 flex-nowrap max-md:mx-0'>
+      <MiniNavbar />
+    <div className='flex flex-col items-center justify-between w-full h-auto pt-24 -mt-1 text-indigo-200 bg-gray-900 flex-nowrap max-md:mx-0'>
        
         <div className='text-center max-md:px-2 max-sm:text-lg'>
         <h1 className='text-4xl text-white font-playfair '>PRODUCT DESIGNER</h1>

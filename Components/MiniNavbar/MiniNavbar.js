@@ -15,7 +15,7 @@ function MiniNavbar() {
 
     return (
         <>
-       <div className="navbar hidden lg:block bg-[#0A075F]">
+       <div className="navbar hidden md:block bg-[#011334]">
                 <div className="Navbar py-5 flex justify-around relative">
                     <Link href="/"
                         className={"bg-[#ffffff] xs:w-[90px] sm:w-[149px] xs:h-[32px] sm:h-[37px] relative "}
@@ -31,7 +31,7 @@ function MiniNavbar() {
                 </div>
             </div>
 
-        <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8 lg:hidden bg-[#0A075F]">
+        <div className="flex items-center justify-between bg-[#011334] border-gray-400 py-8 px-8 md:hidden bg-[#011334]">
       <Link href="/">
       <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
       </Link>
@@ -66,7 +66,7 @@ function MiniNavbar() {
             </div>
             <div className="flex flex-col justify-start p-5">
             <div className="flex-col justify-start items-start text-left min-h-[250px]">
-              <li className="h-[45px] rounded-lg flex justify- items-center my-8 text-center font-['figtree'] text-base font-normal relative w-[129px] hover:bg-gray-200">
+              <li className="h-[45px] rounded-lg flex justify-center items-center my-8 text-center font-['figtree'] text-base font-normal relative w-[129px] hover:bg-gray-200">
                 <Link href="/Marketplace">Marketplace</Link>
               </li>
 
