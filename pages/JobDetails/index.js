@@ -29,8 +29,15 @@ const JobsItem = () => {
     </div>
     
     <div className='flex flex-col items-center justify-between w-full h-auto pt-24 text-indigo-200 bg-gray-900 flex-nowrap max-md:mx-0'>
-       <h1 className='text-4xl text-white font-playfair '>PRODUCT DESIGNER</h1>
-       <p className='mt-2 font-normal text-white text-md font-figtree'>Job Type: Full Time  &#160; &#160;No of Vacancies:02</p>
+       
+        <div className='text-center max-md:px-2 max-sm:text-lg'>
+        <h1 className='text-4xl text-white font-playfair '>PRODUCT DESIGNER</h1>
+        </div>
+        <div className='flex max-sm:flex-col'>
+        <p className='mt-2 mr-4 font-normal text-white text-md font-figtree'>Job Type: Full Time </p>
+        <p className='mt-2 font-normal text-white text-md font-figtree'> No of Vacancies:02</p>
+        </div>
+       
        <button
             className=" w-40 h-14 self-center font-semibold rounded-[50px]  bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white  mr-5 my-6 px-6  max-md:self-center  max-md:mx-6 max-md:w-40 box-shadow mt-12 mb-20"
             type="button"
@@ -39,7 +46,7 @@ const JobsItem = () => {
           </button>
      </div>
      
-     <div className='pt-20 pr-16 pl-28 max-md:px-8 '>
+     <div className='pt-20 pl-20 pr-16 max-md:px-8 '>
      <Image
               src='/assets/Vectortop.png' alt=""
               width={70}
@@ -58,11 +65,14 @@ const JobsItem = () => {
              <Image src='/assets/Jobs1.png' width={1200} height={500} alt="" />
         </div>
        
-        <div className='flex pr-16 max-md:px-4 max-md:flex-col-reverse'>
-        <div className='flex-col w-[70%] max-md:w-full px-12 max-md:px-4'>
-            <h1 className='text-4xl font-bold text-gray-900 font-figtree'>PRODUCT DESIGNER</h1>
+        <div className='flex max-md:px-4 max-md:flex-col-reverse'>
+        <div className='flex-col w-[70%] max-md:w-full pr-12 pl-8 max-md:px-4'>
+          
+            <h1 className='text-4xl font-bold text-gray-900 font-figtree '>PRODUCT DESIGNER</h1>
+
+         
             <div>
-               <p className='mt-16 text-2xl font-semibold'>Who Are We Looking For</p>
+               <p className='mt-16 text-2xl font-semibold max-md:mt-10'>Who Are We Looking For</p>
             <ul className='px-4 list-disc'>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Nullam dictum ligula a gravida porta.</li>
@@ -151,7 +161,7 @@ const JobsItem = () => {
             
         </div>
         <div className='mb-10'>
-        <div className='w-[400px] h-[1099px] bg-indigo-100 max-md:h-auto max-md:w-full mb-12 '>
+        <div className='w-[400px] h-[1099px] bg-indigo-100 max-md:h-auto max-md:w-full mb-12 max-lg:w-[300px]'>
         <div className='flex justify-center max-md:self-center'>
            <button
             className=" w-40 h-14  font-semibold rounded-[50px]  bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white  mr-5 my-6 px-6  max-md:self-center  max-md:mx-6 max-md:w-40 box-shadow mt-12 "
@@ -161,60 +171,60 @@ const JobsItem = () => {
            <h1 className='text-xl font-bold text-gray-800 max-md:text-center ml-14 max-md:ml-0'>Job Summary</h1> 
          </div>
          
-         <div className='grid grid-cols-1 pr-8 ml-8 max-md:grid-cols-3 lg:grid-cols-1 max-sm:grid-cols-2 max-sm:ml-2'>
-         <div className='flex mt-4 max-md:mt-14'>
-            <Image src='/assets/location.svg' width={30} height={30} className='m-2'/>
+         <div className='grid grid-cols-1 pr-8 ml-8 max-md:grid-cols-3 lg:grid-cols-1 max-sm:grid-cols-1 max-sm:ml-2'>
+         <div className='flex mt-4 max-md:mt-14 max-sm:mt-2'>
+            <Image src='/assets/location.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Location</p>
                 <p className='text-gray-900'>Panjim, Goa</p>
             </div>
          </div>
-         <div className='flex mt-14'>
-            <Image src='/assets/office-bag.svg' width={33} height={30} className='m-2'/>
+         <div className='flex mt-14 max-sm:mt-2'>
+            <Image src='/assets/office-bag.svg' width={33} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Job Type</p>
                 <p className='text-gray-900'>Full Time</p>
             </div>
          </div>
-         <div className='flex mt-14'>
-            <Image src='/assets/calender.svg' width={30} height={34} className='m-2'/>
+         <div className='flex mt-14 max-sm:mt-2'>
+            <Image src='/assets/calender.svg' width={30} height={34} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Date posted</p>
                 <p className='text-gray-900'>posted 1 month ago</p>
             </div>
          </div>
-         <div className='flex mt-14'>
-            <Image src='/assets/book.svg' width={40} height={30} className='m-2'/>
+         <div className='flex mt-14 max-sm:mt-2'>
+            <Image src='/assets/book.svg' width={40} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Exprience</p>
                 <p className='text-gray-900'>Experience:1-3 year</p>
             </div>
          </div>
-         <div className='flex mt-14'>
-            <Image src='/assets/clock.svg' width={30} height={30} className='m-2'/>
+         <div className='flex mt-14 max-sm:mt-2'>
+            <Image src='/assets/clock.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Working Hours</p>
                 <p className='text-gray-900'>9AM - 6PM</p>
             </div>
          </div>
-         <div className='flex mt-14'>
-            <Image src='/assets/calender-days.svg' width={34} height={34} className='m-2'/>
+         <div className='flex mt-14 max-sm:mt-2'>
+            <Image src='/assets/calender-days.svg' width={34} height={34} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Working Days</p>
                 <p className='text-gray-900'>Weekly: 5days</p>
                 <p className='text-gray-900 break-normal'>Weekend: Saturday,Sunday</p>
             </div>
          </div>
-         <div className='flex mt-14 '>
-            <Image src='/assets/chair.svg' width={26} height={38} className='m-2'/>
+         <div className='flex mt-14 max-sm:mt-2'>
+            <Image src='/assets/chair.svg' width={26} height={38} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Vacancy</p>
                 <p className='text-gray-900'>Weekly: 5days</p>
             </div>
             
          </div>
-         <div className='pt-10 pl-8 mb-10 mt-14'>
-            <Link href='#' className='text-lg font-medium text-gray-900 underline'>View all jobsItem</Link>
+         <div className='pt-10 pl-8 mb-10 mt-14 max-sm:mt-2'>
+            <Link href='#' className='text-xl font-semibold text-gray-900 underline'>View all jobs</Link>
             </div>
          </div>
         
