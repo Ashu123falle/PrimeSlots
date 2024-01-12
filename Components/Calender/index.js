@@ -152,7 +152,7 @@ const CalendarPage = () => {
             color: white !important;
             border-radius: 50% !important;
           }
-
+          
           /* Styles for confirmed and selected dates */
           .confirmed {
             background-color: rgba(238, 218, 252, 1);
