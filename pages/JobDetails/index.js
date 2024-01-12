@@ -180,21 +180,21 @@ const JobsItem = () => {
             </div>
          </div>
          <div className='flex mt-14 max-sm:mt-2'>
-            <Image src='/assets/office-bag.svg' width={33} height={30} className='m-2 max-md:mb-10'/>
+            <Image src='/assets/office-bag.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Job Type</p>
                 <p className='text-gray-900'>Full Time</p>
             </div>
          </div>
          <div className='flex mt-14 max-sm:mt-2'>
-            <Image src='/assets/calender.svg' width={30} height={34} className='m-2 max-md:mb-10'/>
+            <Image src='/assets/calender.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Date posted</p>
                 <p className='text-gray-900'>posted 1 month ago</p>
             </div>
          </div>
          <div className='flex mt-14 max-sm:mt-2'>
-            <Image src='/assets/book.svg' width={40} height={30} className='m-2 max-md:mb-10'/>
+            <Image src='/assets/book.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Exprience</p>
                 <p className='text-gray-900'>Experience:1-3 year</p>
@@ -208,7 +208,7 @@ const JobsItem = () => {
             </div>
          </div>
          <div className='flex mt-14 max-sm:mt-2'>
-            <Image src='/assets/calender-days.svg' width={34} height={34} className='m-2 max-md:mb-10'/>
+            <Image src='/assets/calender-days.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Working Days</p>
                 <p className='text-gray-900'>Weekly: 5days</p>
@@ -216,7 +216,7 @@ const JobsItem = () => {
             </div>
          </div>
          <div className='flex mt-14 max-sm:mt-2'>
-            <Image src='/assets/chair.svg' width={26} height={38} className='m-2 max-md:mb-10'/>
+            <Image src='/assets/chair.svg' width={30} height={30} className='m-2 max-md:mb-10'/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Vacancy</p>
                 <p className='text-gray-900'>Weekly: 5days</p>
