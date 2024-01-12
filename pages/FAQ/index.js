@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import MiniNavbar from '@/Components/MiniNavbar/MiniNavbar';
-import CalendarPage from '@/Components/Calender';
+
 const FAQ = () => {
   
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
@@ -106,7 +106,7 @@ const FAQ = () => {
                 
     <StayLoop/>
     <Footer/>
-    <CalendarPage/>
+  
   </div>
   
   );
