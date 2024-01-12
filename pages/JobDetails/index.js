@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import MiniNavbar from '@/Components/MiniNavbar/MiniNavbar';
 
 const JobsItem = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
@@ -166,7 +165,7 @@ const JobsItem = () => {
          
          <div className='grid grid-cols-1 sm:grid-cols-2 px-8 md:pr-8  md:grid-cols-1 lg:grid-cols-1  '>
          <div className='flex items-center m-4'>
-            <Image src='/assets/location.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/location.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Location</p>
                 <p className='text-gray-900'>Panjim, Goa</p>
@@ -174,35 +173,35 @@ const JobsItem = () => {
          </div>
 
          <div className='flex items-center m-4'>
-            <Image src='/assets/office-bag.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/office-bag.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Job Type</p>
                 <p className='text-gray-900'>Full Time</p>
             </div>
          </div>
          <div className='flex items-center  m-4'>
-            <Image src='/assets/calender.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/calender.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Date posted</p>
                 <p className='text-gray-900'>posted 1 month ago</p>
             </div>
          </div>
          <div className='flex items-center m-4'>
-            <Image src='/assets/book.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/book.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Exprience</p>
                 <p className='text-gray-900'>Experience:1-3 year</p>
             </div>
          </div>
          <div className='items-center flex m-4'>
-            <Image src='/assets/clock.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/clock.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Working Hours</p>
                 <p className='text-gray-900'>9AM - 6PM</p>
             </div>
          </div>
          <div className='flex  items-center  m-3'>
-            <Image src='/assets/calender-days.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/calender-days.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Working Days</p>
                 <p className='text-gray-900'>Weekly: 5days</p>
@@ -210,7 +209,7 @@ const JobsItem = () => {
             </div>
          </div>
          <div className='items-center flex m-4'>
-            <Image src='/assets/chair.svg' width={30} height={30} className='m-2'/>
+            <Image src='/assets/chair.svg' width={30} height={30} className='m-2' alt=""/>
             <div className='pl-2 text-lg font-semibold'>
                 <p className='text-pink-400'>Vacancy</p>
                 <p className='text-gray-900'>Weekly: 5days</p>
