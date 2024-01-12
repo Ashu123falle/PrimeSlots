@@ -151,7 +151,6 @@ const CalendarPage = () => {
             background-color: rgba(67, 57, 242, 1) !important; /* Pink hex code for selected and today's date */
             color: white !important;
             border-radius: 50% !important;
-           
           }
 
           /* Styles for confirmed and selected dates */
