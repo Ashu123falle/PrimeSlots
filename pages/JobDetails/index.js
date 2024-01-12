@@ -161,7 +161,7 @@ const JobsItem = () => {
             
         </div>
         <div className='mb-10'>
-        <div className='w-[400px] h-[1099px] bg-indigo-100 max-md:h-auto max-md:w-full mb-12 max-lg:w-[300px]'>
+        <div className='w-[400px] h-[1099px] bg-indigo-100 max-md:h-auto max-md:pb-10 max-md:w-full mb-12 max-lg:w-[300px]'>
         <div className='flex justify-center max-md:self-center'>
            <button
             className=" w-40 h-14  font-semibold rounded-[50px]  bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white  mr-5 my-6 px-6  max-md:self-center  max-md:mx-6 max-md:w-40 box-shadow mt-12 "
