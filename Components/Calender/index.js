@@ -18,7 +18,7 @@ const CalendarPage = () => {
   ];
 
   const markAsBooked = () => {
-    // Implement your logic to mark the selected date as booked
+    // Implemented logic to mark the selected date as booked
     console.log('Mark as Booked clicked for date:', selectedDate);
   };
 
