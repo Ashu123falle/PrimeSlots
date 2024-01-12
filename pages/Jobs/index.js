@@ -7,6 +7,7 @@ import Link from "next/link";
 import JobsHeader from "@/Components/JobsHeader";
 import StayLoop from "@/Components/StayLoop/StayLoop";
 import Footer from "@/Components/Footer/Footer";
+import MiniNavbar from "@/Components/MiniNavbar/MiniNavbar";
 
 
 
@@ -17,7 +18,7 @@ const Jobs = () => {
     <>
      
         <div className='h-[70px]' style={{ background: 'linear-gradient(to bottom, rgba(12, 12, 66, 1), rgba(36, 37, 101, 1))' }}>
-          <JobsHeader />
+          <MiniNavbar />
           <div className=" relative w-full bg-cover text-white flex flex-col justify-center items-center" style={{ backgroundImage: 'url("/assets/Border.png")', height: 'auto' }}>
             <div className="absolute inset-0" style={{ backgroundImage: 'url("/assets/BorderLayer.png")', opacity: 2 }}></div>
             <div className="relative z-20 text-center mt-32 mb-10 max-w-[655px] p-5">
