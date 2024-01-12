@@ -8,6 +8,7 @@ const CalendarPage = () => {
     new Date(2024, 0, 5),
     new Date(2024, 0, 11),
     new Date(2024, 0, 19),
+    new Date(2024, 0, 20)
   ];
 
   const confirmedDates = [
