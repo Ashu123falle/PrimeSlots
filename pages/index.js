@@ -78,7 +78,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-       <div className='w-[100%] overflow-x-hidden'>
+       <div className='w-[100%] overflow-x-hidden '>
     <Banner />
 
       <div className='mt-10 text-center mb-8 w-[100%] overflow-x-hidden'>
