@@ -157,7 +157,7 @@ const DetailsComponent = () => {
 
                         <button onClick={login} className='bg-[#6979F8] w-full text-1xl rounded-md text-white  py-2 w-[100px]'>Book Now</button>
                         </div>
-                        ): <p>Login</p>}
+                        ): <p>Please Login first</p>}
                         </div>
                    )}
                     </Popup>
