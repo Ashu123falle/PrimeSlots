@@ -173,7 +173,6 @@ export default function Home() {
     setHotPicksData(updatedSearchData)
 }
 
-  
     return (
       <main className="bg-whitebg-cover w-full">
         <Navbar/>
