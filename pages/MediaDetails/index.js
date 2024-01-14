@@ -142,8 +142,7 @@ const MediaOptionsButtons = [
                 return aboutVendorSection()
         }
     }
-
-        
+   
     return(
         <>
         <Navbar/>
