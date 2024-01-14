@@ -142,13 +142,12 @@ const MediaOptionsButtons = [
                 return aboutVendorSection()
         }
     }
-
-        
+   
     return(
         <>
         <Navbar/>
 
-       <div>
+       <div className='xs:mt-24 lg:mt-24'>
             <div className='px-5 py-4 mb-[-10px] text-[14px] ml-8'>
                 <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
               <span className= " mx-3 text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 

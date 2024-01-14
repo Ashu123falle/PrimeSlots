@@ -16,7 +16,6 @@ const Jobs = () => {
 
   return (
     <>
-     
         <div className='h-[70px]' style={{ background: 'linear-gradient(to bottom, rgba(12, 12, 66, 1), rgba(36, 37, 101, 1))' }}>
           <MiniNavbar />
           <div className=" relative w-full bg-cover text-white flex flex-col justify-center items-center" style={{ backgroundImage: 'url("/assets/Border.png")', height: 'auto' }}>
@@ -24,7 +23,7 @@ const Jobs = () => {
             <div className="relative z-20 text-center mt-32 mb-10 max-w-[655px] p-5">
               <h1
                 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 500 }}
-                className="xs:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-2"
+                className="xs:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-2 mt-16"
               >
                 JOIN US
               </h1>

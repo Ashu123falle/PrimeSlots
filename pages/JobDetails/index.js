@@ -10,15 +10,13 @@ const JobsItem = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
 
   return (
-    <div>
-
-        
+    <div>  
     <MiniNavbar/>
     
     <div className='flex flex-col items-center justify-between w-full h-auto pt-24 text-indigo-200 bg-gray-900 flex-nowrap max-md:mx-0'>
 
        
-        <div className='text-center max-md:px-2 max-sm:text-lg'>
+        <div className='text-center max-md:px-2 max-sm:text-lg mt-24'>
         <h1 className='text-4xl text-white font-playfair '>PRODUCT DESIGNER</h1>
         </div>
 

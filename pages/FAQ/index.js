@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 import MiniNavbar from '@/Components/MiniNavbar/MiniNavbar';
 
 const FAQ = () => {
+
   
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
   return (
@@ -15,7 +16,7 @@ const FAQ = () => {
     <MiniNavbar />
     <div className='w-full h-auto p-2 px-8 pb-12 text-white bg-gradient-to-b from-gray-900 to-indigo-900 sm:px-16'>
      
-      <div className='flex flex-col items-center justify-between mt-24 text-indigo-200 flex-nowrap max-md:mx-0'>
+      <div className='mt-32 flex flex-col items-center justify-between mt-24 text-indigo-200 flex-nowrap max-md:mx-0 '>
         <p className='text-sm  h-[18px]'>FAQs</p>
         <h1 className='py-1 my-4 text-4xl font-semibold font-playfair'>Ask us anything</h1>
         <p className='mb-4 font-sm text-light '>Have any questions? We&apos;re here to assist you.</p>

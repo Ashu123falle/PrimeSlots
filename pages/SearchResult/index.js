@@ -132,7 +132,7 @@ const SearchResultPage = (props) => {
     return (
         <div className='box-border'>
             <Navbar/>
-            <div>
+            <div className='xs:mt-24 lg:mt-24 '>
                     <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
                     <Link href="/">
                         <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > <Link href="/">Home</Link> &nbsp; / </span>  </Link>
@@ -141,8 +141,7 @@ const SearchResultPage = (props) => {
                     </div>
                    <hr className='border border-gray-300 w-[100vw]' />
                    <h2 className='text-right py-3 text-[14px] px-5 md: pr-16 md:mr-16'><span className='font-semibold'>Showing 1-20</span> <span className='text-gray-400'>out of 2356 Products</span></h2>
-             </div>
-        
+             </div>     
 
         <div className="px-8 pb-2">
              <ul className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 4xl:grid-cols-6 justify-center items-start
