@@ -16,7 +16,6 @@ const Jobs = () => {
 
   return (
     <>
-     
         <div className='h-[70px]' style={{ background: 'linear-gradient(to bottom, rgba(12, 12, 66, 1), rgba(36, 37, 101, 1))' }}>
           <MiniNavbar />
           <div className=" relative w-full bg-cover text-white flex flex-col justify-center items-center" style={{ backgroundImage: 'url("/assets/Border.png")', height: 'auto' }}>
