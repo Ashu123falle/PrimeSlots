@@ -30,7 +30,6 @@ function MiniNavbar() {
                     </div>
                 </div>
             </div>
-
         <div className="flex items-center justify-between bg-[#011334] border-gray-400 py-8 px-8 md:hidden bg-[#011334] fixed top-0 right-0 left-0 z-50">
       <Link href="/">
       <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
