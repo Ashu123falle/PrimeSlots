@@ -187,7 +187,6 @@ export default function Userprofile () {
                 <ProfileDetails/>
                 </div>
             </div>
-            
             <ServiceSectionBlue />
 
             <Footer />
