@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 import MiniNavbar from '@/Components/MiniNavbar/MiniNavbar';
 
 const FAQ = () => {
+
   
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
   return (
