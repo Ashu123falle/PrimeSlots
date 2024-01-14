@@ -16,8 +16,7 @@ const WhoWeAre = () => {
             width={365}
             height={360}
             alt="look for help"
-            src="https://s3-alpha-sig.figma.com/img/07cd/30a5/fbc750fab49f45fde83645f53cdbfdca?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bDJtW373vgnPMD1f4FTXwg~uRIR5tWviC28v5PbgGwpMoA4WfMooVyVlXSDYBYFGonIwrXohlvbJk20HM-a1HeKk71wnL906tf0-34cZedGXIpwBw855qpDmaRVx9wikxrV2crfy3zlQRIITkmkmgjTiS3p41vd1X~Z18Bt-NpnyBbtDk7G1Xy8UZEUpY1K7NP8ybDKO-Hk~HqRJLNztZnJQ2-CYNFpxQjU76ezoIdhRjngF1bN2o9mWKiiYPsr6vlEYZT83p8iDv5A20qFlA~t8Gje7URcrlfxpnpZagNMDjba3yeDXJytB0f8AeFdf4hpVqznyOVWs0ETElqbeqQ__"
-            />
+            src="/assets/unsplash_JaoVGh5aJ3E.png"          />
 
         <div
             className={
@@ -177,8 +176,7 @@ const WhoWeAre = () => {
             height={320}
             width={425}
             alt="look for help"
-            src="https://s3-alpha-sig.figma.com/img/07cd/30a5/fbc750fab49f45fde83645f53cdbfdca?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bDJtW373vgnPMD1f4FTXwg~uRIR5tWviC28v5PbgGwpMoA4WfMooVyVlXSDYBYFGonIwrXohlvbJk20HM-a1HeKk71wnL906tf0-34cZedGXIpwBw855qpDmaRVx9wikxrV2crfy3zlQRIITkmkmgjTiS3p41vd1X~Z18Bt-NpnyBbtDk7G1Xy8UZEUpY1K7NP8ybDKO-Hk~HqRJLNztZnJQ2-CYNFpxQjU76ezoIdhRjngF1bN2o9mWKiiYPsr6vlEYZT83p8iDv5A20qFlA~t8Gje7URcrlfxpnpZagNMDjba3yeDXJytB0f8AeFdf4hpVqznyOVWs0ETElqbeqQ__"
-            />
+            src="/assets/unsplash_JaoVGh5aJ3E.png"      />
 
         <div
             className={
@@ -327,8 +325,7 @@ const WhoWeAre = () => {
 
       <div className="flex justify-center">  
     <div className="img-cont w-[90vw] h-[60%]  items-center -mt-2 z-10 relative">
-        <Image src="https://s3-alpha-sig.figma.com/img/e44b/950f/b4840766421086953e20e34484f58173?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GFyqLBURDep1ZwLJuYBmFm0E34WtEBl3K2DoNyo14kAo1-xnT093HbXrTxKl9s2On3MsAQi~ihd7wskCAFE1yRz9PZPDGMJdSYC6Rp652tDWlDaHX881ps8M8h-QgCSi~NnbtH~wkQ2IR6xzxleR9s1b9JrCYSuJ1hbDGkI8eiUshQQM6QtidcvwAqXG-Au~FAu2KjO3wIGjARYc5RDPliGPzYjPM2nwCX79QGaxKl6XLEpFHnaZRfygYOG5DHtsScF6o9~MaACLfXreoD-pvM5vTouFc1rVdDXQJG4Xzr6LoJtaUIh23J2lNjnx7udPIi8IznEpplwlCqguhl4O6A__" 
-         className="rounded-[20px] fill -mt-5 z-10" alt="bottom image" height={648} width={2312}/>
+        <Image src="/assets/Rectangle 34624201.png"  className="rounded-[20px] fill -mt-5 z-10" alt="bottom image" height={648} width={2312}/>
 
     </div>
     </div>
