@@ -42,11 +42,7 @@ const blogsList = [
 function Blogs() {
     return (
         <>
-
-            
             <MiniNavbar />
-
-
             <div className="py-6 banner-container flex flex-col justify-center items-center bg-[#EBEDFD] w-[100vw] px-5 sm:px-10 md:px-16 lg:px-32">
 
                 <h1 className="font-[Playfair] text-[76px] sm:text-[96px] text-[#13165F] font-normal text-center mt-24">Our Blogs</h1>
