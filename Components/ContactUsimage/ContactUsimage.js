@@ -9,7 +9,6 @@ const ContactUsimage = () => {
                 <div className="w-full">
                     <Image src={ContactUsbackground} alt='bg-image' className='' />
                 </div>
-
                 <div className='w-full py-3 flex justify-center items-center'>
                     <h1 className='text-3xl sm:text-4xl md:text-5xl text-[#131C5F] font-[Playfair] font-semibold'>Contact Us</h1>
                 </div>
