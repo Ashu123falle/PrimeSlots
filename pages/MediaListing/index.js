@@ -237,7 +237,7 @@ const MediaListingPage = () => {
   return (
     <div className='box-border' style={{ overflowX: 'hidden' }}>
       <Navbar />
-      <div>
+      <div className='xs:mt-24 lg:mt-24'>
             <div className='px-5 py-4 mb-[-10px] text-[16px] ml-6 md:px-7 xl:px-14'>
             <Link href="/">
                 <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> </Link>

@@ -49,7 +49,7 @@ function Blogs() {
 
             <div className="py-6 banner-container flex flex-col justify-center items-center bg-[#EBEDFD] w-[100vw] px-5 sm:px-10 md:px-16 lg:px-32">
 
-                <h1 className="font-[Playfair] text-[76px] sm:text-[96px] text-[#13165F] font-normal text-center">Our Blogs</h1>
+                <h1 className="font-[Playfair] text-[76px] sm:text-[96px] text-[#13165F] font-normal text-center mt-24">Our Blogs</h1>
                 <p className="font-[DM Sans] text-[18px] sm:text-[20px] text-[#121212] text-center">Get the latest updates and advertising tips from Industry experts</p>
 
                 <div className="image-cont flex flex-col justify-center my-8">

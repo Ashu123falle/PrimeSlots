@@ -33,7 +33,7 @@ const PriceFilter = () => {
       <div className="slider-header-container mb-2 flex justify-between items-center">
         <label className="block text-sm font-medium text-gray-600">Price Range</label>
         <button className="caret-button" onClick={togglePriceSliderVisibility}>
-          {priceSliderVisible ? '˅' : '^'}
+          {priceSliderVisible ? '▼' : '▲'}
         </button>
       </div>
 
@@ -78,9 +78,10 @@ const PriceFilter = () => {
       <div className="slider-header-container mb-2 flex justify-between items-center">
         <label className="block text-sm font-medium text-gray-600">Ratings</label>
         <button className="caret-button" onClick={toggleRatingSliderVisibility}>
-          {ratingSliderVisible ? '˅' : '^'}
+          {ratingSliderVisible ? '▼' : '▲'}
         </button>
       </div>
+      
 
       {ratingSliderVisible && (
         <div className="rating-selector">

@@ -28,7 +28,7 @@ function Navbar() {
 
     return (
         <>
-        <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 w-full">
+        <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 w-full fixed top-0 left-0 right-0 z-50 bg-white h-[100px]">
           <Link href="/">
             <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="w-[136.7px] h-8 relative mx-1" />
             </Link>
@@ -124,13 +124,13 @@ function Navbar() {
             </div>
         </nav>
 
-        <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8 lg:hidden">
+        <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8 lg:hidden fixed top-0 left-0 right-0 z-50 bg-white w-full bg-white shadow">
       <Link href="/">
       <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="ml-5 relative"></Image>
       </Link>
 
       <nav>
-        <section className="MOBILE-MENU px-5 text-left flex lg:hidden">
+        <section className="MOBILE-MENU px-5 text-left flex lg:hidden ">
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)}

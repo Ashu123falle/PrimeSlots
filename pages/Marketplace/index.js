@@ -178,7 +178,7 @@ export default function Home() {
       <main className="bg-whitebg-cover w-full">
         <Navbar/>
 
-        <div>
+        <div className="xs:mt-24 lg:mt-24">
             <h1 className='px-5 py-4 ml-5 mb-[-10px] text-[16px] px-5 md:px-8 xl:px-16 font-["Figtree"] leading-tight '>
               <Link href="/">
               <span className='text-gray-400 '> Home  </span> </Link>

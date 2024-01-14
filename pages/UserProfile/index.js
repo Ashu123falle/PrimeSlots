@@ -20,7 +20,7 @@ export default function Userprofile () {
     return (
         <>
             <Navbar />
-            <div>
+            <div className="xs:mt-24 lg:mt-24">
                 <div className='py-4 mb-[-10px] text-[14px] px-5 sm:px-10 md:px-16 lg:px-32 '>
                 <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > Home &nbsp; / </span> 
                 <span className= " mx-3 text-slate-950 text-base font-normal font-['Figtree'] leading-tight " >  {pageName} &nbsp; /</span> 
@@ -182,7 +182,7 @@ export default function Userprofile () {
             </div>
 
             <div className="px-2 py-5 sm:px-0 md:px-16 lg:px-32">
-                <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] ">Profile Details:</h1>
+                <h1 className="text-zinc-900 xl:self-start text-2xl font-semibold font-['Figtree'] xs:ml-1 md:ml-0">Profile Details:</h1>
                 <div>
                 <ProfileDetails/>
                 </div>
