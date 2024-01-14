@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 const OurAdvantage = () => {
     return (
         <>
-            <div className="px-10 grid grid-flow-row main bg-gradient-to-t from-violet-100 via-violet-100 to-white sm:px-8 md:px-14 lg:px-24 xl:px-40  py-10 sm:space-y-2 md:space-y-6">
+            <div className=" px-10 grid grid-flow-row main bg-gradient-to-t from-violet-100 via-violet-100 to-white sm:px-8 md:px-14 lg:px-24 xl:px-40  py-10 sm:space-y-2 md:space-y-6">
 
                 <div className='w-[100%] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[550px] 4xl:h-[600px] bg-[#232526] flex justify-center items-center rounded-xl'>
                     <ReactPlayer url="https://www.youtube.com/watch?v=iFQ6vHSulJw" controls height={'93%'} width={'93%'} className="rounded-xl"/>
@@ -13,8 +13,8 @@ const OurAdvantage = () => {
 
 
                 {/* content  */}
-                <div className="mt-3 px-4">
-                    <div className=''>
+                <div className=" px-4">
+                    <div className='mt-6 sm:mt-7'>
                         <span className="text-[#242565] text-xl sm:text-3xl md:text-4xl font-bold font-['Playfair']">our</span>
                         <h1 className="text-3xl sm:text-5xl md:text-6xl text-[#242565] font-['Playfair'] font-bold ">advantages</h1>
                     </div>

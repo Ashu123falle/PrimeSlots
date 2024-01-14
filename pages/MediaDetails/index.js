@@ -173,7 +173,7 @@ const MediaOptionsButtons = [
                 modal
                 >
                {close => (
-                <div className='w-[100vw] h-[40vw] bg-[#2d2d2d] rounded-2xl p-3 flex flex-col'>
+                <div className='w-[90vw] h-[40vw] bg-white rounded-2xl p-3 flex flex-col'>
                     {/* <span className="cursor-pointer w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] bg-white rounded-full border
                 border-neutral-200 flex justify-center items-center p-1 self-end">
                  <Image height={20} width={20} src='/assets/icons8-close.svg' onClick={() => close()} alt="close"/>
