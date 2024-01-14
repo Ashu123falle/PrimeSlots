@@ -8,7 +8,7 @@ const PerksHeader = () => {
   return (
 <div className=" text-white p-2 px-8 sm:px-16 pb-16">
   <div className=''>
-    <nav className="navbar flex justify-between items-center fixed top-0 right-12 left-12 z-50">
+    <nav className="navbar flex justify-between items-center  top-0 right-12 left-12 z-50">
       <Link href="/" className="logo">
         <Image src='/assets/nobglogo.png' alt="Logo" height={56} width={150}/>
       </Link>

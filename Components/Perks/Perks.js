@@ -66,7 +66,7 @@ const PerksComponent = () => {
   
   return (
     <div className="relative p-4 lg:p-8 bg-gradient-to-b from-rgba-19-28-95-1 to-rgba-2-12-97-0-79 rotate-container lg:text-left origin-top-left
-     min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white mt-32" style={{...containerStyle, ...customRotationStyle,...mtStyle, position: 'relative'}}>
+     min-h-[500px] lg:min-h-[550px] xl:h-[550px] text-white mt-32  " style={{...containerStyle, ...customRotationStyle,...mtStyle, position: 'relative'}}>
     
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className='absolute top-24 left-7'>
         <Image src='/assets/Vectortop.png' alt="Vector Top" height={61} width={40} className='sm:w-[63]'/>

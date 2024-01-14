@@ -28,9 +28,11 @@ const Partner = () => {
     const imageHeight = windowWidth <= 366 ? 390 : 480;
   
     return (
-      <div className='bg-cover bg-center' style={{ backgroundImage: `url('${backgroundImageUrl}')`, height: `${imageHeight}px` }}>
+      <div className='bg-cover bg-center ' style={{ backgroundImage: `url('${backgroundImageUrl}')`, height: `${imageHeight}px` }}>
         <PerksHeader />
+        <div className="no-scrollbar overflow-hidden ">
         <PerksComponent />
+        </div>
         <Unleasing />
         <EasyStepsSection />
         <ReadyToConnect />

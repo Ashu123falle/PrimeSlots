@@ -256,7 +256,7 @@ const MediaListingPage = () => {
           <h1 className="text-secondarycolor-1 text-left mx-8 font-['Figtree'] 
           text-3xl md:text-4xl leading-[17.5px] font-bold relative text-[#00002E] mb-5 mt-2">Browse By Category</h1>
 
-          <ul className="ml-2 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
+          <ul className="ml-2 categories flex justify-start items-center overflow-x-scroll  md: p-3 ">
               {categoriesList.map(each => (
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}
@@ -271,7 +271,7 @@ const MediaListingPage = () => {
       
       <div className="px-5 md:px-8 xl:px-8 pb-5">
         <div className='flex justify-center'>
-        <ul className='px-8 grid grid-cols-1 sm:grid-cols-2 sm:px-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-5 4xl:grid-cols-6  max-h-[90vh] overflow-y-auto w-full mb-4 '>
+        <ul className='sm:px-8 grid grid-cols-1 sm:grid-cols-2 sm:px-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-5 4xl:grid-cols-6 w-full mb-4 '>
           {
             searchData.map((curElem, ind) => {
               return <BlogCard key={ind} data={curElem} onClickWishlistButton = {onClickWishlistButton}/>
