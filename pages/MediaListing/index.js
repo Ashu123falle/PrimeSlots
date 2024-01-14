@@ -234,6 +234,7 @@ const MediaListingPage = () => {
     };
   }, []);
 
+  
   return (
     <div className='box-border' style={{ overflowX: 'hidden' }}>
       <Navbar />
