@@ -190,7 +190,7 @@ export default function Home() {
           <h1 className="text-color-4-text text-left mx-5 font-['Figtree-SemiBold',_sans-serif] text-base leading-5 font-semibold uppercase text-[#224757] my-5">CATEGORIES</h1>
           <h1 className="text-secondarycolor-1 text-left mx-5 font-['Figtree-Bold',_sans-serif] text-2xl leading-[17.5px] font-bold relative text-[#00002E] my-5">BROWSE BY CATEGORY</h1>
 
-          <ul className=" categories flex justify-start items-center overflow-visible overscroll-auto overflow-x-scroll no-scrollbar md: p-3 ">
+          <ul className=" categories flex justify-start items-center overflow-visible overscroll-auto overflow-x-scroll md: p-3 ">
               {categoriesList.map(each => (
                 <CategoryCard key={each.id} title={each.title} imageUrl={each.imageUrl} alt={each.alt} />
                 ))}

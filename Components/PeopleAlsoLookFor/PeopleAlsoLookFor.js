@@ -126,7 +126,7 @@ const PeopleAlsoLookFor = () => {
 
 
     return(
-        <ul className='flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar md:p-6 md:pr-0 '>
+        <ul className='flex justify-start items-center overscroll-auto overflow-x-scroll  md:p-6 md:pr-0 '>
             {
              searchData.map((curElem, ind) =>
                 <BlogCard key={ind} data = {curElem} onClickWishlistButton={onClickWishlistButton}/>

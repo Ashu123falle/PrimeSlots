@@ -253,7 +253,7 @@ const Banner = () => {
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
             className={"w-[40vw] h-[25vh] md:h-[50vh] relative top-[calc(8vw)] top-[calc(1vh)] md:top-[calc(-12vh)] bg-cover"}
-            style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/3181/f79d/5f3ed537229f96087c4eca08efd968b9?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ka3nQBVUtLIz682lhjyf9mtJYhinGu1w0~kut5FTGFFxrWESjsrojZtZWW9M1GM5aaZiY62CcK0C-xD3hoJvrDSvTYve6AXnfTyiSjJUP7vmgfFKsz-L2jVYb4RZqFciXidk88fkZ96y~eQZm2fdcDDymeNVuTouR0C0NdOxBD3YmwDf~nbg07-kKpq3bx6~bRNjBIlfmXlkYXcWVx~sIdAQeGR171iaLL0S~jMJEJLT0CnO756gECJqa14l6f0pReRvoJovGQ406RzXYFwHCoGKqOK39RGjG3f1sE~PwDBjRj50hGIvXrMDyglh2A3Lz-wtw8PUlMSO88RZo~6Brw__")'}}
+            style={{backgroundImage: 'url("/assets/Rectangle 18.png")'}}
             ></motion.div>
 
             <motion.div
@@ -265,7 +265,7 @@ const Banner = () => {
             animate="visible"
             transition={{duration: 1.5, delay: 0}}
             className={"w-[40vw] h-[25vh] md:h-[50vh] relative left-[calc(60vw)]  top-[calc(-30vh)]  md:top-[calc(-85vh)] bg-cover"}
-            style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/fa98/8e09/1a4b35e0c0523eeeb654c75c59849568?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CpEWDddjfoIXaFo7mB55T33UKpqlg~wLi9v4MGL9fOZiuojPfeZqBs0ihaskAg4-5T-c7V7hBGRX6yNmH8rGgCFyxQnCIt~4KIh6CcdzdgYLXbN6~AVtb~2BrqRdzH5kJ-WQ~wwDmCzwdZ0c0UzCPnBVf8Gof2rCdUxbH62m6KWDz1rC2PkdZ~2LczrcwAPC~Jib3775K-iza1SF9vCaBr2L61HSOq~jrrQE8I-e3OipCK8b55-DVdZ5LTwKOjLUToZLRfZhImdijxZFxFLiYKQyEKYSgX791UoHWbDnyJYWSNQ5CC2CQS3RL6FYbAs20xlPF6-ADy3iQMC18rS5sw__")'}}
+            style={{backgroundImage: 'url("/assets/Rectangle 19.png")'}}
             ></motion.div>
             </div>
             <div className="flex-col items-center justify-center">
