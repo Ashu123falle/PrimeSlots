@@ -269,7 +269,7 @@ const MediaListingPage = () => {
       <FilterComponent data={data} optionsConfig={optionsConfig} />
       </div>
       
-      <div className="px-5 md:px-8 xl:px-8 pb-5">
+      <div className="px-5 sm:px-0 md:px-8 xl:px-8 pb-5">
         <div className='flex justify-center'>
         <ul className='sm:px-8 grid grid-cols-1 sm:grid-cols-2 sm:px-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-5 4xl:grid-cols-6 w-full mb-4 '>
           {
@@ -290,6 +290,7 @@ const MediaListingPage = () => {
         </div>
         <ServiceSection />
       </div>
+
       <Footer/>
       
     </div>

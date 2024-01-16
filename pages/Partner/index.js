@@ -6,7 +6,6 @@ import PerksHeader from "@/Components/PerksHeader/PerksHeader";
 import Unleasing from "@/Components/Unleashing/Unleashing";
 import EasyStepsSection from "@/Components/EasyStepsSection/EasyStepsSection";
 import ReadyToConnect from "@/Components/ReadyToConnect/ReadyToConnect";
-import Testimonials from "@/Components/Testomonials/Testomonials";
 const Partner = () => {
     const [windowWidth, setWindowWidth] = useState(0);
   

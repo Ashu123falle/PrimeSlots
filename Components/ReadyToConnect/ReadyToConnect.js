@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 
 const ReadyToConnect = () => {
-  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
 
     return (
         <>
@@ -60,14 +58,15 @@ const ReadyToConnect = () => {
             aria-label="Email Address"
           />
           <button
-            className="h-12 w-38 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
+            className="h-12 w-38 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600
+             hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  
+             max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white flex items-center"
             type="button"
           >
-            {isSmallScreen ? (
-              <Image src="/assets/subscribe.png" width={70} height={70} alt="Subscribe" className='bg-white  rounded-[50px]'/>
-            ) : (
-              <span className="p-2">Subscribe Now</span>
-            )}
+            
+              <Image src="/assets/subscribe.png" width={70} height={70} alt="Subscribe" className='bg-white sm:hidden flex rounded-[50px]'/>
+              <span className="p-2  hidden sm:flex ">Subscribe Now</span>
+          
           </button>
         </div>
 

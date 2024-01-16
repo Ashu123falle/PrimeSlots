@@ -130,9 +130,9 @@ const SearchResultPage = (props) => {
     }
         
     return (
-        <div className='box-border'>
+        <div className='box-border overflow-hidden'>
             <Navbar/>
-            <div className='xs:mt-24 lg:mt-24 '>
+            <div className='xs:mt-24 lg:mt-24 sticky'>
                     <div className='px-2 py-4 mb-[-10px] text-[14px] ml-6 md:px-7 xl:px-14'>
                     <Link href="/">
                         <span className= "text-zinc-400 text-base font-normal font-['Figtree'] leading-tight " > <Link href="/">Home</Link> &nbsp; / </span>  </Link>

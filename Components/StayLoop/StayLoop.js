@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 
 const StayLoop = () => {
-  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
 
   return (
     <div className="main h-[160px] sm:h-[160px] md:h-[180px]  bg-gradient-to-b from-[#241E1F] to-[#0A075F]  flex justify-center items-center  max-sm:pt-14 ">
@@ -26,14 +24,14 @@ const StayLoop = () => {
             aria-label="Email Address"
           />
           <button
-            className="h-12 w-38 rounded-[50px] flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
+            className="h-12 w-38 rounded-[50px] flex items-center flex-shrink-0 bg-pink-600 hover:bg-pink-800 border-pink-600 hover:border-pink-800 text-lg border-4 text-white py-1 px-1 max-sm:w-[70px]  max-sm:border-white  max-sm:bg-white max-sm:hover:bg-white max-sm:hover:border-white"
             type="button"
           >
-            {isSmallScreen ? (
-              <Image src="/assets/subscribe.png" width={70} height={70} alt="Subscribe" className='bg-white  rounded-[50px]'/>
-            ) : (
-              <span className="p-2">Subscribe Now</span>
-            )}
+            
+              <Image src="/assets/subscribe.png" width={70} height={70} alt="Subscribe" className='flex sm:hidden bg-white  rounded-[50px]'/>
+          
+              <span className="p-2 sm:flex hidden ">Subscribe Now</span>
+          
           </button>
         </div>
 

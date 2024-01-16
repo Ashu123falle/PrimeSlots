@@ -28,7 +28,7 @@ function Navbar() {
 
     return (
         <>
-        <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 w-full fixed top-0 left-0 right-0 z-50 bg-white h-[100px]">
+        <nav className="hidden lg:flex items-center justify-center flex-wrap p-6 py-3 w-full fixed top-0 left-0 right-0 z-50 bg-white">
           <Link href="/">
             <Image alt="" src='/assets/mainlogo.png' width={136.7} height={32} className="w-[136.7px] h-8 relative mx-1" />
             </Link>

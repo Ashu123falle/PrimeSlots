@@ -174,7 +174,7 @@ export default function Home() {
 }
 
     return (
-      <main className="bg-whitebg-cover w-full">
+      <main className="bg-whitebg-cover w-full overflow-hidden">
         <Navbar/>
 
         <div className="xs:mt-24 lg:mt-24">
@@ -256,8 +256,8 @@ export default function Home() {
         </div>
 
 
-        <div className="hotpicks mt-5 overflow-hidden pl-5 md:pl-8 xl:pl-16" style={{backgroundImage: 'url("https://s3-alpha-sig.figma.com/img/f14e/b26d/1d680359edae64cf6d1becafa42a77ac?Expires=1704067200&Signature=FzkKVug~zZWkX09UFDrVfIEHZKaoeZkiaDb1dP~6RxpSWaFWx7xhHf3vcYjM6H5K3Rihl9M89LWtH-o7Hofp1nXxIiVALFj3kMehkMI~Wo52E75s~yi9UMHOPOSLSHu3~EzwhGbERL3qU6GllRaYyGZa-X9gERVJ~TlH8Rqfoq-dcND7mMFHwkAbPKbvxZQntrVOobTeipgnW2qkIZvq0c1IYdg29C8UIfONdio-EEiNkhLK6FHpJVOYdNdd1XvxOkkL6CgTHK~jLJDx2KuSukWAvOVCIJzaZBwfirSJPNRXcbQTZUNn3~jmyP5L~RQopYuKPivwgg3WaGb6cVbAog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")', height: "610px", backgroundSize: "cover", width: "100%"}}>
-          <h1 className="text-secondarycolor-1 mx-5 my-7 text-left font-['Inter-Bold',_sans-serif] text-3xl leading-[48px] font-bold  text-[#181265]">Prime Slots Exclusive!⭐</h1>
+        <div className="hotpicks mt-5 overflow-hidden pl-5 md:pl-8 xl:pl-16" style={{backgroundImage: 'url("/assets/magicpattern-8h_tctpq4h0-unsplash 1 (1).png")', height: "610px", backgroundSize: "cover", width: "100%"}}>
+          <h1 className="text-secondarycolor-1 mx-5 my-7 text-left font-['Inter-Bold',_sans-serif] text-3xl leading-[48px] font-bold  text-[#D292FF]">Prime Slots Exclusive!⭐</h1>
            <ul className="ml-3 categories flex justify-start items-center overscroll-auto overflow-x-scroll no-scrollbar">
               {hotPicksData.map(each => (
                 <BlogCard key={each.id} data = {each} onClickWishlistButton= {onClickWishlistButton} />
@@ -339,11 +339,6 @@ export default function Home() {
                 
 
               </button>
-
-
-              
-
-
           </div>
 
         </div>

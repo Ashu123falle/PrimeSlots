@@ -10,7 +10,9 @@ const ContactUs = () => {
   return (
     <>
       <MiniNavbar />
+      <div className='mt-24 md:mt-14'>
       <ContactUsimage/>
+      </div>
       <LetsTalk />
       <StayLoop />
       <Footer />
