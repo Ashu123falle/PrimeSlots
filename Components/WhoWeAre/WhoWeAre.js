@@ -40,7 +40,7 @@ const WhoWeAre = () => {
                 </div>
                 <div
                     className={
-                        "text-[#000000] text-center font-['Nexa-Regular',_sans-serif] xs:text-normal sm:text-lg font-normal relative " 
+                        "text-[#000000] text-center font-['Nexa-Regular',_sans-serif] xs:text-normal sm:text-lg font-normal relative p-3" 
                     }
                     >
                     Lorem Ipsum is simply dummy

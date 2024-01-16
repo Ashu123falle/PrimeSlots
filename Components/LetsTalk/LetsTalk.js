@@ -40,20 +40,20 @@ const LetsTalk = () => {
                     <div className='border border-[#DDE5EE] shadow-xl sm:shadow-2xl rounded-lg p-3 sm:p-8 md:w-[350px] lg:w-[400px]'>
                         <div className='content space-y-5'>
                             <div className='flex gap-5'>
-                                <input type="text" placeholder='First Name' className='bg-[#DDE5EE80] px-2 py-2 w-full rounded-lg' />
-                                <input type="text" placeholder='Last Name' className='bg-[#DDE5EE80] px-2 py-2 w-full rounded-lg' />
+                                <input type="text" placeholder='First Name' className='bg-[#DDE5EE80] font-normal bg-opacity-50 px-2 py-2 w-full rounded-lg text-[14px]' />
+                                <input type="text" placeholder='Last Name' className='bg-[#DDE5EE80] font-normal bg-opacity-50 px-2 py-2 w-full rounded-lg text-[14px]' />
                             </div>
                             <div>
-                                <input type="email" name="" id="" placeholder='Email' className='bg-[#DDE5EE80] px-2 py-2 rounded-lg w-full' />
+                                <input type="email" name="" id="" placeholder='Email' className='bg-[#DDE5EE80] font-normal  text-[14px] bg-opacity-50 px-2 py-2 rounded-lg w-full' />
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder='Mobile Number' className='bg-[#DDE5EE80] px-2 py-2 rounded-lg w-full' />
+                                <input type="text" name="" id="" placeholder='Mobile Number' className='bg-[#DDE5EE80] font-normal text-[14px] bg-opacity-50 px-2 py-2 rounded-lg w-full' />
                             </div>
                             <div>
-                                <textarea name="" id="" cols="5" rows="5" placeholder='Your Message' className='bg-[#DDE5EE80] px-2 py-2 rounded-lg w-full'>
+                                <textarea name="" id="" cols="5" rows="5" placeholder='Your Message' className='bg-[#DDE5EE80] text-[14px] bg-opacity-50 px-2 py-2 rounded-lg w-full'>
                                 </textarea>
                             </div>
-                            <button type="button" className='w-full bg-[#F5167E] text-white  py-2 rounded-full'>Send Message</button>
+                            <button type="button" className='w-full bg-[#F5167E] font-[600] text-white text-[14px] py-2 rounded-full'>Send Message</button>
                         </div>
                     </div>
                 </div>

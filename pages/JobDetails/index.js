@@ -36,14 +36,14 @@ const JobsItem = () => {
      <div className='pt-20 pl-20 pr-16 max-md:px-8'>
      <Image
               src='/assets/Vectortop.png' alt=""
-              width={70}
-              height={70}
+              width={60}
+              height={60}
               className='absolute z-10 right-[95%] sm:right-[95%] top-[563px] md:top-[ 572px] w-[37px] h-[35px] md:w-[60px] md:h-[70px] max-md:sr-only sm:inline-block'
         />
      <Image
               src='/assets/Vectormiddle.png' alt=""
-              width={100}
-              height={200}
+              width={70}
+              height={160}
               className='absolute z-10 right-[95%] sm:right-[95%] top-[763px] md:top-[ 572px] w-[100px] h-[225px] md:w-[100px] md:h-[225px] max-md:sr-only sm:inline-block'
         />
     

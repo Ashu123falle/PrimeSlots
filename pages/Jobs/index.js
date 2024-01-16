@@ -52,7 +52,7 @@ const Jobs = () => {
                         family. Check out our open roles below and fill out an application.</p>
                   </div>
 
-                  <div className="xl:flex xl:justify-center ">
+                  <div className="xl:flex xl:justify-center">
                   <div className="px-4 md:flex md:justify-between xl:justify-end w-full xl:w-[90%] mt-9 px-3 lg:px-16 lg:pl-13">
                     <ul className="flex flex-col gap-3 mx-9 lg:mx-0 my-9 md:w-[260px]">
                       <li class="text-slate-900 text-lg font-semibold font-['Figtree'] uppercase">HT & Admin</li>
