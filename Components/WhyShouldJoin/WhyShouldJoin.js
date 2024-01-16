@@ -7,8 +7,13 @@ const WhyShouldJoin = () => {
     return (
         <>
             <div className='relative flex flex-col gap-14 sm:flex-col lg:flex-row py-14 sm:gap-20 lg:gap-0'>
+<<<<<<< HEAD
                 <Image src="/assets/contactusvector.svg" width={30} height={30} alt='' className='absolute sm:w-[40px] sm:h-[40px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] md:left-5 md:top-10 sm:left-5 sm:top-20 left-2 top-16' />
                 <Image src="/assets/contactusvector2.svg" width={20} height={20} alt='' className='absolute w-[50px] h-[60px] sm:w-[70px] sm:h-[100px] md:w-[60px] md:h-[100px] lg:w-[50px] lg:h-[120px] md:left-0 sm:top-1/4 md:top-1/4 lg:top-52 top-52' />
+=======
+                <Image src={"/contactusvector.svg"} width={30} height={30} alt='' className='absolute sm:w-[40px] sm:h-[40px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] md:left-5 md:top-10 sm:left-5 sm:top-20 left-2 top-16' />
+                <Image src={"/contactusvector2.svg"} width={20} height={20} alt='' className='absolute w-[50px] h-[60px] sm:w-[70px] sm:h-[100px] md:w-[60px] md:h-[100px] lg:w-[50px] lg:h-[120px] md:left-0 sm:top-1/4 md:top-1/4 lg:top-52 top-52' />
+>>>>>>> e88df48406cf69b2e94a586f73ce19eaee371362
 
 
                 {/* onediv */}
@@ -28,7 +33,11 @@ const WhyShouldJoin = () => {
 
                         <div className='space-y-2 sm:space-y-3'>
                             <span className='flex justify-center w-fit p-3 bg-[#E7F2FF] rounded-full'>
+<<<<<<< HEAD
                                 <Image src="/assets/jobsvector1.svg" alt='' width={30} height={30} className=' sm:w-[35px]' />
+=======
+                                <Image src={"/jobsvector1.svg"} alt='' width={30} height={30} className=' sm:w-[35px]' />
+>>>>>>> e88df48406cf69b2e94a586f73ce19eaee371362
                             </span>
                             <h1 className='font-[Playfair] text-[#282933] text-xl font-bold'>Team work</h1>
                             <p className='text-[#131C5F] text-sm sm:text-base lg:text-sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
@@ -44,7 +53,11 @@ const WhyShouldJoin = () => {
 
                         <div className='space-y-2 sm:space-y-3'>
                             <span className='flex justify-center w-fit p-3 bg-[#E7F2FF] rounded-full'>
+<<<<<<< HEAD
                                 <Image src="/assets/jobsvector2.svg" alt='' width={30} height={30} className='sm:w-[35px]' />
+=======
+                                <Image src={"/jobsicon2.svg"} alt='' width={30} height={30} className='sm:w-[35px]' />
+>>>>>>> e88df48406cf69b2e94a586f73ce19eaee371362
                             </span>
                             <h1 className='font-[Playfair] text-[#282933] text-xl font-bold'>Learning Opportunity</h1>
                             <p className='text-[#131C5F] text-sm sm:text-base lg:text-sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
@@ -52,7 +65,11 @@ const WhyShouldJoin = () => {
 
                         <div className='space-y-2 sm:space-y-3'>
                             <span className='flex justify-center w-fit p-3 bg-[#E7F2FF] rounded-full'>
+<<<<<<< HEAD
                                 <Image src="/assets/jobsicon1.svg" alt='' width={30} height={30} className='sm:w-[35px]' />
+=======
+                                <Image src={"/jobsicon1.svg"} alt='' width={30} height={30} className='sm:w-[35px]' />
+>>>>>>> e88df48406cf69b2e94a586f73ce19eaee371362
                             </span>
                             <h1 className='font-[Playfair] text-[#282933] text-xl font-bold'>Upgrate Skills</h1>
                             <p className='text-[#131C5F] text-sm sm:text-base lg:text-sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
