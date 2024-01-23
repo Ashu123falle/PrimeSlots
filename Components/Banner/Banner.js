@@ -74,7 +74,7 @@ const Banner = () => {
     return(
         <>
         <div className="opacity-0.5 w-[100%] overflow-x-hidden rgba(35, 29, 32, 0.89) no-scrollbar backdrop-opacity-75 lg:h-[140vh] xs:h-[160vh] sm:h-[140vh] md:h-[163vh] xl:h-[165vh]" 
-        style={{backgroundImage: "url('https://s3-alpha-sig.figma.com/img/8361/dc28/d4780ff4f4143e28302cc03f7a231643?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LbjwwZribj2HvpVtvrBr6qtMy846ZGMCLQe1Wu5rI4yjk4UTRYs-llD5i8UBO7YRTl1d1ZSK-~MEh4zfq8ocbyK-ujwG-AGujck8ekndcxyHNgR9RC3QKG5EwRHMnHUaSeirnql4nXNvr7noE7G-UX0wIKLe3sJIC~zgfqVMB9ul8uN2p8rR5gGOu4lkrb0g4P2GAjwMBXLS0BFeVaABvqCYtNpvUJ7YhFI2H7vinMv0m0RPREJecbhkbHw3gOccwTdHuc39RNLx2UAKWAzIHbNKKBhw0gYDTwnbnXd0aRifeGRxvG-LiiVysOGBEPIx3OmwSRD7EiFZbcGZhH7KPQ__')", backgroundSize: "cover", width:"100%"}}>
+        style={{backgroundImage: "url('/banner.jpeg')", backgroundSize: "cover", width:"100%"}}>
         <div className="absolute inset-0 backdrop-blur-sm">
             
             <div className="hidden md:block">

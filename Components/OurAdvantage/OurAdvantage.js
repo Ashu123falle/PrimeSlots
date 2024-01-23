@@ -7,9 +7,26 @@ const OurAdvantage = () => {
         <>
             <div className=" px-10 grid grid-flow-row main bg-gradient-to-t from-violet-100 via-violet-100 to-white sm:px-8 md:px-14 lg:px-24 xl:px-40  py-10 sm:space-y-2 md:space-y-6">
 
-                <div className='w-[100%] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[550px] 4xl:h-[600px]  flex justify-center items-center rounded-xl'>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=iFQ6vHSulJw" controls height={'93%'} width={'93%'} className="rounded-xl"/>
+             {/* <div className=' flex  '>
+             <div className='w-[100%] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[550px] 4xl:h-[600px]  flex justify-center items-center rounded-xl'>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=NwZ1v5xNmrs" controls height={'93%'} width={'93%'} className="rounded-xl"/>
                 </div>
+
+                
+               
+             </div>
+               */}
+
+<div className='flex overflow-x-auto space-x-4'>
+      <div className='w-[100%] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[550px] 4xl:h-[600px] flex-shrink-0 rounded-xl p-2'>
+        {/* First Video */}
+        <ReactPlayer url="https://www.youtube.com/watch?v=NwZ1v5xNmrs" controls height={'100%'} width={'100%'} className="rounded-xl" />
+      </div>
+      <div className='w-[100%] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[550px] 4xl:h-[600px] flex-shrink-0 rounded-xl'>
+        {/* Second Video */}
+        <ReactPlayer url="https://www.youtube.com/watch?v=6g-_Ma2ro9c" controls height={'100%'} width={'100%'} className="rounded-xl" />
+      </div>
+    </div>
 
 
                 {/* content  */}
